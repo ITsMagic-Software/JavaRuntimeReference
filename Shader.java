@@ -39,13 +39,6 @@ public class Shader {
             //
             return this;
         }
-        @Deprecated
-        @DeprecatedInfo(info={"PFile is now obsolete, use Shader.Builder.setVertexCode(VertexGLSLFile) instead"})
-        @MethodArgs(args={"file"})
-        public Builder setVertexCode(PFile pFile) {
-            //
-            return this;
-        }
         @MethodArgs(args={"file"})
         public Builder setVertexCode(VertexGLSLFile pFile) {
             //
@@ -69,13 +62,6 @@ public class Shader {
             //
             return this;
         }
-        @Deprecated
-        @DeprecatedInfo(info={"PFile is now obsolete, use Shader.Builder.setGeometryCode(FragmentGLSLFile) instead"})
-        @MethodArgs(args={"file"})
-        public Builder setGeometryCode(PFile pFile) {
-            //
-            return this;
-        }
         @MethodArgs(args={"file"})
         public Builder setGeometryCode(GeometryGLSLFile pFile) {
             //
@@ -96,13 +82,6 @@ public class Shader {
         }
         @MethodArgs(args={"fragmentCode"})
         public Builder setFragmentCode(String fragmentCode) {
-            //
-            return this;
-        }
-        @Deprecated
-        @DeprecatedInfo(info={"PFile is now obsolete, use Shader.Builder.setFragmentCode(FragmentGLSLFile) instead"})
-        @MethodArgs(args={"file"})
-        public Builder setFragmentCode(PFile pFile) {
             //
             return this;
         }
@@ -133,7 +112,6 @@ public class Shader {
             //
             return this;
         }
-
 
         public Builder compileVertex(){
             //

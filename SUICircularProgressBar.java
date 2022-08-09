@@ -1,13 +1,15 @@
 package JAVARuntime;
 
+//
+
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"UI (Deprecated)"})
-public class UIJoystick extends Component{
+@ClassCategory(cat={"SupremeUI"})
+public class SUICircularProgressBar extends Component{
     //
 
-    public UIJoystick() {
+    public SUICircularProgressBar() {
         //
         super();
         //
@@ -15,8 +17,9 @@ public class UIJoystick extends Component{
         //
     }
 
+
     @HideGetSet
-    public float getHandleSize(){
+    public float getValue() {
         //
         return 0;
         //
@@ -25,12 +28,12 @@ public class UIJoystick extends Component{
     }
     @HideGetSet
     @MethodArgs(args={"value"})
-    public void setHandleSize(float value){
+    public void setValue(float value) {
         //
     }
+
     @HideGetSet
-    @MethodArgs(args={"value"})
-    public float getPositionDamping(){
+    public float getMaxValue() {
         //
         return 0;
         //
@@ -39,12 +42,26 @@ public class UIJoystick extends Component{
     }
     @HideGetSet
     @MethodArgs(args={"value"})
-    public void setPositionDamping(float value){
+    public void setMaxValue(float value) {
+        //
+    }
+
+    @HideGetSet
+    public float getMaskMaxLength() {
+        //
+        return 0;
+        //
+
         //
     }
     @HideGetSet
     @MethodArgs(args={"value"})
-    public boolean getGlobalAxisEnabled(){
+    public void setMaskMaxLength(float value) {
+        //
+    }
+
+    @HideGetSet
+    public boolean isTextEnabled() {
         //
         return false;
         //
@@ -53,25 +70,12 @@ public class UIJoystick extends Component{
     }
     @HideGetSet
     @MethodArgs(args={"value"})
-    public void setGlobalAxisEnabled(boolean value){
-        //
-    }
-    @HideGetSet
-    public String getGlobalAxisName(){
-        //
-        return "";
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"value"})
-    public void setGlobalAxisName(String value){
+    public void setTextEnabled(boolean value) {
         //
     }
 
     @HideGetSet
-    public boolean getInvertX(){
+    public boolean isSetMask() {
         //
         return false;
         //
@@ -80,20 +84,7 @@ public class UIJoystick extends Component{
     }
     @HideGetSet
     @MethodArgs(args={"value"})
-    public void setInvertX(boolean value){
-        //
-    }
-    @HideGetSet
-    public boolean getInvertY(){
-        //
-        return false;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"value"})
-    public void setInvertY(boolean value){
+    public void setMaskEnabled(boolean value) {
         //
     }
 

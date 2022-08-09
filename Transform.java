@@ -341,6 +341,80 @@ public class Transform{
         //
     }
 
+    @MethodArgs(args={"out"})
+    public Vector3 forward(Vector3 out){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args={"out"})
+    public Vector3 back(Vector3 out){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args={"out"})
+    public Vector3 right(Vector3 out){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args={"out"})
+    public Vector3 left(Vector3 out){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args={"out"})
+    public Vector3 up(Vector3 out){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args={"out"})
+    public Vector3 down(Vector3 out){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    @MethodArgs(args={"other"})
+    public float globalDistance(SpatialObject other) {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @MethodArgs(args={"other"})
+    public float globalDistance(Transform other) {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @MethodArgs(args={"other"})
+    public float globalDistance(Vector3 other) {
+        //
+        return 0;
+        //
+
+        //
+    }
+
     @Deprecated
     public boolean isStatic(){
         //

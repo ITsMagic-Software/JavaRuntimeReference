@@ -1,6 +1,7 @@
 package JAVARuntime;
 
 //
+
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
@@ -9,7 +10,6 @@ public class Light extends Component{
     public static final int TYPE_SUN = 0;
     public static final int TYPE_POINT = 1;
     public static final int TYPE_SPOT = 2;
-    public static final int TYPE_DIRECTIONAL = 3;
 
     //
 

@@ -28,34 +28,16 @@ public class SkinnedModelRenderer extends Component{
     }
 
     @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use SkinnedModelRenderer.getVertex() instead"})
-    public PFile getModelFile(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @Deprecated
     @DeprecatedInfo(info={"PFile is now obsolete, use SkinnedModelRenderer.setVertex(Vertex) instead"})
     @MethodArgs(args={"file"})
-    public void setModelFile(PFile pFile){
+    public void setModelFile(VertexFile pFile){
         //
     }
 
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use SkinnedModelRenderer.getMaterial() instead"})
-    public PFile getMaterialFile(){
-        //
-        return null;
-        //
-
-        //
-    }
     @Deprecated
     @DeprecatedInfo(info={"PFile is now obsolete, use SkinnedModelRenderer.setMaterial(Material) instead"})
     @MethodArgs(args={"file"})
-    public void setMaterialFile(PFile pFile){
+    public void setMaterialFile(MaterialFile pFile){
         //
     }
 

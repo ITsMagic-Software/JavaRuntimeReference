@@ -24,9 +24,18 @@ public class PerlinNoise {
 
     //
 
+    public PerlinNoise() {}
+    public PerlinNoise(float scale) {
+        //
+    }
+
     /**
      * Defautl scale = 10
      */
+
+
+
+
 
     /// Builder
     @HideGetSet

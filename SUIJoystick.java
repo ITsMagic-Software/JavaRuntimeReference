@@ -95,11 +95,6 @@ public class SUIJoystick extends Component{
 
         //
     }
-    @HideGetSet
-    @MethodArgs(args={"value"})
-    public void setPressed(boolean value){
-        //
-    }
 
     @HideGetSet
     public boolean isDown(){

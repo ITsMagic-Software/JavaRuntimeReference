@@ -17,6 +17,10 @@ public class GUI {
         //
     }
 
+    @MethodArgs(args={"color","text","x","y","width","height"})
+    public static void drawText(Color color, String text, int x, int y, int width, int height){
+        //
+    }
     @MethodArgs(args={"color","text","x","y","width","height","font"})
     public static void drawText(Color color, String text, int x, int y, int width, int height, Font font){
         //
@@ -37,12 +41,12 @@ public class GUI {
     public static void drawText(String text, int x, int y, int width, int height, Font font, GUIText.Alignment alignment){
         //
     }
-    @MethodArgs(args={"color","text","x","y","width","height"})
-    public static void drawText(Color color, String text, int x, int y, int width, int height){
-        //
-    }
     @MethodArgs(args={"text","x","y","width","height"})
     public static void drawText(String text, int x, int y, int width, int height){
+        //
+    }
+    @MethodArgs(args={"text","x","y","width","height","scale"})
+    public static void drawText(String text, int x, int y, int width, int height, float scale){
         //
     }
     @MethodArgs(args={"color","text","x","y","width","height","alignment"})
@@ -89,19 +93,6 @@ public class GUI {
     }
     @MethodArgs(args={"color","texture","guiRect"})
     public static void drawImage(Color color, Texture texture, GUIRect guiRect){
-        //
-    }
-
-    @MethodArgs(args={"color","texture","x","y","width","height"})
-    public static void editorDrawImage(Texture texture, int x, int y, int width, int height){
-        //
-    }
-    @MethodArgs(args={"color","texture","x","y","width","height"})
-    public static void editorDrawImage(Color color, Texture texture, int x, int y, int width, int height){
-        //
-    }
-    @MethodArgs(args={"guiImage"})
-    public static void editorDrawImage(GUIImage guiImage){
         //
     }
 }

@@ -1,13 +1,15 @@
 package JAVARuntime;
 
+//
+
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"UI (Deprecated)"})
-public class UIImage extends Component{
+@ClassCategory(cat={"SupremeUI"})
+public class SUICircularMask extends Component{
     //
 
-    public UIImage() {
+    public SUICircularMask() {
         //
         super();
         //
@@ -15,35 +17,46 @@ public class UIImage extends Component{
         //
     }
 
+
     @HideGetSet
-    public Color getColor(){
+    public float getRotation() {
         //
-        return null;
+        return 0;
         //
 
         //
     }
     @HideGetSet
     @MethodArgs(args={"value"})
-    public void setColor(Color color){
+    public void setRotation(float value) {
         //
     }
 
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use UIImage.getImage() instead"})
     @HideGetSet
-    public PFile getImageFile(){
+    public float getLength() {
         //
-        return null;
+        return 0;
         //
 
         //
     }
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use UIImage.setImage(Texture) instead"})
     @HideGetSet
     @MethodArgs(args={"value"})
-    public void setImageFile(PFile pFile){
+    public void setLength(float value) {
+        //
+    }
+
+    @HideGetSet
+    public float getSmooth() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args={"value"})
+    public void setSmooth(float value) {
         //
     }
 
@@ -56,7 +69,7 @@ public class UIImage extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args={"texture"})
     public void setImage(Texture texture){
         //
     }

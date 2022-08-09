@@ -18,34 +18,16 @@ public class HPOP extends Component{
     }
 
     @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use HPOP.getVertex() instead"})
-    @HideGetSet
-    public PFile getModelFile(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @Deprecated
     @DeprecatedInfo(info={"PFile is now obsolete, use HPOP.setVertex(Vertex) instead"})
     @HideGetSet
     @MethodArgs(args={"pFile"})
-    public void setModelFile(PFile pFile){
+    public void setModelFile(VertexFile pFile){
         //
     }
 
-    @HideGetSet
-    public PFile getMaterialFile(){
-        //
-        return null;
-        //
-
-        //
-    }
     @HideGetSet
     @MethodArgs(args={"pFile"})
-    public void setMaterialFile(PFile pFile){
+    public void setMaterialFile(MaterialFile pFile){
         //
     }
 
@@ -78,20 +60,6 @@ public class HPOP extends Component{
     }
 
     @HideGetSet
-    public boolean isFovCulling(){
-        //
-        return false;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"value"})
-    public void setFovCulling(boolean value){
-        //
-    }
-
-    @HideGetSet
     public boolean isMaxRenderDistanceEnabled(){
         //
         return false;
@@ -116,48 +84,6 @@ public class HPOP extends Component{
     @HideGetSet
     @MethodArgs(args={"value"})
     public void setMaxRenderDistance(float value){
-        //
-    }
-
-    @HideGetSet
-    public float getFovcBias(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"value"})
-    public void setFovcBias(float value){
-        //
-    }
-
-    @HideGetSet
-    public float getMinimalDistance(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"value"})
-    public void setMinimalDistance(float value){
-        //
-    }
-
-    @HideGetSet
-    public float getFovObjectSize(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"value"})
-    public void setObjectSize(float value){
         //
     }
 

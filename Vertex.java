@@ -270,32 +270,19 @@ public class Vertex {
 
     public enum RayMode{ClosestPoint, FirstHit}
     @MethodArgs(args={"transform","ray"})
-    public LaserHit fastTraceLaser(Transform transform, Ray ray){
+    public LaserHit traceLaser(Transform transform, Ray ray){
         return traceLaser(transform, ray, RayMode.ClosestPoint);
     }
     @MethodArgs(args={"transform","ray","rayMode"})
-    public LaserHit fastTraceLaser(Transform transform, Ray ray, RayMode rayMode){
+    public LaserHit traceLaser(Transform transform, Ray ray, RayMode rayMode){
         //
         return null;
         //
 
         //
     }
-    @MethodArgs(args={"transform","ray","asyncLaserListener"})
-    public void fastTraceLaserAsync(Transform transform, Ray ray, AsyncLaserListener asyncLaserListener){
-        traceLaserAsync(transform, ray, asyncLaserListener, RayMode.ClosestPoint);
-    }
-    @MethodArgs(args={"transform","ray","asyncLaserListener","rayMode"})
-    public void fastTraceLaserAsync(Transform transform, Ray ray, AsyncLaserListener asyncLaserListener, RayMode rayMode){
-        //
-    }
-
-    @MethodArgs(args={"transform","ray"})
-    public LaserHit traceLaser(Transform transform, Ray ray){
-        return traceLaser(transform, ray, RayMode.ClosestPoint);
-    }
-    @MethodArgs(args={"transform","ray","rayMode"})
-    public LaserHit traceLaser(Transform transform, Ray ray, RayMode rayMode){
+    @MethodArgs(args={"transform","ray","rayMode","backfaceCulling"})
+    public LaserHit traceLaser(Transform transform, Ray ray, RayMode rayMode, boolean backfaceCulling){
         //
         return null;
         //
@@ -308,6 +295,10 @@ public class Vertex {
     }
     @MethodArgs(args={"transform","ray","asyncLaserListener","rayMode"})
     public void traceLaserAsync(Transform transform, Ray ray, AsyncLaserListener asyncLaserListener, RayMode rayMode){
+        //
+    }
+    @MethodArgs(args={"transform","ray","asyncLaserListener","rayMode","backfaceCulling"})
+    public void traceLaserAsync(Transform transform, Ray ray, AsyncLaserListener asyncLaserListener, RayMode rayMode, boolean backfaceCulling){
         //
     }
 
@@ -335,16 +326,6 @@ public class Vertex {
     }
 
     /// Abstract
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use Vertex.loadFile(VertexFile) instead"})
-    @MethodArgs(args={"file"})
-    public static Vertex loadFile(PFile pFile){
-        //
-        return null;
-        //
-
-        //
-    }
     @MethodArgs(args={"file"})
     public static Vertex loadFile(VertexFile pFile){
         //

@@ -43,13 +43,6 @@ public class SoundPlayer extends Component{
 
         //
     }
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use SoundPlayer.setSoundFile(SoundFile) instead"})
-    @HideGetSet
-    @MethodArgs(args={"file"})
-    public void setSoundFile(PFile pFile){
-        //
-    }
     @MethodArgs(args={"file"})
     public void setSoundFile(SoundFile pFile){
         //

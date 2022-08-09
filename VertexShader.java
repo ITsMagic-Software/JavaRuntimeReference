@@ -13,14 +13,21 @@ public class VertexShader {
     }
 
     /// Abstract
-    @MethodArgs(args={"materialShader", "shaderName"})
+    /*@MethodArgs(args={"materialShader", "shaderName"})
     public static VertexShader loadFile(MaterialShader materialShader, String shaderName){
-        //
-        return null;
-        //
 
-        //
-    }
+        VertexShaderScript vertex = Core.classExporter.getBuilder().fromJson(
+                Core.classExporter.loadJson(materialShader.getShaderFolderLocation() + "/" + shaderName + FormatDictionaries.VERTEX_GLSL, MainCore.pageToMainListener.getActivity()),
+                VertexShaderScript.class
+        );
+
+        if (vertex != null) {
+            return new VertexShader(vertex.getCode());
+        }
+        return null;
+
+    }*/
+
     @MethodArgs(args={"inputStream"})
     public static VertexShader loadInputStream(InputStream inputStream) throws IOException {
         //

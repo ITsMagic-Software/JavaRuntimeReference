@@ -2,6 +2,8 @@ package JAVARuntime;
 
 //
 
+//
+
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
@@ -11,24 +13,14 @@ public class Texture {
 
     //
 
-    public Texture() {
+    public Texture(int width, int height){
+        //
+    }
+    public Texture(int width, int height, boolean allowModifications){
         //
     }
 
-    public void prepareImage(){
-        //
-    }
-    public boolean isPrepared(){
-        //
-        return false;
-        //
-
-        //
-    }
     public void apply(){
-        //
-    }
-    public void release(){
         //
     }
 
@@ -74,16 +66,6 @@ public class Texture {
     }
 
     /// ABSTRACT
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use Texture.loadFile(TextureFile) instead"})
-    @MethodArgs(args={"file"})
-    public static Texture loadFile(PFile pFile){
-        //
-        return null;
-        //
-
-        //
-    }
     @MethodArgs(args={"file"})
     public static Texture loadFile(TextureFile pFile){
         //
@@ -110,6 +92,14 @@ public class Texture {
     public static Texture black(){
         //
         return null;
+        //
+
+        //
+    }
+
+    public static boolean isRenderable(Texture texture){
+        //
+        return false;
         //
 
         //

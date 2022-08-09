@@ -13,14 +13,23 @@ public class GeometryShader {
     }
 
     /// Abstract
+    /*
     @MethodArgs(args={"materialShader", "shaderName"})
     public static GeometryShader loadFile(MaterialShader materialShader, String shaderName){
-        //
-        return null;
-        //
 
-        //
+        FragmentShaderScript vertex = Core.classExporter.getBuilder().fromJson(
+                Core.classExporter.loadJson(materialShader.getShaderFolderLocation() + "/" + shaderName + FormatDictionaries.GEOMETRY_GLSL, MainCore.pageToMainListener.getActivity()),
+                FragmentShaderScript.class
+        );
+
+        if (vertex != null) {
+            return new GeometryShader(vertex.getCode());
+        }
+        return null;
+
     }
+    */
+
     @MethodArgs(args={"inputStream"})
     public static GeometryShader loadInputStream(InputStream inputStream) throws IOException {
         //

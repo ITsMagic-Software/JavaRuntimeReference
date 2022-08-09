@@ -16,15 +16,6 @@ public class FontLoader {
 
         //
     }
-    @Deprecated
-    @MethodArgs(args={"pFile","resolution"})
-    public static Font load(PFile pFile, int resolution) {
-        //
-        return null;
-        //
-
-        //
-    }
     @MethodArgs(args={"file","resolution"})
     public static Font load(FontFile file, int resolution) {
         //

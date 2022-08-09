@@ -15,6 +15,8 @@ public class GizmoObject extends GizmoTransform {
     private RenderMode renderMode = RenderMode.Triangles;
     private Object userPointer = null;
     private boolean enableTransparency = false;
+    private boolean scaleBasedCamera;
+
     //
     private int wireFrameWidth = 0;
     //
@@ -158,8 +160,19 @@ public class GizmoObject extends GizmoTransform {
     public boolean isEnableTransparency() {
         return enableTransparency;
     }
+    @HideGetSet
     @MethodArgs(args={"enableTransparency"})
     public void setEnableTransparency(boolean enableTransparency) {
         this.enableTransparency = enableTransparency;
+    }
+
+    @HideGetSet
+    @Override
+    public boolean isScaleBasedCamera() {
+        return scaleBasedCamera;
+    }
+    @HideGetSet
+    public void setScaleBasedCamera(boolean scaleBasedCamera) {
+        this.scaleBasedCamera = scaleBasedCamera;
     }
 }

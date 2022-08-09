@@ -6,10 +6,10 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 @ClassCategory(cat={"Components"})
-public class Terrain extends Component{
+public class STerrain extends Component{
     //
 
-    public Terrain() {
+    public STerrain() {
         //
         super();
         //
@@ -19,7 +19,7 @@ public class Terrain extends Component{
 
     //
 
-    public int getWidth(){
+    public float getWidth(){
         //
         return 0;
         //
@@ -27,10 +27,10 @@ public class Terrain extends Component{
         //
     }
     @MethodArgs(args={"value"})
-    public void setWidth(int v){
+    public void setWidth(float v){
         //
     }
-    public int getMaxHeight(){
+    public float getMaxHeight(){
         //
         return 0;
         //
@@ -38,7 +38,7 @@ public class Terrain extends Component{
         //
     }
     @MethodArgs(args={"value"})
-    public void setMaxHeight(int v){
+    public void setMaxHeight(float v){
         //
     }
 
@@ -86,24 +86,16 @@ public class Terrain extends Component{
     public void setHeight(int x, int z, float height){
         //
     }
-    public void apply(){
+    public void applyHeight(){
         //
     }
 
     @MethodArgs(args={"worldCoordinates", "intensity", "size", "brush"})
-    public void applyRaiseLower(Vector3 worldCoordinates, float intensity, float size, Brush brush){
-        //
-    }
-    @MethodArgs(args={"worldCoordinates", "intensity", "size", "brush"})
-    public void applySmoother(Vector3 worldCoordinates, float intensity, float size, Brush brush){
-        //
-    }
-    @MethodArgs(args={"worldCoordinates", "intensity", "size", "brush"})
-    public void applyFlatter(Vector3 worldCoordinates, float intensity, float size, Brush brush){
+    public void applyRaiseLower(Vector2 worldCoordinates, float intensity, float size, Brush brush){
         //
     }
     @MethodArgs(args={"worldCoordinates", "intensity", "size", "textureSize", "diffuse", "normalMap", "ao", "brush"})
-    public void applyPaint(Vector3 worldCoordinates, float intensity, float size, float textureSize, Texture diffuse, Texture normalMap, Texture ao, Brush brush){
+    public void applyPaint(Vector2 worldCoordinates, float intensity, float size, float textureSize, int layerIndex, Brush brush){
         //
     }
 }

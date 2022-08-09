@@ -99,6 +99,9 @@ public class GizmoTransform extends GizmoElement{
 
         //
     }
+
+    //
+
     @HideGetSet
     @MethodArgs(args={"matrix"})
     public void setMatrix(float[] matrix) {

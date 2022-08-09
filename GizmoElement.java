@@ -40,4 +40,5 @@ public class GizmoElement {
     public boolean isEnableTransparency() {
         return false;
     }
+    public boolean isScaleBasedCamera(){ return false; }
 }

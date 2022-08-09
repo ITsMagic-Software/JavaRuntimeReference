@@ -205,7 +205,7 @@ public class OHString implements
     @MethodArgs(args={"str"})
     public OHString[] split(String str){
         //
-        return false;
+        return null;
         //
 
         //
@@ -213,7 +213,7 @@ public class OHString implements
     @MethodArgs(args={"str"})
     public OHString[] split(OHString str){
         //
-        return false;
+        return null;
         //
 
         //

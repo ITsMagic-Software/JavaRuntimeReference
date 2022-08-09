@@ -6,10 +6,10 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 @ClassCategory(cat={"SupremeUI"})
-public class SUIKeyEventListener extends Component{
+public class SUISlideArea extends Component{
     //
 
-    public SUIKeyEventListener() {
+    public SUISlideArea() {
         //
         super();
         //
@@ -18,7 +18,7 @@ public class SUIKeyEventListener extends Component{
     }
 
     @HideGetSet
-    public Key getKey(){
+    public Axis getAxis(){
         //
         return null;
         //
@@ -27,12 +27,12 @@ public class SUIKeyEventListener extends Component{
     }
     @HideGetSet
     @MethodArgs(args={"key"})
-    public void setKey(Key key){
+    public void setAxis(Axis axis){
         //
     }
 
     @HideGetSet
-    public String getKeyName(){
+    public String getAxisName(){
         //
         return null;
         //
@@ -41,7 +41,7 @@ public class SUIKeyEventListener extends Component{
     }
     @HideGetSet
     @MethodArgs(args={"name"})
-    public void setKeyName(String name){
+    public void setAxisName(String name){
         //
     }
 

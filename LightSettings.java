@@ -47,20 +47,10 @@ public class LightSettings {
     }
 
     @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use LightSettings.getSkybox() instead"})
-    @HideGetSet
-    public PFile getSkyboxPFile(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @Deprecated
     @DeprecatedInfo(info={"PFile is now obsolete, use LightSettings.setSkybox(Texture) instead"})
     @HideGetSet
     @MethodArgs(args={"file"})
-    public void setSkyboxPFile(PFile pFile){
+    public void setSkyboxFile(TextureFile pFile){
         //
     }
     @HideGetSet

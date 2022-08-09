@@ -1,5 +1,7 @@
 package JAVARuntime;
 
+//
+
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
@@ -42,20 +44,10 @@ public class Collider extends Component{
     }
 
     @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use Collider.getVertex() instead"})
-    @HideGetSet
-    public PFile getModelFile(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @Deprecated
     @DeprecatedInfo(info={"PFile is now obsolete, use Collider.setVertex(Vertex) instead"})
     @HideGetSet
     @MethodArgs(args={"pFile"})
-    public void setModelFile(PFile pFile){
+    public void setVertexFile(VertexFile pFile){
         //
     }
 

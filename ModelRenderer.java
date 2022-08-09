@@ -30,39 +30,13 @@ public class ModelRenderer extends Component{
         //
     }
 
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use ModelRenderer.getVertex() instead"})
-    @HideGetSet
-    public PFile getModelFile(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use ModelRenderer.setVertex(Vertex) instead"})
-    @HideGetSet
     @MethodArgs(args={"file"})
-    public void setModelFile(PFile pFile){
+    public void setModelFile(VertexFile file){
         //
     }
 
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use ModelRenderer.getMaterial() instead"})
-    @HideGetSet
-    public PFile getMaterialFile(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use ModelRenderer.setMaterial(Material) instead"})
-    @HideGetSet
     @MethodArgs(args={"file"})
-    public void setMaterialFile(PFile pFile){
+    public void setMaterialFile(MaterialFile file){
         //
     }
 

@@ -76,7 +76,7 @@ public class SpatialObject {
     @HideGetSet
     public JAVARuntime.OHString getNameOH(){
         //
-        return "";
+        return null;
         //
 
         //
@@ -114,6 +114,7 @@ public class SpatialObject {
 
         //
     }
+
     @MethodArgs(args={"name"})
     public void callFunction(String name){
         //
@@ -136,122 +137,6 @@ public class SpatialObject {
     }
     @MethodArgs(args={"name","value"})
     public void callFunction(String name, boolean value){
-        //
-    }
-
-    @Deprecated
-    @DeprecatedInfo(info={"Interpreted scripts(NodeScript v1 and MagicScript) are obsolete, this method will be removed"})
-    @MethodArgs(args={"name"})
-    public void callScriptsFunction(String name){
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"Interpreted scripts(NodeScript v1 and MagicScript) are obsolete, this method will be removed"})
-    @MethodArgs(args={"name","value"})
-    public void callScriptsFunction(String name, float value){
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"Interpreted scripts(NodeScript v1 and MagicScript) are obsolete, this method will be removed"})
-    @MethodArgs(args={"name","value"})
-    public void callScriptsFunction(String name, int value){
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"Interpreted scripts(NodeScript v1 and MagicScript) are obsolete, this method will be removed"})
-    @MethodArgs(args={"name","value"})
-    public void callScriptsFunction(String name, boolean value){
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"Interpreted scripts(NodeScript v1 and MagicScript) are obsolete, this method will be removed"})
-    @MethodArgs(args={"name","value"})
-    public void callScriptsFunction(String name, Vector3 value){
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"Interpreted scripts(NodeScript v1 and MagicScript) are obsolete, this method will be removed"})
-    @MethodArgs(args={"name","value"})
-    public void callScriptsFunction(String name, Vector2 value){
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"Interpreted scripts(NodeScript v1 and MagicScript) are obsolete, this method will be removed"})
-    @MethodArgs(args={"name","value"})
-    public void callScriptsFunction(String name, Quaternion value){
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"Interpreted scripts(NodeScript v1 and MagicScript) are obsolete, this method will be removed"})
-    @MethodArgs(args={"name","value"})
-    public void callScriptsFunction(String name, String value){
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"Interpreted scripts(NodeScript v1 and MagicScript) are obsolete, this method will be removed"})
-    @MethodArgs(args={"name","value"})
-    public void callScriptsFunction(String name, PFile value){
-        //
-    }
-
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use SpatialObject.instantiate(ObjectFile) instead"})
-    @MethodArgs(args={"file"})
-    public SpatialObject instantiate(PFile pFile){
-        //
-        return null;
-        //
-
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use SpatialObject.instantiate(ObjectFile, Vector3 position) instead"})
-    @MethodArgs(args={"file","position"})
-    public SpatialObject instantiate(PFile pFile, Vector3 position){
-        //
-        return null;
-        //
-
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use SpatialObject.instantiate(ObjectFile, Vector3 position, Quaternion rotation) instead"})
-    @MethodArgs(args={"file","position","rotation"})
-    public SpatialObject instantiate(PFile pFile, Vector3 position, Quaternion rotation){
-        //
-        return null;
-        //
-
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use SpatialObject.instantiate(ObjectFile, Vector3 position, Quaternion rotation, Vector3 scale) instead"})
-    @MethodArgs(args={"file","position","rotation","scale"})
-    public SpatialObject instantiate(PFile pFile, Vector3 position, Quaternion rotation, Vector3 scale){
-        //
-        return null;
-        //
-
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use SpatialObject.instantiateHasChild(ObjectFile) instead"})
-    @MethodArgs(args={"file"})
-    public SpatialObject instantiateHasChild(PFile pFile){
-        //
-        return null;
-        //
-
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use SpatialObject.instantiateHasChild(ObjectFile, SpatialObject parent) instead"})
-    @MethodArgs(args={"file","parent"})
-    public SpatialObject instantiateHasChild(PFile pFile, SpatialObject parent){
-        //
-        return null;
-        //
-
         //
     }
 

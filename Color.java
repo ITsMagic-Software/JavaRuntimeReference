@@ -22,6 +22,10 @@ public class Color implements
     public Color(int r, int g, int b) {
         //
     }
+    @MethodArgs(args={"r","g","b"})
+    public Color(float r, float g, float b) {
+        //
+    }
     @MethodArgs(args={"a","r","g","b"})
     public Color(int a, int r, int g, int b) {
         //
@@ -408,6 +412,14 @@ public class Color implements
         //
     }
     public static Color PINK(){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    public Color copy() {
         //
         return null;
         //

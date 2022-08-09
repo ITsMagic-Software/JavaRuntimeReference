@@ -9,7 +9,7 @@ import java.util.List;
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 @ClassCategory(cat={"Java"})
-public class JCompiller {
+public class JCompiler {
 
     public static List getAllClasses(){
         //
@@ -63,5 +63,36 @@ public class JCompiller {
 
         //
     }
+
+    public static JClass findOfficialClass(String fullName){
+        //
+        return null;
+        //
+
+        //
+    }
+    public static JClass findUserClass(String fullName){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    public static boolean isCompiling(){
+        //
+        return false;
+        //
+
+        //
+    }
+
+    public static void addListener(Object object){
+        //
+    }
+    public static void removeListener(Object object){
+        //
+    }
 }
+
 

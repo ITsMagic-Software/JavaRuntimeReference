@@ -92,6 +92,7 @@ public class AList implements java.util.List {
     public ListIterator listIterator() {
         return list.listIterator();
     }
+    @MethodArgs(args={"i"})
     public ListIterator listIterator(int i) {
         return list.listIterator(i);
     }

@@ -416,6 +416,22 @@ public class Vector2 implements
 
         //
     }
+    @MethodArgs(args={"vector","angle"})
+    public static Vector2 rotateAroundPivot(Vector2 vector, float angle){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args={"vector","pivot","angle"})
+    public static Vector2 rotateAroundPivot(Vector2 vector, Vector2 pivot, float angle){
+        //
+        return null;
+        //
+
+        //
+    }
 
     /// Comparators
     @MethodArgs(args={"value"})

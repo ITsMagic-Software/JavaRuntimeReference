@@ -10,8 +10,6 @@ import java.io.IOException;
  */
 @ClassCategory(cat={"Files"})
 public class FileLoader {
-    //
-
     private FileLoader() { }
 
     /// Abstracts
@@ -32,14 +30,14 @@ public class FileLoader {
 
         //
     }
+    /*
     @Deprecated
     @DeprecatedInfo(info={"PFile is now obsolete, use FileLoader.loadTextFromFile(File) instead to load text from external files"})
     @MethodArgs(args={"file"})
     public static String loadTextFromFile(PFile file){
-        //
-        return "";
-        //
-
-        //
+        Context context = Main.getContext();
+        String json = Core.classExporter.loadJson(file.getFilePath(), context);
+        return json;
     }
+     */
 }

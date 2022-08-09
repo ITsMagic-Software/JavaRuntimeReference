@@ -15,6 +15,7 @@ public class GUIImage extends GUIElement {
     private boolean flipY = false;
     private boolean overrideAlpha = false;
     private float alpha = 1;
+    //
 
     public GUIImage() {
         this.color = new Color();

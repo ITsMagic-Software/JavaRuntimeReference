@@ -131,11 +131,23 @@ public class Quaternion implements
 
         //
     }
+    @MethodArgs(args={"value"})
     public void mulLocal(Quaternion value){
         //
     }
     @MethodArgs(args={"w","x","y","z"})
     public void mulLocal(float w, float x, float y, float z){
+        //
+    }
+
+    public Quaternion normalize(){
+        //
+        return null;
+        //
+
+        //
+    }
+    public void normalizeLocal(){
         //
     }
 
@@ -193,6 +205,10 @@ public class Quaternion implements
     public void lookTo(Vector3 from, Vector3 to){
         //
     }
+    @MethodArgs(args={"from","to","up"})
+    public void lookTo(Vector3 from, Vector3 to, Vector3 up){
+        //
+    }
 
     @MethodArgs(args={"value","speed"})
     public Quaternion slerp(Quaternion b, float t) {
@@ -232,6 +248,10 @@ public class Quaternion implements
     public void setFromEuler(float x, float y, float z){
         //
     }
+    @MethodArgs(args={"value"})
+    public void setFromEuler(Vector3 value){
+        //
+    }
 
     public Quaternion copy(){
         //
@@ -243,6 +263,14 @@ public class Quaternion implements
 
     @MethodArgs(args={"value"})
     public Vector3 rotateVector(Vector3 vector3){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args={"value","out"})
+    public Vector3 rotateVector(Vector3 vector3, Vector3 out){
         //
         return null;
         //
@@ -300,6 +328,14 @@ public class Quaternion implements
     }
     @MethodArgs(args={"from","to"})
     public static Quaternion lookAt(Vector3 from, Vector3 to){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args={"from","to","up"})
+    public static Quaternion lookAt(Vector3 from, Vector3 to, Vector3 up){
         //
         return null;
         //

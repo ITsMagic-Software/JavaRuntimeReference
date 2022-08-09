@@ -69,6 +69,57 @@ public class Vector3 implements
         //
     }
 
+    @MethodArgs(args={"value"})
+    public void sumX(float value){
+        //
+    }
+    @MethodArgs(args={"value"})
+    public void sumY(float value){
+        //
+    }
+    @MethodArgs(args={"value"})
+    public void sumZ(float value){
+        //
+    }
+
+    @MethodArgs(args={"value"})
+    public void subX(float value){
+        //
+    }
+    @MethodArgs(args={"value"})
+    public void subY(float value){
+        //
+    }
+    @MethodArgs(args={"value"})
+    public void subZ(float value){
+        //
+    }
+
+    @MethodArgs(args={"value"})
+    public void mulX(float value){
+        //
+    }
+    @MethodArgs(args={"value"})
+    public void mulY(float value){
+        //
+    }
+    @MethodArgs(args={"value"})
+    public void mulZ(float value){
+        //
+    }
+
+    @MethodArgs(args={"value"})
+    public void divX(float value){
+        //
+    }
+    @MethodArgs(args={"value"})
+    public void divY(float value){
+        //
+    }
+    @MethodArgs(args={"value"})
+    public void divZ(float value){
+        //
+    }
 
     /// Calcs
     @MethodArgs(args={"value"})
@@ -477,6 +528,23 @@ public class Vector3 implements
 
         //
     }
+    @MethodArgs(args={"a","b","c"})
+    public static Vector3 triangleNormal(Vector3 a, Vector3 b, Vector3 c){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args={"a","b","c","out"})
+    public static Vector3 triangleNormal(Vector3 a, Vector3 b, Vector3 c, Vector3 out){
+        //
+        return null;
+        //
+
+        //
+    }
+
 
     /// Comparators
     @MethodArgs(args={"value"})

@@ -18,6 +18,21 @@ public class FilterBloom extends CameraFilter{
     }
 
     @HideGetSet
+    public float getResolution(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args={"value"})
+    public void setResolution(float value){
+        //
+    }
+
+
+    @HideGetSet
     public float getIntensity(){
         //
         return 0;

@@ -46,6 +46,7 @@ public class OGLES {
 
         //
     }
+
     @MethodArgs(args={"uniform","vector"})
     public boolean uniformVector(String uniform, Vector3 vector){
         //
@@ -55,15 +56,7 @@ public class OGLES {
         //
     }
     @MethodArgs(args={"uniform","vector"})
-    public boolean uniformVector(String uniform, Vector2 vector){
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args={"uniform","x","y","z","w"})
-    public boolean uniformVector(String uniform, float x, float y, float z, float w){
+    public boolean uniformVector3(String uniform, Vector3 vector){
         //
         return false;
         //
@@ -78,6 +71,31 @@ public class OGLES {
 
         //
     }
+    @MethodArgs(args={"uniform","x","y","z"})
+    public boolean uniformVector3(String uniform, float x, float y, float z){
+        //
+        return false;
+        //
+
+        //
+    }
+
+    @MethodArgs(args={"uniform","vector"})
+    public boolean uniformVector(String uniform, Vector2 vector){
+        //
+        return false;
+        //
+
+        //
+    }
+    @MethodArgs(args={"uniform","vector"})
+    public boolean uniformVector2(String uniform, Vector2 vector){
+        //
+        return false;
+        //
+
+        //
+    }
     @MethodArgs(args={"uniform","x","y"})
     public boolean uniformVector(String uniform, float x, float y){
         //
@@ -86,6 +104,48 @@ public class OGLES {
 
         //
     }
+    @MethodArgs(args={"uniform","x","y"})
+    public boolean uniformVector2(String uniform, float x, float y){
+        //
+        return false;
+        //
+
+        //
+    }
+
+    @MethodArgs(args={"uniform","x","y","z","w"})
+    public boolean uniformVector(String uniform, float x, float y, float z, float w){
+        //
+        return false;
+        //
+
+        //
+    }
+    @MethodArgs(args={"uniform","x","y","z","w"})
+    public boolean uniformVector4(String uniform, float x, float y, float z, float w){
+        //
+        return false;
+        //
+
+        //
+    }
+    @MethodArgs(args={"uniform","vector"})
+    public boolean uniformVector(String uniform, Vector4 vector){
+        //
+        return false;
+        //
+
+        //
+    }
+    @MethodArgs(args={"uniform","vector"})
+    public boolean uniformVector4(String uniform, Vector4 vector){
+        //
+        return false;
+        //
+
+        //
+    }
+
     @MethodArgs(args={"uniform","vector"})
     public boolean uniformVector(String uniform, Point3 vector){
         //
@@ -177,6 +237,14 @@ public class OGLES {
     }
     @MethodArgs(args={"attribute","buffer"})
     public void attributeMatrix4(String attribute, NativeFloatBuffer buffer){
+        //
+    }
+    @MethodArgs(args={"attribute","buffer"})
+    public boolean attributeFloat(String attribute, NativeFloatBuffer buffer){
+        //
+        return false;
+        //
+
         //
     }
 

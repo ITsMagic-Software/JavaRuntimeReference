@@ -14,11 +14,6 @@ public class WorldController {
     private WorldController() { }
 
     /// Abstracts
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use WorldController.loadWorld(WorldFile) instead"})
-    public static void loadWorld(PFile pFile){
-        //
-    }
     public static void loadWorld(WorldFile worldFile){
         //
     }
@@ -52,14 +47,14 @@ public class WorldController {
         //
     }
 
-    public static ArrayList listAllComponents(String tittle){
+    public static List<JAVARuntime.Component> listAllComponents(String tittle){
         //
         return null;
         //
 
         //
     }
-    public static ArrayList listAllComponents(Class classReference){
+    public static List<JAVARuntime.Component> listAllComponents(Class classReference){
         //
         return null;
         //

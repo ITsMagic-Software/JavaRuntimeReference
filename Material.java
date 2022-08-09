@@ -69,22 +69,6 @@ public class Material {
         //
     }
 
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use Material.findTexture(String) instead"})
-    @MethodArgs(args={"entryName"})
-    public PFile findTextureFile(String entryName){
-        //
-        return null;
-        //
-
-        //
-    }
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete, use Material.setTexture(String, Texture) instead"})
-    @MethodArgs(args={"entryName","pfile"})
-    public void setTextureFile(String entryName, PFile pFile){
-        //
-    }
     @MethodArgs(args={"entryName"})
     public Texture getTexture(String entryName){
         //
@@ -105,12 +89,8 @@ public class Material {
     public void setTexture(String entryName, Texture texture){
         //
     }
-
-    public <T extends MaterialShader> T getCustomShader(){
-        //
-        return null;
-        //
-
+    @MethodArgs(args={"entryName","pfile"})
+    public void setTextureFile(String entryName, TextureFile textureFile){
         //
     }
 
