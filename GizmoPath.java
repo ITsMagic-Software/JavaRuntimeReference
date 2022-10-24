@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Debug"})
+@ClassCategory(cat ={"Debug"})
 public class GizmoPath extends GizmoElement{
 
     private Vertex vertex;
@@ -33,7 +33,7 @@ public class GizmoPath extends GizmoElement{
         return color;
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setColor(Color color) {
         this.color = color;
     }
@@ -43,12 +43,12 @@ public class GizmoPath extends GizmoElement{
         return position;
     }
     @HideGetSet
-    @MethodArgs(args={"position"})
+    @MethodArgs(args ={"position"})
     public void setPosition(Vector3 position) {
         //
         this.position = position;
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void setPosition(float x, float y, float z) {
         this.position.set(x, y, z);
     }
@@ -58,16 +58,16 @@ public class GizmoPath extends GizmoElement{
         return rotation;
     }
     @HideGetSet
-    @MethodArgs(args={"rotation"})
+    @MethodArgs(args ={"rotation"})
     public void setRotation(Quaternion rotation) {
         //
         this.rotation = rotation;
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void setRotation(float x, float y, float z){
         //
     }
-    @MethodArgs(args={"x","y","z","w"})
+    @MethodArgs(args ={"x","y","z","w"})
     public void setRotation(float x, float y, float z, float w){
         //
     }
@@ -77,12 +77,12 @@ public class GizmoPath extends GizmoElement{
         return scale;
     }
     @HideGetSet
-    @MethodArgs(args={"scale"})
+    @MethodArgs(args ={"scale"})
     public void setScale(Vector3 scale) {
         //
         this.scale = scale;
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void setScale(float x, float y, float z) {
         this.scale.set(x, y, z);
     }
@@ -97,7 +97,7 @@ public class GizmoPath extends GizmoElement{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"matrix"})
+    @MethodArgs(args ={"matrix"})
     public void setMatrix(float[] matrix) {
         this.matrix = matrix;
     }
@@ -107,7 +107,7 @@ public class GizmoPath extends GizmoElement{
         return userPointer;
     }
     @HideGetSet
-    @MethodArgs(args={"userPointer"})
+    @MethodArgs(args ={"userPointer"})
     public void setUserPointer(Object userPointer) {
         this.userPointer = userPointer;
     }
@@ -115,12 +115,15 @@ public class GizmoPath extends GizmoElement{
     public void clear() {
         //
     }
-    @MethodArgs(args={"from","to"})
+    @MethodArgs(args ={"from","to"})
     public GizmoPath addLine(Vector3 from, Vector3 to){
         //
         return this;
     }
-    @MethodArgs(args={"path"})
+
+    //
+
+    @MethodArgs(args ={"path"})
     public GizmoPath addPath(List<Vector2> path){
         //
         return this;
@@ -132,7 +135,7 @@ public class GizmoPath extends GizmoElement{
         return wireFrameWidth;
     }
     @HideGetSet
-    @MethodArgs(args={"wireFrameWidth"})
+    @MethodArgs(args ={"wireFrameWidth"})
     public void setWireFrameWidth(int wireFrameWidth) {
         this.wireFrameWidth = wireFrameWidth;
     }

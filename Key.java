@@ -5,14 +5,14 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Input"})
+@ClassCategory(cat ={"Input"})
 public class Key {
     //
 
     public Key() {
         //
     }
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public Key(String name){
         //
     }
@@ -26,7 +26,7 @@ public class Key {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setPressed(boolean value){
         //
     }
@@ -40,7 +40,7 @@ public class Key {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setDown(boolean value){
         //
     }
@@ -54,7 +54,7 @@ public class Key {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setUp(boolean value){
         //
     }
@@ -68,7 +68,7 @@ public class Key {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setName(String value){
         //
     }

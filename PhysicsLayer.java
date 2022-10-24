@@ -6,21 +6,21 @@ public class PhysicsLayer {
 
     //
 
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public PhysicsLayer(String name) {
         //
     }
 
-    @MethodArgs(args={"layer"})
+    @MethodArgs(args ={"layer"})
     public void addIgnoreLayer(PhysicsLayer layer) {
         //
     }
-    @MethodArgs(args={"layer"})
+    @MethodArgs(args ={"layer"})
     public void removeIgnoreLayer(PhysicsLayer layer) {
         //
     }
 
-    @MethodArgs(args={"index"})
+    @MethodArgs(args ={"index"})
     public PhysicsLayer getIgnoreAt(int idx) {
         //
         return null;

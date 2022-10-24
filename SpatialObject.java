@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Object"})
+@ClassCategory(cat ={"Object"})
 public class SpatialObject {
     //
 
@@ -19,15 +19,15 @@ public class SpatialObject {
     public SpatialObject() {
         //
     }
-    @MethodArgs(args={"parent"})
+    @MethodArgs(args ={"parent"})
     public SpatialObject(SpatialObject parent) {
         //
     }
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public SpatialObject(String name) {
         //
     }
-    @MethodArgs(args={"name","parent"})
+    @MethodArgs(args ={"name","parent"})
     public SpatialObject(String name, SpatialObject parent) {
         //
     }
@@ -41,7 +41,7 @@ public class SpatialObject {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setEnabled(boolean enabled){
         //
     }
@@ -55,7 +55,7 @@ public class SpatialObject {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setDontDestroyOnLoad(boolean value){
         //
     }
@@ -69,7 +69,7 @@ public class SpatialObject {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public void setName(String name){
         //
     }
@@ -82,8 +82,16 @@ public class SpatialObject {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public void setNameOH(JAVARuntime.OHString name){
+        //
+    }
+    @MethodArgs(args ={"name"})
+    public boolean compareName(String name){
+        //
+        return false;
+        //
+
         //
     }
 
@@ -115,32 +123,32 @@ public class SpatialObject {
         //
     }
 
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public void callFunction(String name){
         //
     }
-    @MethodArgs(args={"name","value"})
+    @MethodArgs(args ={"name","value"})
     public void callFunction(String name, Object value){
         //
     }
-    @MethodArgs(args={"name","value"})
+    @MethodArgs(args ={"name","value"})
     public void callFunction(String name, int value){
         //
     }
-    @MethodArgs(args={"name","value"})
+    @MethodArgs(args ={"name","value"})
     public void callFunction(String name, float value){
         //
     }
-    @MethodArgs(args={"name","value"})
+    @MethodArgs(args ={"name","value"})
     public void callFunction(String name, String value){
         //
     }
-    @MethodArgs(args={"name","value"})
+    @MethodArgs(args ={"name","value"})
     public void callFunction(String name, boolean value){
         //
     }
 
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public SpatialObject instantiate(ObjectFile pFile){
         //
         return null;
@@ -148,7 +156,7 @@ public class SpatialObject {
 
         //
     }
-    @MethodArgs(args={"file","position"})
+    @MethodArgs(args ={"file","position"})
     public SpatialObject instantiate(ObjectFile pFile, Vector3 position){
         //
         return null;
@@ -156,7 +164,7 @@ public class SpatialObject {
 
         //
     }
-    @MethodArgs(args={"file","position","rotation"})
+    @MethodArgs(args ={"file","position","rotation"})
     public SpatialObject instantiate(ObjectFile pFile, Vector3 position, Quaternion rotation){
         //
         return null;
@@ -164,7 +172,7 @@ public class SpatialObject {
 
         //
     }
-    @MethodArgs(args={"file","position","rotation","scale"})
+    @MethodArgs(args ={"file","position","rotation","scale"})
     public SpatialObject instantiate(ObjectFile pFile, Vector3 position, Quaternion rotation, Vector3 scale){
         //
         return null;
@@ -172,7 +180,7 @@ public class SpatialObject {
 
         //
     }
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public SpatialObject instantiateHasChild(ObjectFile pFile){
         //
         return null;
@@ -180,7 +188,7 @@ public class SpatialObject {
 
         //
     }
-    @MethodArgs(args={"file","parent"})
+    @MethodArgs(args ={"file","parent"})
     public SpatialObject instantiateHasChild(ObjectFile pFile, SpatialObject parent){
         //
         return null;
@@ -189,13 +197,13 @@ public class SpatialObject {
         //
     }
 
-    @MethodArgs(args={"tittle"})
+    @MethodArgs(args ={"tittle"})
     public <T extends Component> T findComponent(String tittle){
         //
         return null;
     }
-    @MethodArgs(args={"tittle"})
-    public ArrayList findComponents(String tittle){
+    @MethodArgs(args ={"tittle"})
+    public List<Component> findComponents(String tittle){
         //
         return null;
         //
@@ -203,7 +211,7 @@ public class SpatialObject {
         //
     }
 
-    @MethodArgs(args={"type"})
+    @MethodArgs(args ={"type"})
     public <T extends Component> T findComponent(Class classReference){
         //
         return null;
@@ -211,8 +219,8 @@ public class SpatialObject {
 
         //
     }
-    @MethodArgs(args={"type"})
-    public ArrayList findComponents(Class classReference){
+    @MethodArgs(args ={"type"})
+    public List<Component> findComponents(Class classReference){
         //
         return null;
         //
@@ -220,12 +228,12 @@ public class SpatialObject {
         //
     }
 
-    @MethodArgs(args={"tittle"})
+    @MethodArgs(args ={"tittle"})
     public <T extends Component> T findComponentInChildren(String tittle){
         //
         return null;
     }
-    @MethodArgs(args={"type"})
+    @MethodArgs(args ={"type"})
     public <T extends Component> T findComponentInChildren(Class classReference){
         //
         return null;
@@ -234,15 +242,15 @@ public class SpatialObject {
         //
     }
 
-    @MethodArgs(args={"component"})
+    @MethodArgs(args ={"component"})
     public void removeComponent(Component component){
         //
     }
-    @MethodArgs(args={"component"})
+    @MethodArgs(args ={"component"})
     public void addComponent(Component component){
         //
     }
-    @MethodArgs(args={"component","type"})
+    @MethodArgs(args ={"component","type"})
     public void addComponent(Component component, Class type){
         //
     }
@@ -258,7 +266,7 @@ public class SpatialObject {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"parent"})
+    @MethodArgs(args ={"parent"})
     public void setParent(SpatialObject parent) {
         //
     }
@@ -275,7 +283,7 @@ public class SpatialObject {
         //
     }
 
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public SpatialObject findChildObject(String name) {
         //
         return null;
@@ -283,7 +291,15 @@ public class SpatialObject {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"name"})
+    public SpatialObject findChildObject(JAVARuntime.OHString name) {
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"idx"})
     public SpatialObject getChildAt(int idx) {
         //
         return null;
@@ -299,7 +315,7 @@ public class SpatialObject {
 
         //
     }
-    @MethodArgs(args={"child"})
+    @MethodArgs(args ={"child"})
     public int getChildIndex(SpatialObject child) {
         //
         return 0;
@@ -323,7 +339,7 @@ public class SpatialObject {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public Component getComponentsAt(int idx) {
         //
         return null;
@@ -348,10 +364,32 @@ public class SpatialObject {
         //
     }
 
+    @HideGetSet
+    public String getTag(){
+        //
+        return "";
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"name"})
+    public void setTag(String name){
+        //
+    }
+    @MethodArgs(args ={"name"})
+    public boolean compareTag(String name){
+        //
+        return false;
+        //
+
+        //
+    }
+
     //
 
     /// Abstract
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public static SpatialObject loadFile(PFile pFile){
         //
         return null;

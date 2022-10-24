@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI"})
 public class SUIDrivingWheel extends Component{
     //
 
@@ -26,7 +26,7 @@ public class SUIDrivingWheel extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setLerp(float value){
         //
     }
@@ -40,7 +40,7 @@ public class SUIDrivingWheel extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setMaxAngle(float value){
         //
     }
@@ -72,7 +72,7 @@ public class SUIDrivingWheel extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setAxisName(String name){
         //
     }
@@ -86,7 +86,7 @@ public class SUIDrivingWheel extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setAxis(Axis axis){
         //
     }
@@ -126,7 +126,7 @@ public class SUIDrivingWheel extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setClickable(boolean value){
         //
     }
@@ -140,7 +140,7 @@ public class SUIDrivingWheel extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setTargetRectType(STargetRect value){
         //
     }
@@ -154,7 +154,7 @@ public class SUIDrivingWheel extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"object"})
+    @MethodArgs(args ={"object"})
     public void setTargetRectObject(SpatialObject object){
         //
     }

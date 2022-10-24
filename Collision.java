@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Physics"})
+@ClassCategory(cat ={"Physics"})
 public class Collision {
     //
 
@@ -22,7 +22,7 @@ public class Collision {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"vector"})
+    @MethodArgs(args ={"vector"})
     public void setNormal(Vector3 vector){
         //
     }
@@ -36,7 +36,7 @@ public class Collision {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"vector"})
+    @MethodArgs(args ={"vector"})
     public void setContactPoint(Vector3 vector){
         //
     }
@@ -50,7 +50,7 @@ public class Collision {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public void setOtherObject(SpatialObject otherObject){
         //
     }
@@ -64,7 +64,7 @@ public class Collision {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setImpulse(float value){
         //
     }

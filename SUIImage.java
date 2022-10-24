@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI"})
 public class SUIImage extends Component{
     //
 
@@ -26,7 +26,7 @@ public class SUIImage extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setColor(Color color){
         //
     }
@@ -40,7 +40,7 @@ public class SUIImage extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"texture"})
+    @MethodArgs(args ={"texture"})
     public void setImage(Texture texture){
         //
     }
@@ -54,7 +54,7 @@ public class SUIImage extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setIgnoreMask(boolean value){
         //
     }
@@ -68,7 +68,7 @@ public class SUIImage extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setBorder(int value){
         //
     }
@@ -81,11 +81,11 @@ public class SUIImage extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setBorderUnitType(SUnitType value){
         //
     }
-    @MethodArgs(args={"value","unitType"})
+    @MethodArgs(args ={"value","unitType"})
     public void setBorder(int value, SUnitType unitType){
         //
     }
@@ -99,7 +99,7 @@ public class SUIImage extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setImageType(SImageType sImageType){
         //
     }

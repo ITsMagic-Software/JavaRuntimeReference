@@ -2,7 +2,7 @@ package JAVARuntime;
 
 //
 
-@ClassCategory(cat={"Files"})
+@ClassCategory(cat ={"Files"})
 public class FormatDictionaries {
     public static String BACKUP                = ".itsmbp";
     public static String TEXTURE               = ".png|.jpg|.jpeg|.bmp|.webp|.heif|.ppm|.tif|.tga";
@@ -49,7 +49,7 @@ public class FormatDictionaries {
 
     private FormatDictionaries() { }
 
-    @MethodArgs(args={"format"})
+    @MethodArgs(args ={"format"})
     public static String createFrom(String format){
         //
         return null;

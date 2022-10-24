@@ -6,7 +6,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Files"})
+@ClassCategory(cat ={"Files"})
 public class OutPFile {
     //
 
@@ -15,7 +15,7 @@ public class OutPFile {
     public OutPFile() {
 
     }
-    @MethodArgs(args={"filePath"})
+    @MethodArgs(args ={"filePath"})
     public OutPFile(String filePath) {
         this.filePath = filePath;
     }
@@ -23,7 +23,7 @@ public class OutPFile {
     public String getFilePath() {
         return filePath;
     }
-    @MethodArgs(args={"filePath"})
+    @MethodArgs(args ={"filePath"})
     public void setFilePath(String filePath) {
         this.filePath = filePath;
     }

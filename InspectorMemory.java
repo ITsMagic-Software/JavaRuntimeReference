@@ -6,7 +6,7 @@ import java.io.Serializable;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Platform"})
+@ClassCategory(cat ={"Platform"})
 public class InspectorMemory implements Serializable {
 
     //

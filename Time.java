@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Time"})
+@ClassCategory(cat ={"Time"})
 public class Time {
     //
 
@@ -68,7 +68,7 @@ public class Time {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public static void setTimeSpeed(float value){
         //
     }
@@ -82,25 +82,8 @@ public class Time {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public static void setTimeScale(float value){
-        //
-    }
-
-    @HideGetSet
-    public static float getLastFrameUnscaledDeltaTime(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @HideGetSet
-    public static float getLastFrameDeltaTime(){
-        //
-        return 0;
-        //
-
         //
     }
 }

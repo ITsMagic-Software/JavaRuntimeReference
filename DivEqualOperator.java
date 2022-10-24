@@ -1,7 +1,7 @@
 package JAVARuntime;
 
-@ClassCategory(cat={"EngineOverride"})
+@ClassCategory(cat ={"EngineOverride"})
 public interface DivEqualOperator {
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     void divEqual(Object otherObject);
 }

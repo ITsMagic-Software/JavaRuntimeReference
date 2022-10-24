@@ -1,6 +1,6 @@
 package JAVARuntime;
 
-@ClassCategory(cat={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI"})
 public enum SVerticalConstraintTarget {
     Unfixed, ToTopOf, ToBottomOf
 }

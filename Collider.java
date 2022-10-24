@@ -5,13 +5,12 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Components","Physics"})
+@ClassCategory(cat ={"Components","Physics"})
 public class Collider extends Component{
     public static final int SHAPE_BOX = 0;
     public static final int SHAPE_SPHERE = 1;
     public static final int SHAPE_CONVEX = 2;
     public static final int SHAPE_MODEL = 3;
-    public static final int SHAPE_SDMODEL = 4;
 
     //
 
@@ -22,7 +21,7 @@ public class Collider extends Component{
 
         //
     }
-    @MethodArgs(args={"shape"})
+    @MethodArgs(args ={"shape"})
     public Collider(int shape) {
         //
         super();
@@ -38,7 +37,7 @@ public class Collider extends Component{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setShape(int value){
         //
     }
@@ -46,13 +45,13 @@ public class Collider extends Component{
     @Deprecated
     @DeprecatedInfo(info={"PFile is now obsolete, use Collider.setVertex(Vertex) instead"})
     @HideGetSet
-    @MethodArgs(args={"pFile"})
+    @MethodArgs(args ={"pFile"})
     public void setVertexFile(VertexFile pFile){
         //
     }
 
     @HideGetSet
-    public Vector3 getOffsetPosition() {
+    public Vector3 getPosition() {
         //
         return null;
         //
@@ -60,8 +59,22 @@ public class Collider extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"vector3"})
+    @MethodArgs(args ={"vector3"})
     public void setPosition(Vector3 vector3){
+        //
+    }
+
+    @HideGetSet
+    public Quaternion getRotation() {
+        //
+        return null;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setRotation(Quaternion value){
         //
     }
 
@@ -74,7 +87,7 @@ public class Collider extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"vector3"})
+    @MethodArgs(args ={"vector3"})
     public void setScale(Vector3 vector3){
         //
     }
@@ -88,13 +101,13 @@ public class Collider extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"vertex"})
+    @MethodArgs(args ={"vertex"})
     public void setVertex(Vertex vertex){
         //
     }
 
     @HideGetSet
-    @MethodArgs(args={"vertex"})
+    @MethodArgs(args ={"vertex"})
     public void setConvexVertex(Vertex vertex){
         //
     }

@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Input"})
+@ClassCategory(cat ={"Input"})
 public class GamePadButton {
     //
 
@@ -22,7 +22,7 @@ public class GamePadButton {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setPressed(boolean value){
         //
     }
@@ -36,7 +36,7 @@ public class GamePadButton {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setDown(boolean value){
         //
     }
@@ -50,7 +50,7 @@ public class GamePadButton {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setLongDown(boolean value){
         //
     }
@@ -64,7 +64,7 @@ public class GamePadButton {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setLongPressed(boolean value){
         //
     }

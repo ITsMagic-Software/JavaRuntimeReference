@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Vector","Buffers"})
+@ClassCategory(cat ={"Vector","Buffers"})
 public class Vector2Buffer {
     //
 
@@ -13,7 +13,7 @@ public class Vector2Buffer {
         //
     }
 
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public Vector2 get(int idx){
         //
         return null;
@@ -21,7 +21,7 @@ public class Vector2Buffer {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public float getX(int idx){
         //
         return 0;
@@ -29,7 +29,7 @@ public class Vector2Buffer {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public float getY(int idx){
         //
         return 0;
@@ -38,20 +38,20 @@ public class Vector2Buffer {
         //
     }
 
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void put(Vector2 vector){
         //
     }
-    @MethodArgs(args={"x","y"})
+    @MethodArgs(args ={"x","y"})
     public void put(float x, float y){
         //
     }
 
-    @MethodArgs(args={"idx","x","y"})
+    @MethodArgs(args ={"idx","x","y"})
     public void set(int idx, Vector2 vector){
         //
     }
-    @MethodArgs(args={"idx","x","y"})
+    @MethodArgs(args ={"idx","x","y"})
     public void set(int idx, float x, float y){
         //
     }
@@ -72,7 +72,7 @@ public class Vector2Buffer {
         //
     }
 
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public void position(int idx){
         //
     }
@@ -86,7 +86,7 @@ public class Vector2Buffer {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setVboEnabled(boolean value){
         //
     }

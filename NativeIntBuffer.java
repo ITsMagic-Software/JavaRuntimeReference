@@ -5,16 +5,16 @@ import java.nio.IntBuffer;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Buffers"})
+@ClassCategory(cat ={"Buffers"})
 public class NativeIntBuffer {
     //
 
-    @MethodArgs(args={"capacity"})
+    @MethodArgs(args ={"capacity"})
     public NativeIntBuffer(int capacity) {
         //
     }
 
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public int get(int index){
         //
         return 0;
@@ -22,11 +22,11 @@ public class NativeIntBuffer {
 
         //
     }
-    @MethodArgs(args={"idx","value"})
+    @MethodArgs(args ={"idx","value"})
     public void set(int index, int value){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void put(int value){
         //
     }
@@ -45,11 +45,11 @@ public class NativeIntBuffer {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public void Position(int idx){
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public void setPosition(int idx){
         //
     }
@@ -63,7 +63,7 @@ public class NativeIntBuffer {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setVboEnabled(boolean value){
         //
     }

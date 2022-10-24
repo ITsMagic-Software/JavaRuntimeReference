@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Physics"})
+@ClassCategory(cat ={"Physics"})
 public class PhysicsEntity {
 
     //

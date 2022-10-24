@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Components"})
+@ClassCategory(cat ={"Components"})
 public class STerrain extends Component{
     //
 
@@ -17,8 +17,6 @@ public class STerrain extends Component{
         //
     }
 
-    //
-
     public float getWidth(){
         //
         return 0;
@@ -26,7 +24,7 @@ public class STerrain extends Component{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setWidth(float v){
         //
     }
@@ -37,12 +35,12 @@ public class STerrain extends Component{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setMaxHeight(float v){
         //
     }
 
-    @MethodArgs(args={"worldCoord"})
+    @MethodArgs(args ={"worldCoord"})
     public Point2 nearestVerticeAt(Vector3 worldCoord){
         //
         return null;
@@ -58,11 +56,11 @@ public class STerrain extends Component{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setResolution(int v){
         //
     }
-    @MethodArgs(args={"point"})
+    @MethodArgs(args ={"point"})
     public float getHeight(Point2 point2){
         //
         return 0;
@@ -70,7 +68,7 @@ public class STerrain extends Component{
 
         //
     }
-    @MethodArgs(args={"x","y"})
+    @MethodArgs(args ={"x","y"})
     public float getHeight(int x, int z){
         //
         return 0;
@@ -78,11 +76,11 @@ public class STerrain extends Component{
 
         //
     }
-    @MethodArgs(args={"point","height"})
+    @MethodArgs(args ={"point","height"})
     public void setHeight(Point2 point2, float height){
         //
     }
-    @MethodArgs(args={"x","y","height"})
+    @MethodArgs(args ={"x","y","height"})
     public void setHeight(int x, int z, float height){
         //
     }
@@ -90,12 +88,14 @@ public class STerrain extends Component{
         //
     }
 
-    @MethodArgs(args={"worldCoordinates", "intensity", "size", "brush"})
+    @MethodArgs(args ={"worldCoordinates", "intensity", "size", "brush"})
     public void applyRaiseLower(Vector2 worldCoordinates, float intensity, float size, Brush brush){
         //
     }
-    @MethodArgs(args={"worldCoordinates", "intensity", "size", "textureSize", "diffuse", "normalMap", "ao", "brush"})
+    @MethodArgs(args ={"worldCoordinates", "intensity", "size", "textureSize", "diffuse", "normalMap", "ao", "brush"})
     public void applyPaint(Vector2 worldCoordinates, float intensity, float size, float textureSize, int layerIndex, Brush brush){
         //
     }
+
+    //
 }

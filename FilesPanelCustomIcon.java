@@ -1,15 +1,15 @@
 package JAVARuntime;
 
-@ClassCategory(cat={"Files"})
+@ClassCategory(cat ={"Files"})
 public class FilesPanelCustomIcon {
 
     public FilesPanelCustomIcon() { }
 
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public File getIconForFile(File file){
         return null;
     }
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public boolean supportFile(File file) {
         return false;
     }

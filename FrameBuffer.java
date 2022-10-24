@@ -5,23 +5,23 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Shaders"})
+@ClassCategory(cat ={"Shaders"})
 public class FrameBuffer {
     //
 
-    @MethodArgs(args={"width", "height"})
+    @MethodArgs(args ={"width", "height"})
     public FrameBuffer(int width, int height) {
         //
     }
-    @MethodArgs(args={"width", "height", "renderPercentage"})
+    @MethodArgs(args ={"width", "height", "renderPercentage"})
     public FrameBuffer(int width, int height, int renderPercentage) {
         //
     }
-    @MethodArgs(args={"width", "height", "renderPercentage", "colorAttachments"})
+    @MethodArgs(args ={"width", "height", "renderPercentage", "colorAttachments"})
     public FrameBuffer(int width, int height, int renderPercentage, int colorAttachments) {
         //
     }
-    @MethodArgs(args={"width", "height", "renderPercentage", "colorAttachments", "depthAttachment"})
+    @MethodArgs(args ={"width", "height", "renderPercentage", "colorAttachments", "depthAttachment"})
     public FrameBuffer(int width, int height, int renderPercentage, int colorAttachments, Texture depthAttachment) {
         //
     }
@@ -32,11 +32,11 @@ public class FrameBuffer {
     public void unbind(){
         //
     }
-    @MethodArgs(args={"width", "height"})
+    @MethodArgs(args ={"width", "height"})
     public void resize(int width, int height){
         //
     }
-    @MethodArgs(args={"width", "height", "renderPercentage"})
+    @MethodArgs(args ={"width", "height", "renderPercentage"})
     public void resize(int width, int height, int renderPercentage){
         //
     }
@@ -82,7 +82,7 @@ public class FrameBuffer {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setRenderPercentage(int value){
         //
     }
@@ -108,7 +108,7 @@ public class FrameBuffer {
     public Texture getColorAttachment(){
         return getColorTexture();
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public Texture getColorTexture(int idx){
         //
         return null;
@@ -116,7 +116,7 @@ public class FrameBuffer {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public Texture getColorAttachment(int idx){
         return getColorTexture(idx);
     }
@@ -140,7 +140,7 @@ public class FrameBuffer {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"texture"})
+    @MethodArgs(args ={"texture"})
     public void setDepthTexture(Texture texture){
         //
     }
@@ -153,7 +153,7 @@ public class FrameBuffer {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"texture"})
+    @MethodArgs(args ={"texture"})
     public void setDepthAttachment(Texture texture){
         //
     }

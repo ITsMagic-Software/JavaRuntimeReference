@@ -5,7 +5,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 
-@ClassCategory(cat={"Vector"})
+@ClassCategory(cat ={"Vector"})
 public class AABB {
 
     //
@@ -13,11 +13,11 @@ public class AABB {
     public AABB() {
         //
     }
-    @MethodArgs(args={"x","y","z", "xn", "yn","zn"})
+    @MethodArgs(args ={"x","y","z", "xn", "yn","zn"})
     public AABB(float x, float y, float z, float xn, float yn, float zn) {
         //
     }
-    @MethodArgs(args={"x","y","z", "xn", "yn","zn","cx","cy","cz"})
+    @MethodArgs(args ={"x","y","z", "xn", "yn","zn","cx","cy","cz"})
     public AABB(float x, float y, float z, float xn, float yn, float zn, float cx, float cy, float cz) {
         //
     }
@@ -48,7 +48,7 @@ public class AABB {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setX(float value){
         //
     }
@@ -61,7 +61,7 @@ public class AABB {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setY(float value){
         //
     }
@@ -74,7 +74,7 @@ public class AABB {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setZ(float value){
         //
     }
@@ -88,7 +88,7 @@ public class AABB {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setXN(float value){
         //
     }
@@ -101,7 +101,7 @@ public class AABB {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setYN(float value){
         //
     }
@@ -114,7 +114,7 @@ public class AABB {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setZN(float value){
         //
     }
@@ -135,7 +135,7 @@ public class AABB {
     }
 
     @HideGetSet
-    public float getlengthMax(){
+    public float getLengthMax(){
         //
        return 0;
         //

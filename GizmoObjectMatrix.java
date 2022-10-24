@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Debug"})
+@ClassCategory(cat ={"Debug"})
 public class GizmoObjectMatrix extends GizmoMatrix {
 
     private Vertex vertex;
@@ -23,7 +23,7 @@ public class GizmoObjectMatrix extends GizmoMatrix {
 
     public GizmoObjectMatrix() {
     }
-    @MethodArgs(args={"vertex"})
+    @MethodArgs(args ={"vertex"})
     public GizmoObjectMatrix(Vertex vertex) {
         setVertex(vertex);
     }
@@ -34,7 +34,7 @@ public class GizmoObjectMatrix extends GizmoMatrix {
         return vertex;
     }
     @HideGetSet
-    @MethodArgs(args={"vertex"})
+    @MethodArgs(args ={"vertex"})
     public void setVertex(Vertex vertex) {
         //
     }
@@ -45,7 +45,7 @@ public class GizmoObjectMatrix extends GizmoMatrix {
         return wireFrameWidth;
     }
     @HideGetSet
-    @MethodArgs(args={"wireFrameWidth"})
+    @MethodArgs(args ={"wireFrameWidth"})
     public void setWireFrameWidth(int wireFrameWidth) {
         this.wireFrameWidth = wireFrameWidth;
     }
@@ -57,7 +57,7 @@ public class GizmoObjectMatrix extends GizmoMatrix {
     }
     @Deprecated
     @HideGetSet
-    @MethodArgs(args={"wireFrame"})
+    @MethodArgs(args ={"wireFrame"})
     public void setWireFrame(boolean wireFrame) {
         if(wireFrame){
             this.renderMode = RenderMode.WireFrame;
@@ -72,7 +72,7 @@ public class GizmoObjectMatrix extends GizmoMatrix {
         return color;
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setColor(Color color) {
         this.color = color;
     }
@@ -83,7 +83,7 @@ public class GizmoObjectMatrix extends GizmoMatrix {
         return texture;
     }
     @HideGetSet
-    @MethodArgs(args={"texture"})
+    @MethodArgs(args ={"texture"})
     public void setTexture(Texture texture) {
         this.texture = texture;
     }
@@ -93,7 +93,7 @@ public class GizmoObjectMatrix extends GizmoMatrix {
         return dualFaceRender;
     }
     @HideGetSet
-    @MethodArgs(args={"dualFaceRender"})
+    @MethodArgs(args ={"dualFaceRender"})
     public void setDualFaceRender(boolean dualFaceRender) {
         this.dualFaceRender = dualFaceRender;
     }
@@ -104,7 +104,7 @@ public class GizmoObjectMatrix extends GizmoMatrix {
         return renderMode;
     }
     @HideGetSet
-    @MethodArgs(args={"renderMode"})
+    @MethodArgs(args ={"renderMode"})
     public void setRenderMode(RenderMode renderMode) {
         this.renderMode = renderMode;
     }
@@ -112,7 +112,7 @@ public class GizmoObjectMatrix extends GizmoMatrix {
     public Object getUserPointer() {
         return userPointer;
     }
-    @MethodArgs(args={"userPointer"})
+    @MethodArgs(args ={"userPointer"})
     public void setUserPointer(Object userPointer) {
         this.userPointer = userPointer;
     }

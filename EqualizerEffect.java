@@ -7,7 +7,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"SoundEffects"})
+@ClassCategory(cat ={"SoundEffects"})
 public class EqualizerEffect extends AudioEffect{
     //
 
@@ -19,7 +19,7 @@ public class EqualizerEffect extends AudioEffect{
         //
     }
 
-    @MethodArgs(args={"index"})
+    @MethodArgs(args ={"index"})
     public float getBandGain(int index){
         //
         return 0;
@@ -27,7 +27,7 @@ public class EqualizerEffect extends AudioEffect{
 
         //
     }
-    @MethodArgs(args={"index","value"})
+    @MethodArgs(args ={"index","value"})
     public void setBandGain(int index, float value){
         //
     }

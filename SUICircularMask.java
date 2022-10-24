@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI"})
 public class SUICircularMask extends Component{
     //
 
@@ -27,7 +27,7 @@ public class SUICircularMask extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setRotation(float value) {
         //
     }
@@ -41,7 +41,7 @@ public class SUICircularMask extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setLength(float value) {
         //
     }
@@ -55,7 +55,7 @@ public class SUICircularMask extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setSmooth(float value) {
         //
     }
@@ -69,7 +69,7 @@ public class SUICircularMask extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"texture"})
+    @MethodArgs(args ={"texture"})
     public void setImage(Texture texture){
         //
     }

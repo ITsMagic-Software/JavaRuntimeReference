@@ -4,7 +4,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"CameraFilters"})
+@ClassCategory(cat ={"CameraFilters"})
 public class FilterAdvancedVignette extends CameraFilter{
     //
 
@@ -25,13 +25,13 @@ public class FilterAdvancedVignette extends CameraFilter{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setIntensity(float value){
         //
     }
 
     @HideGetSet
-    public float getDistance(){
+    public float getStart(){
         //
         return 0;
         //
@@ -39,8 +39,22 @@ public class FilterAdvancedVignette extends CameraFilter{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
-    public void setDistance(float value){
+    @MethodArgs(args ={"value"})
+    public void setStart(float value){
+        //
+    }
+
+    @HideGetSet
+    public float getFade(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setFade(float value){
         //
     }
 }

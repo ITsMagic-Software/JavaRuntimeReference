@@ -5,7 +5,7 @@ package JAVARuntime;
 import java.util.LinkedList;
 import java.util.List;
 
-@ClassCategory(cat={"NurbsPath"})
+@ClassCategory(cat ={"NurbsPath"})
 public class NurbsPath3D {
 
     //
@@ -13,20 +13,20 @@ public class NurbsPath3D {
     public NurbsPath3D() {
         //
     }
-    @MethodArgs(args={"points"})
+    @MethodArgs(args ={"points"})
     public NurbsPath3D(List<Vector3> points) {
         //
     }
-    @MethodArgs(args={"continuous"})
+    @MethodArgs(args ={"continuous"})
     public NurbsPath3D(boolean continuous) {
         //
     }
-    @MethodArgs(args={"points","continuous"})
+    @MethodArgs(args ={"points","continuous"})
     public NurbsPath3D(List<Vector3> points, boolean continuous) {
         //
     }
 
-    @MethodArgs(args={"x"})
+    @MethodArgs(args ={"x"})
     public Vector3 evaluate(float u){
         //
         return null;
@@ -34,7 +34,7 @@ public class NurbsPath3D {
 
         //
     }
-    @MethodArgs(args={"x","out"})
+    @MethodArgs(args ={"x","out"})
     public Vector3 evaluate(float u, Vector3 out){
         //
         return null;
@@ -43,7 +43,7 @@ public class NurbsPath3D {
         //
     }
 
-    @MethodArgs(args={"resolution"})
+    @MethodArgs(args ={"resolution"})
     public List<Vector3> evaluatePath(int resolution){
         //
         return null;
@@ -51,7 +51,7 @@ public class NurbsPath3D {
 
         //
     }
-    @MethodArgs(args={"resolution","list"})
+    @MethodArgs(args ={"resolution","list"})
     public List<Vector3> evaluatePath(int resolution, List<Vector3> list){
         //
         return null;
@@ -60,15 +60,15 @@ public class NurbsPath3D {
         //
     }
 
-    @MethodArgs(args={"vector"})
+    @MethodArgs(args ={"vector"})
     public void addPoint(Vector3 vector){
         //
     }
-    @MethodArgs(args={"path"})
+    @MethodArgs(args ={"path"})
     public void addPath(List<Vector3> path){
         //
     }
-    @MethodArgs(args={"i"})
+    @MethodArgs(args ={"i"})
     public Vector3 getPoint(int i){
         //
         return null;
@@ -76,11 +76,11 @@ public class NurbsPath3D {
 
         //
     }
-    @MethodArgs(args={"vector"})
+    @MethodArgs(args ={"vector"})
     public void removePoint(Vector3 vector3){
         //
     }
-    @MethodArgs(args={"i"})
+    @MethodArgs(args ={"i"})
     public void removePoint(int i){
         //
     }
@@ -99,7 +99,7 @@ public class NurbsPath3D {
 
         //
     }
-    @MethodArgs(args={"continuous"})
+    @MethodArgs(args ={"continuous"})
     public void setContinuous(boolean continuous) {
         //
     }

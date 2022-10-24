@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI"})
 public class SUILinearLayout extends Component{
     //
 
@@ -26,7 +26,7 @@ public class SUILinearLayout extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setOrientation(SLinearOrientation value){
         //
     }

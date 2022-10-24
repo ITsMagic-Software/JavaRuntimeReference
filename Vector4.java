@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Vector"})
+@ClassCategory(cat ={"Vector"})
 public class Vector4 {
 
     //
@@ -13,20 +13,87 @@ public class Vector4 {
     public Vector4() {
         //
     }
-    @MethodArgs(args={"x","y","z","w"})
+    @MethodArgs(args ={"x","y","z","w"})
     public Vector4(float x, float y, float z, float w) {
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z","w"})
+    public Vector4(float x, float y, float z, int w) {
+        //
+    }
+    @MethodArgs(args ={"x","y","z","w"})
+    public Vector4(float x, float y, int z, int w) {
+        //
+    }
+    @MethodArgs(args ={"x","y","z","w"})
+    public Vector4(float x, int y, int z, int w) {
+        //
+    }
+    @MethodArgs(args ={"x","y","z","w"})
+    public Vector4(int x, int y, int z, int w) {
+        //
+    }
+    @MethodArgs(args ={"x","y","z","w"})
+    public Vector4(int x, float y, int z, int w) {
+        //
+    }
+    @MethodArgs(args ={"x","y","z","w"})
+    public Vector4(int x, int y, float z, int w) {
+        //
+    }
+    @MethodArgs(args ={"x","y","z","w"})
+    public Vector4(int x, int y, int z, float w) {
+        //
+    }
+
+    @MethodArgs(args ={"x","y","z"})
     public Vector4(float x, float y, float z) {
         //
     }
-    @MethodArgs(args={"x","y"})
+    @MethodArgs(args ={"x","y","z"})
+    public Vector4(int x, float y, float z) {
+        //
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public Vector4(float x, int y, float z) {
+        //
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public Vector4(float x, float y, int z) {
+        //
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public Vector4(int x, int y, float z) {
+        //
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public Vector4(float x, int y, int z) {
+        //
+    }
+
+    @MethodArgs(args ={"x","y"})
     public Vector4(float x, float y) {
         //
     }
-    @MethodArgs(args={"a"})
+    @MethodArgs(args ={"x","y"})
+    public Vector4(int x, float y) {
+        //
+    }
+    @MethodArgs(args ={"x","y"})
+    public Vector4(float x, int y) {
+        //
+    }
+    @MethodArgs(args ={"x","y"})
+    public Vector4(int x, int y) {
+        //
+    }
+
+    @MethodArgs(args ={"a"})
     public Vector4(float a) {
+        //
+    }
+    @MethodArgs(args ={"a"})
+    public Vector4(int a) {
         //
     }
 
@@ -39,7 +106,7 @@ public class Vector4 {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setX(float value){
         //
     }
@@ -52,7 +119,7 @@ public class Vector4 {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setY(float value){
         //
     }
@@ -65,7 +132,7 @@ public class Vector4 {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setZ(float value){
         //
     }
@@ -78,20 +145,20 @@ public class Vector4 {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setW(float value){
         //
     }
 
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void set(Vector4 vector){
         //
     }
-    @MethodArgs(args={"x","y","z","w"})
+    @MethodArgs(args ={"x","y","z","w"})
     public void set(float x, float y, float z, float w){
         //
     }
-    @MethodArgs(args={"a"})
+    @MethodArgs(args ={"a"})
     public void set(float a){
         //
     }

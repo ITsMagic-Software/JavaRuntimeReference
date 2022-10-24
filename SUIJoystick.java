@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI"})
 public class SUIJoystick extends Component{
     //
 
@@ -26,7 +26,7 @@ public class SUIJoystick extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setLerp(float value){
         //
     }
@@ -40,7 +40,7 @@ public class SUIJoystick extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setValue(Vector2 value){
         //
     }
@@ -54,7 +54,7 @@ public class SUIJoystick extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setAxisName(String name){
         //
     }
@@ -68,7 +68,7 @@ public class SUIJoystick extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setAxis(Axis axis){
         //
     }
@@ -82,7 +82,7 @@ public class SUIJoystick extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setSpherical(boolean value){
         //
     }
@@ -122,7 +122,7 @@ public class SUIJoystick extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setClickable(boolean value){
         //
     }
@@ -136,7 +136,7 @@ public class SUIJoystick extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setTargetRectType(STargetRect value){
         //
     }
@@ -150,7 +150,7 @@ public class SUIJoystick extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"object"})
+    @MethodArgs(args ={"object"})
     public void setTargetRectObject(SpatialObject object){
         //
     }

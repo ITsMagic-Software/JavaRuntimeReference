@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Components"})
+@ClassCategory(cat ={"Components"})
 public class SkinnedModelRenderer extends Component{
     public static final int CUBE = 456;
     public static final int SPHERE = 457;
@@ -29,14 +29,14 @@ public class SkinnedModelRenderer extends Component{
 
     @Deprecated
     @DeprecatedInfo(info={"PFile is now obsolete, use SkinnedModelRenderer.setVertex(Vertex) instead"})
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public void setModelFile(VertexFile pFile){
         //
     }
 
     @Deprecated
     @DeprecatedInfo(info={"PFile is now obsolete, use SkinnedModelRenderer.setMaterial(Material) instead"})
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public void setMaterialFile(MaterialFile pFile){
         //
     }
@@ -48,7 +48,7 @@ public class SkinnedModelRenderer extends Component{
 
         //
     }
-    @MethodArgs(args={"material"})
+    @MethodArgs(args ={"material"})
     public void setMaterial(Material material){
         //
     }
@@ -60,12 +60,12 @@ public class SkinnedModelRenderer extends Component{
 
         //
     }
-    @MethodArgs(args={"vertex"})
+    @MethodArgs(args ={"vertex"})
     public void setVertex(Vertex vertex){
         //
     }
 
-    @MethodArgs(args={"primitive"})
+    @MethodArgs(args ={"primitive"})
     public void attachPrimitive(int primitive){
         //
     }

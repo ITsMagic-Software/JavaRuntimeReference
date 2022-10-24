@@ -2,13 +2,14 @@ package JAVARuntime;
 
 //
 
-import java.util.ArrayList;
+
+import java.lang.reflect.Field;
 import java.util.List;
 
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Vertex"})
+@ClassCategory(cat ={"Vertex"})
 public class Vertex {
     //
 
@@ -16,7 +17,7 @@ public class Vertex {
         //
     }
 
-    public ArrayList getVertices(){
+    public List<Vector3> getVertices(){
         //
         return null;
         //
@@ -37,28 +38,24 @@ public class Vertex {
 
         //
     }
-    @MethodArgs(args={"value"})
-    public void setVertices(List list){
+    @MethodArgs(args ={"value"})
+    public void setVertices(List<Vector3> list){
         //
     }
-    @MethodArgs(args={"value"})
-    public void setVertices(ArrayList list){
-        //
-    }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setVertices(float[] array){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setVertices(NativeFloatBuffer vertices){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setVertices(Vector3Buffer buffer){
         //
     }
 
-    public ArrayList getTriangles(){
+    public List<Vector3> getTriangles(){
         //
         return null;
         //
@@ -79,28 +76,24 @@ public class Vertex {
 
         //
     }
-    @MethodArgs(args={"value"})
-    public void setTriangles(List list){
+    @MethodArgs(args ={"value"})
+    public void setTriangles(List<Vector3> list){
         //
     }
-    @MethodArgs(args={"value"})
-    public void setTriangles(ArrayList list){
-        //
-    }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setTriangles(int[] array){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setTriangles(NativeIntBuffer triangles){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setTriangles(Point3Buffer buffer){
         //
     }
 
-    public ArrayList getNormals(){
+    public List<Vector3> getNormals(){
         //
         return null;
         //
@@ -121,28 +114,24 @@ public class Vertex {
 
         //
     }
-    @MethodArgs(args={"value"})
-    public void setNormals(List list){
+    @MethodArgs(args ={"value"})
+    public void setNormals(List<Vector3> list){
         //
     }
-    @MethodArgs(args={"value"})
-    public void setNormals(ArrayList list){
-        //
-    }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setNormals(float[] array){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setNormals(NativeFloatBuffer normals){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setNormals(Vector3Buffer buffer){
         //
     }
 
-    public ArrayList getUVs(){
+    public List<Vector2> getUVs(){
         //
         return null;
         //
@@ -163,28 +152,24 @@ public class Vertex {
 
         //
     }
-    @MethodArgs(args={"value"})
-    public void setUVs(List list){
+    @MethodArgs(args ={"value"})
+    public void setUVs(List<Vector2> list){
         //
     }
-    @MethodArgs(args={"value"})
-    public void setUVs(ArrayList list){
-        //
-    }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setUVs(float[] array){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setUVs(NativeFloatBuffer uvs){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setUVs(Vector2Buffer buffer){
         //
     }
 
-    public ArrayList getJoints(){
+    public List<Vector3> getJoints(){
         //
         return null;
         //
@@ -205,28 +190,24 @@ public class Vertex {
 
         //
     }
-    @MethodArgs(args={"value"})
-    public void setJoints(List list){
+    @MethodArgs(args ={"value"})
+    public void setJoints(List<Vector3> list){
         //
     }
-    @MethodArgs(args={"value"})
-    public void setJoints(ArrayList list){
-        //
-    }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setJoints(float[] array){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setJoints(NativeFloatBuffer joints){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setJoints(Vector3Buffer buffer){
         //
     }
 
-    public ArrayList getWeights(){
+    public List<Vector3> getWeights(){
         //
         return null;
         //
@@ -247,33 +228,29 @@ public class Vertex {
 
         //
     }
-    @MethodArgs(args={"value"})
-    public void setWeights(List list){
+    @MethodArgs(args ={"value"})
+    public void setWeights(List<Vector3> list){
         //
     }
-    @MethodArgs(args={"value"})
-    public void setWeights(ArrayList list){
-        //
-    }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setWeights(float[] array){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setWeights(NativeFloatBuffer weights){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setWeights(Vector3Buffer buffer){
         //
     }
 
     public enum RayMode{ClosestPoint, FirstHit}
-    @MethodArgs(args={"transform","ray"})
+    @MethodArgs(args ={"transform","ray"})
     public LaserHit traceLaser(Transform transform, Ray ray){
         return traceLaser(transform, ray, RayMode.ClosestPoint);
     }
-    @MethodArgs(args={"transform","ray","rayMode"})
+    @MethodArgs(args ={"transform","ray","rayMode"})
     public LaserHit traceLaser(Transform transform, Ray ray, RayMode rayMode){
         //
         return null;
@@ -281,7 +258,7 @@ public class Vertex {
 
         //
     }
-    @MethodArgs(args={"transform","ray","rayMode","backfaceCulling"})
+    @MethodArgs(args ={"transform","ray","rayMode","backfaceCulling"})
     public LaserHit traceLaser(Transform transform, Ray ray, RayMode rayMode, boolean backfaceCulling){
         //
         return null;
@@ -289,15 +266,15 @@ public class Vertex {
 
         //
     }
-    @MethodArgs(args={"transform","ray","asyncLaserListener"})
+    @MethodArgs(args ={"transform","ray","asyncLaserListener"})
     public void traceLaserAsync(Transform transform, Ray ray, AsyncLaserListener asyncLaserListener){
         traceLaserAsync(transform, ray, asyncLaserListener, RayMode.ClosestPoint);
     }
-    @MethodArgs(args={"transform","ray","asyncLaserListener","rayMode"})
+    @MethodArgs(args ={"transform","ray","asyncLaserListener","rayMode"})
     public void traceLaserAsync(Transform transform, Ray ray, AsyncLaserListener asyncLaserListener, RayMode rayMode){
         //
     }
-    @MethodArgs(args={"transform","ray","asyncLaserListener","rayMode","backfaceCulling"})
+    @MethodArgs(args ={"transform","ray","asyncLaserListener","rayMode","backfaceCulling"})
     public void traceLaserAsync(Transform transform, Ray ray, AsyncLaserListener asyncLaserListener, RayMode rayMode, boolean backfaceCulling){
         //
     }
@@ -305,7 +282,7 @@ public class Vertex {
     public void apply(){
         //
     }
-    @MethodArgs(args={"regenerateTBN","recalculateBoundingBox"})
+    @MethodArgs(args ={"regenerateTBN","recalculateBoundingBox"})
     public void apply(boolean regenerateTBN, boolean recalculateBoundingBox){
         //
     }
@@ -326,7 +303,7 @@ public class Vertex {
     }
 
     /// Abstract
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public static Vertex loadFile(VertexFile pFile){
         //
         return null;
@@ -335,18 +312,33 @@ public class Vertex {
         //
     }
 
-    public static final int CUBE = 456;
-    public static final int SPHERE = 457;
-    public static final int CONE = 458;
-    public static final int CYLINDER = 459;
-    public static final int CIRCLE = 460;
-    public static final int TORUS = 461;
-    public static final int SQUARE = 462;
-    public static final int SQUARE90 = 463;
-    public static final int CAPSULE = 464;
-    public static final int HALF_CAPSULE = 465;
+    //
+    private @interface PrimitiveExpose { }
 
-    @MethodArgs(args={"primitive"})
+    @PrimitiveExpose
+    public static final int CUBE = 0;
+    @PrimitiveExpose
+    public static final int SPHERE = 1;
+    @PrimitiveExpose
+    public static final int CONE = 2;
+    @PrimitiveExpose
+    public static final int CYLINDER = 3;
+    @PrimitiveExpose
+    public static final int CIRCLE = 4;
+    @PrimitiveExpose
+    public static final int TORUS = 5;
+    @PrimitiveExpose
+    public static final int SQUARE = 6;
+    @PrimitiveExpose
+    public static final int SQUARE90 = 7;
+    @PrimitiveExpose
+    public static final int CAPSULE = 8;
+    @PrimitiveExpose
+    public static final int HALF_CAPSULE = 9;
+    @PrimitiveExpose
+    public static final int SPHERE_LOWPOLY = 10;
+
+    @MethodArgs(args ={"primitive"})
     public static Vertex loadPrimitive(int primitive){
         //
         return null;

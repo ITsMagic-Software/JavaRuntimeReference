@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"CameraFilters"})
+@ClassCategory(cat ={"CameraFilters"})
 public class FilterSuspicious extends CameraFilter{
     //
 
@@ -26,7 +26,7 @@ public class FilterSuspicious extends CameraFilter{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setStrength(float value){
         //
     }

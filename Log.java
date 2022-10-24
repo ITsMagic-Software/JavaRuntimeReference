@@ -5,26 +5,26 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Debug"})
+@ClassCategory(cat ={"Debug"})
 public class Log {
     //
 
     public Log() {
         //
     }
-    @MethodArgs(args={"message"})
+    @MethodArgs(args ={"message"})
     public Log(String message) {
         //
     }
-    @MethodArgs(args={"tittle","message"})
+    @MethodArgs(args ={"tittle","message"})
     public Log(String tittle, String message) {
         //
     }
-    @MethodArgs(args={"tag","tittle","message"})
+    @MethodArgs(args ={"tag","tittle","message"})
     public Log(String tag, String tittle, String message) {
         //
     }
-    @MethodArgs(args={"tag","tittle","message","color"})
+    @MethodArgs(args ={"tag","tittle","message","color"})
     public Log(String tag, String tittle, String message, Color color) {
         //
     }
@@ -38,7 +38,7 @@ public class Log {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setTittle(String value){
         //
     }
@@ -51,7 +51,7 @@ public class Log {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setMessage(String value){
         //
     }
@@ -64,7 +64,7 @@ public class Log {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setTag(String value){
         //
     }
@@ -77,7 +77,7 @@ public class Log {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setLink(String value){
         //
     }
@@ -90,7 +90,7 @@ public class Log {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setQuantity(int value){
         //
     }
@@ -103,7 +103,7 @@ public class Log {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setColor(Color value){
         //
     }

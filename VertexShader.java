@@ -5,7 +5,7 @@ package JAVARuntime;
 import java.io.IOException;
 import java.io.InputStream;
 
-@ClassCategory(cat={"Shaders"})
+@ClassCategory(cat ={"Shaders"})
 public class VertexShader {
     public String code;
     public VertexShader(String code) {
@@ -28,7 +28,7 @@ public class VertexShader {
 
     }*/
 
-    @MethodArgs(args={"inputStream"})
+    @MethodArgs(args ={"inputStream"})
     public static VertexShader loadInputStream(InputStream inputStream) throws IOException {
         //
         return null;

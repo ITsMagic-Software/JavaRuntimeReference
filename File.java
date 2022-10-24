@@ -3,7 +3,6 @@ package JAVARuntime;
 //
 
 import java.io.FileFilter;
-import java.io.FileWriter;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -11,25 +10,25 @@ import java.net.URI;
 import java.net.URL;
 import java.nio.file.Path;
 
-@ClassCategory(cat={"Files"})
+@ClassCategory(cat ={"Files"})
 public class File extends java.io.File {
 
-    @MethodArgs(args={"pathName"})
+    @MethodArgs(args ={"pathName"})
     public File(String pathname) {
         super(pathname);
         isAccessible();
     }
-    @MethodArgs(args={"parent","child"})
+    @MethodArgs(args ={"parent","child"})
     public File(String parent, String child) {
         super(parent, child);
         isAccessible();
     }
-    @MethodArgs(args={"parent","child"})
+    @MethodArgs(args ={"parent","child"})
     public File(java.io.File parent, String child) {
         super(parent, child);
         isAccessible();
     }
-    @MethodArgs(args={"uri"})
+    @MethodArgs(args ={"uri"})
     public File(URI uri) {
         super(uri);
         isAccessible();
@@ -139,7 +138,7 @@ public class File extends java.io.File {
         isAccessible();
         return super.list();
     }
-    @MethodArgs(args={"filter"})
+    @MethodArgs(args ={"filter"})
     public String[] list(FilenameFilter filter) {
         isAccessible();
         return super.list(filter);
@@ -148,12 +147,12 @@ public class File extends java.io.File {
         isAccessible();
         return super.listFiles();
     }
-    @MethodArgs(args={"filter"})
+    @MethodArgs(args ={"filter"})
     public java.io.File[] listFiles(FilenameFilter filter) {
         isAccessible();
         return super.listFiles(filter);
     }
-    @MethodArgs(args={"filter"})
+    @MethodArgs(args ={"filter"})
     public java.io.File[] listFiles(FileFilter filter) {
         isAccessible();
         return super.listFiles(filter);
@@ -166,12 +165,12 @@ public class File extends java.io.File {
         isAccessible();
         return super.mkdirs();
     }
-    @MethodArgs(args={"destination"})
+    @MethodArgs(args ={"destination"})
     public boolean renameTo(java.io.File dest) {
         isAccessible();
         return super.renameTo(dest);
     }
-    @MethodArgs(args={"time"})
+    @MethodArgs(args ={"time"})
     public boolean setLastModified(long time) {
         isAccessible();
         return super.setLastModified(time);
@@ -180,32 +179,32 @@ public class File extends java.io.File {
         isAccessible();
         return super.setReadOnly();
     }
-    @MethodArgs(args={"writable","ownerOnly"})
+    @MethodArgs(args ={"writable","ownerOnly"})
     public boolean setWritable(boolean writable, boolean ownerOnly) {
         isAccessible();
         return super.setWritable(writable, ownerOnly);
     }
-    @MethodArgs(args={"writable"})
+    @MethodArgs(args ={"writable"})
     public boolean setWritable(boolean writable) {
         isAccessible();
         return super.setWritable(writable);
     }
-    @MethodArgs(args={"writable","ownerOnly"})
+    @MethodArgs(args ={"writable","ownerOnly"})
     public boolean setReadable(boolean readable, boolean ownerOnly) {
         isAccessible();
         return super.setReadable(readable, ownerOnly);
     }
-    @MethodArgs(args={"readable"})
+    @MethodArgs(args ={"readable"})
     public boolean setReadable(boolean readable) {
         isAccessible();
         return super.setReadable(readable);
     }
-    @MethodArgs(args={"writable","ownerOnly"})
+    @MethodArgs(args ={"writable","ownerOnly"})
     public boolean setExecutable(boolean executable, boolean ownerOnly) {
         isAccessible();
         return super.setExecutable(executable, ownerOnly);
     }
-    @MethodArgs(args={"executable"})
+    @MethodArgs(args ={"executable"})
     public boolean setExecutable(boolean executable) {
         isAccessible();
         return super.setExecutable(executable);
@@ -226,12 +225,12 @@ public class File extends java.io.File {
         isAccessible();
         return super.getUsableSpace();
     }
-    @MethodArgs(args={"pathname"})
+    @MethodArgs(args ={"pathname"})
     public int compareTo(java.io.File pathname) {
         isAccessible();
         return super.compareTo(pathname);
     }
-    @MethodArgs(args={"obj"})
+    @MethodArgs(args ={"obj"})
     public boolean equals(Object obj) {
         isAccessible();
         return super.equals(obj);
@@ -267,7 +266,7 @@ public class File extends java.io.File {
 
         //
     }
-    @MethodArgs(args={"path"})
+    @MethodArgs(args ={"path"})
     public boolean isAccessible(String path){
         //
         return false;

@@ -5,7 +5,7 @@ package JAVARuntime;
 import java.io.IOException;
 import java.io.InputStream;
 
-@ClassCategory(cat={"Shaders"})
+@ClassCategory(cat ={"Shaders"})
 public class FragmentShader {
     public String code;
     public FragmentShader(String code) {
@@ -30,7 +30,7 @@ public class FragmentShader {
     }
     */
 
-    @MethodArgs(args={"inputStream"})
+    @MethodArgs(args ={"inputStream"})
     public static FragmentShader loadInputStream(InputStream inputStream) throws IOException {
         //
         return null;

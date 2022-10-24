@@ -6,7 +6,7 @@ public class TextScriptingSyntaxHighlightSpan {
     public int end;
 
     public TextScriptingSyntaxHighlightSpan() { }
-    @MethodArgs(args={"span","start","end"})
+    @MethodArgs(args ={"span","start","end"})
     public TextScriptingSyntaxHighlightSpan(TextScriptingStyleSpan span, int start, int end) {
         this.span = span;
         this.start = start;
@@ -16,7 +16,7 @@ public class TextScriptingSyntaxHighlightSpan {
     public TextScriptingStyleSpan getSpan() {
         return span;
     }
-    @MethodArgs(args={"span"})
+    @MethodArgs(args ={"span"})
     public void setSpan(TextScriptingStyleSpan span) {
         this.span = span;
     }
@@ -24,7 +24,7 @@ public class TextScriptingSyntaxHighlightSpan {
     public int getStart() {
         return start;
     }
-    @MethodArgs(args={"start"})
+    @MethodArgs(args ={"start"})
     public void setStart(int start) {
         this.start = start;
     }
@@ -32,7 +32,7 @@ public class TextScriptingSyntaxHighlightSpan {
     public int getEnd() {
         return end;
     }
-    @MethodArgs(args={"end"})
+    @MethodArgs(args ={"end"})
     public void setEnd(int end) {
         this.end = end;
     }

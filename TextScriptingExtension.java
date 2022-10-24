@@ -11,7 +11,7 @@ public class TextScriptingExtension extends ScriptingExtension{
     //
 
     // Util methods
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public void setText(String str){
         //
     }
@@ -22,37 +22,37 @@ public class TextScriptingExtension extends ScriptingExtension{
 
         //
     }
-    @MethodArgs(args={"theme"})
+    @MethodArgs(args ={"theme"})
     public void setTheme(TextScriptingTheme theme){
         //
     }
-    @MethodArgs(args={"textScriptingProvider"})
+    @MethodArgs(args ={"textScriptingProvider"})
     public void setProvider(TextScriptingProvider textScriptingProvider){
         //
     }
-    @MethodArgs(args={"textScriptingStyler"})
+    @MethodArgs(args ={"textScriptingStyler"})
     public void setStyler(TextScriptingStyler textScriptingStyler){
         //
     }
 
     // Override methods
-    @MethodArgs(args={"line"})
+    @MethodArgs(args ={"line"})
     public LineTip getTipForLine(int line) {
         return LineTip.None;
     }
-    @MethodArgs(args={"line"})
+    @MethodArgs(args ={"line"})
     public String getTipTextForLine(int line) {
         return "";
     }
 
     @Override
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public void replaceScript(File newScript) {
 
     }
 
     @Override
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public void openScript(File script) {
 
     }
@@ -83,21 +83,21 @@ public class TextScriptingExtension extends ScriptingExtension{
     }
 
     @Override
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public boolean supportFile(File file) {
         return false;
     }
 
-    @MethodArgs(args={"charSequence", "start", "before", "count"})
+    @MethodArgs(args ={"charSequence", "start", "before", "count"})
     public void beforeTextChanged(CharSequence charSequence, int start, int before, int count) {
     }
 
-    @MethodArgs(args={"charSequence", "start", "before", "count"})
+    @MethodArgs(args ={"charSequence", "start", "before", "count"})
     public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
 
     }
 
-    @MethodArgs(args={"editable"})
+    @MethodArgs(args ={"editable"})
     public void afterTextChanged(Editable editable) {
     }
 }

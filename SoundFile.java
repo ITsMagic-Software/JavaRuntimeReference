@@ -6,7 +6,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Files","Sound"})
+@ClassCategory(cat ={"Files","Sound"})
 public class SoundFile
 //
 {

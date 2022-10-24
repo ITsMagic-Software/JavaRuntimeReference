@@ -4,7 +4,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Debug"})
+@ClassCategory(cat ={"Debug"})
 public class GizmoElement {
     public enum RenderMode{
         Triangles, WireFrame, Both, SimpleWireFrame
@@ -12,7 +12,7 @@ public class GizmoElement {
 
     private Object userPointer = null;
     public Object getUserPointer() { return userPointer; }
-    @MethodArgs(args={"userPointer"})
+    @MethodArgs(args ={"userPointer"})
     public void setUserPointer(Object userPointer) { this.userPointer = userPointer; }
 
     public Vertex getVertex(){

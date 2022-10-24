@@ -5,18 +5,18 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Laser"})
+@ClassCategory(cat ={"Laser"})
 public class Ray {
     //
 
     public Ray() {
         //
     }
-    @MethodArgs(args={"rayDirection","distance"})
+    @MethodArgs(args ={"rayDirection","distance"})
     public Ray(JAVARuntime.RayDirection rayDirection, float distance) {
         //
     }
-    @MethodArgs(args={"position","direction","distance"})
+    @MethodArgs(args ={"position","direction","distance"})
     public Ray(Vector3 position, Vector3 direction, float distance) {
         //
     }
@@ -28,7 +28,7 @@ public class Ray {
 
         //
     }
-    @MethodArgs(args={"rayDirection"})
+    @MethodArgs(args ={"rayDirection"})
     public void setRayDirection(JAVARuntime.RayDirection rayDirection){
         //
     }
@@ -42,7 +42,7 @@ public class Ray {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"layer"})
+    @MethodArgs(args ={"layer"})
     public void setPhysicsLayer(PhysicsLayer layer){
         //
     }
@@ -54,7 +54,7 @@ public class Ray {
 
         //
     }
-    @MethodArgs(args={"distance"})
+    @MethodArgs(args ={"distance"})
     public void setDistance(float distance){
         //
     }

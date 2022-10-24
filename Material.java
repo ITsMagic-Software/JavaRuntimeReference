@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Material"})
+@ClassCategory(cat ={"Material"})
 public class Material {
     //
 
@@ -22,12 +22,12 @@ public class Material {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"shaderName"})
+    @MethodArgs(args ={"shaderName"})
     public void setShader(String shaderName){
         //
     }
 
-    @MethodArgs(args={"entryName"})
+    @MethodArgs(args ={"entryName"})
     public Color getColor(String entryName){
         //
         return null;
@@ -35,7 +35,7 @@ public class Material {
 
         //
     }
-    @MethodArgs(args={"entryName"})
+    @MethodArgs(args ={"entryName"})
     public Color findColor(String entryName){
         //
         return null;
@@ -43,12 +43,12 @@ public class Material {
 
         //
     }
-    @MethodArgs(args={"entryName","color"})
+    @MethodArgs(args ={"entryName","color"})
     public void setColor(String entryName, Color color){
         //
     }
 
-    @MethodArgs(args={"entryName"})
+    @MethodArgs(args ={"entryName"})
     public JAVARuntime.Vector2 getVector2(String entryName){
         //
         return null;
@@ -56,7 +56,7 @@ public class Material {
 
         //
     }
-    @MethodArgs(args={"entryName"})
+    @MethodArgs(args ={"entryName"})
     public JAVARuntime.Vector2 findVector2(String entryName){
         //
         return null;
@@ -64,12 +64,12 @@ public class Material {
 
         //
     }
-    @MethodArgs(args={"entryName","vector2"})
+    @MethodArgs(args ={"entryName","vector2"})
     public void setVector2(String entryName, JAVARuntime.Vector2 vector2){
         //
     }
 
-    @MethodArgs(args={"entryName"})
+    @MethodArgs(args ={"entryName"})
     public Texture getTexture(String entryName){
         //
         return null;
@@ -77,7 +77,7 @@ public class Material {
 
         //
     }
-    @MethodArgs(args={"entryName"})
+    @MethodArgs(args ={"entryName"})
     public Texture findTexture(String entryName){
         //
         return null;
@@ -85,11 +85,11 @@ public class Material {
 
         //
     }
-    @MethodArgs(args={"entryName","texture"})
+    @MethodArgs(args ={"entryName","texture"})
     public void setTexture(String entryName, Texture texture){
         //
     }
-    @MethodArgs(args={"entryName","pfile"})
+    @MethodArgs(args ={"entryName","pfile"})
     public void setTextureFile(String entryName, TextureFile textureFile){
         //
     }
@@ -98,13 +98,6 @@ public class Material {
         //
     }
 
-    public boolean isLoaded(){
-        //
-        return false;
-        //
-
-        //
-    }
 
     public String toJson(){
         //
@@ -114,7 +107,7 @@ public class Material {
         //
     }
 
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public static Material loadFile(MaterialFile materialFile){
         //
         return null;

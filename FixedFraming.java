@@ -5,11 +5,11 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Framerate"})
+@ClassCategory(cat ={"Framerate"})
 public class FixedFraming {
     //
 
-    @MethodArgs(args={"framesPerSecond", "FixedFrameListener", "fixedFrameListener"})
+    @MethodArgs(args ={"framesPerSecond", "FixedFrameListener", "fixedFrameListener"})
     public FixedFraming(int framesPerSecond, FixedFrameListener fixedFrameListener) {
         //
     }
@@ -18,15 +18,15 @@ public class FixedFraming {
         //
     }
 
-    @MethodArgs(args={"allowTimeScale"})
+    @MethodArgs(args ={"allowTimeScale"})
     public void setAllowTimeScale(boolean allowTimeScale) {
         //
     }
-    @MethodArgs(args={"desyncLowFrameRate"})
+    @MethodArgs(args ={"desyncLowFrameRate"})
     public void setDesyncLowFrameRate(boolean desyncLowFrameRate) {
         //
     }
-    @MethodArgs(args={"desyncHighFrameRate"})
+    @MethodArgs(args ={"desyncHighFrameRate"})
     public void setDesyncHighFrameRate(boolean desyncHighFrameRate) {
         //
     }
@@ -40,12 +40,12 @@ public class FixedFraming {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"framesPerSecond"})
+    @MethodArgs(args ={"framesPerSecond"})
     public void setFixedFrames(int framesPerSecond) {
         //
     }
 
-    @MethodArgs(args={"fixedFrameListener"})
+    @MethodArgs(args ={"fixedFrameListener"})
     public void setFixedFrameListener(FixedFrameListener fixedFrameListener) {
         //
     }

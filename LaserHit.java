@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Laser"})
+@ClassCategory(cat ={"Laser"})
 public class LaserHit {
     //
 
@@ -22,7 +22,7 @@ public class LaserHit {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"object"})
+    @MethodArgs(args ={"object"})
     public void setObject(SpatialObject object){
         //
     }
@@ -36,7 +36,7 @@ public class LaserHit {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"point"})
+    @MethodArgs(args ={"point"})
     public void setPoint(Vector3 point){
         //
     }
@@ -50,7 +50,7 @@ public class LaserHit {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"normal"})
+    @MethodArgs(args ={"normal"})
     public void setNormal(Vector3 normal){
         //
     }
@@ -64,7 +64,7 @@ public class LaserHit {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"normal"})
+    @MethodArgs(args ={"normal"})
     public void setFaceNormal(Vector3 normal){
         //
     }
@@ -78,7 +78,7 @@ public class LaserHit {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"normal"})
+    @MethodArgs(args ={"normal"})
     public void setFaceNormalLocal(Vector3 normal){
         //
     }
@@ -92,7 +92,7 @@ public class LaserHit {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"distance"})
+    @MethodArgs(args ={"distance"})
     public void setDistance(float distance){
         //
     }

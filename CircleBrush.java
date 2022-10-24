@@ -4,7 +4,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  * Creates a circle brush
  */
-@ClassCategory(cat={"Brushs"})
+@ClassCategory(cat ={"Brushs"})
 public class CircleBrush implements Brush{
 
     /**
@@ -12,7 +12,7 @@ public class CircleBrush implements Brush{
      *  return the intensity from 0f - 1f
      */
     //
-    @MethodArgs(args={"x","y"})
+    @MethodArgs(args ={"x","y"})
     public float getIntensity(float x, float y){
         float distance = Math.sqrt((x * x) + (y*y));
         if(distance <= 1f){

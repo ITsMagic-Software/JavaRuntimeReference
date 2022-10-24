@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Components"})
+@ClassCategory(cat ={"Components"})
 public class PathFinder extends Component{
     public enum LookTo{
         Disabled, Path, Target
@@ -78,7 +78,7 @@ public class PathFinder extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"object"})
+    @MethodArgs(args ={"object"})
     public void setTarget(SpatialObject object){
         //
     }
@@ -92,22 +92,8 @@ public class PathFinder extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"lookTo"})
+    @MethodArgs(args ={"lookTo"})
     public void setLookTo(LookTo lookToo){
-        //
-    }
-
-    @HideGetSet
-    public float getMinimalDistance(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"value"})
-    public void setMinimalDistance(float value){
         //
     }
 
@@ -120,12 +106,19 @@ public class PathFinder extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setSearchDelay(float value){
         //
     }
 
     public float getTargetDistance(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    public float getTargetDistanceInPath(){
         //
         return 0;
         //

@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Input"})
+@ClassCategory(cat ={"Input"})
 public class Touch {
     //
 
@@ -22,7 +22,7 @@ public class Touch {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setPressed(boolean value){
         //
     }
@@ -36,7 +36,7 @@ public class Touch {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setDown(boolean value){
         //
     }
@@ -50,7 +50,7 @@ public class Touch {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setUp(boolean value){
         //
     }
@@ -64,7 +64,7 @@ public class Touch {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setLongDown(boolean value){
         //
     }
@@ -78,7 +78,7 @@ public class Touch {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setLongPressed(boolean value){
         //
     }
@@ -92,7 +92,7 @@ public class Touch {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setSlided(boolean value){
         //
     }
@@ -106,7 +106,7 @@ public class Touch {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setPosition(Vector2 value){
         //
     }
@@ -120,7 +120,7 @@ public class Touch {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setSlide(Vector2 value){
         //
     }

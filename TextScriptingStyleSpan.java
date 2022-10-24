@@ -9,11 +9,11 @@ public class TextScriptingStyleSpan {
     public boolean underline = false;
     public boolean strikethrough = false;
 
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public TextScriptingStyleSpan(Color color) {
         this.color = color;
     }
-    @MethodArgs(args={"color","bold","italic","underline","strikethrough"})
+    @MethodArgs(args ={"color","bold","italic","underline","strikethrough"})
     public TextScriptingStyleSpan(Color color, boolean bold, boolean italic, boolean underline, boolean strikethrough) {
         this.color = color;
         this.bold = bold;
@@ -25,7 +25,7 @@ public class TextScriptingStyleSpan {
     public Color getColor() {
         return color;
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setColor(Color color) {
         this.color = color;
     }
@@ -33,7 +33,7 @@ public class TextScriptingStyleSpan {
     public boolean isBold() {
         return bold;
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setBold(boolean bold) {
         this.bold = bold;
     }
@@ -41,7 +41,7 @@ public class TextScriptingStyleSpan {
     public boolean isItalic() {
         return italic;
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setItalic(boolean italic) {
         this.italic = italic;
     }
@@ -49,7 +49,7 @@ public class TextScriptingStyleSpan {
     public boolean isUnderline() {
         return underline;
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setUnderline(boolean underline) {
         this.underline = underline;
     }
@@ -57,7 +57,7 @@ public class TextScriptingStyleSpan {
     public boolean isStrikethrough() {
         return strikethrough;
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setStrikethrough(boolean strikethrough) {
         this.strikethrough = strikethrough;
     }

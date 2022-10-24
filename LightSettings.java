@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"World"})
+@ClassCategory(cat ={"World"})
 public class LightSettings {
     public static final int FOG_FAST = 0;
     public static final int FOG_SQRT = 1;
@@ -27,7 +27,7 @@ public class LightSettings {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setSpaceColor(Color color) {
         //
     }
@@ -41,7 +41,7 @@ public class LightSettings {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setAmbientColor(Color color) {
         //
     }
@@ -49,7 +49,7 @@ public class LightSettings {
     @Deprecated
     @DeprecatedInfo(info={"PFile is now obsolete, use LightSettings.setSkybox(Texture) instead"})
     @HideGetSet
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public void setSkyboxFile(TextureFile pFile){
         //
     }
@@ -62,7 +62,7 @@ public class LightSettings {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"texture"})
+    @MethodArgs(args ={"texture"})
     public void setSkybox(Texture texture){
         //
     }
@@ -76,7 +76,7 @@ public class LightSettings {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setSkyboxColor(Color color) {
         //
     }
@@ -90,7 +90,7 @@ public class LightSettings {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"enabled"})
+    @MethodArgs(args ={"enabled"})
     public void setEnableFog(boolean enabled){
         //
     }
@@ -104,7 +104,7 @@ public class LightSettings {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setFogColor(Color color) {
         //
     }
@@ -118,7 +118,7 @@ public class LightSettings {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setFogStart(float value) {
         //
     }
@@ -131,7 +131,7 @@ public class LightSettings {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setFogEnd(float value) {
         //
     }
@@ -144,7 +144,7 @@ public class LightSettings {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"type"})
+    @MethodArgs(args ={"type"})
     public void setFogType(int type) {
         //
     }
@@ -158,7 +158,7 @@ public class LightSettings {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setSkyboxRotY(float value) {
         //
     }
@@ -171,7 +171,7 @@ public class LightSettings {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setSkyboxRotX(float value) {
         //
     }
@@ -184,7 +184,7 @@ public class LightSettings {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setSkyboxRotZ(float value) {
         //
     }
@@ -198,7 +198,7 @@ public class LightSettings {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"type"})
+    @MethodArgs(args ={"type"})
     public void setSkyboxType(int type) {
         //
     }

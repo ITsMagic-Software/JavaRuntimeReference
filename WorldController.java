@@ -7,17 +7,23 @@ import java.util.List;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"World"})
+@ClassCategory(cat ={"World"})
 public class WorldController {
     //
 
     private WorldController() { }
 
     /// Abstracts
+    @MethodArgs(args ={"worldFile"})
     public static void loadWorld(WorldFile worldFile){
         //
     }
+    @MethodArgs(args ={"worldFile"})
+    public static void loadWorldAsync(WorldFile worldFile){
+        //
+    }
 
+    @MethodArgs(args ={"name"})
     public static SpatialObject findObject(String name){
         //
         return null;
@@ -25,7 +31,7 @@ public class WorldController {
 
         //
     }
-    public static ArrayList getObjectList() {
+    public static List<SpatialObject> getObjectList() {
         //
         return null;
         //
@@ -39,6 +45,7 @@ public class WorldController {
 
         //
     }
+    @MethodArgs(args ={"index"})
     public static SpatialObject getObject(int index) {
         //
         return null;
@@ -47,6 +54,7 @@ public class WorldController {
         //
     }
 
+    @MethodArgs(args ={"tittle"})
     public static List<JAVARuntime.Component> listAllComponents(String tittle){
         //
         return null;
@@ -54,6 +62,7 @@ public class WorldController {
 
         //
     }
+    @MethodArgs(args ={"classReference"})
     public static List<JAVARuntime.Component> listAllComponents(Class classReference){
         //
         return null;
@@ -91,6 +100,13 @@ public class WorldController {
 
         //
     }
+    public static String getLoadMessage(){
+        //
+        return null;
+        //
+
+        //
+    }
     public static boolean isLoaded(){
         //
         return false;
@@ -121,4 +137,46 @@ public class WorldController {
         //
     }
 
+    @MethodArgs(args ={"tagName"})
+    public static SpatialObject findObjectWithTag(String tagName) {
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"tagName"})
+    public static List<SpatialObject> findObjectsWithTag(String tagName) {
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"tagName"})
+    public static SpatialObject findRandomObjectWithTag(String tagName) {
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"tagName"})
+    public static int countObjectsWithTag(String tagName) {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"tagName"})
+    public static boolean hasObjectsWithTag(String tagName) {
+        //
+        return false;
+        //
+
+        //
+    }
+
+    //
 }

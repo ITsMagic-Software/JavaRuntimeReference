@@ -6,7 +6,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  * MethodArgs filled by Carlos at 22-04-2022
  */
-@ClassCategory(cat={"CameraFilters"})
+@ClassCategory(cat ={"CameraFilters"})
 public class CameraFilter{
 
     //
@@ -16,7 +16,7 @@ public class CameraFilter{
 
     public CameraFilter() {
     }
-    @MethodArgs(args={"tittle"})
+    @MethodArgs(args ={"tittle"})
     public CameraFilter(String tittle) {
         //
     }
@@ -44,7 +44,7 @@ public class CameraFilter{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"tittle"})
+    @MethodArgs(args ={"tittle"})
     public void setTittle(String tittle){
         //
     }

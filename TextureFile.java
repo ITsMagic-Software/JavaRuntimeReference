@@ -6,7 +6,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Material","Files"})
+@ClassCategory(cat ={"Material","Files"})
 public class TextureFile
 //
 {

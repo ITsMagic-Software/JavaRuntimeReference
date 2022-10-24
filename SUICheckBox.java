@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI"})
 public class SUICheckBox extends Component{
     //
 
@@ -26,7 +26,7 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setPressed(boolean value){
         //
     }
@@ -40,7 +40,7 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setUncheckedColor(Color color){
         //
     }
@@ -54,7 +54,7 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"texture"})
+    @MethodArgs(args ={"texture"})
     public void setUncheckedImage(Texture texture){
         //
     }
@@ -68,7 +68,7 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setUncheckedIgnoreMask(boolean value){
         //
     }
@@ -82,7 +82,7 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setUncheckedBorder(int value){
         //
     }
@@ -95,11 +95,11 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setUncheckedBorderUnitType(SUnitType value){
         //
     }
-    @MethodArgs(args={"value","unitType"})
+    @MethodArgs(args ={"value","unitType"})
     public void setUncheckedBorder(int value, SUnitType unitType){
         //
     }
@@ -113,7 +113,7 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setUncheckedImageType(SImageType sImageType){
         //
     }
@@ -127,7 +127,7 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setCheckedColor(Color color){
         //
     }
@@ -141,7 +141,7 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"texture"})
+    @MethodArgs(args ={"texture"})
     public void setCheckedImage(Texture texture){
         //
     }
@@ -155,7 +155,7 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setCheckedIgnoreMask(boolean value){
         //
     }
@@ -169,7 +169,7 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setCheckedBorder(int value){
         //
     }
@@ -182,11 +182,11 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setCheckedBorderUnitType(SUnitType value){
         //
     }
-    @MethodArgs(args={"value","unitType"})
+    @MethodArgs(args ={"value","unitType"})
     public void setCheckedBorder(int value, SUnitType unitType){
         //
     }
@@ -200,7 +200,7 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setCheckedImageType(SImageType sImageType){
         //
     }
@@ -214,7 +214,7 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setClickable(boolean value){
         //
     }
@@ -228,7 +228,7 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setTargetRectType(STargetRect value){
         //
     }
@@ -242,7 +242,7 @@ public class SUICheckBox extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"object"})
+    @MethodArgs(args ={"object"})
     public void setTargetRectObject(SpatialObject object){
         //
     }

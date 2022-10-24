@@ -6,14 +6,14 @@ package JAVARuntime;
  * MethodArgs filled by Carlos at 22-04-2022
  * Extends java.util.concurrent.atomic.AtomicInteger
  */
-@ClassCategory(cat={"Atomic"})
+@ClassCategory(cat ={"Atomic"})
 public class AtomicInteger {
     //
 
     public AtomicInteger() {
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public AtomicInteger(int value) {
         //
     }
@@ -25,16 +25,16 @@ public class AtomicInteger {
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void set(int value){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void lazySet(int value){
         //
     }
     
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public int getAndSet(int value){
         //
         return 0;
@@ -70,7 +70,7 @@ public class AtomicInteger {
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public int getAndAdd(int value){
         //
         return 0;
@@ -78,7 +78,7 @@ public class AtomicInteger {
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public int addAndGet(int value){
         //
         return 0;
@@ -87,7 +87,7 @@ public class AtomicInteger {
         //
     }
     
-    @MethodArgs(args={"expect","update"})
+    @MethodArgs(args ={"expect","update"})
     public boolean compareAndSet(int expect, int update){
         //
         return false;
@@ -95,7 +95,7 @@ public class AtomicInteger {
 
         //
     }
-    @MethodArgs(args={"expect","update"})
+    @MethodArgs(args ={"expect","update"})
     public boolean weakCompareAndSet(int expect, int update){
         //
         return false;

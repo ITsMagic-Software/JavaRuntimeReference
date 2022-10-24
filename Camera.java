@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * @Author Lucas Leandro (ITsMagic Founder)
  * MethodArgs filled by Carlos at 22-04-2022
  */
-@ClassCategory(cat={"Components"})
+@ClassCategory(cat ={"Components"})
 public class Camera extends Component{
     public static final int PROJECTION_3D = 0;
     public static final int PROJECTION_2D = 1;
@@ -35,7 +35,7 @@ public class Camera extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setRenderDistance(float value){
         //
     }
@@ -49,7 +49,7 @@ public class Camera extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setMinimalDistance(float value){
         //
     }
@@ -63,7 +63,7 @@ public class Camera extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setFov(float value){
         //
     }
@@ -77,7 +77,7 @@ public class Camera extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setRenderPercentage(int value){
         //
     }
@@ -91,7 +91,7 @@ public class Camera extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setLayer(int value){
         //
     }
@@ -105,7 +105,7 @@ public class Camera extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setOrthoDiameter(float value){
         //
     }
@@ -120,7 +120,7 @@ public class Camera extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setProjection(int value){
         //
     }
@@ -134,7 +134,7 @@ public class Camera extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setBackground(int value){
         //
     }
@@ -148,12 +148,12 @@ public class Camera extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"filter"})
+    @MethodArgs(args ={"filter"})
     public void setObjectFilter(CameraObjectFilter filter){
         //
     }
 
-    @MethodArgs(args={"x","y"})
+    @MethodArgs(args ={"x","y"})
     public RayDirection screenPointRay(int x, int y){
         //
         return null;
@@ -161,7 +161,7 @@ public class Camera extends Component{
 
         //
     }
-    @MethodArgs(args={"screenCoords"})
+    @MethodArgs(args ={"screenCoords"})
     public RayDirection screenPointRay(Point2 screenCoords){
         //
         return null;
@@ -170,7 +170,7 @@ public class Camera extends Component{
         //
     }
     
-    @MethodArgs(args={"x","y"})
+    @MethodArgs(args ={"x","y"})
     public RayDirection screenPointRay(float x, float y){
         //
         return null;
@@ -178,7 +178,7 @@ public class Camera extends Component{
 
         //
     }
-    @MethodArgs(args={"screenCoords"})
+    @MethodArgs(args ={"screenCoords"})
     public RayDirection screenPointRay(Vector2 screenCoords){
         //
         return null;
@@ -187,7 +187,7 @@ public class Camera extends Component{
         //
     }
     
-    @MethodArgs(args={"x","y"})
+    @MethodArgs(args ={"x","y"})
     public Vector3 screenPointNormal(int x, int y){
         //
         return null;
@@ -195,7 +195,7 @@ public class Camera extends Component{
 
         //
     }
-    @MethodArgs(args={"screenCoords"})
+    @MethodArgs(args ={"screenCoords"})
     public Vector3 screenPointNormal(Point2 screenCoords){
         //
         return null;
@@ -204,7 +204,7 @@ public class Camera extends Component{
         //
     }
     
-    @MethodArgs(args={"x","y"})
+    @MethodArgs(args ={"x","y"})
     public Vector3 screenPointNormal(float x, float y){
         //
         return null;
@@ -212,7 +212,7 @@ public class Camera extends Component{
 
         //
     }
-    @MethodArgs(args={"screenCoords"})
+    @MethodArgs(args ={"screenCoords"})
     public Vector3 screenPointNormal(Vector2 screenCoords){
         //
         return null;
@@ -221,15 +221,15 @@ public class Camera extends Component{
         //
     }
     
-    @MethodArgs(args={"folder","outputFile"})
+    @MethodArgs(args ={"folder","outputFile"})
     public void takeScreenShot(String folder, String outputFile){
         takeScreenShot(folder, outputFile, false);
     }
-    @MethodArgs(args={"folder","outputFile","bypassFileChecking"})
+    @MethodArgs(args ={"folder","outputFile","bypassFileChecking"})
     public void takeScreenShot(String folder, String outputFile, boolean bypassFileChecking){
         //
     }
-    @MethodArgs(args={"folder","outputFile"})
+    @MethodArgs(args ={"folder","outputFile"})
     public void takeScreenShot(File folder, String outputFile){
         //
     }
@@ -256,7 +256,7 @@ public class Camera extends Component{
 
         //
     }
-    @MethodArgs(args={"id"})
+    @MethodArgs(args ={"id"})
     public CameraFilter getFilter(int idx){
         //
         return null;
@@ -264,7 +264,7 @@ public class Camera extends Component{
 
         //
     }
-    @MethodArgs(args={"tittle"})
+    @MethodArgs(args ={"tittle"})
     public CameraFilter getFilter(String tittle){
         //
         return null;
@@ -272,7 +272,7 @@ public class Camera extends Component{
 
         //
     }
-    @MethodArgs(args={"classReference"})
+    @MethodArgs(args ={"classReference"})
     public CameraFilter getFilter(Class classReference){
         //
         return null;
@@ -287,15 +287,15 @@ public class Camera extends Component{
 
         //
     }
-    @MethodArgs(args={"filters"})
+    @MethodArgs(args ={"filters"})
     public void setFilters(ArrayList filters){
         //
     }
-    @MethodArgs(args={"cameraFilter"})
+    @MethodArgs(args ={"cameraFilter"})
     public void addFilter(CameraFilter cameraFilter){
         //
     }
-    @MethodArgs(args={"cameraFilter"})
+    @MethodArgs(args ={"cameraFilter"})
     public void removeFilter(CameraFilter cameraFilter){
         //
     }

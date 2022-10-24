@@ -2,7 +2,7 @@ package JAVARuntime;
 
 //
 
-@ClassCategory(cat={"Physics"})
+@ClassCategory(cat ={"Physics"})
 public class Characterbody extends PhysicsEntity{
 
     //
@@ -22,7 +22,7 @@ public class Characterbody extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"enabled"})
+    @MethodArgs(args ={"enabled"})
     public void setGravityEnabled(boolean enabled){
         //
     }
@@ -34,7 +34,7 @@ public class Characterbody extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"enabled"})
+    @MethodArgs(args ={"enabled"})
     public void setGlobalDirections(boolean enabled){
         //
     }
@@ -64,7 +64,7 @@ public class Characterbody extends PhysicsEntity{
         //
     }
     
-    @MethodArgs(args={"x","z"})
+    @MethodArgs(args ={"x","z"})
     public void setSpeed(float x, float z){
         //
     }
@@ -76,7 +76,7 @@ public class Characterbody extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setForwardSpeed(float value){
         //
     }
@@ -87,7 +87,7 @@ public class Characterbody extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setSideSpeed(float value){
         //
     }
@@ -101,7 +101,7 @@ public class Characterbody extends PhysicsEntity{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"layer"})
+    @MethodArgs(args ={"layer"})
     public void setPhysicsLayer(PhysicsLayer layer){
         //
     }
@@ -115,7 +115,7 @@ public class Characterbody extends PhysicsEntity{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"vector"})
+    @MethodArgs(args ={"vector"})
     public void setGravityMultiplier(Vector3 vector){
         //
     }
@@ -131,7 +131,7 @@ public class Characterbody extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setHeight(float value){
         //
     }
@@ -143,7 +143,7 @@ public class Characterbody extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setWidth(float value){
         //
     }
@@ -155,7 +155,7 @@ public class Characterbody extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setJumpSpeed(float value){
         //
     }
@@ -167,7 +167,7 @@ public class Characterbody extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setStepHeight(float value){
         //
     }

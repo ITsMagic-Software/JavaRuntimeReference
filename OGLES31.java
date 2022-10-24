@@ -2,12 +2,11 @@ package JAVARuntime;
 
 //
 
-import java.nio.IntBuffer;
 
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"OGL"})
+@ClassCategory(cat ={"OGL"})
 public class OGLES31 extends OGLES3 {
     //
 

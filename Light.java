@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Components"})
+@ClassCategory(cat ={"Components"})
 public class Light extends Component{
     public static final int TYPE_SUN = 0;
     public static final int TYPE_POINT = 1;
@@ -20,7 +20,7 @@ public class Light extends Component{
 
         //
     }
-    @MethodArgs(args={"type"})
+    @MethodArgs(args ={"type"})
     public Light(int type) {
         //
         super();
@@ -38,7 +38,7 @@ public class Light extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setIntensity(float value){
         //
     }
@@ -52,7 +52,7 @@ public class Light extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setDiameter(float value){
         //
     }
@@ -66,7 +66,7 @@ public class Light extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setDistance(float value){
         //
     }
@@ -80,7 +80,7 @@ public class Light extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setColor(Color value){
         //
     }
@@ -94,12 +94,12 @@ public class Light extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setShadowEnabled(boolean value){
         //
     }
 
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public void forcePriority(int idx){
         //
     }
@@ -111,7 +111,7 @@ public class Light extends Component{
 
         //
     }
-    @MethodArgs(args={"listener"})
+    @MethodArgs(args ={"listener"})
     public void setCustomLightShadowViewCalculator(CustomLightShadowViewCalculator customLightShadowViewCalculator){
         //
     }

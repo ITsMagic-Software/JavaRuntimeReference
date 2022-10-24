@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Files"})
+@ClassCategory(cat ={"Files"})
 public class FileUtils {
 
     private FileUtils() { }
@@ -20,7 +20,7 @@ public class FileUtils {
         //
     }
     @Deprecated
-    @MethodArgs(args={"filePath"})
+    @MethodArgs(args ={"filePath"})
     public static PFile newPFile(String filePath) {
         //
         return null;
@@ -29,7 +29,7 @@ public class FileUtils {
         //
     }
 
-    @MethodArgs(args={"classType"})
+    @MethodArgs(args ={"classType"})
     public static String determineClassFolder(Class classType){
         //
         return null;
@@ -37,7 +37,7 @@ public class FileUtils {
 
         //
     }
-    @MethodArgs(args={"classType"})
+    @MethodArgs(args ={"classType"})
     public static String determineClassPath(Class classType){
         //
         return null;
@@ -46,7 +46,7 @@ public class FileUtils {
         //
     }
 
-    @MethodArgs(args={"paths"})
+    @MethodArgs(args ={"paths"})
     public static String commonPath(List paths){
         //
         return null;
@@ -55,7 +55,7 @@ public class FileUtils {
         //
     }
 
-    @MethodArgs(args={"filePath"})
+    @MethodArgs(args ={"filePath"})
     public static String getFileName(String filePath){
         //
         return null;
@@ -63,7 +63,7 @@ public class FileUtils {
 
         //
     }
-    @MethodArgs(args={"filePath","hideExtension"})
+    @MethodArgs(args ={"filePath","hideExtension"})
     public static String getFileName(String filePath, boolean hideExtension){
         //
         return null;
@@ -72,7 +72,7 @@ public class FileUtils {
         //
     }
 
-    @MethodArgs(args={"filePath"})
+    @MethodArgs(args ={"filePath"})
     public static String getFileFolder(String filePath){
         //
         return null;
@@ -80,7 +80,7 @@ public class FileUtils {
 
         //
     }
-    @MethodArgs(args={"filePath"})
+    @MethodArgs(args ={"filePath"})
     public static String getExtensionName(String filePath){
         //
         return null;
@@ -88,7 +88,7 @@ public class FileUtils {
 
         //
     }
-    @MethodArgs(args={"filePath"})
+    @MethodArgs(args ={"filePath"})
     public static String removeExtension(String filePath){
         //
         return null;
@@ -96,7 +96,7 @@ public class FileUtils {
 
         //
     }
-    @MethodArgs(args={"filePath"})
+    @MethodArgs(args ={"filePath"})
     public static String getLastFolder(String filePath){
         //
         return null;

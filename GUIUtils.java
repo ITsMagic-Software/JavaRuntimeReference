@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"GUI"})
+@ClassCategory(cat ={"GUI"})
 public class GUIUtils {
     public enum TouchFilter{
         All, Pressed, Down, Up, DownAndPressed, DownAndUp, PressedAndUp
@@ -20,7 +20,7 @@ public class GUIUtils {
     private GUIUtils() { }
 
     /// Abstracts
-    @MethodArgs(args={"touch","x","y","width","height"})
+    @MethodArgs(args ={"touch","x","y","width","height"})
     public static boolean isTouchInside(Touch touch, int x, int y, int width, int height){
         //
         return false;
@@ -29,11 +29,11 @@ public class GUIUtils {
         //
     }
 
-    @MethodArgs(args={"x","y","width","height"})
+    @MethodArgs(args ={"x","y","width","height"})
     public static Touch determineTouch(int x, int y, int width, int height){
         return determineTouch(x, y, width, height, TouchFilter.All);
     }
-    @MethodArgs(args={"x","y","width","height","touchFilter"})
+    @MethodArgs(args ={"x","y","width","height","touchFilter"})
     public static Touch determineTouch(int x, int y, int width, int height, TouchFilter touchFilter){
         //
         return null;
@@ -42,11 +42,11 @@ public class GUIUtils {
         //
     }
 
-    @MethodArgs(args={"x","y","width","height"})
+    @MethodArgs(args ={"x","y","width","height"})
     public static Touch[] determineTouches(int x, int y, int width, int height){
         return determineTouches(x, y, width, height, TouchFilter.All);
     }
-    @MethodArgs(args={"x","y","width","height","touchFilter"})
+    @MethodArgs(args ={"x","y","width","height","touchFilter"})
     public static Touch[] determineTouches(int x, int y, int width, int height, TouchFilter touchFilter){
         //
         return null;
@@ -55,11 +55,11 @@ public class GUIUtils {
         //
     }
 
-    @MethodArgs(args={"x","y","width","height"})
+    @MethodArgs(args ={"x","y","width","height"})
     public static List<Touch> determineTouchList(int x, int y, int width, int height){
         return determineTouchList(x, y, width, height, TouchFilter.All);
     }
-    @MethodArgs(args={"x","y","width","height","touchFilter"})
+    @MethodArgs(args ={"x","y","width","height","touchFilter"})
     public static List<Touch> determineTouchList(int x, int y, int width, int height, TouchFilter touchFilter){
         //
         return null;

@@ -5,14 +5,16 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Laser"})
+@ClassCategory(cat ={"Laser"})
 public class Laser {
+    //
+
     //
 
     public Laser() {
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public Laser(Color color) {
         //
     }
@@ -26,12 +28,26 @@ public class Laser {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setColor(Color color){
         //
     }
 
-    @MethodArgs(args={"ray"})
+    @HideGetSet
+    public boolean isShowGizmo() {
+        //
+        return false;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"showGizmo"})
+    public void setShowGizmo(boolean showGizmo) {
+        //
+    }
+
+    @MethodArgs(args ={"ray"})
     public LaserHit trace(JAVARuntime.Ray ray){
         //
         return null;
@@ -39,7 +55,15 @@ public class Laser {
 
         //
     }
-    @MethodArgs(args={"position","direction","distance"})
+    @MethodArgs(args ={"position","direction"})
+    public LaserHit trace(Vector3 position, Vector3 direction){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"position","direction","distance"})
     public LaserHit trace(Vector3 position, Vector3 direction, float distance){
         //
         return null;
@@ -47,7 +71,7 @@ public class Laser {
 
         //
     }
-    @MethodArgs(args={"position","direction","distance","layer"})
+    @MethodArgs(args ={"position","direction","distance","layer"})
     public LaserHit trace(Vector3 position, Vector3 direction, float distance, PhysicsLayer layer){
         //
         return null;
@@ -55,8 +79,12 @@ public class Laser {
 
         //
     }
+    @MethodArgs(args ={"position","direction","layer"})
+    public LaserHit trace(Vector3 position, Vector3 direction, PhysicsLayer layer){
+        //
+        return null;
+        //
 
-    public void destroy(){
         //
     }
 }

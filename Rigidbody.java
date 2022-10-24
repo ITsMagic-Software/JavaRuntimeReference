@@ -3,8 +3,9 @@ package JAVARuntime;
 //
 
 import java.util.ArrayList;
+import java.util.List;
 
-@ClassCategory(cat={"Physics"})
+@ClassCategory(cat ={"Physics"})
 public class Rigidbody extends PhysicsEntity{
 
     //
@@ -17,7 +18,7 @@ public class Rigidbody extends PhysicsEntity{
         //
     }
 
-    @MethodArgs(args={"objectName"})
+    @MethodArgs(args ={"objectName"})
     public boolean colliderWithName(String objectName){
         //
         return false;
@@ -32,15 +33,15 @@ public class Rigidbody extends PhysicsEntity{
 
         //
     }
-    public ArrayList getCollisionList(){
+    public List<Collision> getCollisionList(){
         //
         return null;
         //
 
         //
     }
-    @MethodArgs(args={"idx"})
-    public JAVARuntime.Collision getCollisionAt(int idx){
+    @MethodArgs(args ={"idx"})
+    public Collision getCollisionAt(int idx){
         //
         return null;
         //
@@ -62,7 +63,7 @@ public class Rigidbody extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"enabled"})
+    @MethodArgs(args ={"enabled"})
     public void setGravityEnabled(boolean enabled){
         //
     }
@@ -74,7 +75,7 @@ public class Rigidbody extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setMass(float value){
         //
     }
@@ -86,7 +87,7 @@ public class Rigidbody extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setFriction(float value){
         //
     }
@@ -98,7 +99,7 @@ public class Rigidbody extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setLinearDamping(float value){
         //
     }
@@ -110,24 +111,24 @@ public class Rigidbody extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setAngularDamping(float value){
         //
     }
 
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void addForce(Vector3 vector3){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void addForce(float x, float y, float z){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void addForceBySecond(Vector3 vector3){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void addForceBySecond(float x, float y, float z){
         //
     }
@@ -141,24 +142,24 @@ public class Rigidbody extends PhysicsEntity{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"layer"})
+    @MethodArgs(args ={"layer"})
     public void setPhysicsLayer(PhysicsLayer layer){
         //
     }
 
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void addVelocity(Vector3 vector3){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void addVelocity(float x, float y, float z){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void addVelocityBySecond(Vector3 vector3){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void addVelocityBySecond(float x, float y, float z){
         //
     }
@@ -172,7 +173,7 @@ public class Rigidbody extends PhysicsEntity{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"vector"})
+    @MethodArgs(args ={"vector"})
     public void setGravityMultiplier(Vector3 vector){
         //
     }
@@ -184,7 +185,7 @@ public class Rigidbody extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setVelocity(Vector3 vector){
         //
     }

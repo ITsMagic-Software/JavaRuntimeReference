@@ -6,7 +6,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"GUI"})
+@ClassCategory(cat ={"GUI"})
 public class GUIImage extends GUIElement {
 
     private Color color;
@@ -20,36 +20,36 @@ public class GUIImage extends GUIElement {
     public GUIImage() {
         this.color = new Color();
     }
-    @MethodArgs(args={"texture","x","y","width","height"})
+    @MethodArgs(args ={"texture","x","y","width","height"})
     public GUIImage(Texture texture, int x, int y, int width, int height) {
         super(0, x, y, width, height);
         this.color = new Color();
         this.texture = texture;
     }
-    @MethodArgs(args={"color","x","y","width","height"})
+    @MethodArgs(args ={"color","x","y","width","height"})
     public GUIImage(Color color, int x, int y, int width, int height) {
         super(0, x, y, width, height);
         this.color = color;
     }
-    @MethodArgs(args={"color","texture","x","y","width","height"})
+    @MethodArgs(args ={"color","texture","x","y","width","height"})
     public GUIImage(Color color, Texture texture, int x, int y, int width, int height) {
         super(0, x, y, width, height);
         this.color = color;
         this.texture = texture;
     }
-    @MethodArgs(args={"color","texture","guiRect"})
+    @MethodArgs(args ={"color","texture","guiRect"})
     public GUIImage(Color color, Texture texture, GUIRect guiRect) {
         super(0, guiRect.getX(), guiRect.getY(), guiRect.getWidth(), guiRect.getHeight());
         this.color = color;
         this.texture = texture;
     }
-    @MethodArgs(args={"color","texture","x","y","width","height","layer"})
+    @MethodArgs(args ={"color","texture","x","y","width","height","layer"})
     public GUIImage(Color color, Texture texture, int x, int y, int width, int height, int layer) {
         super(layer, x, y, width, height);
         this.color = color;
         this.texture = texture;
     }
-    @MethodArgs(args={"color","texture","guiRect","layer"})
+    @MethodArgs(args ={"color","texture","guiRect","layer"})
     public GUIImage(Color color, Texture texture, GUIRect guiRect, int layer) {
         super(layer, guiRect.getX(), guiRect.getY(), guiRect.getWidth(), guiRect.getHeight());
         this.color = color;
@@ -61,7 +61,7 @@ public class GUIImage extends GUIElement {
         return flipX;
     }
     @HideGetSet
-    @MethodArgs(args={"flipX"})
+    @MethodArgs(args ={"flipX"})
     public void setFlipX(boolean flipX) {
         this.flipX = flipX;
     }
@@ -71,7 +71,7 @@ public class GUIImage extends GUIElement {
         return flipY;
     }
     @HideGetSet
-    @MethodArgs(args={"flipY"})
+    @MethodArgs(args ={"flipY"})
     public void setFlipY(boolean flipY) {
         this.flipY = flipY;
     }
@@ -81,7 +81,7 @@ public class GUIImage extends GUIElement {
         return color;
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setColor(Color color) {
         if(color == null){
             throw new NullPointerException("color can't be null");
@@ -94,7 +94,7 @@ public class GUIImage extends GUIElement {
         return texture;
     }
     @HideGetSet
-    @MethodArgs(args={"texture"})
+    @MethodArgs(args ={"texture"})
     public void setTexture(Texture texture) {
         this.texture = texture;
     }
@@ -104,7 +104,7 @@ public class GUIImage extends GUIElement {
         return overrideAlpha;
     }
     @HideGetSet
-    @MethodArgs(args={"overrideAlpha"})
+    @MethodArgs(args ={"overrideAlpha"})
     public void setOverrideAlpha(boolean overrideAlpha) {
         this.overrideAlpha = overrideAlpha;
     }
@@ -114,7 +114,7 @@ public class GUIImage extends GUIElement {
         return alpha;
     }
     @HideGetSet
-    @MethodArgs(args={"alpha"})
+    @MethodArgs(args ={"alpha"})
     public void setAlpha(float alpha) {
         this.alpha = alpha;
     }

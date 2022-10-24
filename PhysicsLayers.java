@@ -6,7 +6,7 @@ public class PhysicsLayers {
 
     private PhysicsLayers() {}
 
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public static PhysicsLayer findByName(String name){
         //
         return null;
@@ -15,11 +15,11 @@ public class PhysicsLayers {
         //
     }
 
-    @MethodArgs(args={"layer"})
+    @MethodArgs(args ={"layer"})
     public static void add(PhysicsLayer layer){
         //
     }
-    @MethodArgs(args={"layer"})
+    @MethodArgs(args ={"layer"})
     public static void remove(PhysicsLayer layer){
         //
     }

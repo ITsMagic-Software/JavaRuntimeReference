@@ -1,10 +1,12 @@
 package JAVARuntime;
 
 
+//
+
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Platform"})
+@ClassCategory(cat ={"Platform"})
 public class Device {
 
     private Device() { }
@@ -14,6 +16,15 @@ public class Device {
         return 0;
         //
 
+        //
+    }
+
+    @MethodArgs(args ={"url"})
+    public static void openURL(String url){
+        //
+    }
+    @MethodArgs(args ={"url"})
+    public static void openLink(String url){
         //
     }
 }

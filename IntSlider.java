@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Inspector"})
+@ClassCategory(cat ={"Inspector"})
 public class IntSlider {
     //
 
@@ -15,7 +15,7 @@ public class IntSlider {
     public int min;
     public int max;
 
-    @MethodArgs(args={"value","min","max"})
+    @MethodArgs(args ={"value","min","max"})
     public IntSlider(int value, int min, int max) {
         this.value = value;
         this.min = min;
@@ -27,7 +27,7 @@ public class IntSlider {
         return value;
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setValue(int value) {
         this.value = value;
     }
@@ -37,7 +37,7 @@ public class IntSlider {
         return min;
     }
     @HideGetSet
-    @MethodArgs(args={"min"})
+    @MethodArgs(args ={"min"})
     public void setMin(int min) {
         this.min = min;
     }
@@ -47,7 +47,7 @@ public class IntSlider {
         return max;
     }
     @HideGetSet
-    @MethodArgs(args={"max"})
+    @MethodArgs(args ={"max"})
     public void setMax(int max) {
         this.max = max;
     }

@@ -2,7 +2,7 @@ package JAVARuntime;
 
 //
 
-@ClassCategory(cat={"Shaders"})
+@ClassCategory(cat ={"Shaders"})
 public class MSRenderData {
 
     //
@@ -16,7 +16,7 @@ public class MSRenderData {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public Vertex vertexAt(int idx){
         //
         return null;
@@ -32,7 +32,7 @@ public class MSRenderData {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public ModelRenderer modelRendererAt(int idx){
         //
         return null;
@@ -48,7 +48,7 @@ public class MSRenderData {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public SkinnedModelRenderer skinnedModelRendererAt(int idx){
         //
         return null;
@@ -64,7 +64,7 @@ public class MSRenderData {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public Light lightAt(int idx){
         //
         return null;
@@ -80,7 +80,7 @@ public class MSRenderData {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public Vertex bakeAt(int idx){
         //
         return null;

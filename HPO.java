@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"HPOP"})
+@ClassCategory(cat ={"HPOP"})
 public class HPO {
     //
 
@@ -25,7 +25,7 @@ public class HPO {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"vector3"})
+    @MethodArgs(args ={"vector3"})
     public void setPosition(Vector3 vector3){
         //
     }
@@ -39,7 +39,7 @@ public class HPO {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"quaternion"})
+    @MethodArgs(args ={"quaternion"})
     public void setPosition(Quaternion quaternion){
         //
     }
@@ -53,7 +53,7 @@ public class HPO {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"vector3"})
+    @MethodArgs(args ={"vector3"})
     public void setScale(Vector3 vector3){
         //
     }
@@ -67,7 +67,7 @@ public class HPO {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setStatic(boolean value){
         //
     }

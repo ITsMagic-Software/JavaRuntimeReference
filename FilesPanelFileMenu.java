@@ -1,10 +1,10 @@
 package JAVARuntime;
 
-@ClassCategory(cat={"Files"})
+@ClassCategory(cat ={"Files"})
 public class FilesPanelFileMenu {
     private String menu;
 
-    @MethodArgs(args={"menu"})
+    @MethodArgs(args ={"menu"})
     public FilesPanelFileMenu(String menu) {
         this.menu = menu;
     }
@@ -12,12 +12,12 @@ public class FilesPanelFileMenu {
     public String getMenu() {
         return menu;
     }
-    @MethodArgs(args={"menu"})
+    @MethodArgs(args ={"menu"})
     public void setMenu(String menu) {
         this.menu = menu;
     }
 
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public void onClick(File file){
 
     }

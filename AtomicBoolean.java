@@ -6,14 +6,14 @@ package JAVARuntime;
  * MethodArgs filled by Carlos at 22-04-2022
  * Extends java.util.concurrent.atomic.AtomicBoolean
  */
-@ClassCategory(cat={"Atomic"})
+@ClassCategory(cat ={"Atomic"})
 public class AtomicBoolean {
     //
 
     public AtomicBoolean() {
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public AtomicBoolean(boolean value) {
         //
     }
@@ -25,15 +25,15 @@ public class AtomicBoolean {
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void set(boolean value){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void lazySet(boolean value){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean getAndSet(boolean value){
         //
         return false;
@@ -42,7 +42,7 @@ public class AtomicBoolean {
         //
     }
     
-    @MethodArgs(args={"expect","update"})
+    @MethodArgs(args ={"expect","update"})
     public boolean compareAndSet(boolean expect, boolean update){
         //
         return false;
@@ -50,7 +50,7 @@ public class AtomicBoolean {
 
         //
     }
-    @MethodArgs(args={"expect","update"})
+    @MethodArgs(args ={"expect","update"})
     public boolean weakCompareAndSet(boolean expect, boolean update){
         //
         return false;

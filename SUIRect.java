@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI"})
 public class SUIRect extends Component{
     //
 
@@ -26,7 +26,7 @@ public class SUIRect extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setRotation(Quaternion value){
         //
     }
@@ -73,12 +73,12 @@ public class SUIRect extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setLayer(int value){
         //
     }
 
-    @MethodArgs(args={"entry"})
+    @MethodArgs(args ={"entry"})
     public int getInt(String entry){
         //
         return 0;
@@ -86,12 +86,12 @@ public class SUIRect extends Component{
 
         //
     }
-    @MethodArgs(args={"entry","value"})
+    @MethodArgs(args ={"entry","value"})
     public void setInt(String entry, int value){
         //
     }
 
-    @MethodArgs(args={"entry"})
+    @MethodArgs(args ={"entry"})
     public float getFloat(String entry){
         //
         return 0;
@@ -99,12 +99,12 @@ public class SUIRect extends Component{
 
         //
     }
-    @MethodArgs(args={"entry","value"})
+    @MethodArgs(args ={"entry","value"})
     public void setFloat(String entry, float value){
         //
     }
 
-    @MethodArgs(args={"entry"})
+    @MethodArgs(args ={"entry"})
     public SUnitType getUnit(String entry){
         //
         return null;
@@ -112,12 +112,12 @@ public class SUIRect extends Component{
 
         //
     }
-    @MethodArgs(args={"entry","value"})
+    @MethodArgs(args ={"entry","value"})
     public void setUnit(String entry, SUnitType value){
         //
     }
 
-    @MethodArgs(args={"entry"})
+    @MethodArgs(args ={"entry"})
     public SpatialObject getAnchorObject(String entry){
         //
         return null;
@@ -125,12 +125,12 @@ public class SUIRect extends Component{
 
         //
     }
-    @MethodArgs(args={"entry","value"})
+    @MethodArgs(args ={"entry","value"})
     public void setAnchorObject(String entry, SpatialObject value){
         //
     }
 
-    @MethodArgs(args={"entry"})
+    @MethodArgs(args ={"entry"})
     public SVerticalConstraintTarget getVerticalAnchorType(String entry){
         //
         return null;
@@ -138,12 +138,12 @@ public class SUIRect extends Component{
 
         //
     }
-    @MethodArgs(args={"entry","value"})
+    @MethodArgs(args ={"entry","value"})
     public void setVerticalAnchorType(String entry, SVerticalConstraintTarget value){
         //
     }
 
-    @MethodArgs(args={"entry"})
+    @MethodArgs(args ={"entry"})
     public SHorizontalConstraintTarget getHorizontalAnchorType(String entry){
         //
         return null;
@@ -151,7 +151,7 @@ public class SUIRect extends Component{
 
         //
     }
-    @MethodArgs(args={"entry","value"})
+    @MethodArgs(args ={"entry","value"})
     public void setHorizontalAnchorType(String entry, SHorizontalConstraintTarget value){
         //
     }

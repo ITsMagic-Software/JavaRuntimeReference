@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Physics"})
+@ClassCategory(cat ={"Physics"})
 public class ObjectPhysics {
 
     //
@@ -31,7 +31,7 @@ public class ObjectPhysics {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"vehiclePhysics"})
+    @MethodArgs(args ={"vehiclePhysics"})
     public void setVehiclePhysics(VehiclePhysics vehiclePhysics){
         //
     }

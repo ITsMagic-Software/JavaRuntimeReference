@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"GUI"})
+@ClassCategory(cat ={"GUI"})
 public class GUIElement {
 
     private int layer, x, y, width, height;
@@ -13,11 +13,11 @@ public class GUIElement {
 
     public GUIElement() {
     }
-    @MethodArgs(args={"layer"})
+    @MethodArgs(args ={"layer"})
     public GUIElement(int layer) {
         this.layer = layer;
     }
-    @MethodArgs(args={"layer","x","y","width","height"})
+    @MethodArgs(args ={"layer","x","y","width","height"})
     public GUIElement(int layer, int x, int y, int width, int height) {
         this.layer = layer;
         this.x = x;
@@ -35,7 +35,7 @@ public class GUIElement {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public GUIElement setLayer(int value){
         //
         return this;
@@ -46,7 +46,7 @@ public class GUIElement {
         return x;
     }
     @HideGetSet
-    @MethodArgs(args={"x"})
+    @MethodArgs(args ={"x"})
     public GUIElement setX(int x) {
         this.x = x;
         return this;
@@ -57,7 +57,7 @@ public class GUIElement {
         return y;
     }
     @HideGetSet
-    @MethodArgs(args={"y"})
+    @MethodArgs(args ={"y"})
     public GUIElement setY(int y) {
         this.y = y;
         return this;
@@ -68,7 +68,7 @@ public class GUIElement {
         return width;
     }
     @HideGetSet
-    @MethodArgs(args={"width"})
+    @MethodArgs(args ={"width"})
     public GUIElement setWidth(int width) {
         this.width = width;
         return this;
@@ -79,13 +79,13 @@ public class GUIElement {
         return height;
     }
     @HideGetSet
-    @MethodArgs(args={"height"})
+    @MethodArgs(args ={"height"})
     public GUIElement setHeight(int height) {
         this.height = height;
         return this;
     }
 
-    @MethodArgs(args={"x","y","w","h"})
+    @MethodArgs(args ={"x","y","w","h"})
     public GUIElement set(int x, int y, int w, int h) {
         this.x = x;
         this.y = y;
@@ -99,21 +99,21 @@ public class GUIElement {
         return rotation;
     }
     @HideGetSet
-    @MethodArgs(args={"rotation"})
+    @MethodArgs(args ={"rotation"})
     public GUIElement setRotation(Quaternion rotation) {
         this.rotation = rotation;
         return this;
     }
 
-    @MethodArgs(args={"v"})
+    @MethodArgs(args ={"v"})
     public void setRotationX(float v){
         //
     }
-    @MethodArgs(args={"v"})
+    @MethodArgs(args ={"v"})
     public void setRotationY(float v){
         //
     }
-    @MethodArgs(args={"v"})
+    @MethodArgs(args ={"v"})
     public void setRotationZ(float v){
         //
     }

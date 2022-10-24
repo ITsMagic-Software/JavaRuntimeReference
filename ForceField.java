@@ -4,7 +4,7 @@ package JAVARuntime;
 
 import java.util.ArrayList;
 
-@ClassCategory(cat={"Physics"})
+@ClassCategory(cat ={"Physics"})
 public class ForceField extends PhysicsEntity{
 
     //
@@ -38,7 +38,7 @@ public class ForceField extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public JAVARuntime.Collision getTrigger(int idx){
         //
         return null;

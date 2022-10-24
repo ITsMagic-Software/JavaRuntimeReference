@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Constraint"})
+@ClassCategory(cat ={"Constraint"})
 public class PointConstraint extends Component{
     //
 
@@ -24,7 +24,7 @@ public class PointConstraint extends Component{
 
         //
     }
-    @MethodArgs(args={"object"})
+    @MethodArgs(args ={"object"})
     public void setObjectA(SpatialObject object){
         //
     }
@@ -35,7 +35,7 @@ public class PointConstraint extends Component{
 
         //
     }
-    @MethodArgs(args={"object"})
+    @MethodArgs(args ={"object"})
     public void setObjectB(SpatialObject object){
         //
     }
@@ -47,7 +47,7 @@ public class PointConstraint extends Component{
 
         //
     }
-    @MethodArgs(args={"object"})
+    @MethodArgs(args ={"object"})
     public void setPointA(SpatialObject object){
         //
     }
@@ -58,7 +58,7 @@ public class PointConstraint extends Component{
 
         //
     }
-    @MethodArgs(args={"object"})
+    @MethodArgs(args ={"object"})
     public void setPointB(SpatialObject object){
         //
     }

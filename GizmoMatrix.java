@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Debug"})
+@ClassCategory(cat ={"Debug"})
 public class GizmoMatrix extends GizmoElement{
 
     private float[] matrix;
@@ -24,7 +24,7 @@ public class GizmoMatrix extends GizmoElement{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"matrix"})
+    @MethodArgs(args ={"matrix"})
     public void setMatrix(float[] matrix) {
         this.matrix = matrix;
     }

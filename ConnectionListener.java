@@ -6,6 +6,6 @@ package JAVARuntime;
 public interface ConnectionListener {
     void onConnected();
     void onDisconnected();
-    @MethodArgs(args={"error","code"})
+    @MethodArgs(args ={"error","code"})
     void onError(String error, int code);
 }

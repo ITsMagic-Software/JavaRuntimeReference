@@ -6,7 +6,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 
-@ClassCategory(cat={"Editor"})
+@ClassCategory(cat ={"Editor"})
 public class CanvasPanel extends EditorPanel {
     public enum DrawMode{ CopyPixels, DirectDraw }
     public static class DrawParams{

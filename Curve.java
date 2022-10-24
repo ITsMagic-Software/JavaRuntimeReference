@@ -6,7 +6,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Vector"})
+@ClassCategory(cat ={"Vector"})
 public class Curve {
     public enum WrapMode{
         Loop, ClampToBorder, PingPong

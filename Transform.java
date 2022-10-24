@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Object"})
+@ClassCategory(cat ={"Object"})
 public class Transform{
     public static final int STATE_DYNAMIC = 0;
     public static final int STATE_SEMI_STATIC = 1;
@@ -26,11 +26,11 @@ public class Transform{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"vector"})
+    @MethodArgs(args ={"vector"})
     public void setPosition(Vector3 vector){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void setPosition(float x, float y, float z){
         //
     }
@@ -44,11 +44,11 @@ public class Transform{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"quaternion"})
+    @MethodArgs(args ={"quaternion"})
     public void setRotation(Quaternion quaternion){
         //
     }
-    @MethodArgs(args={"w","x","y","z"})
+    @MethodArgs(args ={"w","x","y","z"})
     public void setRotation(float w, float x, float y, float z){
         //
     }
@@ -62,12 +62,16 @@ public class Transform{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"vector"})
+    @MethodArgs(args ={"vector"})
     public void setScale(Vector3 vector){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void setScale(float x, float y, float z){
+        //
+    }
+    @MethodArgs(args ={"all"})
+    public void setScale(float a){
         //
     }
 
@@ -118,136 +122,136 @@ public class Transform{
     }
 
 
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void translate(float x, float y, float z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void move(float x, float y, float z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void rotate(float x, float y, float z){
         //
     }
 
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void translateInSeconds(float x, float y, float z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void translateInSeconds(int x, int y, int z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void translateInSeconds(int x, int y, float z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void translateInSeconds(int x, float y, int z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void translateInSeconds(float x, int y, int z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void translateInSeconds(float x, float y, int z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void translateInSeconds(int x, float y, float z){
         //
     }
 
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void moveInSeconds(float x, float y, float z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void moveInSeconds(int x, int y, int z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void moveInSeconds(int x, int y, float z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void moveInSeconds(int x, float y, int z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void moveInSeconds(float x, int y, int z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void moveInSeconds(float x, float y, int z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void moveInSeconds(int x, float y, float z){
         //
     }
 
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void rotateInSeconds(float x, float y, float z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void rotateInSeconds(int x, int y, int z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void rotateInSeconds(int x, int y, float z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void rotateInSeconds(int x, float y, int z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void rotateInSeconds(float x, int y, int z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void rotateInSeconds(float x, float y, int z){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void rotateInSeconds(int x, float y, float z){
         //
     }
 
-    @MethodArgs(args={"object"})
+    @MethodArgs(args ={"object"})
     public void lookTo(SpatialObject object){
         //
     }
-    @MethodArgs(args={"position"})
+    @MethodArgs(args ={"position"})
     public void lookTo(Vector3 position){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void lookTo(float x, float y, float z){
         //
     }
-    @MethodArgs(args={"object"})
+    @MethodArgs(args ={"object"})
     public void lookToIgnoreY(SpatialObject object){
         //
     }
-    @MethodArgs(args={"position"})
+    @MethodArgs(args ={"position"})
     public void lookToIgnoreY(Vector3 position){
         //
     }
-    @MethodArgs(args={"object"})
+    @MethodArgs(args ={"object"})
     public void teleportTo(SpatialObject object){
         //
     }
-    @MethodArgs(args={"position"})
+    @MethodArgs(args ={"position"})
     public void teleportTo(Vector3 position){
         //
     }
 
-    @MethodArgs(args={"vector3"})
+    @MethodArgs(args ={"vector3"})
     public Vector3 transformPoint(Vector3 vector3){
         //
         return null;
@@ -255,11 +259,11 @@ public class Transform{
 
         //
     }
-    @MethodArgs(args={"vector3","out"})
+    @MethodArgs(args ={"vector3","out"})
     public void transformPoint(Vector3 vector3, Vector3 out){
         //
     }
-    @MethodArgs(args={"vector3"})
+    @MethodArgs(args ={"vector3"})
     public Vector3 inverseTransformPoint(Vector3 vector3){
         //
         return null;
@@ -267,12 +271,12 @@ public class Transform{
 
         //
     }
-    @MethodArgs(args={"vector3","out"})
+    @MethodArgs(args ={"vector3","out"})
     public void inverseTransformPoint(Vector3 vector3, Vector3 out){
         //
     }
 
-    @MethodArgs(args={"vector3"})
+    @MethodArgs(args ={"vector3"})
     public Vector3 transformDirection(Vector3 vector3){
         //
         return null;
@@ -280,12 +284,12 @@ public class Transform{
 
         //
     }
-    @MethodArgs(args={"vector3","out"})
+    @MethodArgs(args ={"vector3","out"})
     public void transformDirection(Vector3 vector3, Vector3 out){
         //
     }
 
-    @MethodArgs(args={"vector3"})
+    @MethodArgs(args ={"vector3"})
     public Vector3 inverseTransformDirection(Vector3 vector3){
         //
         return null;
@@ -293,7 +297,7 @@ public class Transform{
 
         //
     }
-    @MethodArgs(args={"vector3","out"})
+    @MethodArgs(args ={"vector3","out"})
     public void inverseTransformDirection(Vector3 vector3, Vector3 out){
         //
     }
@@ -341,7 +345,7 @@ public class Transform{
         //
     }
 
-    @MethodArgs(args={"out"})
+    @MethodArgs(args ={"out"})
     public Vector3 forward(Vector3 out){
         //
         return null;
@@ -349,7 +353,7 @@ public class Transform{
 
         //
     }
-    @MethodArgs(args={"out"})
+    @MethodArgs(args ={"out"})
     public Vector3 back(Vector3 out){
         //
         return null;
@@ -357,7 +361,7 @@ public class Transform{
 
         //
     }
-    @MethodArgs(args={"out"})
+    @MethodArgs(args ={"out"})
     public Vector3 right(Vector3 out){
         //
         return null;
@@ -365,7 +369,7 @@ public class Transform{
 
         //
     }
-    @MethodArgs(args={"out"})
+    @MethodArgs(args ={"out"})
     public Vector3 left(Vector3 out){
         //
         return null;
@@ -373,7 +377,7 @@ public class Transform{
 
         //
     }
-    @MethodArgs(args={"out"})
+    @MethodArgs(args ={"out"})
     public Vector3 up(Vector3 out){
         //
         return null;
@@ -381,7 +385,7 @@ public class Transform{
 
         //
     }
-    @MethodArgs(args={"out"})
+    @MethodArgs(args ={"out"})
     public Vector3 down(Vector3 out){
         //
         return null;
@@ -390,7 +394,7 @@ public class Transform{
         //
     }
 
-    @MethodArgs(args={"other"})
+    @MethodArgs(args ={"other"})
     public float globalDistance(SpatialObject other) {
         //
         return 0;
@@ -398,7 +402,7 @@ public class Transform{
 
         //
     }
-    @MethodArgs(args={"other"})
+    @MethodArgs(args ={"other"})
     public float globalDistance(Transform other) {
         //
         return 0;
@@ -406,7 +410,7 @@ public class Transform{
 
         //
     }
-    @MethodArgs(args={"other"})
+    @MethodArgs(args ={"other"})
     public float globalDistance(Vector3 other) {
         //
         return 0;
@@ -424,7 +428,7 @@ public class Transform{
         //
     }
     @Deprecated
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setStatic(boolean value){
         //
     }
@@ -436,7 +440,7 @@ public class Transform{
 
         //
     }
-    @MethodArgs(args={"state"})
+    @MethodArgs(args ={"state"})
     public void setState(int state){
         //
     }
@@ -456,7 +460,7 @@ public class Transform{
         //
     }
 
-    @MethodArgs(args={"vector"})
+    @MethodArgs(args ={"vector"})
     public Vector3 mulGlobalVector3(Vector3 vector3){
         //
         return null;
@@ -464,7 +468,7 @@ public class Transform{
 
         //
     }
-    @MethodArgs(args={"vector"})
+    @MethodArgs(args ={"vector"})
     public Vector3 mulLocalVector3(Vector3 vector3){
         //
         return null;

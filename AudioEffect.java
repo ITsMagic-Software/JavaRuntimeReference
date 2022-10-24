@@ -6,11 +6,11 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  * MethodArgs filled by Carlos at 22-04-2022
  */
-@ClassCategory(cat={"SoundEffects"})
+@ClassCategory(cat ={"SoundEffects"})
 public class AudioEffect {
 
     //
-    @MethodArgs(args={"tittle"})
+    @MethodArgs(args ={"tittle"})
     public AudioEffect(String tittle) {
         //
     }
@@ -24,7 +24,7 @@ public class AudioEffect {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"tittle"})
+    @MethodArgs(args ={"tittle"})
     public void setTittle(String tittle){
         //
     }

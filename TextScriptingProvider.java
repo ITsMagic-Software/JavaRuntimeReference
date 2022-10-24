@@ -9,11 +9,11 @@ public class TextScriptingProvider {
         return null;
     }
 
-    @MethodArgs(args={"lineNumber", "text"})
+    @MethodArgs(args ={"lineNumber", "text"})
     public void processLine(int lineNumber, String text) {
 
     }
-    @MethodArgs(args={"lineNumber"})
+    @MethodArgs(args ={"lineNumber"})
     public void deleteLine(int lineNumber) {
 
     }

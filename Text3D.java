@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Components"})
+@ClassCategory(cat ={"Components"})
 public class Text3D extends Component{
     //
 
@@ -17,10 +17,8 @@ public class Text3D extends Component{
         //
     }
 
-    //
-
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setFont(Font font){
         //
     }
@@ -42,7 +40,7 @@ public class Text3D extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"text"})
+    @MethodArgs(args ={"text"})
     public void setText(String text) {
         //
     }
@@ -56,7 +54,7 @@ public class Text3D extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setColor(Color color) {
         //
     }
@@ -99,7 +97,7 @@ public class Text3D extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"scale"})
+    @MethodArgs(args ={"scale"})
     public void setScale(float scale) {
         //
     }
@@ -113,8 +111,10 @@ public class Text3D extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"resolution"})
+    @MethodArgs(args ={"resolution"})
     public void setResolution(int resolution) {
         //
     }
+
+    //
 }

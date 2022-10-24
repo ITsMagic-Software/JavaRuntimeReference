@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * A bridge that calls between java runtime and Java Collections.synchronizedList
  * Collections.synchronizedList was not made by ITsMagic
  */
-@ClassCategory(cat={"Lists"})
+@ClassCategory(cat ={"Lists"})
 public class ListStream {
     public static final int HALF_THREADS = 411;
     public static final int MAX_THREADS = 412;
@@ -17,37 +17,37 @@ public class ListStream {
 
     //
 
-    @MethodArgs(args={"list"})
+    @MethodArgs(args ={"list"})
     public ListStream(List list) {
         //
     }
-    @MethodArgs(args={"list","threadsSequence","listStreamListener"})
+    @MethodArgs(args ={"list","threadsSequence","listStreamListener"})
     public ListStream(List list, int threadsSequence, ListStreamListener listStreamListener) {
         //
     }
-    @MethodArgs(args={"userData","list","threadsSequence","listStreamListener"})
+    @MethodArgs(args ={"userData","list","threadsSequence","listStreamListener"})
     public ListStream(Object userData, List list, int threadsSequence, ListStreamListener listStreamListener) {
         //
     }
-    @MethodArgs(args={"list","threadsSequence","threadsCount","listStreamListener"})
+    @MethodArgs(args ={"list","threadsSequence","threadsCount","listStreamListener"})
     public ListStream(List list, int threadsSequence, int threadsCount, ListStreamListener listStreamListener) {
         //
     }
-    @MethodArgs(args={"userData","list","threadsSequence","threadsCount","listStreamListener"})
+    @MethodArgs(args ={"userData","list","threadsSequence","threadsCount","listStreamListener"})
     public ListStream(Object userData,List list, int threadsSequence, int threadsCount, ListStreamListener listStreamListener) {
         //
     }
 
 
-    @MethodArgs(args={"threadsSequence"})
+    @MethodArgs(args ={"threadsSequence"})
     public void setThreadsSequence(int threadsSequence) {
         //
     }
-    @MethodArgs(args={"threadsCount"})
+    @MethodArgs(args ={"threadsCount"})
     public void setThreadsCount(int threadsCount) {
         //
     }
-    @MethodArgs(args={"listStreamListener"})
+    @MethodArgs(args ={"listStreamListener"})
     public void setListStreamListener(ListStreamListener listStreamListener) {
         //
     }

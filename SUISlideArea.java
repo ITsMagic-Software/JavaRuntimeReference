@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI"})
 public class SUISlideArea extends Component{
     //
 
@@ -26,7 +26,7 @@ public class SUISlideArea extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"key"})
+    @MethodArgs(args ={"key"})
     public void setAxis(Axis axis){
         //
     }
@@ -40,7 +40,7 @@ public class SUISlideArea extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public void setAxisName(String name){
         //
     }
@@ -80,7 +80,7 @@ public class SUISlideArea extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setClickable(boolean value){
         //
     }
@@ -94,7 +94,7 @@ public class SUISlideArea extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setTargetRectType(STargetRect value){
         //
     }
@@ -108,7 +108,7 @@ public class SUISlideArea extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"object"})
+    @MethodArgs(args ={"object"})
     public void setTargetRectObject(SpatialObject object){
         //
     }

@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI"})
 public class SUICircularProgressBar extends Component{
     //
 
@@ -27,7 +27,7 @@ public class SUICircularProgressBar extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setValue(float value) {
         //
     }
@@ -41,7 +41,7 @@ public class SUICircularProgressBar extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setMaxValue(float value) {
         //
     }
@@ -55,7 +55,7 @@ public class SUICircularProgressBar extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setMaskMaxLength(float value) {
         //
     }
@@ -69,7 +69,7 @@ public class SUICircularProgressBar extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setTextEnabled(boolean value) {
         //
     }
@@ -83,7 +83,7 @@ public class SUICircularProgressBar extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setMaskEnabled(boolean value) {
         //
     }

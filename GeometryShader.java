@@ -5,7 +5,7 @@ package JAVARuntime;
 import java.io.IOException;
 import java.io.InputStream;
 
-@ClassCategory(cat={"Shaders"})
+@ClassCategory(cat ={"Shaders"})
 public class GeometryShader {
     public String code;
     public GeometryShader(String code) {
@@ -30,7 +30,7 @@ public class GeometryShader {
     }
     */
 
-    @MethodArgs(args={"inputStream"})
+    @MethodArgs(args ={"inputStream"})
     public static GeometryShader loadInputStream(InputStream inputStream) throws IOException {
         //
         return null;

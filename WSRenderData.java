@@ -2,7 +2,7 @@ package JAVARuntime;
 
 //
 
-@ClassCategory(cat={"Shaders"})
+@ClassCategory(cat ={"Shaders"})
 public class WSRenderData {
 
     //
@@ -16,7 +16,7 @@ public class WSRenderData {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public Light lightAt(int idx){
         //
         return null;
@@ -32,7 +32,7 @@ public class WSRenderData {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public Camera bakeAt(int idx) {
         //
         return null;

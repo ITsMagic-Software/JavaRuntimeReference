@@ -1,6 +1,6 @@
 package JAVARuntime;
 
-@ClassCategory(cat={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI"})
 public enum STextAlignment {
     TopLeft, TopCenter, TopRight,
     MiddleLeft, MiddleCenter, MiddleRight,

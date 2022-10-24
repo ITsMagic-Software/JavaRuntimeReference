@@ -1,49 +1,49 @@
 package JAVARuntime;
 //
 
-@ClassCategory(cat={"Buffers"})
+@ClassCategory(cat ={"Buffers"})
 public class OHDataBase {
 
     //
 
-    @MethodArgs(args={"capacity"})
+    @MethodArgs(args ={"capacity"})
     public OHDataBase(int capacity){
         //
     }
 
-    @MethodArgs(args={"size"})
+    @MethodArgs(args ={"size"})
     public void incrementSize(int size){
         //
     }
-    @MethodArgs(args={"size"})
+    @MethodArgs(args ={"size"})
     public void decrementSize(int size){
         //
     }
 
-    @MethodArgs(args={"capacity"})
+    @MethodArgs(args ={"capacity"})
     public void resize(int newCapacity){
         //
     }
-    @MethodArgs(args={"capacity","copyData"})
+    @MethodArgs(args ={"capacity","copyData"})
     public void resize(int newCapacity, boolean copyData){
         //
     }
 
-    @MethodArgs(args={"position"})
+    @MethodArgs(args ={"position"})
     public void position(int position){
         //
     }
 
-    @MethodArgs(args={"bytes"})
+    @MethodArgs(args ={"bytes"})
     public void put(byte[] bytes){
         //
     }
-    @MethodArgs(args={"position","value"})
+    @MethodArgs(args ={"position","value"})
     public void set(int position, byte value){
         //
     }
 
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public byte get(int idx){
         //
         return 0;

@@ -7,7 +7,7 @@ package JAVARuntime;
  * A bridge that calls between java runtime and Java Collections.synchronizedList
  * Collections.synchronizedList was not made by ITsMagic
  */
-@ClassCategory(cat={"Lists"})
+@ClassCategory(cat ={"Lists"})
 public class SynchronizedArrayList extends SynchronizedList {
 
     public SynchronizedArrayList() {

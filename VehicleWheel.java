@@ -4,7 +4,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Physics","Components"})
+@ClassCategory(cat ={"Physics","Components"})
 public class VehicleWheel extends Component{
     public enum Type{
         ContactPoint, Model
@@ -19,7 +19,7 @@ public class VehicleWheel extends Component{
 
         //
     }
-    @MethodArgs(args={"type"})
+    @MethodArgs(args ={"type"})
     public VehicleWheel(Type type) {
         this();
         //
@@ -34,7 +34,7 @@ public class VehicleWheel extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setRadius(float value){
         //
     }
@@ -48,7 +48,7 @@ public class VehicleWheel extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setSuspensionRestLength(float value){
         //
     }
@@ -62,7 +62,7 @@ public class VehicleWheel extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setFrictionSlip(float value){
         //
     }
@@ -76,7 +76,7 @@ public class VehicleWheel extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setPosPhysicsFunctionEnabled(boolean value){
         //
     }
@@ -98,19 +98,19 @@ public class VehicleWheel extends Component{
         //
     }
 
-    @MethodArgs(args={"torque"})
+    @MethodArgs(args ={"torque"})
     public void setTorque(float torque){
         //
     }
-    @MethodArgs(args={"brake"})
+    @MethodArgs(args ={"brake"})
     public void setBrake(float brake){
         //
     }
-    @MethodArgs(args={"steer"})
+    @MethodArgs(args ={"steer"})
     public void setSteer(float steer){
         //
     }
-    @MethodArgs(args={"steer"})
+    @MethodArgs(args ={"steer"})
     public void setSteerRelativeVelocity(float steer){
         //
     }
@@ -124,12 +124,12 @@ public class VehicleWheel extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"torque"})
+    @MethodArgs(args ={"torque"})
     public void setShowGizmo(boolean value){
         //
     }
 
-    @MethodArgs(args={"type"})
+    @MethodArgs(args ={"type"})
     public void setType(Type type){
         //
     }

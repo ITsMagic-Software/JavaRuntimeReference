@@ -1,25 +1,25 @@
 package JAVARuntime;
 
 
-@ClassCategory(cat={"Utils"})
+@ClassCategory(cat ={"Utils"})
 public class AbstractCameraObjectFilter implements CameraObjectFilter {
-    @MethodArgs(args={"light"})
+    @MethodArgs(args ={"light"})
     public boolean filterLight(Light light) {
         return true;
     }
-    @MethodArgs(args={"renderer"})
+    @MethodArgs(args ={"renderer"})
     public boolean filterRenderer(ModelRenderer renderer) {
         return true;
     }
-    @MethodArgs(args={"renderer"})
+    @MethodArgs(args ={"renderer"})
     public boolean filterRenderer(SkinnedModelRenderer renderer) {
         return true;
     }
-    @MethodArgs(args={"material","bake"})
+    @MethodArgs(args ={"material","bake"})
     public boolean filterMaterialBake(Material material, Vertex bake) {
         return true;
     }
-    @MethodArgs(args={"component"})
+    @MethodArgs(args ={"component"})
     public boolean filter3DText(Component component) {
         return true;
     }

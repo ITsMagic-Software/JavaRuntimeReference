@@ -5,11 +5,38 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Input"})
+@ClassCategory(cat ={"Input"})
 public class KeyboardButton {
     //
 
     public KeyboardButton() {
+        //
+    }
+
+    @HideGetSet
+    public String getName(){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    @HideGetSet
+    public String getPrintableName(){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    @HideGetSet
+    public boolean isUpperCase(){
+        //
+        return false;
+        //
+
         //
     }
 
@@ -22,7 +49,7 @@ public class KeyboardButton {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setPressed(boolean value){
         //
     }
@@ -36,7 +63,7 @@ public class KeyboardButton {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setDown(boolean value){
         //
     }
@@ -50,7 +77,7 @@ public class KeyboardButton {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setLongDown(boolean value){
         //
     }
@@ -64,7 +91,7 @@ public class KeyboardButton {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setLongPressed(boolean value){
         //
     }

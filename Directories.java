@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Platform"})
+@ClassCategory(cat ={"Platform"})
 public class Directories {
     //
 

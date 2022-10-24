@@ -6,16 +6,16 @@ import java.nio.ByteBuffer;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Buffers"})
+@ClassCategory(cat ={"Buffers"})
 public class NativeByteBuffer {
     //
 
-    @MethodArgs(args={"capacity"})
+    @MethodArgs(args ={"capacity"})
     public NativeByteBuffer(int capacity) {
         //
     }
 
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public byte get(int index){
         //
         return 0;
@@ -23,11 +23,11 @@ public class NativeByteBuffer {
 
         //
     }
-    @MethodArgs(args={"idx","value"})
+    @MethodArgs(args ={"idx","value"})
     public void set(int index, byte value){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void put(byte value){
         //
     }
@@ -46,11 +46,11 @@ public class NativeByteBuffer {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public void Position(int idx){
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public void setPosition(int idx){
         //
     }

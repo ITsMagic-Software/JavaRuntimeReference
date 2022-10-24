@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI"})
 public class SUIText extends Component{
     //
 
@@ -26,7 +26,7 @@ public class SUIText extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setColor(Color color){
         //
     }
@@ -40,8 +40,13 @@ public class SUIText extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"text"})
+    @MethodArgs(args ={"text"})
     public void setText(String text){
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"textLines"})
+    public void setText(String... text){
         //
     }
 
@@ -54,7 +59,7 @@ public class SUIText extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setResolution(int value){
         //
     }
@@ -67,11 +72,11 @@ public class SUIText extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setResolutionUnitType(SUnitType value){
         //
     }
-    @MethodArgs(args={"value","unitType"})
+    @MethodArgs(args ={"value","unitType"})
     public void setResolution(int value, SUnitType unitType){
         //
     }
@@ -114,7 +119,7 @@ public class SUIText extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setScale(float value){
         //
     }
@@ -129,7 +134,7 @@ public class SUIText extends Component{
     }
     @HideGetSet
 
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setAlignment(STextAlignment value){
         //
     }
@@ -143,7 +148,7 @@ public class SUIText extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setIgnoreMask(boolean value){
         //
     }
@@ -157,7 +162,7 @@ public class SUIText extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setFont(Font value){
         //
     }

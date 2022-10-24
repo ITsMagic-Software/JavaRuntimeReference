@@ -6,7 +6,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Vector","Buffers"})
+@ClassCategory(cat ={"Vector","Buffers"})
 public class Point3Buffer {
     //
 
@@ -15,7 +15,7 @@ public class Point3Buffer {
         //
     }
 
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public Point3 get(int idx){
         //
         return null;
@@ -23,7 +23,7 @@ public class Point3Buffer {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public float getX(int idx){
         //
         return 0;
@@ -31,7 +31,7 @@ public class Point3Buffer {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public float getY(int idx){
         //
         return 0;
@@ -39,7 +39,7 @@ public class Point3Buffer {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public float getZ(int idx){
         //
         return 0;
@@ -48,20 +48,20 @@ public class Point3Buffer {
         //
     }
 
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void put(Point3 point3){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void put(int x, int y, int z){
         //
     }
 
-    @MethodArgs(args={"idx","value"})
+    @MethodArgs(args ={"idx","value"})
     public void set(int idx, Point3 point3){
         //
     }
-    @MethodArgs(args={"idx","x","y","z"})
+    @MethodArgs(args ={"idx","x","y","z"})
     public void set(int idx, int x, int y, int z){
         //
     }
@@ -82,7 +82,7 @@ public class Point3Buffer {
         //
     }
 
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public void position(int idx){
         //
     }
@@ -96,7 +96,7 @@ public class Point3Buffer {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setVboEnabled(boolean value){
         //
     }

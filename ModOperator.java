@@ -1,7 +1,7 @@
 package JAVARuntime;
 
-@ClassCategory(cat={"EngineOverride"})
+@ClassCategory(cat ={"EngineOverride"})
 public interface ModOperator {
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     <T> T mod(Object otherObject);
 }

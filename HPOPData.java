@@ -7,7 +7,7 @@ import java.util.ArrayList;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"HPOP"})
+@ClassCategory(cat ={"HPOP"})
 public class HPOPData {
     //
 
@@ -24,12 +24,12 @@ public class HPOPData {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"list"})
+    @MethodArgs(args ={"list"})
     public void setHPOList(ArrayList list){
         //
     }
 
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public JAVARuntime.HPO getHPO(int idx){
         //
         return null;
@@ -37,11 +37,11 @@ public class HPOPData {
 
         //
     }
-    @MethodArgs(args={"hpo"})
+    @MethodArgs(args ={"hpo"})
     public void addHPO(JAVARuntime.HPO hpo){
         //
     }
-    @MethodArgs(args={"hpo"})
+    @MethodArgs(args ={"hpo"})
     public void removeHPO(JAVARuntime.HPO hpo){
         //
     }

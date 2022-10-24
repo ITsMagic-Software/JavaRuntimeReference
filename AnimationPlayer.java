@@ -4,7 +4,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  * MethodArgs filled by Carlos at 22-04-2022
  */
-@ClassCategory(cat={"Components","Animations"})
+@ClassCategory(cat ={"Components","Animations"})
 public class AnimationPlayer extends Component{
     //
 
@@ -15,7 +15,8 @@ public class AnimationPlayer extends Component{
 
         //
     }
-    @MethodArgs(args={"name"})
+
+    @MethodArgs(args ={"name"})
     public Animation getAnimation(String name) {
         //
         return null;
@@ -23,7 +24,7 @@ public class AnimationPlayer extends Component{
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public Animation getAnimation(int idx) {
         //
         return null;

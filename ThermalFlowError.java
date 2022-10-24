@@ -7,17 +7,17 @@ public class ThermalFlowError extends RuntimeException{
 
     //
 
-    @MethodArgs(args={"message","callStack"})
+    @MethodArgs(args ={"message","callStack"})
     public ThermalFlowError(String message, String callStack) {
         super();
         //
     }
-    @MethodArgs(args={"message","callStack", "exception"})
+    @MethodArgs(args ={"message","callStack", "exception"})
     public ThermalFlowError(String message, String callStack, Exception e) {
         super();
         //
     }
-    @MethodArgs(args={"message","callStack","error"})
+    @MethodArgs(args ={"message","callStack","error"})
     public ThermalFlowError(String message, String callStack, Error e) {
         super();
         //

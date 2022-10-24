@@ -7,7 +7,7 @@ import java.util.ArrayList;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Sound","Components"})
+@ClassCategory(cat ={"Sound","Components"})
 public class SoundPlayer extends Component{
     //
 
@@ -28,7 +28,7 @@ public class SoundPlayer extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setLoop(boolean value){
         //
     }
@@ -43,7 +43,7 @@ public class SoundPlayer extends Component{
 
         //
     }
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public void setSoundFile(SoundFile pFile){
         //
     }
@@ -70,7 +70,7 @@ public class SoundPlayer extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setVolume(float value){
         //
     }
@@ -84,7 +84,7 @@ public class SoundPlayer extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setSpeed(float value){
         //
     }
@@ -98,7 +98,7 @@ public class SoundPlayer extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setPitch(float value){
         //
     }
@@ -112,7 +112,7 @@ public class SoundPlayer extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"filters"})
+    @MethodArgs(args ={"filters"})
     public void setEffects(ArrayList filters){
         //
     }

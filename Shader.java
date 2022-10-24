@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Material"})
+@ClassCategory(cat ={"Material"})
 public class Shader {
     //
 
@@ -22,7 +22,7 @@ public class Shader {
         public Builder() {
             //
         }
-        @MethodArgs(args={"vertexCode","fragmentCode"})
+        @MethodArgs(args ={"vertexCode","fragmentCode"})
         public Builder(String vertexCode, String fragmentCode) {
             //
         }
@@ -34,17 +34,17 @@ public class Shader {
 
             //
         }
-        @MethodArgs(args={"vertexCode","vertexCode"})
+        @MethodArgs(args ={"vertexCode","vertexCode"})
         public Builder setVertexCode(String vertexCode) {
             //
             return this;
         }
-        @MethodArgs(args={"file"})
+        @MethodArgs(args ={"file"})
         public Builder setVertexCode(VertexGLSLFile pFile) {
             //
             return this;
         }
-        @MethodArgs(args={"vertexShader"})
+        @MethodArgs(args ={"vertexShader"})
         public Builder setVertexCode(VertexShader vertexShader) {
             //
             return this;
@@ -57,17 +57,17 @@ public class Shader {
 
             //
         }
-        @MethodArgs(args={"geometryCode"})
+        @MethodArgs(args ={"geometryCode"})
         public Builder setGeometryCode(String geometryCode) {
             //
             return this;
         }
-        @MethodArgs(args={"file"})
+        @MethodArgs(args ={"file"})
         public Builder setGeometryCode(GeometryGLSLFile pFile) {
             //
             return this;
         }
-        @MethodArgs(args={"fragmentShader"})
+        @MethodArgs(args ={"fragmentShader"})
         public Builder setGeometryCode(GeometryShader geometryShader) {
             //
             return this;
@@ -80,17 +80,17 @@ public class Shader {
 
             //
         }
-        @MethodArgs(args={"fragmentCode"})
+        @MethodArgs(args ={"fragmentCode"})
         public Builder setFragmentCode(String fragmentCode) {
             //
             return this;
         }
-        @MethodArgs(args={"file"})
+        @MethodArgs(args ={"file"})
         public Builder setFragmentCode(FragmentGLSLFile pFile) {
             //
             return this;
         }
-        @MethodArgs(args={"fragmentShader"})
+        @MethodArgs(args ={"fragmentShader"})
         public Builder setFragmentCode(FragmentShader fragmentShader) {
             //
             return this;
@@ -117,7 +117,7 @@ public class Shader {
             //
             return this;
         }
-        @MethodArgs(args={"compileErrorListener"})
+        @MethodArgs(args ={"compileErrorListener"})
         public Builder tryCompileVertex(CompileErrorListener compileErrorListener){
             //
             return this;
@@ -127,7 +127,7 @@ public class Shader {
             //
             return this;
         }
-        @MethodArgs(args={"compileErrorListener"})
+        @MethodArgs(args ={"compileErrorListener"})
         public Builder tryCompileGeometry(CompileErrorListener compileErrorListener){
             //
             return this;
@@ -137,7 +137,7 @@ public class Shader {
             //
             return this;
         }
-        @MethodArgs(args={"compileErrorListener"})
+        @MethodArgs(args ={"compileErrorListener"})
         public Builder tryCompileFragment(CompileErrorListener compileErrorListener){
             //
             return this;
@@ -150,7 +150,7 @@ public class Shader {
 
             //
         }
-        @MethodArgs(args={"shaderErrorListener"})
+        @MethodArgs(args ={"shaderErrorListener"})
         public Shader tryCreate(ShaderErrorListener shaderErrorListener){
             //
             return null;

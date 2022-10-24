@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"CameraFilters"})
+@ClassCategory(cat ={"CameraFilters"})
 public class FilterGaussianBlur extends CameraFilter{
     //
 
@@ -26,7 +26,7 @@ public class FilterGaussianBlur extends CameraFilter{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setIntensity(float value){
         //
     }
@@ -40,7 +40,7 @@ public class FilterGaussianBlur extends CameraFilter{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setSize(float value){
         //
     }

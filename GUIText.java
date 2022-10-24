@@ -6,7 +6,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"GUI"})
+@ClassCategory(cat ={"GUI"})
 public class GUIText extends GUIElement {
     public enum Alignment{
         TopLeft, TopCenter, TopRight,
@@ -23,20 +23,20 @@ public class GUIText extends GUIElement {
     public GUIText() {
         this.color = new Color();
     }
-    @MethodArgs(args={"text","x","y","width","height"})
+    @MethodArgs(args ={"text","x","y","width","height"})
     public GUIText(String text, int x, int y, int width, int height) {
         super(0, x, y, width, height);
         this.color = new Color();
         this.text = text;
     }
-    @MethodArgs(args={"text","font","x","y","width","height"})
+    @MethodArgs(args ={"text","font","x","y","width","height"})
     public GUIText(String text, Font font, int x, int y, int width, int height) {
         super(0, x, y, width, height);
         this.color = new Color();
         this.text = text;
         this.font = font;
     }
-    @MethodArgs(args={"text","font","x","y","width","height","alignment"})
+    @MethodArgs(args ={"text","font","x","y","width","height","alignment"})
     public GUIText(String text, Font font, int x, int y, int width, int height, Alignment alignment) {
         super(0, x, y, width, height);
         this.color = new Color();
@@ -44,7 +44,7 @@ public class GUIText extends GUIElement {
         this.font = font;
         this.alignment = alignment;
     }
-    @MethodArgs(args={"text","font","x","y","width","height","alignment","scale"})
+    @MethodArgs(args ={"text","font","x","y","width","height","alignment","scale"})
     public GUIText(String text, Font font, int x, int y, int width, int height, Alignment alignment, float scale) {
         super(0, x, y, width, height);
         this.color = new Color();
@@ -53,7 +53,7 @@ public class GUIText extends GUIElement {
         this.alignment = alignment;
         this.scale = scale;
     }
-    @MethodArgs(args={"color","text","font","x","y","width","height","alignment","scale"})
+    @MethodArgs(args ={"color","text","font","x","y","width","height","alignment","scale"})
     public GUIText(Color color, String text, Font font, int x, int y, int width, int height, Alignment alignment, float scale) {
         super(0, x, y, width, height);
         this.color = color;
@@ -62,25 +62,25 @@ public class GUIText extends GUIElement {
         this.alignment = alignment;
         this.scale = scale;
     }
-    @MethodArgs(args={"color","text","x","y","width","height"})
+    @MethodArgs(args ={"color","text","x","y","width","height"})
     public GUIText(Color color, String text, int x, int y, int width, int height) {
         super(0, x, y, width, height);
         this.color = color;
         this.text = text;
     }
-    @MethodArgs(args={"color","text","guiRect"})
+    @MethodArgs(args ={"color","text","guiRect"})
     public GUIText(Color color, String text, GUIRect guiRect) {
         super(0, guiRect.getX(), guiRect.getY(), guiRect.getWidth(), guiRect.getHeight());
         this.color = color;
         this.text = text;
     }
-    @MethodArgs(args={"color","text","x","y","width","height","layer"})
+    @MethodArgs(args ={"color","text","x","y","width","height","layer"})
     public GUIText(Color color, String text, int x, int y, int width, int height, int layer) {
         super(layer, x, y, width, height);
         this.color = color;
         this.text = text;
     }
-    @MethodArgs(args={"color","text","guiRect","layer"})
+    @MethodArgs(args ={"color","text","guiRect","layer"})
     public GUIText(Color color, String text, GUIRect guiRect, int layer) {
         super(layer, guiRect.getX(), guiRect.getY(), guiRect.getWidth(), guiRect.getHeight());
         this.color = color;
@@ -92,7 +92,7 @@ public class GUIText extends GUIElement {
         return color;
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setColor(Color color) {
         this.color = color;
     }
@@ -102,7 +102,7 @@ public class GUIText extends GUIElement {
         return scale;
     }
     @HideGetSet
-    @MethodArgs(args={"scale"})
+    @MethodArgs(args ={"scale"})
     public void setScale(float scale) {
         this.scale = scale;
     }
@@ -112,7 +112,7 @@ public class GUIText extends GUIElement {
         return alignment;
     }
     @HideGetSet
-    @MethodArgs(args={"alignment"})
+    @MethodArgs(args ={"alignment"})
     public void setAlignment(Alignment alignment) {
         this.alignment = alignment;
     }
@@ -122,7 +122,7 @@ public class GUIText extends GUIElement {
         return text;
     }
     @HideGetSet
-    @MethodArgs(args={"text"})
+    @MethodArgs(args ={"text"})
     public void setText(String text) {
         this.text = text;
     }
@@ -132,7 +132,7 @@ public class GUIText extends GUIElement {
         return font;
     }
     @HideGetSet
-    @MethodArgs(args={"font"})
+    @MethodArgs(args ={"font"})
     public void setFont(Font font) {
         this.font = font;
     }

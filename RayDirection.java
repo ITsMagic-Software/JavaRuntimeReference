@@ -5,14 +5,14 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Laser"})
+@ClassCategory(cat ={"Laser"})
 public class RayDirection {
     //
 
     public RayDirection() {
         //
     }
-    @MethodArgs(args={"origin","direction"})
+    @MethodArgs(args ={"origin","direction"})
     public RayDirection(Vector3 origin, Vector3 direction) {
         //
     }
@@ -24,7 +24,7 @@ public class RayDirection {
 
         //
     }
-    @MethodArgs(args={"vector"})
+    @MethodArgs(args ={"vector"})
     public void setOrigin(Vector3 vector){
         //
     }
@@ -36,7 +36,7 @@ public class RayDirection {
 
         //
     }
-    @MethodArgs(args={"vector"})
+    @MethodArgs(args ={"vector"})
     public void setDirection(Vector3 vector){
         //
     }

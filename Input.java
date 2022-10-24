@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Input"})
+@ClassCategory(cat ={"Input"})
 public class Input {
     //
 
@@ -15,7 +15,7 @@ public class Input {
     private Input() { }
 
     /// Abstracts
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public static Key getKey(String name){
         //
         return null;
@@ -23,7 +23,7 @@ public class Input {
 
         //
     }
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public static Key registerKey(String name){
         //
         return null;
@@ -31,11 +31,11 @@ public class Input {
 
         //
     }
-    @MethodArgs(args={"key"})
+    @MethodArgs(args ={"key"})
     public static void registerKey(Key key){
         //
     }
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public static boolean isKeyDown(String name){
         //
         return false;
@@ -43,7 +43,7 @@ public class Input {
 
         //
     }
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public static boolean isKeyPressed(String name){
         //
         return false;
@@ -51,7 +51,7 @@ public class Input {
 
         //
     }
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public static boolean isKeyUp(String name){
         //
         return false;
@@ -60,7 +60,7 @@ public class Input {
         //
     }
 
-    @MethodArgs(args={"id"})
+    @MethodArgs(args ={"id"})
     public static Touch getTouch(int id){
         //
         return null;
@@ -68,7 +68,7 @@ public class Input {
 
         //
     }
-    @MethodArgs(args={"id"})
+    @MethodArgs(args ={"id"})
     public static Vector2 getTouchPosition(int id){
         //
         return null;
@@ -76,7 +76,7 @@ public class Input {
 
         //
     }
-    @MethodArgs(args={"id","out"})
+    @MethodArgs(args ={"id","out"})
     public static Vector2 getTouchPosition(int id, Vector2 out){
         //
         return null;
@@ -84,7 +84,7 @@ public class Input {
 
         //
     }
-    @MethodArgs(args={"id"})
+    @MethodArgs(args ={"id"})
     public static boolean isTouchDown(int id){
         //
         return false;
@@ -92,7 +92,7 @@ public class Input {
 
         //
     }
-    @MethodArgs(args={"id"})
+    @MethodArgs(args ={"id"})
     public static boolean isTouchPressed(int id){
         //
         return false;
@@ -100,7 +100,7 @@ public class Input {
 
         //
     }
-    @MethodArgs(args={"id"})
+    @MethodArgs(args ={"id"})
     public static boolean isTouchUp(int id){
         //
         return false;
@@ -109,7 +109,7 @@ public class Input {
         //
     }
 
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public static Axis getAxis(String name){
         //
         return null;
@@ -117,7 +117,7 @@ public class Input {
 
         //
     }
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public static Axis registerAxis(String name){
         //
         return null;
@@ -125,7 +125,7 @@ public class Input {
 
         //
     }
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public static Vector2 getAxisValue(String name){
         //
         return null;
@@ -139,6 +139,20 @@ public class Input {
         return null;
         //
 
+        //
+    }
+
+    public static boolean isKeyboardOpen(){
+        //
+        return false;
+        //
+
+        //
+    }
+    public static void addKeyboardRequest(Component component){
+        //
+    }
+    public static void removeKeyboardRequest(Component component){
         //
     }
 
@@ -189,7 +203,30 @@ public class Input {
         }
     }
     public static class Keyboard{
+
         public KeyboardButton getKey(String name){
+            //
+            return null;
+            //
+
+            //
+        }
+
+        public List<KeyboardButton> getDownButtons(){
+            //
+            return null;
+            //
+
+            //
+        }
+        public List<KeyboardButton> getPressedButtons(){
+            //
+            return null;
+            //
+
+            //
+        }
+        public List<KeyboardButton> getUpButtons(){
             //
             return null;
             //

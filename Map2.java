@@ -7,7 +7,7 @@ import java.util.ArrayList;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Lists"})
+@ClassCategory(cat ={"Lists"})
 public class Map2 {
     //
 
@@ -18,7 +18,7 @@ public class Map2 {
     private ArrayList keyList;
     private ArrayList valueList;
 
-    @MethodArgs(args={"key","value"})
+    @MethodArgs(args ={"key","value"})
     public Map2(Class keyClass, Class valueClass) {
         this.keyClass = keyClass;
         this.valueClass = valueClass;
@@ -27,7 +27,7 @@ public class Map2 {
         this.valueList = new ArrayList();
     }
 
-    @MethodArgs(args={"key","value"})
+    @MethodArgs(args ={"key","value"})
     public void put(Object key, Object value){
         if(key.getClass() != keyClass){
             Console.log("Map2 invalid put: key class type is different from defined at constructor");
@@ -42,7 +42,7 @@ public class Map2 {
 
         count++;
     }
-    @MethodArgs(args={"key"})
+    @MethodArgs(args ={"key"})
     public Object get(Object key){
         if(key.getClass() != keyClass){
             Console.log("Map2 invalid put: key class type is different from defined at constructor");
@@ -82,7 +82,7 @@ public class Map2 {
 
         return null;
     }
-    @MethodArgs(args={"key","value"})
+    @MethodArgs(args ={"key","value"})
     public void replace(Object key, Object newValue){
         if(key.getClass() != keyClass){
             Console.log("Map2 invalid put: key class type is different from defined at constructor");
@@ -124,7 +124,7 @@ public class Map2 {
             }
         }
     }
-    @MethodArgs(args={"key"})
+    @MethodArgs(args ={"key"})
     public void remove(Object key){
         if(key.getClass() != keyClass){
             Console.log("Map2 invalid put: key class type is different from defined at constructor");
@@ -215,7 +215,7 @@ public class Map2 {
         return count;
     }
 
-    @MethodArgs(args={"json"})
+    @MethodArgs(args ={"json"})
     public static Map2 fromJson(String json){
         //
         return null;

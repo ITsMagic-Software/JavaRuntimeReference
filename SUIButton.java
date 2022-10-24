@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI"})
 public class SUIButton extends Component{
     //
 
@@ -52,7 +52,7 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setNormalColor(Color color){
         //
     }
@@ -66,7 +66,7 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"texture"})
+    @MethodArgs(args ={"texture"})
     public void setNormalImage(Texture texture){
         //
     }
@@ -80,7 +80,7 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setNormalIgnoreMask(boolean value){
         //
     }
@@ -94,7 +94,7 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setNormalBorder(int value){
         //
     }
@@ -107,11 +107,11 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setNormalBorderUnitType(SUnitType value){
         //
     }
-    @MethodArgs(args={"value","unitType"})
+    @MethodArgs(args ={"value","unitType"})
     public void setNormalBorder(int value, SUnitType unitType){
         //
     }
@@ -125,7 +125,7 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setNormalImageType(SImageType sImageType){
         //
     }
@@ -140,7 +140,7 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setPressedColor(Color color){
         //
     }
@@ -154,7 +154,7 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"texture"})
+    @MethodArgs(args ={"texture"})
     public void setPressedImage(Texture texture){
         //
     }
@@ -168,7 +168,7 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setPressedIgnoreMask(boolean value){
         //
     }
@@ -182,7 +182,7 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setPressedBorder(int value){
         //
     }
@@ -195,11 +195,11 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setPressedBorderUnitType(SUnitType value){
         //
     }
-    @MethodArgs(args={"value","unitType"})
+    @MethodArgs(args ={"value","unitType"})
     public void setPressedBorder(int value, SUnitType unitType){
         //
     }
@@ -213,7 +213,7 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setPressedImageType(SImageType sImageType){
         //
     }
@@ -227,7 +227,7 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setClickable(boolean value){
         //
     }
@@ -241,7 +241,7 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setTargetRectType(STargetRect value){
         //
     }
@@ -255,7 +255,7 @@ public class SUIButton extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"object"})
+    @MethodArgs(args ={"object"})
     public void setTargetRectObject(SpatialObject object){
         //
     }

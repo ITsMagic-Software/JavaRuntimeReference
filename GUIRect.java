@@ -5,14 +5,14 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"GUI"})
+@ClassCategory(cat ={"GUI"})
 public class GUIRect {
 
     private int x, y, width, height;
 
     public GUIRect() {
     }
-    @MethodArgs(args={"x","y","width","height"})
+    @MethodArgs(args ={"x","y","width","height"})
     public GUIRect(int x, int y, int width, int height) {
         this.x = x;
         this.y = y;
@@ -25,7 +25,7 @@ public class GUIRect {
         return x;
     }
     @HideGetSet
-    @MethodArgs(args={"x"})
+    @MethodArgs(args ={"x"})
     public GUIRect setX(int x) {
         this.x = x;
         return this;
@@ -36,7 +36,7 @@ public class GUIRect {
         return y;
     }
     @HideGetSet
-    @MethodArgs(args={"y"})
+    @MethodArgs(args ={"y"})
     public GUIRect setY(int y) {
         this.y = y;
         return this;
@@ -47,7 +47,7 @@ public class GUIRect {
         return width;
     }
     @HideGetSet
-    @MethodArgs(args={"width"})
+    @MethodArgs(args ={"width"})
     public GUIRect setWidth(int width) {
         this.width = width;
         return this;
@@ -58,7 +58,7 @@ public class GUIRect {
         return height;
     }
     @HideGetSet
-    @MethodArgs(args={"height"})
+    @MethodArgs(args ={"height"})
     public GUIRect setHeight(int height) {
         this.height = height;
         return this;

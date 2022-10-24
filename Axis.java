@@ -5,14 +5,14 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  * MethodArgs filled by Carlos at 22-04-2022
  */
-@ClassCategory(cat={"Input"})
+@ClassCategory(cat ={"Input"})
 public class Axis {
     //
 
     public Axis() {
         //
     }
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public Axis(String name){
         //
     }
@@ -26,7 +26,7 @@ public class Axis {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setValue(Vector2 value){
         //
     }
@@ -40,7 +40,7 @@ public class Axis {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setName(String value){
         //
     }

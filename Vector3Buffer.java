@@ -6,7 +6,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Vector","Buffers"})
+@ClassCategory(cat ={"Vector","Buffers"})
 public class Vector3Buffer {
     //
 
@@ -14,7 +14,7 @@ public class Vector3Buffer {
         //
     }
 
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public Vector3 get(int idx){
         //
         return null;
@@ -22,7 +22,7 @@ public class Vector3Buffer {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public float getX(int idx){
         //
         return 0;
@@ -30,7 +30,7 @@ public class Vector3Buffer {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public float getY(int idx){
         //
         return 0;
@@ -38,7 +38,7 @@ public class Vector3Buffer {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public float getZ(int idx){
         //
         return 0;
@@ -47,20 +47,20 @@ public class Vector3Buffer {
         //
     }
 
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void put(Vector3 vector3){
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void put(float x, float y, float z){
         //
     }
 
-    @MethodArgs(args={"idx","value"})
+    @MethodArgs(args ={"idx","value"})
     public void set(int idx, Vector3 vector3){
         //
     }
-    @MethodArgs(args={"idx","x","y","z"})
+    @MethodArgs(args ={"idx","x","y","z"})
     public void set(int idx, float x, float y, float z){
         //
     }
@@ -81,7 +81,7 @@ public class Vector3Buffer {
         //
     }
 
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public void position(int idx){
         //
     }
@@ -95,7 +95,7 @@ public class Vector3Buffer {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setVboEnabled(boolean value){
         //
     }

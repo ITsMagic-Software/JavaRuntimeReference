@@ -18,8 +18,9 @@ package JAVARuntime;
  * attribution is appreciated.
  *
  * This class was not made by ITsMagic Engine!
+ * OUTPUT VALUES ARE NORMALIZED (-1, 1)
  */
-@ClassCategory(cat={"Algorithms","Math"})
+@ClassCategory(cat ={"Algorithms","Math"})
 public class PerlinNoise {
 
     //
@@ -34,12 +35,9 @@ public class PerlinNoise {
      */
 
 
-
-
-
     /// Builder
     @HideGetSet
-    @MethodArgs(args={"scale"})
+    @MethodArgs(args ={"scale"})
     public void setScale(float scale){
         //
     }
@@ -53,7 +51,7 @@ public class PerlinNoise {
     }
 
     /// Abstracts
-    @MethodArgs(args={"x","y"})
+    @MethodArgs(args ={"x","y"})
     public double noise(double x, double y){
         //
         return 0;
@@ -61,7 +59,7 @@ public class PerlinNoise {
 
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public double noise(double x, double y, double z){
         //
         return 0;
@@ -69,7 +67,7 @@ public class PerlinNoise {
 
         //
     }
-    @MethodArgs(args={"x","y","z","w"})
+    @MethodArgs(args ={"x","y","z","w"})
     public double noise(double x, double y, double z, double w){
         //
         return 0;
@@ -78,7 +76,7 @@ public class PerlinNoise {
         //
     }
 
-    @MethodArgs(args={"x","y"})
+    @MethodArgs(args ={"x","y"})
     public float noise(int x, int y){
         //
         return 0;
@@ -86,7 +84,7 @@ public class PerlinNoise {
 
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public float noise(int x, int y, int z){
         //
         return 0;
@@ -94,7 +92,7 @@ public class PerlinNoise {
 
         //
     }
-    @MethodArgs(args={"x","y","z","w"})
+    @MethodArgs(args ={"x","y","z","w"})
     public float noise(int x, int y, int z, int w){
         //
         return 0;
@@ -103,7 +101,7 @@ public class PerlinNoise {
         //
     }
 
-    @MethodArgs(args={"x","y"})
+    @MethodArgs(args ={"x","y"})
     public float noise(float x, float y){
         //
         return 0;
@@ -111,7 +109,7 @@ public class PerlinNoise {
 
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public float noise(float x, float y, float z){
         //
         return 0;
@@ -119,7 +117,7 @@ public class PerlinNoise {
 
         //
     }
-    @MethodArgs(args={"x","y","z","w"})
+    @MethodArgs(args ={"x","y","z","w"})
     public float noise(float x, float y, float z, float w){
         //
         return 0;

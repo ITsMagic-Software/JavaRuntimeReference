@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Vector"})
+@ClassCategory(cat ={"Vector"})
 public class Color implements
         SumOperator, SubOperator, MulOperator, DivOperator,
         SumEqualOperator, SubEqualOperator, MulEqualOperator, DivEqualOperator,
@@ -18,28 +18,28 @@ public class Color implements
     public Color() {
         //
     }
-    @MethodArgs(args={"r","g","b"})
+    @MethodArgs(args ={"r","g","b"})
     public Color(int r, int g, int b) {
         //
     }
-    @MethodArgs(args={"r","g","b"})
+    @MethodArgs(args ={"r","g","b"})
     public Color(float r, float g, float b) {
         //
     }
-    @MethodArgs(args={"a","r","g","b"})
+    @MethodArgs(args ={"a","r","g","b"})
     public Color(int a, int r, int g, int b) {
         //
     }
-    @MethodArgs(args={"a","r","g","b"})
+    @MethodArgs(args ={"a","r","g","b"})
     public Color(float a, float r, float g, float b) {
         //
     }
-    @MethodArgs(args={"hex"})
+    @MethodArgs(args ={"hex"})
     public Color(String hex){
         //
     }
     
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void set(Color color){
         //
     }
@@ -55,7 +55,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void setInt(int color){
         //
     }
@@ -63,11 +63,11 @@ public class Color implements
     /**
      * Hex color
      */
-    @MethodArgs(args={"hex"})
+    @MethodArgs(args ={"hex"})
     public void fromHexString(String hex){
         //
     }
-    @MethodArgs(args={"hex"})
+    @MethodArgs(args ={"hex"})
     public void fromHex(String hex){
         //
     }
@@ -96,7 +96,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setIntAlpha(int value){
         //
     }
@@ -107,7 +107,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setIntRed(int value){
         //
     }
@@ -120,11 +120,11 @@ public class Color implements
     }
     @Deprecated
     @DeprecatedInfo(info={"method with spelling error, use setIntGreen"})
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setIntGree(int value){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setIntGreen(int value){
         //
     }
@@ -135,16 +135,16 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setIntBlue(int value){
         //
     }
     
-    @MethodArgs(args={"a","r","g","b"})
+    @MethodArgs(args ={"a","r","g","b"})
     public void setInts(int a, int r, int g, int b){
         //
     }
-    @MethodArgs(args={"r","g","b"})
+    @MethodArgs(args ={"r","g","b"})
     public void setInts(int r, int g, int b){
         //
     }
@@ -159,7 +159,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setFloatAlpha(float value){
         //
     }
@@ -171,7 +171,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setFloatRed(float value){
         //
     }
@@ -183,7 +183,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setFloatGreen(float value){
         //
     }
@@ -195,21 +195,21 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setFloatBlue(float value){
         //
     }
     
-    @MethodArgs(args={"a","r","g","b"})
+    @MethodArgs(args ={"a","r","g","b"})
     public void setFloats(float a, float r, float g, float b){
         //
     }
-    @MethodArgs(args={"r","g","b"})
+    @MethodArgs(args ={"r","g","b"})
     public void setFloats(float r, float g, float b){
         //
     }
     
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public Color sum(Color color){
         //
         return null;
@@ -217,7 +217,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public Color sum(Vector3 color){
         //
         return null;
@@ -225,7 +225,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public Color sum(Vector2 color){
         //
         return null;
@@ -234,7 +234,7 @@ public class Color implements
         //
     }
     
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public Color sub(Color color){
         //
         return null;
@@ -242,7 +242,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public Color sub(Vector3 color){
         //
         return null;
@@ -250,7 +250,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public Color sub(Vector2 color){
         //
         return null;
@@ -259,7 +259,7 @@ public class Color implements
         //
     }
     
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public Color mul(Color color){
         //
         return null;
@@ -267,7 +267,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public Color mul(Vector3 color){
         //
         return null;
@@ -275,7 +275,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public Color mul(Vector2 color){
         //
         return null;
@@ -284,7 +284,7 @@ public class Color implements
         //
     }
     
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public Color div(Color color){
         //
         return null;
@@ -292,7 +292,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public Color div(Vector3 color){
         //
         return null;
@@ -300,7 +300,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public Color div(Vector2 color){
         //
         return null;
@@ -309,55 +309,94 @@ public class Color implements
         //
     }
     
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void sumLocal(Color color){
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void sumLocal(Vector3 color){
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void sumLocal(Vector2 color){
         //
     }
     
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void subLocal(Color color){
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void subLocal(Vector3 color){
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void subLocal(Vector2 color){
         //
     }
     
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void mulLocal(Color color){
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void mulLocal(Vector3 color){
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void mulLocal(Vector2 color){
         //
     }
     
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void divLocal(Color color){
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void divLocal(Vector3 color){
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public void divLocal(Vector2 color){
+        //
+    }
+
+    @MethodArgs(args ={"value","speed"})
+    public void lerp(Color color, float speed){
+        //
+    }
+    @MethodArgs(args ={"x","y","z","speed"})
+    public void lerp(float a, float r, float g, float b, float speed){
+        //
+    }
+    @MethodArgs(args ={"a","speed"})
+    public void lerp(float a, float speed){
+        //
+    }
+
+    @MethodArgs(args ={"value","speed"})
+    public void lerpInSeconds(Color color, float speed){
+        //
+    }
+    @MethodArgs(args ={"a","r","g","b","speed"})
+    public void lerpInSeconds(float a, float r, float g, float b, float speed){
+        //
+    }
+    @MethodArgs(args ={"a","speed"})
+    public void lerpInSeconds(float a, float speed){
+        //
+    }
+
+    @MethodArgs(args ={"value","blend"})
+    public void blend(Color color, float blend){
+        //
+    }
+    @MethodArgs(args ={"a","r","g","b","blend"})
+    public void blend(float a, float r, float g, float b, float blend){
+        //
+    }
+    @MethodArgs(args ={"a","blend"})
+    public void blend(float a, float blend){
         //
     }
 
@@ -428,7 +467,7 @@ public class Color implements
     }
 
     /// Comparators
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public boolean equals(Object otherObject){
         //
         return false;
@@ -436,7 +475,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public boolean pointerEquals(Object otherObject){
         //
         return false;
@@ -444,7 +483,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public boolean notEquals(Object otherObject){
         //
         return false;
@@ -452,7 +491,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public static boolean isNull(Object value){
         //
         return false;
@@ -461,7 +500,7 @@ public class Color implements
         //
     }
     
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public boolean greaterThan(Object otherObject) {
         //
         return false;
@@ -469,7 +508,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterThan(float v) {
         //
         return false;
@@ -477,7 +516,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterThan(int v) {
         //
         return false;
@@ -485,7 +524,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterThan(long v) {
         //
         return false;
@@ -493,7 +532,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterThan(double v) {
         //
         return false;
@@ -501,7 +540,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public boolean greaterOrEqualsThan(Object otherObject) {
         //
         return false;
@@ -509,7 +548,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterOrEqualsThan(float v) {
         //
         return false;
@@ -517,7 +556,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterOrEqualsThan(int v) {
         //
         return false;
@@ -525,7 +564,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterOrEqualsThan(long v) {
         //
         return false;
@@ -533,7 +572,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterOrEqualsThan(double v) {
         //
         return false;
@@ -542,7 +581,7 @@ public class Color implements
         //
     }
     
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public boolean lessThan(Object otherObject) {
         //
         return false;
@@ -550,7 +589,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessThan(float v) {
         //
         return false;
@@ -558,7 +597,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessThan(int v) {
         //
         return false;
@@ -566,7 +605,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessThan(long v) {
         //
         return false;
@@ -574,7 +613,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessThan(double v) {
         //
         return false;
@@ -582,7 +621,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public boolean lessOrEqualsThan(Object otherObject) {
         //
         return false;
@@ -590,7 +629,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessOrEqualsThan(float v) {
         //
         return false;
@@ -598,7 +637,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessOrEqualsThan(int v) {
         //
         return false;
@@ -606,7 +645,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public boolean lessOrEqualsThan(long v) {
         //
         return false;
@@ -614,7 +653,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"color"})
+    @MethodArgs(args ={"color"})
     public boolean lessOrEqualsThan(double v) {
         //
         return false;
@@ -624,7 +663,7 @@ public class Color implements
     }
 
     /// Operators
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public <T> T sum(Object otherObject) {
         //
         return null;
@@ -632,12 +671,12 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public void sumEqual(Object otherObject) {
         //
     }
     
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public <T> T div(Object otherObject) {
         //
         return null;
@@ -645,12 +684,12 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public void divEqual(Object otherObject) {
         //
     }
     
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public <T> T mul(Object otherObject) {
         //
         return null;
@@ -658,12 +697,12 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public void mulEqual(Object otherObject) {
         //
     }
     
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public <T> T sub(Object otherObject) {
         //
         return null;
@@ -671,7 +710,7 @@ public class Color implements
 
         //
     }
-    @MethodArgs(args={"otherObject"})
+    @MethodArgs(args ={"otherObject"})
     public void subEqual(Object otherObject) {
         //
     }

@@ -6,7 +6,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  * MethodArgs filled by Carlos at 22-04-2022
  */
-@ClassCategory(cat={"Animations"})
+@ClassCategory(cat ={"Animations"})
 public class Animation {
     //
 
@@ -23,7 +23,7 @@ public class Animation {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setSpeed(float value){
         //
     }

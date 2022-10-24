@@ -6,7 +6,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 
-@ClassCategory(cat={"Editor"})
+@ClassCategory(cat ={"Editor"})
 public class EditorPanel {
 
     //
@@ -15,7 +15,7 @@ public class EditorPanel {
         //
     }
 
-    @MethodArgs(args={"touch","x","y","width","height"})
+    @MethodArgs(args ={"touch","x","y","width","height"})
     public boolean isTouchInside(Touch touch){
         //
         return false;
@@ -24,7 +24,7 @@ public class EditorPanel {
         //
     }
 
-    @MethodArgs(args={"touchFilter"})
+    @MethodArgs(args ={"touchFilter"})
     public Touch determineTouch(GUIUtils.TouchFilter touchFilter){
         //
         return null;
@@ -32,7 +32,7 @@ public class EditorPanel {
 
         //
     }
-    @MethodArgs(args={"touchFilter","offset"})
+    @MethodArgs(args ={"touchFilter","offset"})
     public Touch determineTouch(GUIUtils.TouchFilter touchFilter, int offset){
         //
         return null;
@@ -41,7 +41,7 @@ public class EditorPanel {
         //
     }
 
-    @MethodArgs(args={"touch"})
+    @MethodArgs(args ={"touch"})
     public Vector2 determineTouchPosition(Touch touch){
         //
         return null;
@@ -49,7 +49,7 @@ public class EditorPanel {
 
         //
     }
-    @MethodArgs(args={"touch","out"})
+    @MethodArgs(args ={"touch","out"})
     public Vector2 determineTouchPosition(Touch touch, Vector2 out){
         //
         return null;

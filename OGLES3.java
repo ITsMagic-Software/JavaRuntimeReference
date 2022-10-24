@@ -6,7 +6,7 @@ import java.nio.IntBuffer;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"OGL"})
+@ClassCategory(cat ={"OGL"})
 public class OGLES3 extends JAVARuntime.OGLES2 {
     //
 
@@ -18,33 +18,33 @@ public class OGLES3 extends JAVARuntime.OGLES2 {
     }
 
     //
-    @MethodArgs(args={"indices"})
+    @MethodArgs(args ={"indices"})
     public void drawTriangles(int[] indices){
         //
     }
     //
-    @MethodArgs(args={"indices"})
+    @MethodArgs(args ={"indices"})
     public void drawTriangles(IntBuffer indices){
         //
     }
     //
-    @MethodArgs(args={"buffr"})
+    @MethodArgs(args ={"buffr"})
     public void drawTriangles(NativeIntBuffer buffer){
         //
     }
 
     //
-    @MethodArgs(args={"indices"})
+    @MethodArgs(args ={"indices"})
     public void drawLines(int[] indices){
         //
     }
     //
-    @MethodArgs(args={"indices"})
+    @MethodArgs(args ={"indices"})
     public void drawLines(IntBuffer indices){
         //
     }
     //
-    @MethodArgs(args={"buffer"})
+    @MethodArgs(args ={"buffer"})
     public void drawLines(NativeIntBuffer buffer){
         //
     }

@@ -5,14 +5,14 @@ package JAVARuntime;
 /**
  * ITsMagic Thread-safetying
  */
-@ClassCategory(cat={"Thread"})
+@ClassCategory(cat ={"Thread"})
 public class Thread extends java.lang.Thread {
     //
 
     /**
      * Syncs with the engine thread and execute interface
      */
-    @MethodArgs(args={"runnable"})
+    @MethodArgs(args ={"runnable"})
     public static void runOnEngine(Runnable runnable){
         //
     }
@@ -20,7 +20,7 @@ public class Thread extends java.lang.Thread {
     public Thread() {
         //
     }
-    @MethodArgs(args={"target"})
+    @MethodArgs(args ={"target"})
     public Thread(Runnable target) {
         //
         super((java.lang.Runnable) null);
@@ -28,7 +28,7 @@ public class Thread extends java.lang.Thread {
 
         //
     }
-    @MethodArgs(args={"group","target"})
+    @MethodArgs(args ={"group","target"})
     public Thread(ThreadGroup group, Runnable target) {
         //
         super((java.lang.Runnable) null);
@@ -37,7 +37,7 @@ public class Thread extends java.lang.Thread {
         //
     }
 
-    @MethodArgs(args={"name"})
+    @MethodArgs(args ={"name"})
     public Thread(String name) {
         //
         super((java.lang.Runnable) null);
@@ -46,7 +46,7 @@ public class Thread extends java.lang.Thread {
         //
     }
 
-    @MethodArgs(args={"group","name"})
+    @MethodArgs(args ={"group","name"})
     public Thread(ThreadGroup group, String name) {
         //
         super((java.lang.Runnable) null);
@@ -54,7 +54,7 @@ public class Thread extends java.lang.Thread {
 
         //
     }
-    @MethodArgs(args={"target","name"})
+    @MethodArgs(args ={"target","name"})
     public Thread(Runnable target, String name) {
         //
         super((java.lang.Runnable) null);
@@ -62,7 +62,7 @@ public class Thread extends java.lang.Thread {
 
         //
     }
-    @MethodArgs(args={"group","target","name"})
+    @MethodArgs(args ={"group","target","name"})
     public Thread(ThreadGroup group, Runnable target, String name) {
         //
         super((java.lang.Runnable) null);
@@ -70,7 +70,7 @@ public class Thread extends java.lang.Thread {
 
         //
     }
-    @MethodArgs(args={"group","target","name","stackSize"})
+    @MethodArgs(args ={"group","target","name","stackSize"})
     public Thread(ThreadGroup group, Runnable target, String name, long stackSize) {
         //
         super((java.lang.Runnable) null);
@@ -125,7 +125,7 @@ public class Thread extends java.lang.Thread {
     }
 
     @Override
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setContextClassLoader(ClassLoader cl) {
         super.setContextClassLoader(cl);
     }
@@ -151,7 +151,7 @@ public class Thread extends java.lang.Thread {
     }
 
     @Override
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setUncaughtExceptionHandler(UncaughtExceptionHandler eh) {
         super.setUncaughtExceptionHandler(eh);
     }

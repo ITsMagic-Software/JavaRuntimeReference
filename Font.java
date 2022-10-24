@@ -2,7 +2,7 @@ package JAVARuntime;
 
 //
 
-@ClassCategory(cat={"Fonts"})
+@ClassCategory(cat ={"Fonts"})
 public class Font {
 
     //

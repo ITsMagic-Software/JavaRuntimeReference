@@ -4,7 +4,7 @@ package JAVARuntime;
 
 import java.util.ArrayList;
 
-@ClassCategory(cat={"Physics"})
+@ClassCategory(cat ={"Physics"})
 public class AreaTrigger extends PhysicsEntity{
 
     //
@@ -16,7 +16,7 @@ public class AreaTrigger extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"objectName"})
+    @MethodArgs(args ={"objectName"})
     public boolean triggerWithName(String objectName){
         //
         return false;
@@ -38,7 +38,7 @@ public class AreaTrigger extends PhysicsEntity{
 
         //
     }
-    @MethodArgs(args={"id"})
+    @MethodArgs(args ={"id"})
     public JAVARuntime.Collision getTrigger(int idx){
         //
         return null;
@@ -56,7 +56,7 @@ public class AreaTrigger extends PhysicsEntity{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"layer"})
+    @MethodArgs(args ={"layer"})
     public void setPhysicsLayer(PhysicsLayer layer){
         //
     }

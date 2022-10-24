@@ -6,7 +6,7 @@ import java.nio.ByteOrder;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Vector","Buffers"})
+@ClassCategory(cat ={"Vector","Buffers"})
 public class Point2Buffer {
     //
 
@@ -14,7 +14,7 @@ public class Point2Buffer {
         //
     }
 
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public Point2 get(int idx){
         //
         return null;
@@ -22,7 +22,7 @@ public class Point2Buffer {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public int getX(int idx){
         //
         return 0;
@@ -30,7 +30,7 @@ public class Point2Buffer {
 
         //
     }
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public int getY(int idx){
         //
         return 0;
@@ -39,11 +39,11 @@ public class Point2Buffer {
         //
     }
 
-    @MethodArgs(args={"point2"})
+    @MethodArgs(args ={"point2"})
     public void put(Point2 vector3){
         //
     }
-    @MethodArgs(args={"x","y"})
+    @MethodArgs(args ={"x","y"})
     public void put(int x, int y){
         //
     }
@@ -64,7 +64,7 @@ public class Point2Buffer {
         //
     }
 
-    @MethodArgs(args={"idx"})
+    @MethodArgs(args ={"idx"})
     public void position(int idx){
         //
     }
@@ -94,7 +94,7 @@ public class Point2Buffer {
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setVboEnabled(boolean value){
         //
     }

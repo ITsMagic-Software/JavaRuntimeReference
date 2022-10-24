@@ -6,7 +6,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  * Extensible Component from Java classes compiled in realtime (ITsMagic)
  */
-@ClassCategory(cat={"Components"})
+@ClassCategory(cat ={"Components"})
 public class Component extends InspectorMemory{
      /*
       * DEVELOPER NOTE
@@ -73,12 +73,12 @@ public class Component extends InspectorMemory{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"enabled"})
+    @MethodArgs(args ={"enabled"})
     public void setEnabled(boolean enabled){
         //
     }
 
-    @MethodArgs(args={"delaySeconds","invokeListener"})
+    @MethodArgs(args ={"delaySeconds","invokeListener"})
     public void invoke(float delaySeconds, InvokeListener invokeListener){
         //
     }
@@ -86,15 +86,15 @@ public class Component extends InspectorMemory{
         //
     }
 
-    @MethodArgs(args={"message"})
+    @MethodArgs(args ={"message"})
     public void print(String message){
         //
     }
-    @MethodArgs(args={"number"})
+    @MethodArgs(args ={"number"})
     public void print(int t){
         //
     }
-    @MethodArgs(args={"number"})
+    @MethodArgs(args ={"number"})
     public void print(float t){
         //
     }

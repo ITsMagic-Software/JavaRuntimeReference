@@ -2,7 +2,7 @@ package JAVARuntime;
 
 //
 
-@ClassCategory(cat={"Buffers"})
+@ClassCategory(cat ={"Buffers"})
 public class OHString implements
     SumOperator, SubOperator, DivOperator,
     SumEqualOperator, SubEqualOperator, DivEqualOperator,
@@ -15,78 +15,78 @@ public class OHString implements
     public OHString() {
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public OHString(String str) {
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public OHString(char[] str) {
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public OHString(OHString str) {
         //
     }
 
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public void set(String str){
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public void set(OHString str){
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public void set(float str){
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public void set(int str){
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public void set(boolean str){
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public void set(double str){
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public void set(long str){
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public void set(short str){
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public void set(char str){
         //
     }
-    @MethodArgs(args={"chars","offset","length"})
+    @MethodArgs(args ={"chars","offset","length"})
     public void set(char[] chars, int offset, int length){
         //
     }
 
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public void concatLocal(String str){
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public void concatLocal(OHString str){
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public void concatLocalAtStart(String str){
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public void concatLocalAtStart(OHString str){
         //
     }
 
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public OHString concat(String str){
         //
         return null;
@@ -94,7 +94,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public OHString concat(OHString str){
         //
         return null;
@@ -102,7 +102,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public OHString concatAtStart(String str){
         //
         return null;
@@ -110,7 +110,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public OHString concatAtStart(OHString str){
         //
         return null;
@@ -119,7 +119,7 @@ public class OHString implements
         //
     }
 
-    @MethodArgs(args={"startIdx"})
+    @MethodArgs(args ={"startIdx"})
     public OHString subString(int startIdx){
         //
         return null;
@@ -127,7 +127,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"startIdx","endIdx"})
+    @MethodArgs(args ={"startIdx","endIdx"})
     public OHString subString(int startIdx, int endIndex){
         //
         return null;
@@ -135,11 +135,11 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"startIdx"})
+    @MethodArgs(args ={"startIdx"})
     public void subStringLocal(int startIdx){
         //
     }
-    @MethodArgs(args={"startIdx","endIdx"})
+    @MethodArgs(args ={"startIdx","endIdx"})
     public void subStringLocal(int startIdx, int endIndex){
         //
     }
@@ -152,7 +152,7 @@ public class OHString implements
         //
     }
 
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public boolean equals(String str){
         //
         return false;
@@ -160,7 +160,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public boolean equals(OHString str){
         //
         return false;
@@ -168,7 +168,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public boolean equalsIgnoreCase(String str){
         //
         return false;
@@ -176,7 +176,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public boolean equalsIgnoreCase(OHString str){
         //
         return false;
@@ -185,7 +185,7 @@ public class OHString implements
         //
     }
 
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public boolean contains(String str){
         //
         return false;
@@ -193,7 +193,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public boolean contains(OHString str){
         //
         return false;
@@ -202,7 +202,7 @@ public class OHString implements
         //
     }
 
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public OHString[] split(String str){
         //
         return null;
@@ -210,7 +210,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public OHString[] split(OHString str){
         //
         return null;
@@ -219,7 +219,7 @@ public class OHString implements
         //
     }
 
-    @MethodArgs(args={"str", "replacement"})
+    @MethodArgs(args ={"str", "replacement"})
     public OHString replace(String str, String replacement){
         //
         return null;
@@ -227,7 +227,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"str", "replacement"})
+    @MethodArgs(args ={"str", "replacement"})
     public OHString replace(OHString str, OHString replacement){
         //
         return null;
@@ -235,16 +235,16 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"str", "replacement"})
+    @MethodArgs(args ={"str", "replacement"})
     public void replaceLocal(String str, String replacement){
         //
     }
-    @MethodArgs(args={"str", "replacement"})
+    @MethodArgs(args ={"str", "replacement"})
     public void replaceLocal(OHString str, OHString replacement){
         //
     }
 
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public boolean isEmpty(){
         //
         return false;
@@ -279,7 +279,7 @@ public class OHString implements
     }
 
     /// Comparators
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean equals(Object otherObject){
         //
         return false;
@@ -287,7 +287,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean pointerEquals(Object otherObject){
         //
         return false;
@@ -295,7 +295,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean notEquals(Object otherObject){
         //
         return false;
@@ -303,7 +303,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public static boolean isNull(Object value){
         //
         return false;
@@ -312,7 +312,7 @@ public class OHString implements
         //
     }
 
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterThan(Object otherObject) {
         //
         return false;
@@ -320,7 +320,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterThan(float v) {
         //
         return false;
@@ -328,7 +328,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterThan(int v) {
         //
         return false;
@@ -336,7 +336,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterThan(long v) {
         //
         return false;
@@ -344,7 +344,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterThan(double v) {
         //
         return false;
@@ -352,7 +352,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterOrEqualsThan(Object otherObject) {
         //
         return false;
@@ -360,7 +360,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterOrEqualsThan(float v) {
         //
         return false;
@@ -368,7 +368,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterOrEqualsThan(int v) {
         //
         return false;
@@ -376,7 +376,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterOrEqualsThan(long v) {
         //
         return false;
@@ -384,7 +384,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean greaterOrEqualsThan(double v) {
         //
         return false;
@@ -393,7 +393,7 @@ public class OHString implements
         //
     }
 
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessThan(Object otherObject) {
         //
         return false;
@@ -401,7 +401,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessThan(float v) {
         //
         return false;
@@ -409,7 +409,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessThan(int v) {
         //
         return false;
@@ -417,7 +417,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessThan(long v) {
         //
         return false;
@@ -425,7 +425,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessThan(double v) {
         //
         return false;
@@ -433,7 +433,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessOrEqualsThan(Object otherObject) {
         //
         return false;
@@ -441,7 +441,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessOrEqualsThan(float v) {
         //
         return false;
@@ -449,7 +449,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessOrEqualsThan(int v) {
         //
         return false;
@@ -457,7 +457,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessOrEqualsThan(long v) {
         //
         return false;
@@ -465,7 +465,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean lessOrEqualsThan(double v) {
         //
         return false;
@@ -475,7 +475,7 @@ public class OHString implements
     }
 
     /// Operators
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public <T> T sum(Object otherObject) {
         //
         return null;
@@ -483,12 +483,12 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void sumEqual(Object otherObject) {
         //
     }
 
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public <T> T div(Object otherObject) {
         //
         return null;
@@ -496,12 +496,12 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void divEqual(Object otherObject) {
         //
     }
 
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public <T> T sub(Object otherObject) {
         //
         return null;
@@ -509,7 +509,7 @@ public class OHString implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void subEqual(Object otherObject) {
         //
     }

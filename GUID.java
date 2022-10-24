@@ -13,7 +13,7 @@ public class GUID {
     }
 
     @HideGetSet
-    @MethodArgs(args={"guid"})
+    @MethodArgs(args ={"guid"})
     public void setDuplicableGUID(String guid){
         //
     }

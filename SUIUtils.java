@@ -3,27 +3,27 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI"})
 public class SUIUtils {
 
     private SUIUtils() { }
 
-    @MethodArgs(args={"position"})
+    @MethodArgs(args ={"position"})
     public static Vector2 convertTouchPosition(Point2 position){
         return convertTouchPosition(position.getX(), position.getY(), new Vector2());
     }
 
-    @MethodArgs(args={"position"})
+    @MethodArgs(args ={"position"})
     public static Vector2 convertTouchPosition(Vector2 position){
         return convertTouchPosition((int)position.getX(), (int)position.getY(), new Vector2());
     }
 
-    @MethodArgs(args={"x","y"})
+    @MethodArgs(args ={"x","y"})
     public static Vector2 convertTouchPosition(int x, int y){
         return convertTouchPosition(x, y, new Vector2());
     }
 
-    @MethodArgs(args={"x","y","out"})
+    @MethodArgs(args ={"x","y","out"})
     public static Vector2 convertTouchPosition(int x, int y, Vector2 out){
         //
         return null;
@@ -32,7 +32,7 @@ public class SUIUtils {
         //
     }
 
-    @MethodArgs(args={"y"})
+    @MethodArgs(args ={"y"})
     public static int convertTouchPositionY(int y){
         //
         return 0;

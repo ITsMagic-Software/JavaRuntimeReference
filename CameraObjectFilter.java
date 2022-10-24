@@ -1,16 +1,16 @@
 package JAVARuntime;
 
-@ClassCategory(cat={"CameraFilters"})
+@ClassCategory(cat ={"CameraFilters"})
 public interface CameraObjectFilter {
-    @MethodArgs(args={"light"})
+    @MethodArgs(args ={"light"})
     boolean filterLight(Light light);
-    @MethodArgs(args={"renderer"})
+    @MethodArgs(args ={"renderer"})
     boolean filterRenderer(ModelRenderer renderer);
-    @MethodArgs(args={"renderer"})
+    @MethodArgs(args ={"renderer"})
     boolean filterRenderer(SkinnedModelRenderer renderer);
-    @MethodArgs(args={"material","bake"})
+    @MethodArgs(args ={"material","bake"})
     boolean filterMaterialBake(Material material, Vertex bake);
-    @MethodArgs(args={"component"})
+    @MethodArgs(args ={"component"})
     boolean filter3DText(Component component);
 }
 

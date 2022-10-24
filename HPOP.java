@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"HPOP","Components"})
+@ClassCategory(cat ={"HPOP","Components"})
 public class HPOP extends Component{
     //
 
@@ -20,13 +20,13 @@ public class HPOP extends Component{
     @Deprecated
     @DeprecatedInfo(info={"PFile is now obsolete, use HPOP.setVertex(Vertex) instead"})
     @HideGetSet
-    @MethodArgs(args={"pFile"})
+    @MethodArgs(args ={"pFile"})
     public void setModelFile(VertexFile pFile){
         //
     }
 
     @HideGetSet
-    @MethodArgs(args={"pFile"})
+    @MethodArgs(args ={"pFile"})
     public void setMaterialFile(MaterialFile pFile){
         //
     }
@@ -40,7 +40,7 @@ public class HPOP extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"material"})
+    @MethodArgs(args ={"material"})
     public void setMaterial(Material material){
         //
     }
@@ -54,7 +54,7 @@ public class HPOP extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"vertex"})
+    @MethodArgs(args ={"vertex"})
     public void setVertex(Vertex vertex){
         //
     }
@@ -68,7 +68,7 @@ public class HPOP extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setMaxRenderDistanceEnabled(boolean value){
         //
     }
@@ -82,7 +82,7 @@ public class HPOP extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setMaxRenderDistance(float value){
         //
     }
@@ -96,7 +96,7 @@ public class HPOP extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"hpopData"})
+    @MethodArgs(args ={"hpopData"})
     public void setHPOPData(HPOPData hpopData){
         //
     }

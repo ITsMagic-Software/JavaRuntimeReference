@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"CameraFilters"})
+@ClassCategory(cat ={"CameraFilters"})
 public class FilterCBS extends CameraFilter{
     //
 
@@ -26,7 +26,7 @@ public class FilterCBS extends CameraFilter{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setSaturation(float value){
         //
     }
@@ -40,7 +40,7 @@ public class FilterCBS extends CameraFilter{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setBrightness(float value){
         //
     }
@@ -54,7 +54,7 @@ public class FilterCBS extends CameraFilter{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setContrast(float value){
         //
     }

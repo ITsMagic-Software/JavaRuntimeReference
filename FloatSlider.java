@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Inspector"})
+@ClassCategory(cat ={"Inspector"})
 public class FloatSlider {
     //
 
@@ -16,7 +16,7 @@ public class FloatSlider {
     public float max;
     //public float step = 0f;
 
-    @MethodArgs(args={"value","min","max"})
+    @MethodArgs(args ={"value","min","max"})
     public FloatSlider(float value, float min, float max) {
         this.value = value;
         this.min = min;
@@ -34,7 +34,7 @@ public class FloatSlider {
         return value;
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setValue(float value) {
         this.value = value;
     }
@@ -44,7 +44,7 @@ public class FloatSlider {
         return min;
     }
     @HideGetSet
-    @MethodArgs(args={"min"})
+    @MethodArgs(args ={"min"})
     public void setMin(float min) {
         this.min = min;
     }
@@ -54,7 +54,7 @@ public class FloatSlider {
         return max;
     }
     @HideGetSet
-    @MethodArgs(args={"max"})
+    @MethodArgs(args ={"max"})
     public void setMax(float max) {
         this.max = max;
     }
@@ -80,7 +80,7 @@ public class FloatSlider {
     }
 
     /// Abstract
-    @MethodArgs(args={"str"})
+    @MethodArgs(args ={"str"})
     public static FloatSlider deserialize(String str){
         //
         return null;

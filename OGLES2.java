@@ -6,7 +6,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"OGL"})
+@ClassCategory(cat ={"OGL"})
 public class OGLES2 extends JAVARuntime.OGLES {
     //
 

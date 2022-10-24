@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Vector"})
+@ClassCategory(cat ={"Vector"})
 public class Quaternion implements
         MulOperator,
         MulEqualOperator,
@@ -16,7 +16,7 @@ public class Quaternion implements
     public Quaternion() {
         //
     }
-    @MethodArgs(args={"w","x","y","z"})
+    @MethodArgs(args ={"w","x","y","z"})
     public Quaternion(float w, float x, float y, float z) {
         //
     }
@@ -30,7 +30,7 @@ public class Quaternion implements
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setX(float value){
         //
     }
@@ -43,7 +43,7 @@ public class Quaternion implements
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setY(float value){
         //
     }
@@ -56,7 +56,7 @@ public class Quaternion implements
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setZ(float value){
         //
     }
@@ -70,7 +70,7 @@ public class Quaternion implements
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setQX(float value){
         //
     }
@@ -83,7 +83,7 @@ public class Quaternion implements
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setQY(float value){
         //
     }
@@ -96,7 +96,7 @@ public class Quaternion implements
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setQZ(float value){
         //
     }
@@ -109,13 +109,13 @@ public class Quaternion implements
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setQW(float value){
         //
     }
 
     /// Calcs
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public Quaternion mul(Quaternion value){
         //
         return null;
@@ -123,7 +123,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"w","x","y","z"})
+    @MethodArgs(args ={"w","x","y","z"})
     public Quaternion mul(float w, float x, float y, float z){
         //
         return null;
@@ -131,11 +131,11 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void mulLocal(Quaternion value){
         //
     }
-    @MethodArgs(args={"w","x","y","z"})
+    @MethodArgs(args ={"w","x","y","z"})
     public void mulLocal(float w, float x, float y, float z){
         //
     }
@@ -152,7 +152,7 @@ public class Quaternion implements
     }
 
     /// Utils
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean equals(Quaternion quaternion){
         //
         return false;
@@ -160,7 +160,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"w","x","y","z"})
+    @MethodArgs(args ={"w","x","y","z"})
     public boolean equals(float w, float x, float y, float z){
         //
         return false;
@@ -168,7 +168,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"a"})
+    @MethodArgs(args ={"a"})
     public boolean equals(float a){
         //
         return false;
@@ -177,40 +177,40 @@ public class Quaternion implements
         //
     }
 
-    @MethodArgs(args={"value","blend"})
+    @MethodArgs(args ={"value","blend"})
     public void blend(Quaternion quaternion, float blend){
         //
     }
-    @MethodArgs(args={"to"})
+    @MethodArgs(args ={"to"})
     public void selfLookTo(Vector3 to){
         //
     }
-    @MethodArgs(args={"from","to"})
+    @MethodArgs(args ={"from","to"})
     public void selfLookTo(Vector3 from, Vector3 to){
         //
     }
-    @MethodArgs(args={"to"})
+    @MethodArgs(args ={"to"})
     public void localLookTo(Vector3 to){
         //
     }
-    @MethodArgs(args={"from","to"})
+    @MethodArgs(args ={"from","to"})
     public void localLookTo(Vector3 from, Vector3 to){
         //
     }
-    @MethodArgs(args={"to"})
+    @MethodArgs(args ={"to"})
     public void lookTo(Vector3 to){
         //
     }
-    @MethodArgs(args={"from","to"})
+    @MethodArgs(args ={"from","to"})
     public void lookTo(Vector3 from, Vector3 to){
         //
     }
-    @MethodArgs(args={"from","to","up"})
+    @MethodArgs(args ={"from","to","up"})
     public void lookTo(Vector3 from, Vector3 to, Vector3 up){
         //
     }
 
-    @MethodArgs(args={"value","speed"})
+    @MethodArgs(args ={"value","speed"})
     public Quaternion slerp(Quaternion b, float t) {
         //
         return null;
@@ -218,24 +218,24 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"value","speed"})
+    @MethodArgs(args ={"value","speed"})
     public void slerpLocal(Quaternion b, float t){
         //
     }
-    @MethodArgs(args={"a","b","speed"})
+    @MethodArgs(args ={"a","b","speed"})
     public void slerpLocal(Quaternion a, Quaternion b, float t){
         //
     }
 
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void set(Quaternion quaternion){
         //
     }
-    @MethodArgs(args={"w","x","y","z"})
+    @MethodArgs(args ={"w","x","y","z"})
     public void set(float w, float x, float y, float z){
         //
     }
-    @MethodArgs(args={"a"})
+    @MethodArgs(args ={"a"})
     public void set(float a){
         //
     }
@@ -244,11 +244,11 @@ public class Quaternion implements
         //
     }
 
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public void setFromEuler(float x, float y, float z){
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setFromEuler(Vector3 value){
         //
     }
@@ -261,7 +261,7 @@ public class Quaternion implements
         //
     }
 
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public Vector3 rotateVector(Vector3 vector3){
         //
         return null;
@@ -269,7 +269,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"value","out"})
+    @MethodArgs(args ={"value","out"})
     public Vector3 rotateVector(Vector3 vector3, Vector3 out){
         //
         return null;
@@ -279,7 +279,7 @@ public class Quaternion implements
     }
 
     /// Abstract
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public static Quaternion fromEuler(Vector3 value){
         //
         return null;
@@ -287,7 +287,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public static Quaternion createFromEuler(Vector3 value){
         //
         return null;
@@ -295,7 +295,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"x","y","z"})
+    @MethodArgs(args ={"x","y","z"})
     public static Quaternion createFromEuler(float x, float y, float z){
         //
         return null;
@@ -310,7 +310,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"a","b","blend"})
+    @MethodArgs(args ={"a","b","blend"})
     public static Quaternion blendOut(Quaternion a, Quaternion b, float blend){
         //
         return null;
@@ -318,7 +318,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"a","b","speed"})
+    @MethodArgs(args ={"a","b","speed"})
     public static Quaternion slerp(Quaternion a, Quaternion b, float t){
         //
         return null;
@@ -326,7 +326,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"from","to"})
+    @MethodArgs(args ={"from","to"})
     public static Quaternion lookAt(Vector3 from, Vector3 to){
         //
         return null;
@@ -334,7 +334,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"from","to","up"})
+    @MethodArgs(args ={"from","to","up"})
     public static Quaternion lookAt(Vector3 from, Vector3 to, Vector3 up){
         //
         return null;
@@ -342,7 +342,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"angle","value"})
+    @MethodArgs(args ={"angle","value"})
     public static Quaternion angleAxis(float angle, Vector3 value){
         //
         return null;
@@ -350,7 +350,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"angle","x","y","z"})
+    @MethodArgs(args ={"angle","x","y","z"})
     public static Quaternion angleAxis(float angle, float x, float y, float z){
         //
         return null;
@@ -360,7 +360,7 @@ public class Quaternion implements
     }
 
     /// Comparators
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean equals(Object otherObject){
         //
         return false;
@@ -368,7 +368,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean pointerEquals(Object otherObject){
         //
         return false;
@@ -376,7 +376,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public boolean notEquals(Object otherObject){
         //
         return false;
@@ -384,7 +384,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public static boolean isNull(Object value){
         //
         return false;
@@ -394,7 +394,7 @@ public class Quaternion implements
     }
 
     /// Operators
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public <T> T mul(Object otherObject) {
         //
         return null;
@@ -402,7 +402,7 @@ public class Quaternion implements
 
         //
     }
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void mulEqual(Object otherObject) {
         //
     }

@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Components"})
+@ClassCategory(cat ={"Components"})
 public class ModelRenderer extends Component{
     public enum BatchingChannel{
         Automatic, Dynamic, Static, Disabled
@@ -29,13 +29,20 @@ public class ModelRenderer extends Component{
 
         //
     }
+    public ModelRenderer(Vertex vertex) {
+        //
+        super();
+        //
 
-    @MethodArgs(args={"file"})
+        //
+    }
+
+    @MethodArgs(args ={"file"})
     public void setModelFile(VertexFile file){
         //
     }
 
-    @MethodArgs(args={"file"})
+    @MethodArgs(args ={"file"})
     public void setMaterialFile(MaterialFile file){
         //
     }
@@ -49,7 +56,7 @@ public class ModelRenderer extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"material"})
+    @MethodArgs(args ={"material"})
     public void setMaterial(Material material){
         //
     }
@@ -63,7 +70,7 @@ public class ModelRenderer extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"vertex"})
+    @MethodArgs(args ={"vertex"})
     public void setVertex(Vertex vertex){
         //
     }
@@ -77,20 +84,13 @@ public class ModelRenderer extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"wireframe"})
+    @MethodArgs(args ={"wireframe"})
     public void setWireframe(boolean wireframe){
         //
     }
 
-    @MethodArgs(args={"primitive"})
+    @MethodArgs(args ={"primitive"})
     public void attachPrimitive(int primitive){
-        //
-    }
-    public boolean isModelLoaded(){
-        //
-        return false;
-        //
-
         //
     }
 
@@ -103,7 +103,7 @@ public class ModelRenderer extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"matrix"})
+    @MethodArgs(args ={"matrix"})
     public void setRenderMatrix(float[] renderMatrix){
         //
     }
@@ -117,7 +117,7 @@ public class ModelRenderer extends Component{
         //
     }
     @HideGetSet
-    @MethodArgs(args={"value"})
+    @MethodArgs(args ={"value"})
     public void setBatchingChannel(BatchingChannel value){
         //
     }

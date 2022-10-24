@@ -1,6 +1,7 @@
 package JAVARuntime;
 
 //
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -8,10 +9,10 @@ import java.util.List;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat={"Java"})
+@ClassCategory(cat ={"Java"})
 public class JCompiler {
 
-    public static List getAllClasses(){
+    public static List<JClass> getAllClasses(){
         //
         return null;
         //
@@ -19,7 +20,7 @@ public class JCompiler {
         //
     }
 
-    public static List getEngineClasses(){
+    public static List<JClass> getEngineClasses(){
         //
         return null;
         //
@@ -41,14 +42,13 @@ public class JCompiler {
         //
     }
 
-    public static List getUsersClasses(){
+    public static List<JClass> getUsersClasses(){
         //
         return null;
         //
 
         //
     }
-
     public static int userClassCount(){
         //
         return 0;
