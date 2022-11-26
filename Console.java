@@ -1,6 +1,5 @@
 package JAVARuntime;
 
-//
 
 import java.util.List;
 
@@ -16,6 +15,14 @@ public class Console {
     /// Abstracts
     @MethodArgs(args ={"message"})
     public static void log(String message){
+        //
+    }
+    @MethodArgs(args ={"message"})
+    public static void log(Vector3 message){
+        //
+    }
+    @MethodArgs(args ={"message"})
+    public static void log(Vector2 message){
         //
     }
     @MethodArgs(args ={"message"})

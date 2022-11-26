@@ -69,22 +69,6 @@ public class Point2Buffer {
         //
     }
 
-    public boolean isDirect(){
-        //
-        return false;
-        //
-
-        //
-    }
-
-    public ByteOrder order(){
-        //
-        return null;
-        //
-
-        //
-    }
-
     @HideGetSet
     public boolean isVboEnabled() {
         //

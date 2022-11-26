@@ -6,7 +6,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 
-@ClassCategory(cat ={"Voxel"})
+@ClassCategory(cat ={"Voxels"})
 public class VoxelChunk extends Component{
 
     //

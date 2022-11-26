@@ -67,12 +67,4 @@ public class NativeIntBuffer {
     public void setVboEnabled(boolean value){
         //
     }
-
-    public IntBuffer toIntBuffer(){
-        //
-        return null;
-        //
-
-        //
-    }
 }

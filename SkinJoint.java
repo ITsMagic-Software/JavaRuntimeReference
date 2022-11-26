@@ -5,7 +5,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 
-@ClassCategory(cat ={"TODO"})
+@ClassCategory(cat ={"Skin"})
 public class SkinJoint extends Component {
 
     //

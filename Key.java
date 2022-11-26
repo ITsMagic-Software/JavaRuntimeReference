@@ -9,9 +9,6 @@ package JAVARuntime;
 public class Key {
     //
 
-    public Key() {
-        //
-    }
     @MethodArgs(args ={"name"})
     public Key(String name){
         //
@@ -67,10 +64,4 @@ public class Key {
 
         //
     }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setName(String value){
-        //
-    }
-
 }

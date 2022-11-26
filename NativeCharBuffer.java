@@ -53,12 +53,4 @@ public class NativeCharBuffer {
     public void setPosition(int idx){
         //
     }
-
-    public IntBuffer toIntBuffer(){
-        //
-        return null;
-        //
-
-        //
-    }
 }

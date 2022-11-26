@@ -74,14 +74,6 @@ public class SpatialObject {
         //
     }
     @HideGetSet
-    public JAVARuntime.OHString getNameOH(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @HideGetSet
     @MethodArgs(args ={"name"})
     public void setNameOH(JAVARuntime.OHString name){
         //
@@ -348,6 +340,56 @@ public class SpatialObject {
         //
     }
 
+    @MethodArgs(args ={"other"})
+    public float distance(SpatialObject other) {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"other"})
+    public float distance(Transform other) {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"other"})
+    public float distance(Vector3 other) {
+        //
+        return 0;
+        //
+
+        //
+    }
+
+    @MethodArgs(args ={"other"})
+    public float sqrtDistance(SpatialObject other) {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"other"})
+    public float sqrtDistance(Transform other) {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"other"})
+    public float sqrtDistance(Vector3 other) {
+        //
+        return 0;
+        //
+
+        //
+    }
+
     public String toJson(){
         //
         return "";
@@ -390,7 +432,7 @@ public class SpatialObject {
 
     /// Abstract
     @MethodArgs(args ={"file"})
-    public static SpatialObject loadFile(PFile pFile){
+    public static SpatialObject loadFile(ObjectFile pFile){
         //
         return null;
         //

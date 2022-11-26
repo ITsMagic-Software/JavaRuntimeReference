@@ -409,4 +409,13 @@ public class Math {
 
         //
     }
+
+    @MethodArgs(args ={"value"})
+    public static float fixNaN(float v){
+        //
+        return 0;
+        //
+
+        //
+    }
 }

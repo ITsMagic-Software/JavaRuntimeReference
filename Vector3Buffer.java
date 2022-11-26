@@ -10,7 +10,10 @@ package JAVARuntime;
 public class Vector3Buffer {
     //
 
-    public Vector3Buffer() {
+    public Vector3Buffer(int vectorCount) {
+        //
+    }
+    public Vector3Buffer(NativeFloatBuffer nativeFloatBuffer) {
         //
     }
 
@@ -81,8 +84,23 @@ public class Vector3Buffer {
         //
     }
 
+    public int getPosition(){
+        //
+        return 0;
+        //
+
+        //
+    }
     @MethodArgs(args ={"idx"})
-    public void position(int idx){
+    public int position(int idx){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"idx"})
+    public void setPosition(int idx){
         //
     }
 

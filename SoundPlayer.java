@@ -103,19 +103,6 @@ public class SoundPlayer extends Component{
         //
     }
 
-    @HideGetSet
-    public ArrayList getEffects(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"filters"})
-    public void setEffects(ArrayList filters){
-        //
-    }
 
     //
 }

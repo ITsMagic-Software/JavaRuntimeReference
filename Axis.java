@@ -9,9 +9,6 @@ package JAVARuntime;
 public class Axis {
     //
 
-    public Axis() {
-        //
-    }
     @MethodArgs(args ={"name"})
     public Axis(String name){
         //
@@ -37,11 +34,6 @@ public class Axis {
         return "";
         //
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setName(String value){
         //
     }
 }

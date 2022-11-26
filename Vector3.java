@@ -94,6 +94,104 @@ public class Vector3 implements
         //
     }
 
+    @HideGetSet
+    public Vector2 getXY(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public Vector2 getXZ(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public Vector2 getYZ(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public Vector2 getYX(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public Vector2 getZX(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public Vector2 getZY(){
+        //
+        return 0;
+        //
+
+        //
+    }
+
+    @HideGetSet
+    public void SetXY(Vector2 v){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public void SetXZ(Vector2 v){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public void SetYZ(Vector2 v){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public void SetYX(Vector2 v){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public void SetZX(Vector2 v){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public void SetZY(Vector2 v){
+        //
+        return 0;
+        //
+
+        //
+    }
+
     @MethodArgs(args ={"value"})
     public void sumX(float value){
         //
@@ -397,7 +495,17 @@ public class Vector3 implements
 
         //
     }
+    public Vector3 sqrNormalize(){
+        //
+        return null;
+        //
+
+        //
+    }
     public void normalizeLocal(){
+        //
+    }
+    public void sqrNormalizeLocal(){
         //
     }
 
@@ -583,6 +691,49 @@ public class Vector3 implements
         //
 
         //
+    }
+
+    public static Vector3 Max(Vector3 value1, Vector3 value2){
+        return new Vector3(
+                Mathf.max(value1.getX(), value2.getX()),
+                Mathf.max(value1.getY(), value2.getY()),
+                Mathf.max(value1.getZ(), value2.getZ())
+        );
+    }
+    public static Vector3 Min(Vector3 value1, Vector3 value2){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    public static Vector3 Negate(Vector3 value)
+    {
+        //
+        return null;
+        //
+
+        //
+    }
+
+    public static Vector3 up() {
+        return new Vector3 (0,1,0);
+    }
+    public static Vector3 down() {
+        return new Vector3 (0,-1,0);
+    }
+    public static Vector3 back() {
+        return new Vector3 (0,0,-1);
+    }
+    public static Vector3 forward() {
+        return new Vector3 (0,0,1);
+    }
+    public static Vector3 left() {
+        return new Vector3 (-1,0,0);
+    }
+    public static Vector3 right() {
+        return new Vector3 (1,0,0);
     }
 
 

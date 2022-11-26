@@ -38,7 +38,7 @@ public class NativeFloatBuffer {
 
         //
     }
-    public long getPosition(){
+    public int getPosition(){
         //
         return 0;
         //
@@ -46,8 +46,9 @@ public class NativeFloatBuffer {
         //
     }
     @MethodArgs(args ={"idx"})
-    public void Position(int idx){
+    public int position(int idx){
         //
+        return idx;
     }
     @MethodArgs(args ={"idx"})
     public void setPosition(int idx){
@@ -65,14 +66,6 @@ public class NativeFloatBuffer {
     @HideGetSet
     @MethodArgs(args ={"value"})
     public void setVboEnabled(boolean value){
-        //
-    }
-
-    public FloatBuffer toFloatBuffer(){
-        //
-        return null;
-        //
-
         //
     }
 }

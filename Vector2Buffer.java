@@ -9,7 +9,10 @@ package JAVARuntime;
 public class Vector2Buffer {
     //
 
-    public Vector2Buffer() {
+    public Vector2Buffer(int vectorCount) {
+        //
+    }
+    public Vector2Buffer(NativeFloatBuffer nativeFloatBuffer) {
         //
     }
 

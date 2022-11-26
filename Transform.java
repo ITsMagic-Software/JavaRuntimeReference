@@ -8,8 +8,7 @@ package JAVARuntime;
 @ClassCategory(cat ={"Object"})
 public class Transform{
     public static final int STATE_DYNAMIC = 0;
-    public static final int STATE_SEMI_STATIC = 1;
-    public static final int STATE_STATIC = 2;
+    public static final int STATE_STATIC = 1;
 
     //
 
@@ -32,6 +31,18 @@ public class Transform{
     }
     @MethodArgs(args ={"x","y","z"})
     public void setPosition(float x, float y, float z){
+        //
+    }
+    @MethodArgs(args ={"v"})
+    public void setPositionX(float v){
+        //
+    }
+    @MethodArgs(args ={"v"})
+    public void setPositionY(float v){
+        //
+    }
+    @MethodArgs(args ={"v"})
+    public void setPositionZ(float v){
         //
     }
 
@@ -419,7 +430,31 @@ public class Transform{
         //
     }
 
-    @Deprecated
+    @MethodArgs(args ={"other"})
+    public float globalSqrtDistance(SpatialObject other) {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"other"})
+    public float globalSqrtDistance(Transform other) {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"other"})
+    public float globalSqrtDistance(Vector3 other) {
+        //
+        return 0;
+        //
+
+        //
+    }
+
     public boolean isStatic(){
         //
         return false;
@@ -427,7 +462,6 @@ public class Transform{
 
         //
     }
-    @Deprecated
     @MethodArgs(args ={"value"})
     public void setStatic(boolean value){
         //
@@ -452,7 +486,23 @@ public class Transform{
 
         //
     }
+    @MethodArgs(args ={"out"})
+    public float[] getGlobalMatrix(float[] out) {
+        //
+        return null;
+        //
+
+        //
+    }
     public float[] getLocalMatrix() {
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"out"})
+    public float[] getLocalMatrix(float[] out) {
         //
         return null;
         //

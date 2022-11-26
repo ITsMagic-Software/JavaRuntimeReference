@@ -54,12 +54,4 @@ public class NativeByteBuffer {
     public void setPosition(int idx){
         //
     }
-
-    public ByteBuffer toIntBuffer(){
-        //
-        return null;
-        //
-
-        //
-    }
 }

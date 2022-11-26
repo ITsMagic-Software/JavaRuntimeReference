@@ -5,7 +5,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 
-@ClassCategory(cat ={"TODO"})
+@ClassCategory(cat ={"Voxels"})
 public class VoxelPlayerController extends Component {
 
     //

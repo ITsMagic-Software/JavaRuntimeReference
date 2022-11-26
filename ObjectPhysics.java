@@ -10,7 +10,7 @@ public class ObjectPhysics {
 
     //
 
-
+    @HideGetSet
     public <T extends PhysicsEntity> T getPhysicsEntity(){
         //
         return null;
@@ -18,6 +18,7 @@ public class ObjectPhysics {
 
         //
     }
+    @HideGetSet
     public void setPhysicsEntity(PhysicsEntity physicsEntity){
         //
     }

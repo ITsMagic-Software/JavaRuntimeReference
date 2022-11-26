@@ -21,6 +21,14 @@ public class AABB {
     public AABB(float x, float y, float z, float xn, float yn, float zn, float cx, float cy, float cz) {
         //
     }
+    @MethodArgs(args ={"min", "max"})
+    public AABB(Vector3 min, Vector3 max) {
+        this(max.getX(), max.getY(), max.getZ(), min.getX(), min.getY(), min.getZ());
+    }
+    @MethodArgs(args ={"min", "max"})
+    public AABB(Vector3 min, Vector3 center, Vector3 max) {
+        this(max.getX(), max.getY(), max.getZ(), min.getX(), min.getY(), min.getZ(), center.getX(), center.getY(), center.getZ());
+    }
 
     @HideGetSet
     public Vector3 getMin(){
@@ -31,11 +39,22 @@ public class AABB {
         //
     }
     @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setMin(Vector3 value){
+        //
+    }
+
+    @HideGetSet
     public Vector3 getMax(){
         //
         return null;
         //
 
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setMax(Vector3 value){
         //
     }
 
