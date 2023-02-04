@@ -33,16 +33,6 @@ public class SoundPlayer extends Component{
         //
     }
 
-    @Deprecated
-    @DeprecatedInfo(info={"PFile is now obsolete"})
-    @HideGetSet
-    public PFile getSoundFile(){
-        //
-        return null;
-        //
-
-        //
-    }
     @MethodArgs(args ={"file"})
     public void setSoundFile(SoundFile pFile){
         //
@@ -58,6 +48,31 @@ public class SoundPlayer extends Component{
         //
     }
     public void unPause(){
+        //
+    }
+
+    @HideGetSet
+    public boolean isPlaying(){
+        //
+        return false;
+        //
+
+        //
+    }
+    @HideGetSet
+    public boolean isPaused(){
+        //
+        return false;
+        //
+
+        //
+    }
+    @HideGetSet
+    public boolean isStopped(){
+        //
+        return false;
+        //
+
         //
     }
 

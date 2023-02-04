@@ -1,6 +1,8 @@
 package JAVARuntime;
 
 //
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
@@ -11,6 +13,44 @@ public class PhysicsEntity {
     //
 
     public PhysicsEntity() {
+        //
+    }
+
+    @MethodArgs(args ={"objectName"})
+    public boolean colliderWithName(String objectName){
+        //
+        return false;
+        //
+
+        //
+    }
+    public boolean isColliding(){
+        //
+        return false;
+        //
+
+        //
+    }
+    public List<Collision> getCollisionList(){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"idx"})
+    public Collision getCollisionAt(int idx){
+        //
+        return null;
+        //
+
+        //
+    }
+    public int getCollisionsCount(){
+        //
+        return 0;
+        //
+
         //
     }
 

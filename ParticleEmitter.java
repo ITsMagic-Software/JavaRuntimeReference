@@ -49,6 +49,22 @@ public class ParticleEmitter extends Component {
     //
 
     @HideGetSet
+    @UnimplementedDoc
+    public boolean isAllowEmission(){
+        //
+        return false;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    @UnimplementedDoc
+    public void setAllowEmission(boolean value){
+        //
+    }
+
+    @HideGetSet
     public AlphaBased getAlphaBased(){
         //
         return null;

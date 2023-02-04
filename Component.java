@@ -59,7 +59,25 @@ public class Component extends InspectorMemory{
         //
     }
     public void stoppedRepeat() { }
-    public void pausedRepeat() { }
+    public void pausedRepeat() {}
+
+    // Generic messages
+    @UnimplementedDoc
+    public void prePhysics(){}
+    @UnimplementedDoc
+    public void posPhysics(){}
+    @UnimplementedDoc
+    public void posWheelPhysics(){}
+    @UnimplementedDoc
+    public void onCollision(Collision collision){}
+    @UnimplementedDoc
+    public void onCollisionStop(Collision collision){}
+    @UnimplementedDoc
+    public void onKeyDown(Key key){}
+    @UnimplementedDoc
+    public void onKeyPressed(Key key){}
+    @UnimplementedDoc
+    public void onKeyUp(Key key){}
 
     /**
      * Bridge enabling and disabling JavaComponent or extended Engine Component

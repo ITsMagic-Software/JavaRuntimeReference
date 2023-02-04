@@ -24,6 +24,17 @@ public class Texture {
         //
     }
 
+    @HideGetSet
+    @UnimplementedDoc
+    public boolean isWritable(){
+        //
+        return false;
+        //
+
+        //
+    }
+
+    @HideGetSet
     public int getWidth(){
         //
         return 0;
@@ -31,6 +42,7 @@ public class Texture {
 
         //
     }
+    @HideGetSet
     public int getHeight(){
         //
         return 0;

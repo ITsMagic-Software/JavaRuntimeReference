@@ -130,7 +130,6 @@ public class SUIButton extends Component{
         //
     }
 
-
     @HideGetSet
     public Color getPressedColor(){
         //

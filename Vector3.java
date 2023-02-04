@@ -95,100 +95,88 @@ public class Vector3 implements
     }
 
     @HideGetSet
+    @UnimplementedDoc
     public Vector2 getXY(){
         //
-        return 0;
+        return null;
         //
 
         //
     }
     @HideGetSet
+    @UnimplementedDoc
     public Vector2 getXZ(){
         //
-        return 0;
+        return null;
         //
 
         //
     }
     @HideGetSet
+    @UnimplementedDoc
     public Vector2 getYZ(){
         //
-        return 0;
+        return null;
         //
 
         //
     }
     @HideGetSet
+    @UnimplementedDoc
     public Vector2 getYX(){
         //
-        return 0;
+        return null;
         //
 
         //
     }
     @HideGetSet
+    @UnimplementedDoc
     public Vector2 getZX(){
         //
-        return 0;
+        return null;
         //
 
         //
     }
     @HideGetSet
+    @UnimplementedDoc
     public Vector2 getZY(){
         //
-        return 0;
+        return null;
         //
 
         //
     }
 
     @HideGetSet
+    @UnimplementedDoc
     public void SetXY(Vector2 v){
         //
-        return 0;
-        //
-
-        //
     }
     @HideGetSet
+    @UnimplementedDoc
     public void SetXZ(Vector2 v){
         //
-        return 0;
-        //
-
-        //
     }
     @HideGetSet
+    @UnimplementedDoc
     public void SetYZ(Vector2 v){
         //
-        return 0;
-        //
-
-        //
     }
     @HideGetSet
+    @UnimplementedDoc
     public void SetYX(Vector2 v){
         //
-        return 0;
-        //
-
-        //
     }
     @HideGetSet
+    @UnimplementedDoc
     public void SetZX(Vector2 v){
         //
-        return 0;
-        //
-
-        //
     }
     @HideGetSet
+    @UnimplementedDoc
     public void SetZY(Vector2 v){
-        //
-        return 0;
-        //
-
         //
     }
 
@@ -694,11 +682,11 @@ public class Vector3 implements
     }
 
     public static Vector3 Max(Vector3 value1, Vector3 value2){
-        return new Vector3(
-                Mathf.max(value1.getX(), value2.getX()),
-                Mathf.max(value1.getY(), value2.getY()),
-                Mathf.max(value1.getZ(), value2.getZ())
-        );
+        //
+        return null;
+        //
+
+        //
     }
     public static Vector3 Min(Vector3 value1, Vector3 value2){
         //

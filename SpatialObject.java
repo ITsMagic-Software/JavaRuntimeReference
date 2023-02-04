@@ -340,6 +340,8 @@ public class SpatialObject {
         //
     }
 
+
+    /// TRANSFORM METHODS
     @MethodArgs(args ={"other"})
     public float distance(SpatialObject other) {
         //
@@ -389,6 +391,346 @@ public class SpatialObject {
 
         //
     }
+
+    @HideGetSet
+    public Vector3 getPosition() {
+        return getTransform().getPosition();
+    }
+    @HideGetSet
+    @MethodArgs(args ={"vector"})
+    public void setPosition(Vector3 vector){
+        getTransform().setPosition(vector);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void setPosition(float x, float y, float z){
+        getTransform().setPosition(x, y, z);
+    }
+    @MethodArgs(args ={"v"})
+    public void setPositionX(float v){
+        getTransform().setPositionX(v);
+    }
+    @MethodArgs(args ={"v"})
+    public void setPositionY(float v){
+        getTransform().setPositionY(v);
+    }
+    @MethodArgs(args ={"v"})
+    public void setPositionZ(float v){
+        getTransform().setPositionZ(v);
+    }
+
+    @HideGetSet
+    public Quaternion getRotation() {
+       return getTransform().getRotation();
+    }
+    @HideGetSet
+    @MethodArgs(args ={"quaternion"})
+    public void setRotation(Quaternion quaternion){
+        getTransform().setRotation(quaternion);
+    }
+
+    // Set rotation from angles in degrees
+    @MethodArgs(args ={"x","y","z"})
+    @UnimplementedDoc
+    public void setRotation(float x, float y, float z){
+        getTransform().getRotation().setFromEuler(x, y, z);
+    }
+    @MethodArgs(args ={"w","x","y","z"})
+    public void setRotation(float w, float x, float y, float z){
+        getTransform().setRotation(w, x, y, z);
+    }
+
+    @HideGetSet
+    public Vector3 getScale() {
+        return getTransform().getScale();
+    }
+    @HideGetSet
+    @MethodArgs(args ={"vector"})
+    public void setScale(Vector3 vector){
+        getTransform().setScale(vector);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void setScale(float x, float y, float z){
+        getTransform().setScale(x,y,z);
+    }
+    @MethodArgs(args ={"all"})
+    public void setScale(float a){
+        getTransform().setScale(a);
+    }
+
+    @HideGetSet
+    public Vector3 getGlobalPosition() {
+        return getTransform().getGlobalPosition();
+    }
+    public Vector3 getGlobalPosition(Vector3 out) {
+        return getTransform().getGlobalPosition(out);
+    }
+    @HideGetSet
+    public Quaternion getGlobalRotation() {
+        return getTransform().getGlobalRotation();
+    }
+    public Quaternion getGlobalRotation(Quaternion out) {
+        return getTransform().getGlobalRotation(out);
+    }
+    @HideGetSet
+    public Vector3 getGlobalScale() {
+        return getTransform().getGlobalScale();
+    }
+    public Vector3 getGlobalScale(Vector3 out) {
+       return getTransform().getGlobalScale(out);
+    }
+
+    @MethodArgs(args ={"x","y","z"})
+    public void translate(float x, float y, float z){
+        getTransform().translate(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void move(float x, float y, float z){
+        getTransform().move(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void rotate(float x, float y, float z){
+        getTransform().rotate(x, y, z);
+    }
+
+    @MethodArgs(args ={"x","y","z"})
+    public void translateInSeconds(float x, float y, float z){
+        getTransform().translateInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void translateInSeconds(int x, int y, int z){
+        getTransform().translateInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void translateInSeconds(int x, int y, float z){
+        getTransform().translateInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void translateInSeconds(int x, float y, int z){
+        getTransform().translateInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void translateInSeconds(float x, int y, int z){
+        getTransform().translateInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void translateInSeconds(float x, float y, int z){
+        getTransform().translateInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void translateInSeconds(int x, float y, float z){
+        getTransform().translateInSeconds(x, y, z);
+    }
+
+    @MethodArgs(args ={"x","y","z"})
+    public void moveInSeconds(float x, float y, float z){
+        getTransform().moveInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void moveInSeconds(int x, int y, int z){
+        getTransform().moveInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void moveInSeconds(int x, int y, float z){
+        getTransform().moveInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void moveInSeconds(int x, float y, int z){
+        getTransform().moveInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void moveInSeconds(float x, int y, int z){
+        getTransform().moveInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void moveInSeconds(float x, float y, int z){
+        getTransform().moveInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void moveInSeconds(int x, float y, float z){
+        getTransform().moveInSeconds(x, y, z);
+    }
+
+    @MethodArgs(args ={"x","y","z"})
+    public void rotateInSeconds(float x, float y, float z){
+        getTransform().rotateInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void rotateInSeconds(int x, int y, int z){
+        getTransform().rotateInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void rotateInSeconds(int x, int y, float z){
+        getTransform().rotateInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void rotateInSeconds(int x, float y, int z){
+        getTransform().rotateInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void rotateInSeconds(float x, int y, int z){
+        getTransform().rotateInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void rotateInSeconds(float x, float y, int z){
+        getTransform().rotateInSeconds(x, y, z);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void rotateInSeconds(int x, float y, float z){
+        getTransform().rotateInSeconds(x, y, z);
+    }
+
+    @MethodArgs(args ={"object"})
+    public void lookTo(SpatialObject object){
+        getTransform().lookTo(object);
+    }
+    @MethodArgs(args ={"position"})
+    public void lookTo(Vector3 position){
+        getTransform().lookTo(position);
+    }
+    @MethodArgs(args ={"x","y","z"})
+    public void lookTo(float x, float y, float z){
+        getTransform().lookTo(x, y, z);
+    }
+    @MethodArgs(args ={"object"})
+    public void lookToIgnoreY(SpatialObject object){
+        getTransform().lookToIgnoreY(object);
+    }
+    @MethodArgs(args ={"position"})
+    public void lookToIgnoreY(Vector3 position){
+        getTransform().lookToIgnoreY(position);
+    }
+    @MethodArgs(args ={"object"})
+    public void teleportTo(SpatialObject object){
+        getTransform().teleportTo(object);
+    }
+    @MethodArgs(args ={"position"})
+    public void teleportTo(Vector3 position){
+        getTransform().teleportTo(position);
+    }
+
+    @MethodArgs(args ={"vector3"})
+    public Vector3 transformPoint(Vector3 vector3){
+       return getTransform().transformPoint(vector3);
+    }
+    @MethodArgs(args ={"vector3","out"})
+    public void transformPoint(Vector3 vector3, Vector3 out){
+        getTransform().transformPoint(vector3, out);
+    }
+    @MethodArgs(args ={"vector3"})
+    public Vector3 inverseTransformPoint(Vector3 vector3){
+      return getTransform().inverseTransformPoint(vector3);
+    }
+    @MethodArgs(args ={"vector3","out"})
+    public void inverseTransformPoint(Vector3 vector3, Vector3 out){
+        getTransform().inverseTransformPoint(vector3, out);
+    }
+
+    @MethodArgs(args ={"vector3"})
+    public Vector3 transformDirection(Vector3 vector3){
+        return getTransform().transformDirection(vector3);
+    }
+    @MethodArgs(args ={"vector3","out"})
+    public void transformDirection(Vector3 vector3, Vector3 out){
+        getTransform().transformDirection(vector3,out);
+    }
+
+    @MethodArgs(args ={"vector3"})
+    public Vector3 inverseTransformDirection(Vector3 vector3){
+        return getTransform().inverseTransformDirection(vector3);
+    }
+    @MethodArgs(args ={"vector3","out"})
+    public void inverseTransformDirection(Vector3 vector3, Vector3 out){
+        getTransform().inverseTransformDirection(vector3, out);
+    }
+
+    public Vector3 forward(){
+        return getTransform().forward();
+    }
+    public Vector3 back(){
+        return getTransform().back();
+    }
+    public Vector3 right(){
+        return getTransform().right();
+    }
+    public Vector3 left(){
+       return getTransform().left();
+    }
+    public Vector3 up(){
+       return getTransform().up();
+    }
+    public Vector3 down(){
+        return getTransform().down();
+    }
+
+    @MethodArgs(args ={"out"})
+    public Vector3 forward(Vector3 out){
+       return getTransform().forward(out);
+    }
+    @MethodArgs(args ={"out"})
+    public Vector3 back(Vector3 out){
+        return getTransform().back(out);
+    }
+    @MethodArgs(args ={"out"})
+    public Vector3 right(Vector3 out){
+        return getTransform().right(out);
+    }
+    @MethodArgs(args ={"out"})
+    public Vector3 left(Vector3 out){
+        return getTransform().left(out);
+    }
+    @MethodArgs(args ={"out"})
+    public Vector3 up(Vector3 out){
+        return getTransform().up(out);
+    }
+    @MethodArgs(args ={"out"})
+    public Vector3 down(Vector3 out){
+        return getTransform().down(out);
+    }
+
+    public boolean isStatic(){
+        return getTransform().isStatic();
+    }
+    @MethodArgs(args ={"value"})
+    public void setStatic(boolean value){
+        getTransform().setStatic(value);
+    }
+
+    public int getState(){
+        return getTransform().getState();
+    }
+    @MethodArgs(args ={"state"})
+    public void setState(int state){
+        getTransform().setState(state);
+    }
+
+    public float[] getGlobalMatrix() {
+        return getTransform().getGlobalMatrix();
+    }
+    @MethodArgs(args ={"out"})
+    public float[] getGlobalMatrix(float[] out) {
+        return getTransform().getGlobalMatrix(out);
+    }
+    public float[] getLocalMatrix() {
+        return getTransform().getLocalMatrix();
+    }
+    @MethodArgs(args ={"out"})
+    public float[] getLocalMatrix(float[] out) {
+        return getTransform().getLocalMatrix(out);
+    }
+
+    @MethodArgs(args ={"vector"})
+    public Vector3 mulGlobalVector3(Vector3 vector3){
+        return getTransform().mulGlobalVector3(vector3);
+    }
+    @MethodArgs(args ={"vector"})
+    public Vector3 mulLocalVector3(Vector3 vector3){
+        return getTransform().mulLocalVector3(vector3);
+    }
+
+    public void recalculateMatrices(){
+        getTransform().recalculateMatrices();
+    }
+    /// END TRANSFORM METHODS
 
     public String toJson(){
         //

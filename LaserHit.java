@@ -96,4 +96,52 @@ public class LaserHit {
     public void setDistance(float distance){
         //
     }
+
+    @HideGetSet
+    @UnimplementedDoc
+    public Vector2 getUVCoord() {
+        //
+        return null;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"normal"})
+    @UnimplementedDoc
+    public void setUVCoord(Vector2 normal){
+        //
+    }
+
+    @HideGetSet
+    @UnimplementedDoc
+    public SpatialObject getColliderObject() {
+        //
+        return null;
+        //
+
+        //
+    }
+    @HideGetSet
+    @UnimplementedDoc
+    @MethodArgs(args ={"object"})
+    public void setColliderObject(SpatialObject object){
+        //
+    }
+
+    @HideGetSet
+    @UnimplementedDoc
+    public Collider getCollider() {
+        //
+        return null;
+        //
+
+        //
+    }
+    @HideGetSet
+    @UnimplementedDoc
+    @MethodArgs(args ={"collider"})
+    public void setCollider(Collider collider){
+        //
+    }
 }

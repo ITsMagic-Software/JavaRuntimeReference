@@ -234,6 +234,124 @@ public class Camera extends Component{
         //
     }
 
+    @UnimplementedDoc
+    @MethodArgs(args ={"modelRenderer"})
+    public boolean isVisible(ModelRenderer modelRenderer){
+        //
+        return false;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"vertex","object"})
+    public boolean isVisible(Vertex vertex, SpatialObject object){
+        //
+        return false;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"vertex","transform"})
+    public boolean isVisible(Vertex vertex, Transform transform){
+        //
+        return false;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"vertex","renderMatrix"})
+    public boolean isVisible(Vertex vertex, float[] renderMatrix){
+        //
+        return false;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"position","radius"})
+    public boolean isSphereVisible(Vector3 position, float radius) {
+        //
+        return false;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"x","y","z","radius"})
+    public boolean isSphereVisible(float x, float y, float z, float radius) {
+        //
+        return false;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"transform","radius"})
+    public boolean isSphereVisible(Transform transform, float radius) {
+        //
+        return false;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"position","size"})
+    public boolean isCubeVisible(Vector3 position, float size) {
+        //
+        return false;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"x","y","z","size"})
+    public boolean isCubeVisible(float x, float y, float z, float size) {
+        //
+        return false;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"object"})
+    public boolean isPointVisible(SpatialObject object) {
+        //
+        return false;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"transform"})
+    public boolean isPointVisible(Transform transform) {
+        //
+        return false;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"position"})
+    public boolean isPointVisible(Vector3 position) {
+        //
+        return false;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"x","y","z"})
+    public boolean isPointVisible(float x, float y, float z) {
+        //
+        return false;
+        //
+
+        //
+    }
+
     public float[] getViewMatrix() {
         //
         return null;

@@ -92,7 +92,7 @@ public class STerrain extends Component{
     public void applyRaiseLower(Vector2 worldCoordinates, float intensity, float size, Brush brush){
         //
     }
-    @MethodArgs(args ={"worldCoordinates", "intensity", "size", "textureSize", "diffuse", "normalMap", "ao", "brush"})
+    @MethodArgs(args ={"worldCoordinates", "intensity", "size", "textureSize", "layerIndex", "brush"})
     public void applyPaint(Vector2 worldCoordinates, float intensity, float size, float textureSize, int layerIndex, Brush brush){
         //
     }

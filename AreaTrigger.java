@@ -3,9 +3,10 @@ package JAVARuntime;
 //
 
 import java.util.ArrayList;
+import java.util.List;
 
 @ClassCategory(cat ={"Physics"})
-public class AreaTrigger extends PhysicsEntity{
+public class AreaTrigger extends PhysicsEntity {
 
     //
 
@@ -16,6 +17,7 @@ public class AreaTrigger extends PhysicsEntity{
 
         //
     }
+
     @MethodArgs(args ={"objectName"})
     public boolean triggerWithName(String objectName){
         //
@@ -31,7 +33,7 @@ public class AreaTrigger extends PhysicsEntity{
 
         //
     }
-    public ArrayList getTriggerList(){
+    public List<Collision> getTriggerList(){
         //
         return null;
         //

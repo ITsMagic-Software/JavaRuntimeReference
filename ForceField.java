@@ -3,6 +3,7 @@ package JAVARuntime;
 //
 
 import java.util.ArrayList;
+import java.util.List;
 
 @ClassCategory(cat ={"Physics"})
 public class ForceField extends PhysicsEntity{
@@ -17,6 +18,7 @@ public class ForceField extends PhysicsEntity{
         //
     }
 
+    @MethodArgs(args ={"objectName"})
     public boolean triggerWithName(String objectName){
         //
         return false;
@@ -31,14 +33,14 @@ public class ForceField extends PhysicsEntity{
 
         //
     }
-    public ArrayList getTriggerList(){
+    public List<Collision> getTriggerList(){
         //
         return null;
         //
 
         //
     }
-    @MethodArgs(args ={"idx"})
+    @MethodArgs(args ={"id"})
     public JAVARuntime.Collision getTrigger(int idx){
         //
         return null;

@@ -2,55 +2,15 @@ package JAVARuntime;
 
 //
 
-import java.util.ArrayList;
-import java.util.List;
 
 @ClassCategory(cat ={"Physics"})
-public class Rigidbody extends PhysicsEntity{
+public class Rigidbody extends PhysicsEntity {
 
     //
 
     public Rigidbody() {
         //
         super();
-        //
-
-        //
-    }
-
-    @MethodArgs(args ={"objectName"})
-    public boolean colliderWithName(String objectName){
-        //
-        return false;
-        //
-
-        //
-    }
-    public boolean isColliding(){
-        //
-        return false;
-        //
-
-        //
-    }
-    public List<Collision> getCollisionList(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"idx"})
-    public Collision getCollisionAt(int idx){
-        //
-        return null;
-        //
-
-        //
-    }
-    public int getCollisionsCount(){
-        //
-        return 0;
         //
 
         //

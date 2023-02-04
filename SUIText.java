@@ -49,6 +49,42 @@ public class SUIText extends Component{
     public void setText(String... text){
         //
     }
+    @UnimplementedDoc
+    @HideGetSet
+    @MethodArgs(args ={"text"})
+    public void setText(float text){
+        //
+    }
+    @UnimplementedDoc
+    @HideGetSet
+    @MethodArgs(args ={"text"})
+    public void setText(int text){
+        //
+    }
+    @UnimplementedDoc
+    @HideGetSet
+    @MethodArgs(args ={"text"})
+    public void setText(double text){
+        //
+    }
+    @UnimplementedDoc
+    @HideGetSet
+    @MethodArgs(args ={"text"})
+    public void setText(boolean text){
+        //
+    }
+    @UnimplementedDoc
+    @HideGetSet
+    @MethodArgs(args ={"text"})
+    public void setText(short text){
+        //
+    }
+    @UnimplementedDoc
+    @HideGetSet
+    @MethodArgs(args ={"text"})
+    public void setText(byte text){
+        //
+    }
 
     @HideGetSet
     public int getResolution(){

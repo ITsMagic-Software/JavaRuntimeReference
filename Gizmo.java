@@ -24,6 +24,10 @@ public class Gizmo {
     public static void drawVertex(Vertex vertex, Vector3 position, Quaternion rotation){
         //
     }
+    @MethodArgs(args ={"vertex","position","scale"})
+    public static void drawVertex(Vertex vertex, Vector3 position, Vector3 scale){
+        //
+    }
     @MethodArgs(args ={"vertex","position","rotation","scale"})
     public static void drawVertex(Vertex vertex, Vector3 position, Quaternion rotation, Vector3 scale){
         //

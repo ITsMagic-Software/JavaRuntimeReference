@@ -59,6 +59,13 @@ public class Transform{
     public void setRotation(Quaternion quaternion){
         //
     }
+
+    // Set rotation from angles in degrees
+    @MethodArgs(args ={"x","y","z"})
+    @UnimplementedDoc
+    public void setRotation(float x, float y, float z){
+        //
+    }
     @MethodArgs(args ={"w","x","y","z"})
     public void setRotation(float w, float x, float y, float z){
         //
