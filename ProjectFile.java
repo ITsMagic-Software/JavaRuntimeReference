@@ -2,6 +2,7 @@ package JAVARuntime;
 
 //
 
+import java.io.InputStream;
 
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
@@ -28,6 +29,14 @@ public class ProjectFile
     }
     @UnimplementedDoc
     public InputStream getInputStream(){
+        //
+        return null;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    public String loadText(){
         //
         return null;
         //

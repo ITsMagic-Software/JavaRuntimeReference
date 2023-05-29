@@ -16,6 +16,7 @@ public class Rigidbody extends PhysicsEntity {
         //
     }
 
+    @HideGetSet
     public boolean isGravityEnabled(){
         //
         return false;
@@ -23,11 +24,13 @@ public class Rigidbody extends PhysicsEntity {
 
         //
     }
+    @HideGetSet
     @MethodArgs(args ={"enabled"})
     public void setGravityEnabled(boolean enabled){
         //
     }
 
+    @HideGetSet
     public float getMass(){
         //
         return 0;
@@ -35,11 +38,13 @@ public class Rigidbody extends PhysicsEntity {
 
         //
     }
+    @HideGetSet
     @MethodArgs(args ={"value"})
     public void setMass(float value){
         //
     }
 
+    @HideGetSet
     public float getFriction(){
         //
         return 0;
@@ -47,11 +52,13 @@ public class Rigidbody extends PhysicsEntity {
 
         //
     }
+    @HideGetSet
     @MethodArgs(args ={"value"})
     public void setFriction(float value){
         //
     }
 
+    @HideGetSet
     public float getLinearDamping(){
         //
         return 0;
@@ -59,11 +66,13 @@ public class Rigidbody extends PhysicsEntity {
 
         //
     }
+    @HideGetSet
     @MethodArgs(args ={"value"})
     public void setLinearDamping(float value){
         //
     }
 
+    @HideGetSet
     public float getAngularDamping(){
         //
         return 0;
@@ -71,6 +80,7 @@ public class Rigidbody extends PhysicsEntity {
 
         //
     }
+    @HideGetSet
     @MethodArgs(args ={"value"})
     public void setAngularDamping(float value){
         //
@@ -138,6 +148,7 @@ public class Rigidbody extends PhysicsEntity {
         //
     }
 
+    @HideGetSet
     public Vector3 getVelocity() {
         //
         return null;
@@ -145,6 +156,7 @@ public class Rigidbody extends PhysicsEntity {
 
         //
     }
+    @HideGetSet
     @MethodArgs(args ={"value"})
     public void setVelocity(Vector3 vector){
         //

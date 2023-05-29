@@ -4,6 +4,8 @@ package JAVARuntime;
 
 //
 
+import java.io.InputStream;
+
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
@@ -222,6 +224,24 @@ public class Texture {
 
         //
     }
+    @MethodArgs(args ={"file"})
+    public static Texture loadFile(File file){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"file"})
+    public static Texture loadInputStream(InputStream inputStream){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    //
 
     @MethodArgs(args ={"width","height"})
     public static Texture newDepth(int w, int h){

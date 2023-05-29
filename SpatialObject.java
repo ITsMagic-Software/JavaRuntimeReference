@@ -323,10 +323,20 @@ public class SpatialObject {
 
         //
     }
+
     @HideGetSet
     public ArrayList getComponentsList() {
         //
         return null;
+        //
+
+        //
+    }
+
+    @UnimplementedDoc
+    public int componentCount() {
+        //
+        return 0;
         //
 
         //
@@ -339,7 +349,15 @@ public class SpatialObject {
 
         //
     }
+    @UnimplementedDoc
+    @MethodArgs(args ={"idx"})
+    public Component componentAt(int idx) {
+        //
+        return null;
+        //
 
+        //
+    }
 
     /// TRANSFORM METHODS
     @MethodArgs(args ={"other"})
@@ -687,9 +705,11 @@ public class SpatialObject {
         return getTransform().down(out);
     }
 
+    @HideGetSet
     public boolean isStatic(){
         return getTransform().isStatic();
     }
+    @HideGetSet
     @MethodArgs(args ={"value"})
     public void setStatic(boolean value){
         getTransform().setStatic(value);
@@ -731,6 +751,52 @@ public class SpatialObject {
         getTransform().recalculateMatrices();
     }
     /// END TRANSFORM METHODS
+
+    /// PHYSICS METHODS
+    @UnimplementedDoc
+    @MethodArgs(args ={"objectName"})
+    public boolean colliderWithName(String objectName){
+        //
+        return false;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    public boolean isColliding(){
+        //
+        return false;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    public List<Collision> getCollisionList(){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    @UnimplementedDoc
+    public int getCollisionsCount(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"idx"})
+    public Collision getCollisionAt(int idx){
+        //
+        return null;
+        //
+
+        //
+    }
+    /// END PPHYSICS METHODS
 
     public String toJson(){
         //

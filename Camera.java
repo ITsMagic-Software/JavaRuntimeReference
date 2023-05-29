@@ -110,7 +110,6 @@ public class Camera extends Component{
         //
     }
 
-
     @HideGetSet
     public int getProjection(){
         //
@@ -421,6 +420,355 @@ public class Camera extends Component{
     public void recalculateMatrices(){
         //
     }
+
+    public enum FreeAspectResolutionSide {
+        Width, Height
+    }
+    //
+
+    public enum ResolutionMode {
+        Percentage, FixedResolution, FreeAspectResolution
+    }
+    //
+
+    public int determineImageResolutionPercentage(){
+        //
+        return 0;
+        //
+
+        //
+    }
+
+    @HideGetSet
+    public float getExposure(){
+        //
+        return 0;
+        //
+
+        //
+    }
+
+
+    @HideGetSet
+    public int getFixedResolutionPixelsHeight(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setFixedResolutionPixelsHeight(int value){
+        //
+    }
+
+    @HideGetSet
+    public int getFixedResolutionPixelsWidth(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setFixedResolutionPixelsWidth(int value){
+        //
+    }
+
+    @HideGetSet
+    public FreeAspectResolutionSide getFreeAspectResolutionSide(){
+        //
+        return null;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setFreeAspectResolutionSide(FreeAspectResolutionSide value){
+        //
+    }
+
+    @HideGetSet
+    public int getFreeResolutionPixels(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setFreeResolutionPixels(int value){
+        //
+    }
+
+    @HideGetSet
+    public float[] getFrustumMatrix(){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    @HideGetSet
+    public float getGamma(){
+        //
+        return 0;
+        //
+
+        //
+    }
+
+    @HideGetSet
+    public float[] getHierarchyCameraMatrix(){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    @HideGetSet
+    public int getImageHeight(){
+        //
+        return 0;
+        //
+
+        //
+    }
+
+    @HideGetSet
+    public float getImageRatio(){
+        //
+        return 0;
+        //
+
+        //
+    }
+
+    @HideGetSet
+    public int getImageWidth(){
+        //
+        return 0;
+        //
+
+        //
+    }
+
+    @HideGetSet
+    public float[] getInverseFrustumMatrix(){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    @HideGetSet
+    public float[] getInverseViewMatrix(){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    @HideGetSet
+    public float getLightningResolution(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setLightningResolution(float value){
+        //
+    }
+
+    @HideGetSet
+    public float getNearPlane(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public float getFarPlane(){
+        //
+        return 0;
+        //
+
+        //
+    }
+
+    @HideGetSet
+    public float getRectHeight(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public float getScaledRectHeight(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setRectHeight(float value){
+        //
+    }
+
+    @HideGetSet
+    public float getRectPosX(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public float getScaledRectPosX(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setRectPosX(float value){
+        //
+    }
+
+    @HideGetSet
+    public float getRectPosY(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public float getScaledRectPosY(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setRectPosY(float value){
+        //
+    }
+
+    @HideGetSet
+    public float getRectWidth(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    public float getScaledRectWidth(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setRectWidth(float value){
+        //
+    }
+
+    @HideGetSet
+    public Vector3 getRenderCameraDirection(){
+        //
+        return null;
+        //
+
+        //
+    }
+    @HideGetSet
+    public Vector3 getRenderCameraPosition(){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    @HideGetSet
+    public ResolutionMode getResolutionMode(){
+        //
+        return null;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setResolutionMode(ResolutionMode value){
+        //
+    }
+
+    @HideGetSet
+    public float getSkyboxResolution(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setSkyboxResolution(float value){
+        //
+    }
+
+    @HideGetSet
+    public float getSsaoResolution(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setSsaoResolution(float value){
+        //
+    }
+
+    @HideGetSet
+    public float getSsrResolution(){
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setSsrResolution(float value){
+        //
+    }
+
 
     @HideGetSet
     public FrameBuffer getFrameBuffer() {

@@ -462,6 +462,7 @@ public class Transform{
         //
     }
 
+    @HideGetSet
     public boolean isStatic(){
         //
         return false;
@@ -469,6 +470,7 @@ public class Transform{
 
         //
     }
+    @HideGetSet
     @MethodArgs(args ={"value"})
     public void setStatic(boolean value){
         //

@@ -38,17 +38,18 @@ public class PhysicsEntity {
 
         //
     }
-    @MethodArgs(args ={"idx"})
-    public Collision getCollisionAt(int idx){
+
+    public int getCollisionsCount(){
         //
-        return null;
+        return 0;
         //
 
         //
     }
-    public int getCollisionsCount(){
+    @MethodArgs(args ={"idx"})
+    public Collision getCollisionAt(int idx){
         //
-        return 0;
+        return null;
         //
 
         //

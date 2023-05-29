@@ -178,6 +178,16 @@ public class AABB {
         //
     }
 
+    @UnimplementedDoc
+    @MethodArgs(args ={"point"})
+    public boolean isInside(Vector3 point) {
+        //
+       return false;
+        //
+
+        //
+    }
+
     public Vector3 getCenter(){
         //
        return null;

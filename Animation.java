@@ -55,4 +55,53 @@ public class Animation {
 
         //
     }
+
+    @UnimplementedDoc
+    @HideGetSet
+    public int getFrameCount() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @HideGetSet
+    @MethodArgs(args = {"index"})
+    public AnimationFrame getFrameAt(int index) {
+        //
+        return null;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @HideGetSet
+    @MethodArgs(args = {"frame"})
+    public void addFrame(AnimationFrame frame) {
+        //
+    }
+    @UnimplementedDoc
+    @HideGetSet
+    @MethodArgs(args = {"entry"})
+    public void removeFrame(AnimationFrame frame) {
+        //
+    }
+
+    @UnimplementedDoc
+    public void sortFrames(){
+        //
+    }
+
+    /// ABSTRACT
+    @MethodArgs(args ={"file"})
+    public static Animation loadFile(AnimationFile file){
+        //
+        return null;
+        //
+
+        //
+    }
 }
+
+

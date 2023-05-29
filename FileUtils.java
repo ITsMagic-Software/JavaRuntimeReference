@@ -11,15 +11,6 @@ public class FileUtils {
 
     private FileUtils() { }
 
-    @Deprecated
-    public static PFile newPFile() {
-        //
-        return null;
-        //
-
-        //
-    }
-
     @MethodArgs(args ={"classType"})
     public static String determineClassFolder(Class classType){
         //

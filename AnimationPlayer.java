@@ -33,5 +33,48 @@ public class AnimationPlayer extends Component{
         //
     }
 
+    @MethodArgs(args ={"name"})
+    public void addAnimation(Animation animation) {
+        //
+    }
+
+    @UnimplementedDoc
+    @MethodArgs(args ={"from","to","delay"})
+    public AnimationTransition addTransition(Animation to, float delay){
+        //
+        return null;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"from","to","delay"})
+    public AnimationTransition addTransition(Animation to, float delay, Curve curve){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    @UnimplementedDoc
+    @MethodArgs(args ={"from","to","delay"})
+    public AnimationTransition addTransition(Animation from, Animation to, float delay){
+        //
+        return null;
+        //
+
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"from","to","delay"})
+    public AnimationTransition addTransition(Animation from, Animation to, float delay, Curve curve){
+        //
+        return null;
+        //
+
+        //
+    }
+
     //
 }

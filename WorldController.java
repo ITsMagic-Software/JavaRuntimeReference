@@ -54,6 +54,14 @@ public class WorldController {
         //
     }
 
+    @MethodArgs(args ={"classReference"})
+    public static JAVARuntime.Component findFirstComponent(Class classReference){
+        //
+        return null;
+        //
+
+        //
+    }
     @MethodArgs(args ={"tittle"})
     public static List<JAVARuntime.Component> listAllComponents(String tittle){
         //
@@ -70,6 +78,7 @@ public class WorldController {
 
         //
     }
+
     //
 
     public static float getLoadPercent(){

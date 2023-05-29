@@ -26,6 +26,11 @@ public class TagEnemyFieldOfView {
 
         //
     }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setFov(float value){
+        //
+    }
 
     @HideGetSet
     public float getMaxDistance(){
@@ -33,6 +38,11 @@ public class TagEnemyFieldOfView {
         return 0;
         //
 
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setMaxDistance(float value){
         //
     }
 
@@ -44,6 +54,11 @@ public class TagEnemyFieldOfView {
 
         //
     }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setMinDistance(float value){
+        //
+    }
 
     @HideGetSet
     public String getTargetTag(){
@@ -53,30 +68,24 @@ public class TagEnemyFieldOfView {
 
         //
     }
-
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setFov(float value){
-        //
-    }
-
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setMaxDistance(float value){
-        //
-    }
-
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setMinDistance(float value){
-        //
-    }
-
     @HideGetSet
     @MethodArgs(args ={"value"})
     public void setTargetsTag(String value){
         //
     }
 
+    @HideGetSet
+    public boolean isActive(){
+        //
+        return false;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setActive(boolean value){
+        //
+    }
 
 }
