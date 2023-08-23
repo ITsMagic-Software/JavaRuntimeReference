@@ -37,6 +37,10 @@ public class Device {
         //
     }
 
+    public static void stopVibrate(){
+        //
+    }
+
     @UnimplementedDoc
     @MethodArgs(args ={"text"})
     public static void setClipboard(String text) {

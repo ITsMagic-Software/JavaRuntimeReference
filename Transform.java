@@ -269,6 +269,28 @@ public class Transform{
         //
     }
 
+    @UnimplementedDoc
+    @MethodArgs(args ={"other","lerpSpeed"})
+    public void lerpLookTo(SpatialObject other, float lerpSpeed){
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"position","lerpSpeed"})
+    public void lerpLookTo(Vector3 other, float lerpSpeed){
+        //
+    }
+
+    @UnimplementedDoc
+    @MethodArgs(args ={"other","lerpSpeed"})
+    public void lerpLookToIgnoreY(SpatialObject other, float lerpSpeed){
+        //
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"position","lerpSpeed"})
+    public void lerpLookToIgnoreY(Vector3 other, float lerpSpeed){
+        //
+    }
+
     @MethodArgs(args ={"vector3"})
     public Vector3 transformPoint(Vector3 vector3){
         //

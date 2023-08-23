@@ -6,7 +6,7 @@ package JAVARuntime;
  * ITsMagic Thread-safetying
  */
 @ClassCategory(cat ={"Thread"})
-public class Thread extends java.lang.Thread {
+public class Thread {
     //
 
     /**
@@ -16,6 +16,21 @@ public class Thread extends java.lang.Thread {
     public static void runOnEngine(Runnable runnable){
         //
     }
+
+    //
+
+    public enum State {
+        NEW,
+        RUNNABLE,
+        BLOCKED,
+        WAITING,
+        TIMED_WAITING,
+        TERMINATED;
+    }
+
+    public interface UncaughtExceptionHandler {
+        void uncaughtException(java.lang.Thread t, Throwable e);
+    }
     
     public Thread() {
         //
@@ -23,7 +38,7 @@ public class Thread extends java.lang.Thread {
     @MethodArgs(args ={"target"})
     public Thread(Runnable target) {
         //
-        super((java.lang.Runnable) null);
+
         //
 
         //
@@ -31,25 +46,23 @@ public class Thread extends java.lang.Thread {
     @MethodArgs(args ={"group","target"})
     public Thread(ThreadGroup group, Runnable target) {
         //
-        super((java.lang.Runnable) null);
+
         //
 
         //
     }
-
     @MethodArgs(args ={"name"})
     public Thread(String name) {
         //
-        super((java.lang.Runnable) null);
+
         //
 
         //
     }
-
     @MethodArgs(args ={"group","name"})
     public Thread(ThreadGroup group, String name) {
         //
-        super((java.lang.Runnable) null);
+
         //
 
         //
@@ -57,7 +70,7 @@ public class Thread extends java.lang.Thread {
     @MethodArgs(args ={"target","name"})
     public Thread(Runnable target, String name) {
         //
-        super((java.lang.Runnable) null);
+
         //
 
         //
@@ -65,7 +78,7 @@ public class Thread extends java.lang.Thread {
     @MethodArgs(args ={"group","target","name"})
     public Thread(ThreadGroup group, Runnable target, String name) {
         //
-        super((java.lang.Runnable) null);
+
         //
 
         //
@@ -73,86 +86,130 @@ public class Thread extends java.lang.Thread {
     @MethodArgs(args ={"group","target","name","stackSize"})
     public Thread(ThreadGroup group, Runnable target, String name, long stackSize) {
         //
-        super((java.lang.Runnable) null);
-        //
 
         //
+
+        //
     }
 
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public void start() {
+        //
     }
 
-    @Override
-    public synchronized void start() {
-        super.start();
-    }
-
-    @Override
     public void run() {
-        super.run();
+        //
     }
 
-    @Override
     public void interrupt() {
-        super.interrupt();
+        //
     }
 
-    @Override
     public boolean isInterrupted() {
-        return super.isInterrupted();
+        //
+        return false;
+        //
+
+        //
     }
 
-    @Override
-    public void destroy() {
-        super.destroy();
-    }
-
-    @Override
-    public int countStackFrames() {
-        return super.countStackFrames();
-    }
-    
     @Override
     public String toString() {
-        return super.toString();
+        //
+        return null;
+        //
+
+        //
     }
 
-    @Override
     public ClassLoader getContextClassLoader() {
-        return super.getContextClassLoader();
+        //
+        return null;
+        //
+
+        //
     }
 
-    @Override
     @MethodArgs(args ={"value"})
     public void setContextClassLoader(ClassLoader cl) {
-        super.setContextClassLoader(cl);
+        //
     }
-    
-    @Override
+
     public StackTraceElement[] getStackTrace() {
-        return super.getStackTrace();
+        //
+        return null;
+        //
+
+        //
     }
 
-    @Override
     public long getId() {
-        return super.getId();
+        //
+        return 0;
+        //
+
+        //
     }
-    
-    @Override
+
     public State getState() {
-        return super.getState();
+        //
+        return null;
+        //
+
+        //
     }
 
-    @Override
     public UncaughtExceptionHandler getUncaughtExceptionHandler() {
-        return super.getUncaughtExceptionHandler();
+        //
+        return null;
+        //
+
+        //
     }
 
-    @Override
     @MethodArgs(args ={"value"})
     public void setUncaughtExceptionHandler(UncaughtExceptionHandler eh) {
-        super.setUncaughtExceptionHandler(eh);
+        //
+    }
+
+    public boolean isAlive() {
+        //
+        return false;
+        //
+
+        //
+    }
+
+    @MethodArgs(args ={"newPriority"})
+    public void setPriority(int newPriority) {
+        //
+    }
+
+    public int getPriority() {
+        //
+        return 0;
+        //
+
+        //
+    }
+
+    @MethodArgs(args ={"name"})
+    public void setName(String name) {
+        //
+    }
+
+    public String getName() {
+        //
+        return null;
+        //
+
+        //
+    }
+
+    public ThreadGroup getThreadGroup() {
+        //
+        return null;
+        //
+
+        //
     }
 }

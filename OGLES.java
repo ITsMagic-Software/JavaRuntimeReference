@@ -11,7 +11,7 @@ public class OGLES {
     //
 
     public OGLES(){
-        throw new RuntimeException("Don't manully spawn ogl instances");
+        throw new RuntimeException("Don't manually spawn ogl instances");
     }
 
     @MethodArgs(args ={"value"})

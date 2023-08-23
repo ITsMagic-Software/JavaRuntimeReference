@@ -10,7 +10,7 @@ public class TagEnemyFieldOfView {
 
     //
 
-        public TagEnemyFieldOfView() {
+    public TagEnemyFieldOfView() {
         //
         super();
         //

@@ -324,6 +324,11 @@ public class SpatialObject {
         //
     }
 
+    @MethodArgs(args ={"ObjectA","ObjectB"})
+    public void swapChildrenPosition(SpatialObject a, SpatialObject b){
+        //
+    }
+
     @HideGetSet
     public ArrayList getComponentsList() {
         //
@@ -624,6 +629,28 @@ public class SpatialObject {
     @MethodArgs(args ={"position"})
     public void teleportTo(Vector3 position){
         getTransform().teleportTo(position);
+    }
+
+    @UnimplementedDoc
+    @MethodArgs(args ={"other","lerpSpeed"})
+    public void lerpLookTo(SpatialObject other, float lerpSpeed){
+        getTransform().lerpLookTo(other, lerpSpeed);
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"position","lerpSpeed"})
+    public void lerpLookTo(Vector3 other, float lerpSpeed){
+        getTransform().lerpLookTo(other, lerpSpeed);
+    }
+
+    @UnimplementedDoc
+    @MethodArgs(args ={"other","lerpSpeed"})
+    public void lerpLookToIgnoreY(SpatialObject other, float lerpSpeed){
+        getTransform().lerpLookToIgnoreY(other, lerpSpeed);
+    }
+    @UnimplementedDoc
+    @MethodArgs(args ={"position","lerpSpeed"})
+    public void lerpLookToIgnoreY(Vector3 other, float lerpSpeed){
+        getTransform().lerpLookToIgnoreY(other, lerpSpeed);
     }
 
     @MethodArgs(args ={"vector3"})

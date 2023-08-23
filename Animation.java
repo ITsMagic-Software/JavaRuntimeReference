@@ -66,7 +66,6 @@ public class Animation {
         //
     }
     @UnimplementedDoc
-    @HideGetSet
     @MethodArgs(args = {"index"})
     public AnimationFrame getFrameAt(int index) {
         //
@@ -76,13 +75,12 @@ public class Animation {
         //
     }
     @UnimplementedDoc
-    @HideGetSet
+
     @MethodArgs(args = {"frame"})
     public void addFrame(AnimationFrame frame) {
         //
     }
     @UnimplementedDoc
-    @HideGetSet
     @MethodArgs(args = {"entry"})
     public void removeFrame(AnimationFrame frame) {
         //

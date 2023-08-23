@@ -53,12 +53,10 @@ public class SoundEmitter {
     }
 
     @UnimplementedDoc
-    @HideGetSet
     public void setVolumes(float left, float right){
         //
     }
     @UnimplementedDoc
-    @HideGetSet
     public void setVolumes(float left, float right, float volume){
         //
     }

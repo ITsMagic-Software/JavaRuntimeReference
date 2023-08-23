@@ -11,6 +11,10 @@ public class LightSettings {
     public static final int FOG_SQRT = 1;
     public static final int SKYBOX_CUBIC = 0;
     public static final int SKYBOX_PANORAMA = 1;
+    public static final int SKYBOX_ATMOSPHERIC = 2;
+    public static final int TONEMAP_DISABLED = 0;
+    public static final int TONEMAP_UNCHARTED2 = 1;
+    public static final int TONEMAP_ACES = 2;
 
     //
 
@@ -202,4 +206,234 @@ public class LightSettings {
     public void setSkyboxType(int type) {
         //
     }
+
+    @HideGetSet
+    public boolean isEnableCirrusClouds(){
+        //
+        return false;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"enabled"})
+    public void setEnableCirrusClouds(boolean enabled){
+        //
+    }
+
+    @HideGetSet
+    public boolean isEnableCumulusClouds(){
+        //
+        return false;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"enabled"})
+    public void setEnableCumulusClouds(boolean enabled){
+        //
+    }
+
+    @HideGetSet
+    public Color getRayColor() {
+        //
+        return null;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"color"})
+    public void setRayColor(Color color) {
+        //
+    }
+
+    @HideGetSet
+    public float getWetness() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setWetness(float value) {
+        //
+    }
+
+    @HideGetSet
+    public float getAtmosphereDensity() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setAtmosphereDensity(float value) {
+        //
+    }
+
+    @HideGetSet
+    public float getAtmosphereDensityFalloff() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setAtmosphereDensityFalloff(float value) {
+        //
+    }
+
+    @HideGetSet
+    public float getAtmosphereExtent() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setAtmosphereExtent(float value) {
+        //
+    }
+
+    @HideGetSet
+    public float getSkyboxSimulationSpeed() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setSkyboxSimulationSpeed(float value) {
+        //
+    }
+
+    @HideGetSet
+    public float getGamma() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setGamma(float value) {
+        //
+    }
+
+    @HideGetSet
+    public float getExposure() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setExposure(float value) {
+        //
+    }
+
+    @HideGetSet
+    public float getSlope() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setSlope(float value) {
+        //
+    }
+
+    @HideGetSet
+    public float getToe() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setToe(float value) {
+        //
+    }
+
+    @HideGetSet
+    public float getShoulder() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setShoulder(float value) {
+        //
+    }
+
+    @HideGetSet
+    public float getBlackClip() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setBlackClip(float value) {
+        //
+    }
+
+    @HideGetSet
+    public float getWhiteClip() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"value"})
+    public void setWhiteClip(float value) {
+        //
+    }
+
+    @HideGetSet
+    public int getTonemapMode() {
+        //
+        return 0;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs(args ={"type"})
+    public void setTonemapMode(int type) {
+        //
+    }
+
+    /*public enum Skybox{
+        CUBIC, PANORAMA, ATMOSPHERIC
+    }
+    //
+    */
 }

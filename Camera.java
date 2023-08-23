@@ -578,20 +578,6 @@ public class Camera extends Component{
     }
 
     @HideGetSet
-    public float getLightningResolution(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setLightningResolution(float value){
-        //
-    }
-
-    @HideGetSet
     public float getNearPlane(){
         //
         return 0;
@@ -726,49 +712,6 @@ public class Camera extends Component{
     public void setResolutionMode(ResolutionMode value){
         //
     }
-
-    @HideGetSet
-    public float getSkyboxResolution(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setSkyboxResolution(float value){
-        //
-    }
-
-    @HideGetSet
-    public float getSsaoResolution(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setSsaoResolution(float value){
-        //
-    }
-
-    @HideGetSet
-    public float getSsrResolution(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setSsrResolution(float value){
-        //
-    }
-
 
     @HideGetSet
     public FrameBuffer getFrameBuffer() {

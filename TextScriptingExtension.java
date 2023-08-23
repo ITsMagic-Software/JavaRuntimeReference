@@ -11,10 +11,6 @@ public class TextScriptingExtension extends ScriptingExtension{
     //
 
     // Util methods
-    @MethodArgs(args ={"str"})
-    public void setText(String str){
-        //
-    }
     public String getText(){
         //
         return "";
@@ -22,6 +18,11 @@ public class TextScriptingExtension extends ScriptingExtension{
 
         //
     }
+    @MethodArgs(args ={"str"})
+    public void setText(String str){
+        //
+    }
+
     @MethodArgs(args ={"theme"})
     public void setTheme(TextScriptingTheme theme){
         //

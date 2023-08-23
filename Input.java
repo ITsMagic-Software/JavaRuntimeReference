@@ -17,6 +17,14 @@ public class Input {
 
     /// Abstracts
     @MethodArgs(args ={"name"})
+    public static boolean haveKey(String name){
+        //
+        return false;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"name"})
     public static Key getKey(String name){
         //
         return null;

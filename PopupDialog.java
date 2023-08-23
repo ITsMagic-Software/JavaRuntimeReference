@@ -20,6 +20,11 @@ public class PopupDialog {
     public PopupDialog(int type) {
         //
     }
+    @UnimplementedDoc
+    @MethodArgs(args ={"tittle","message"})
+    public PopupDialog(String tittle, String message) {
+        //
+    }
     @MethodArgs(args ={"type","tittle","message"})
     public PopupDialog(int type, String tittle, String message) {
         //

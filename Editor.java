@@ -11,7 +11,7 @@ public class Editor {
 
     private Editor() {}
 
-    public boolean isEditor(){
+    public static boolean isEditor(){
         //
         return false;
         //
@@ -19,11 +19,15 @@ public class Editor {
         //
     }
 
-    public SpatialObject getSelectedObject(){
+    public static SpatialObject getSelectedObject(){
         //
         return null;
         //
 
+        //
+    }
+
+    public static void setSelectedObject(SpatialObject object){
         //
     }
 }

@@ -116,7 +116,6 @@ public class Collision {
     }
 
     @UnimplementedDoc
-    @HideGetSet
     public int contactCount() {
         //
         return 0;
@@ -124,7 +123,15 @@ public class Collision {
 
         //
     }
+    @UnimplementedDoc
     @HideGetSet
+    public int getContactCount() {
+        //
+        return 0;
+        //
+
+        //
+    }
     @MethodArgs(args ={"index"})
     @UnimplementedDoc
     public Contact contactAt(int index){
