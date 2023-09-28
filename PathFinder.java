@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat ={"Components"})
+@ClassCategory(cat ={"AI","Components"})
 public class PathFinder extends Component{
     public enum LookTo{
         Disabled, Path, Target

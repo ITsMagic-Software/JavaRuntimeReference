@@ -8,21 +8,17 @@ public class SoundEmitter {
 
     //
 
-    @UnimplementedDoc
     public SoundEmitter(NativeFloatBuffer leftChannel, NativeFloatBuffer rightChannel, int sampleRate) {
         //
     }
-    @UnimplementedDoc
     public SoundEmitter(SoundData data) {
         //
     }
-    @UnimplementedDoc
     public SoundEmitter(File file) throws Exception {
         //
     }
 
 
-    @UnimplementedDoc
     @HideGetSet
     public float getLeftVolume() {
         //
@@ -31,13 +27,11 @@ public class SoundEmitter {
 
         //
     }
-    @UnimplementedDoc
     @HideGetSet
     public void setLeftVolume(float leftVolume) {
         //
     }
 
-    @UnimplementedDoc
     @HideGetSet
     public float getRightVolume() {
         //
@@ -46,22 +40,18 @@ public class SoundEmitter {
 
         //
     }
-    @UnimplementedDoc
     @HideGetSet
     public void setRightVolume(float rightVolume) {
         //
     }
 
-    @UnimplementedDoc
     public void setVolumes(float left, float right){
         //
     }
-    @UnimplementedDoc
     public void setVolumes(float left, float right, float volume){
         //
     }
 
-    @UnimplementedDoc
     @HideGetSet
     public float getSpeed() {
         //
@@ -70,13 +60,11 @@ public class SoundEmitter {
 
         //
     }
-    @UnimplementedDoc
     @HideGetSet
     public void setSpeed(float speed) {
         //
     }
 
-    @UnimplementedDoc
     @HideGetSet
     public float getPitch() {
         //
@@ -85,13 +73,11 @@ public class SoundEmitter {
 
         //
     }
-    @UnimplementedDoc
     @HideGetSet
     public void setPitch(float pitch) {
         //
     }
 
-    @UnimplementedDoc
     @HideGetSet
     public float getVolume() {
         //
@@ -100,13 +86,11 @@ public class SoundEmitter {
 
         //
     }
-    @UnimplementedDoc
     @HideGetSet
     public void setVolume(float volume) {
         //
     }
 
-    @UnimplementedDoc
     private int getStepsCount(){
         //
         return 0;
@@ -114,7 +98,6 @@ public class SoundEmitter {
 
         //
     }
-    @UnimplementedDoc
     public float getCurrentSecond(){
         //
         return 0;
@@ -122,7 +105,6 @@ public class SoundEmitter {
 
         //
     }
-    @UnimplementedDoc
     public float getTotalSeconds(){
         //
         return 0;
@@ -130,12 +112,10 @@ public class SoundEmitter {
 
         //
     }
-    @UnimplementedDoc
     public void seekToSecond(float second){
         //
     }
 
-    @UnimplementedDoc
     public boolean isLoop() {
         //
         return false;
@@ -143,25 +123,20 @@ public class SoundEmitter {
 
         //
     }
-    @UnimplementedDoc
     public void setLoop(boolean loop) {
         //
     }
 
-    @UnimplementedDoc
     public void play(){
         //
     }
-    @UnimplementedDoc
     public void pause(){
         //
     }
-    @UnimplementedDoc
     public void stop(){
         //
     }
 
-    @UnimplementedDoc
     public boolean isPaused(){
         //
         return false;
@@ -169,7 +144,6 @@ public class SoundEmitter {
 
         //
     }
-    @UnimplementedDoc
     public boolean isPlaying(){
         //
         return false;
@@ -177,7 +151,6 @@ public class SoundEmitter {
 
         //
     }
-    @UnimplementedDoc
     public boolean isStopped(){
         //
         return false;

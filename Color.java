@@ -9,7 +9,7 @@ package JAVARuntime;
 public class Color implements
         SumOperator, SubOperator, MulOperator, DivOperator,
         SumEqualOperator, SubEqualOperator, MulEqualOperator, DivEqualOperator,
-        EqualsComparator, GreaterThanComparator, LessThanComparator
+        EqualsComparator, GreaterThanComparator, LessThanComparator, JsonSerializer
 {
     //
 
@@ -375,6 +375,34 @@ public class Color implements
     }
 
     @MethodArgs(args ={"value","speed"})
+    @UnimplementedDoc
+    public Color lerpOut(Color color, float speed){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"a","r","g","b","speed"})
+    @UnimplementedDoc
+    public Color lerpOut(float a, float r, float g, float b, float speed){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"a","speed"})
+    @UnimplementedDoc
+    public Color lerpOut(float a, float speed){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    @MethodArgs(args ={"value","speed"})
     public void lerpInSeconds(Color color, float speed){
         //
     }
@@ -388,6 +416,34 @@ public class Color implements
     }
 
     @MethodArgs(args ={"value","blend"})
+    @UnimplementedDoc
+    public Color lerpOutInSeconds(Color color, float speed){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"a","r","g","b","blend"})
+    @UnimplementedDoc
+    public Color lerpOutInSeconds(float a, float r, float g, float b, float speed){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"a","blend"})
+    @UnimplementedDoc
+    public Color lerpOutInSeconds(float a, float speed){
+        //
+        return null;
+        //
+
+        //
+    }
+
+    @MethodArgs(args ={"value","blend"})
     public void blend(Color color, float blend){
         //
     }
@@ -397,6 +453,34 @@ public class Color implements
     }
     @MethodArgs(args ={"a","blend"})
     public void blend(float a, float blend){
+        //
+    }
+
+    @MethodArgs(args ={"value","blend"})
+    @UnimplementedDoc
+    public Color blendOut(Color color, float blend){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"a","r","g","b","blend"})
+    @UnimplementedDoc
+    public Color blendOut(float a, float r, float g, float b, float blend){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"a","blend"})
+    @UnimplementedDoc
+    public Color blendOut(float a, float blend){
+        //
+        return null;
+        //
+
         //
     }
 
@@ -712,6 +796,20 @@ public class Color implements
     }
     @MethodArgs(args ={"otherObject"})
     public void subEqual(Object otherObject) {
+        //
+    }
+
+    //
+    public String serializeToString() {
+        //
+        return null;
+        //
+
+        //
+    }
+
+    //
+    public void deserializeLocal(String str) {
         //
     }
 }

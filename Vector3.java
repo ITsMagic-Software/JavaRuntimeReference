@@ -10,7 +10,7 @@ public class Vector3 implements
         SumOperator, SubOperator, MulOperator, DivOperator,
         SumEqualOperator, SubEqualOperator, MulEqualOperator, DivEqualOperator,
         EqualsComparator, GreaterThanComparator, LessThanComparator,
-        AddAddOperator, RemoveRemoveOperator
+        AddAddOperator, RemoveRemoveOperator, JsonSerializer
 {
 
     //
@@ -95,7 +95,6 @@ public class Vector3 implements
     }
 
     @HideGetSet
-    @UnimplementedDoc
     public Vector2 getXY(){
         //
         return null;
@@ -104,7 +103,6 @@ public class Vector3 implements
         //
     }
     @HideGetSet
-    @UnimplementedDoc
     public Vector2 getXZ(){
         //
         return null;
@@ -113,7 +111,6 @@ public class Vector3 implements
         //
     }
     @HideGetSet
-    @UnimplementedDoc
     public Vector2 getYZ(){
         //
         return null;
@@ -122,7 +119,6 @@ public class Vector3 implements
         //
     }
     @HideGetSet
-    @UnimplementedDoc
     public Vector2 getYX(){
         //
         return null;
@@ -131,7 +127,6 @@ public class Vector3 implements
         //
     }
     @HideGetSet
-    @UnimplementedDoc
     public Vector2 getZX(){
         //
         return null;
@@ -140,7 +135,6 @@ public class Vector3 implements
         //
     }
     @HideGetSet
-    @UnimplementedDoc
     public Vector2 getZY(){
         //
         return null;
@@ -150,32 +144,26 @@ public class Vector3 implements
     }
 
     @HideGetSet
-    @UnimplementedDoc
     public void SetXY(Vector2 v){
         //
     }
     @HideGetSet
-    @UnimplementedDoc
     public void SetXZ(Vector2 v){
         //
     }
     @HideGetSet
-    @UnimplementedDoc
     public void SetYZ(Vector2 v){
         //
     }
     @HideGetSet
-    @UnimplementedDoc
     public void SetYX(Vector2 v){
         //
     }
     @HideGetSet
-    @UnimplementedDoc
     public void SetZX(Vector2 v){
         //
     }
     @HideGetSet
-    @UnimplementedDoc
     public void SetZY(Vector2 v){
         //
     }
@@ -978,6 +966,20 @@ public class Vector3 implements
         //
     }
     public void removeRemove() {
+        //
+    }
+
+    //
+    public String serializeToString() {
+        //
+        return null;
+        //
+
+        //
+    }
+
+    //
+    public void deserializeLocal(String str) {
         //
     }
 }

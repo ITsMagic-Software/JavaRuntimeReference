@@ -311,6 +311,22 @@ public class Vertex {
 
         //
     }
+    @MethodArgs(args ={"file"})
+    public static Vertex loadFile(File file){
+        //
+        return null;
+        //
+
+        //
+    }
+    @MethodArgs(args ={"inputStream"})
+    public static Vertex loadFile(InputStream inputStream){
+        //
+        return null;
+        //
+
+        //
+    }
 
     //
     private @interface PrimitiveExpose { }

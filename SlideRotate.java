@@ -5,7 +5,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 
-@ClassCategory(cat ={"Prototyping"})
+@ClassCategory(cat ={"Prototyping","Components"})
 public class SlideRotate extends Component {
 
     //

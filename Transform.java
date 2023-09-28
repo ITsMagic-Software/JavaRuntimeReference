@@ -62,7 +62,6 @@ public class Transform{
 
     // Set rotation from angles in degrees
     @MethodArgs(args ={"x","y","z"})
-    @UnimplementedDoc
     public void setRotation(float x, float y, float z){
         //
     }
@@ -269,23 +268,19 @@ public class Transform{
         //
     }
 
-    @UnimplementedDoc
     @MethodArgs(args ={"other","lerpSpeed"})
     public void lerpLookTo(SpatialObject other, float lerpSpeed){
         //
     }
-    @UnimplementedDoc
     @MethodArgs(args ={"position","lerpSpeed"})
     public void lerpLookTo(Vector3 other, float lerpSpeed){
         //
     }
 
-    @UnimplementedDoc
     @MethodArgs(args ={"other","lerpSpeed"})
     public void lerpLookToIgnoreY(SpatialObject other, float lerpSpeed){
         //
     }
-    @UnimplementedDoc
     @MethodArgs(args ={"position","lerpSpeed"})
     public void lerpLookToIgnoreY(Vector3 other, float lerpSpeed){
         //

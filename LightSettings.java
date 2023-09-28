@@ -50,6 +50,22 @@ public class LightSettings {
         //
     }
 
+    @HideGetSet
+    @UnimplementedDoc
+    public Color getIndirectLightColor() {
+        //
+        return null;
+        //
+
+        //
+    }
+    @HideGetSet
+    @UnimplementedDoc
+    @MethodArgs(args ={"color"})
+    public void setIndirectLightColor(Color color) {
+        //
+    }
+
     @Deprecated
     @DeprecatedInfo(info={"PFile is now obsolete, use LightSettings.setSkybox(Texture) instead"})
     @HideGetSet

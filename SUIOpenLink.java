@@ -5,8 +5,7 @@ package JAVARuntime;
 /**
  * @Author Daniel Oschepkov (SpeakerFish)
  */
-@ClassCategory(cat ={"SupremeUI"})
-
+@ClassCategory(cat ={"SupremeUI","Components"})
 public class SUIOpenLink extends Component {
     //
 

@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat ={"Components"})
+@ClassCategory(cat ={"Rendering","Components"})
 public class SkinnedModelRenderer extends Component{
     public static final int CUBE = 456;
     public static final int SPHERE = 457;

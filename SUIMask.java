@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat ={"SupremeUI"})
+@ClassCategory(cat ={"SupremeUI","Components"})
 public class SUIMask extends Component{
     //
 

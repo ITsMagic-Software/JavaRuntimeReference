@@ -102,9 +102,13 @@ public class GizmoTransform extends GizmoElement{
 
     //
 
+    private static final ThreadLocal<Matrix4> ltMat4TL = new ThreadLocal<Matrix4>(){
+        protected Matrix4 initialValue() { return new Matrix4(); }
+    };
+
     @HideGetSet
     @MethodArgs(args ={"matrix"})
     public void setMatrix(float[] matrix) {
-        this.matrix = matrix;
+        //
     }
 }

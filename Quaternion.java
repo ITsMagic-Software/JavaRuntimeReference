@@ -9,7 +9,8 @@ package JAVARuntime;
 public class Quaternion implements
         MulOperator,
         MulEqualOperator,
-        EqualsComparator
+        EqualsComparator,
+        JsonSerializer
 {
     //
 
@@ -404,6 +405,20 @@ public class Quaternion implements
     }
     @MethodArgs(args ={"value"})
     public void mulEqual(Object otherObject) {
+        //
+    }
+
+    //
+    public String serializeToString() {
+        //
+        return null;
+        //
+
+        //
+    }
+
+    //
+    public void deserializeLocal(String str) {
         //
     }
 }

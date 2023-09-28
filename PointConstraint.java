@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat ={"Constraint"})
+@ClassCategory(cat ={"Constraint","Components"})
 public class PointConstraint extends Component{
     //
 

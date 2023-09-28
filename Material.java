@@ -79,7 +79,7 @@ public class Material {
     @MethodArgs(args ={"entryName"})
     public boolean getBoolean(String entryName){
         //
-        return 0;
+        return false;
         //
 
         //
@@ -87,7 +87,7 @@ public class Material {
     @MethodArgs(args ={"entryName"})
     public boolean findBoolean(String entryName){
         //
-        return 0;
+        return false;
         //
 
         //

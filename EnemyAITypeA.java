@@ -5,7 +5,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 
-@ClassCategory(cat ={"AI"})
+@ClassCategory(cat ={"AI","Components"})
 public class EnemyAITypeA extends Component {
 
     //

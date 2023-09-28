@@ -5,7 +5,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 
-@ClassCategory(cat ={"SUI"})
+@ClassCategory(cat ={"SupremeUI","Components"})
 public class SUIScrollView extends Component {
 
     //

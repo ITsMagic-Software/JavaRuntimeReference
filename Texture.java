@@ -27,7 +27,6 @@ public class Texture {
     }
 
     @HideGetSet
-    @UnimplementedDoc
     public boolean isWritable(){
         //
         return false;

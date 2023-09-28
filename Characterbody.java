@@ -15,6 +15,7 @@ public class Characterbody extends PhysicsEntity{
         //
     }
 
+    @HideGetSet
     public boolean isGravityEnabled(){
         //
         return false;
@@ -23,10 +24,12 @@ public class Characterbody extends PhysicsEntity{
         //
     }
     @MethodArgs(args ={"enabled"})
+    @HideGetSet
     public void setGravityEnabled(boolean enabled){
         //
     }
 
+    @HideGetSet
     public boolean isGlobalDirections(){
         //
         return false;
@@ -35,6 +38,7 @@ public class Characterbody extends PhysicsEntity{
         //
     }
     @MethodArgs(args ={"enabled"})
+    @HideGetSet
     public void setGlobalDirections(boolean enabled){
         //
     }
@@ -69,6 +73,7 @@ public class Characterbody extends PhysicsEntity{
         //
     }
 
+    @HideGetSet
     public float getForwardSpeed(){
         //
         return 0;
@@ -77,9 +82,11 @@ public class Characterbody extends PhysicsEntity{
         //
     }
     @MethodArgs(args ={"value"})
+    @HideGetSet
     public void setForwardSpeed(float value){
         //
     }
+    @HideGetSet
     public float getSideSpeed(){
         //
         return 0;
@@ -88,6 +95,7 @@ public class Characterbody extends PhysicsEntity{
         //
     }
     @MethodArgs(args ={"value"})
+    @HideGetSet
     public void setSideSpeed(float value){
         //
     }
@@ -124,6 +132,7 @@ public class Characterbody extends PhysicsEntity{
         //
     }
 
+    @HideGetSet
     public float getHeight(){
         //
         return 0;
@@ -132,10 +141,12 @@ public class Characterbody extends PhysicsEntity{
         //
     }
     @MethodArgs(args ={"value"})
+    @HideGetSet
     public void setHeight(float value){
         //
     }
-    
+
+    @HideGetSet
     public float getWidth(){
         //
         return 0;
@@ -144,10 +155,12 @@ public class Characterbody extends PhysicsEntity{
         //
     }
     @MethodArgs(args ={"value"})
+    @HideGetSet
     public void setWidth(float value){
         //
     }
 
+    @HideGetSet
     public float getJumpSpeed(){
         //
         return 0;
@@ -156,10 +169,12 @@ public class Characterbody extends PhysicsEntity{
         //
     }
     @MethodArgs(args ={"value"})
+    @HideGetSet
     public void setJumpSpeed(float value){
         //
     }
 
+    @HideGetSet
     public float getStepHeight(){
         //
         return 0;
@@ -168,10 +183,12 @@ public class Characterbody extends PhysicsEntity{
         //
     }
     @MethodArgs(args ={"value"})
+    @HideGetSet
     public void setStepHeight(float value){
         //
     }
 
+    @HideGetSet
     public Vector3 getPhysicsVelocity(){
         //
         return null;
@@ -179,6 +196,7 @@ public class Characterbody extends PhysicsEntity{
 
         //
     }
+    @HideGetSet
     public Vector2 getHorizontalPhysicsVelocity(){
         //
         return null;

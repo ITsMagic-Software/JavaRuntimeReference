@@ -5,7 +5,7 @@ package JAVARuntime;
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 
-@ClassCategory(cat ={"Roads"})
+@ClassCategory(cat ={"Roads","Components"})
 public class Road extends Component {
 
     //

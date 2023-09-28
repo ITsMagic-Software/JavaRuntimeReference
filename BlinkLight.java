@@ -6,7 +6,7 @@ package JAVARuntime;
  * @Author Daniel Oschepkov (SpeakerFish)
  */
 
-@ClassCategory(cat={"Prototyping"})
+@ClassCategory(cat={"Prototyping","Components"})
 public class BlinkLight extends Component {
     //
 

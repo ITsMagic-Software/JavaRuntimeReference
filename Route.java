@@ -5,11 +5,11 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat ={"SupremeUI","Components"})
-public class SUIController extends Component{
+@ClassCategory(cat ={"AI","Components"})
+public class Route extends Component{
     //
 
-    public SUIController() {
+    public Route() {
         //
         super();
         //

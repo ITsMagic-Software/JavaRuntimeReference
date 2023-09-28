@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat ={"Components"})
+@ClassCategory(cat ={"Rendering","Components"})
 public class ModelRenderer extends Component{
     public enum BatchingChannel{
         Automatic, Dynamic, Static, Disabled

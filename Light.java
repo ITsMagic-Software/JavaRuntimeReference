@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat ={"Components"})
+@ClassCategory(cat ={"Rendering","Components"})
 public class Light extends Component{
     public static final int TYPE_SUN = 0;
     public static final int TYPE_POINT = 1;

@@ -10,7 +10,7 @@ public class Vector2 implements
         SumOperator, SubOperator, MulOperator, DivOperator,
         SumEqualOperator, SubEqualOperator, MulEqualOperator, DivEqualOperator,
         EqualsComparator, GreaterThanComparator, LessThanComparator,
-        AddAddOperator, RemoveRemoveOperator
+        AddAddOperator, RemoveRemoveOperator, JsonSerializer
 {
 
     //
@@ -704,6 +704,20 @@ public class Vector2 implements
         //
     }
     public void removeRemove() {
+        //
+    }
+
+    //
+    public String serializeToString() {
+        //
+        return null;
+        //
+
+        //
+    }
+
+    //
+    public void deserializeLocal(String str) {
         //
     }
 }

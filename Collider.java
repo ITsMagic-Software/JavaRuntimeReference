@@ -5,7 +5,7 @@ package JAVARuntime;
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
-@ClassCategory(cat ={"Components","Physics"})
+@ClassCategory(cat ={"Physics","Components"})
 public class Collider extends Component{
     public static final int SHAPE_BOX = 0;
     public static final int SHAPE_SPHERE = 1;

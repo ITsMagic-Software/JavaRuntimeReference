@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * @Author Lucas Leandro (ITsMagic Founder)
  * MethodArgs filled by Carlos at 22-04-2022
  */
-@ClassCategory(cat ={"Components"})
+@ClassCategory(cat ={"Rendering","Components"})
 public class Camera extends Component{
     public static final int PROJECTION_3D = 0;
     public static final int PROJECTION_2D = 1;

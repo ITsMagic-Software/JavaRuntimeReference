@@ -135,6 +135,17 @@ public class Component extends InspectorMemory{
         return null;
     }
 
+    public <T extends Object> T getUserData(){
+        //
+        return null;
+        //
+
+        //
+    }
+    public void setUserData(Object userData) {
+        //
+    }
+
     public void destroy(){
         //>REMOVE-BRIDGE<
 
