@@ -1,7 +1,6 @@
 package JAVARuntime;
 
-//<REMOVE-BRIDGE>
-//>REMOVE-BRIDGE<
+//
 
 /**
  * @Author Lucas Leandro (ITsMagic Founder)

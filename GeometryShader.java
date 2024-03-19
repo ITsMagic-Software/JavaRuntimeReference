@@ -1,11 +1,6 @@
 package JAVARuntime;
 
-//<REMOVE-BRIDGE>
-import com.itsmagic.engine.Activities.Main.Main;
-import com.itsmagic.engine.Core.Components.ClassExporter;
-import com.itsmagic.engine.Core.Core;
-import com.itsmagic.engine.Engines.Graphics.RuntimeShading.FragmentShaderScript;
-//>REMOVE-BRIDGE<
+//
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,39 +15,19 @@ public class GeometryShader {
     /// Abstract
     @MethodArgs(args={"materialShader", "shaderName"})
     public static GeometryShader loadFile(MaterialShader materialShader, String shaderName){
-        //<REMOVE-BRIDGE>
-        /*
-        //>REMOVE-BRIDGE<
+        //
         return null;
-        //<REMOVE-BRIDGE>
-        */
-        //>REMOVE-BRIDGE<
+        //
 
-        //<REMOVE-BRIDGE>
-        FragmentShaderScript vertex = ClassExporter.getBuilder().fromJson(
-                ClassExporter.loadJson(materialShader.getShaderFolderLocation() + "/" + shaderName + FormatDictionaries.GEOMETRY_GLSL, Main.getActivity()),
-                FragmentShaderScript.class
-        );
-
-        if (vertex != null) {
-            return new GeometryShader(vertex.getCode());
-        }
-        return null;
-        //>REMOVE-BRIDGE<
+        //
     }
 
     @MethodArgs(args ={"inputStream"})
     public static GeometryShader loadInputStream(InputStream inputStream) throws IOException {
-        //<REMOVE-BRIDGE>
-        /*
-        //>REMOVE-BRIDGE<
+        //
         return null;
-        //<REMOVE-BRIDGE>
-        */
-        //>REMOVE-BRIDGE<
+        //
 
-        //<REMOVE-BRIDGE>
-        return new GeometryShader(ClassExporter.loadJsonFromInputStream(inputStream));
-        //>REMOVE-BRIDGE<
+        //
     }
 }

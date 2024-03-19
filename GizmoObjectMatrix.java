@@ -1,9 +1,6 @@
 package JAVARuntime;
 
-//<REMOVE-BRIDGE>
-import com.itsmagic.engine.Engines.Graphics.GraphicsEngine;
-
-//>REMOVE-BRIDGE<
+//
 
 
 /**
@@ -20,16 +17,10 @@ public final class GizmoObjectMatrix extends GizmoMatrix {
     private transient RenderMode renderMode = RenderMode.Triangles;
     private transient Object userPointer = null;
     private transient boolean enableTransparency = false;
-    //<REMOVE-BRIDGE>
-    /*
-    //>REMOVE-BRIDGE<
+    //
     private int wireFrameWidth = 0;
-    //<REMOVE-BRIDGE>
-    */
-    //>REMOVE-BRIDGE<
-    //<REMOVE-BRIDGE>
-    private transient int wireFrameWidth = GraphicsEngine.Utils.lineWidth;
-    //>REMOVE-BRIDGE<
+    //
+    //
 
     public GizmoObjectMatrix() {
     }
@@ -46,15 +37,7 @@ public final class GizmoObjectMatrix extends GizmoMatrix {
     @HideGetSet
     @MethodArgs(args ={"vertex"})
     public void setVertex(Vertex vertex) {
-        //<REMOVE-BRIDGE>
-        if(this.vertex != null){
-            this.vertex.vertex.removeLink(this);
-        }
-        this.vertex = vertex;
-        if(this.vertex != null){
-            this.vertex.vertex.addLink(this);
-        }
-        //>REMOVE-BRIDGE<
+        //
     }
 
     @Override

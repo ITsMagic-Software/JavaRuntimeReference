@@ -1,9 +1,6 @@
 package JAVARuntime;
 
-//<REMOVE-BRIDGE>
-import com.itsmagic.engine.Core.Components.JCompiler.Interfaces.BuildClassConstructor;
-import com.itsmagic.engine.Engines.Engine.Engine;
-//>REMOVE-BRIDGE<
+//
 
 
 /**
@@ -11,12 +8,7 @@ import com.itsmagic.engine.Engines.Engine.Engine;
  */
 @ClassCategory(cat ={"OGL"})
 public class OGLES2 extends JAVARuntime.OGLES {
-    //<REMOVE-BRIDGE>
-    @BuildClassConstructor
-    public OGLES2(Engine engine) {
-        super(engine);
-    }
-    //>REMOVE-BRIDGE<
+    //
 
     public OGLES2(){
         super();

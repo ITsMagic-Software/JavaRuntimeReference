@@ -25,33 +25,19 @@ public final class SUIUtils {
 
     @MethodArgs(args ={"x","y","out"})
     public static Vector2 convertTouchPosition(int x, int y, Vector2 out){
-        //<REMOVE-BRIDGE>
-        /*
-        //>REMOVE-BRIDGE<
+        //
         return null;
-        //<REMOVE-BRIDGE>
-        */
-        //>REMOVE-BRIDGE<
+        //
 
-        //<REMOVE-BRIDGE>
-        out.setX(x);
-        out.setY(Screen.height() - y - 1);
-        return out;
-        //>REMOVE-BRIDGE<
+        //
     }
 
     @MethodArgs(args ={"y"})
     public static int convertTouchPositionY(int y){
-        //<REMOVE-BRIDGE>
-        /*
-        //>REMOVE-BRIDGE<
+        //
         return 0;
-        //<REMOVE-BRIDGE>
-        */
-        //>REMOVE-BRIDGE<
+        //
 
-        //<REMOVE-BRIDGE>
-        return Screen.getHeight() - y - 1;
-        //>REMOVE-BRIDGE<
+        //
     }
 }

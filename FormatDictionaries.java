@@ -1,7 +1,6 @@
 package JAVARuntime;
 
-//<REMOVE-BRIDGE>
-//>REMOVE-BRIDGE<
+//
 
 @ClassCategory(cat ={"Files"})
 public final class FormatDictionaries {
@@ -52,20 +51,10 @@ public final class FormatDictionaries {
 
     @MethodArgs(args ={"format"})
     public static String createFrom(String format){
-        //<REMOVE-BRIDGE>
-        /*
-        //>REMOVE-BRIDGE<
+        //
         return null;
-        //<REMOVE-BRIDGE>
-        */
-        //>REMOVE-BRIDGE<
+        //
 
-        //<REMOVE-BRIDGE>
-        if(format.startsWith(".")){
-            return format;
-        } else {
-            return "." + format;
-        }
-        //>REMOVE-BRIDGE<
+        //
     }
 }

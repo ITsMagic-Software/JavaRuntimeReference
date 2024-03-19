@@ -11,9 +11,7 @@ public class CircleBrush implements Brush{
      *  get the intensity of this brush, based on the coordinates 0f - 1f
      *  return the intensity from 0f - 1f
      */
-    //<REMOVE-BRIDGE>
-    @Override
-    //>REMOVE-BRIDGE<
+    //
     @MethodArgs(args ={"x","y"})
     public float getIntensity(float x, float y){
         float distance = Math.sqrt((x * x) + (y*y));

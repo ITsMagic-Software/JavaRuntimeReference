@@ -5,20 +5,14 @@ public final class System {
     private System() {}
 
     public static void gc(){
-        //<REMOVE-BRIDGE>
-        java.lang.System.gc();
-        //>REMOVE-BRIDGE<
+        //
     }
 
     public static void exit(){
-        //<REMOVE-BRIDGE>
-        GameController.quit();
-        //>REMOVE-BRIDGE<
+        //
     }
     public static void exit(int status){
-        //<REMOVE-BRIDGE>
-        GameController.quit();
-        //>REMOVE-BRIDGE<
+        //
     }
 
     public static void load(String filename) {
@@ -34,25 +28,17 @@ public final class System {
     }
 
     public static String lineSeparator() {
-        //<REMOVE-BRIDGE>
-        /*
-        //>REMOVE-BRIDGE<
+        //
         return null;
-        //<REMOVE-BRIDGE>
-        */
-        //>REMOVE-BRIDGE<
+        //
 
-        //<REMOVE-BRIDGE>
-        return java.lang.System.lineSeparator();
-        //>REMOVE-BRIDGE<
+        //
     }
 
     public static void arraycopy(Object src,  int  srcPos,
                                         Object dest, int destPos,
                                         int length){
-        //<REMOVE-BRIDGE>
-        java.lang.System.arraycopy(src, srcPos, dest, destPos, length);
-        //>REMOVE-BRIDGE<
+        //
     }
 
     public static long currentTimeMillis(){

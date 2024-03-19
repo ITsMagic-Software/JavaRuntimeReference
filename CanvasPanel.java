@@ -1,8 +1,6 @@
 package JAVARuntime;
 
-//<REMOVE-BRIDGE>
 //
-//>REMOVE-BRIDGE<
 
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
@@ -16,14 +14,10 @@ public class CanvasPanel extends EditorPanel {
         public transient DrawMode drawMode;
     }
 
-    //<REMOVE-BRIDGE>
     //
-    //>REMOVE-BRIDGE<
 
     public CanvasPanel(String tittle) {
-        //<REMOVE-BRIDGE>
         //
-        //>REMOVE-BRIDGE<
     }
 
     public void start() {

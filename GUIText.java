@@ -1,10 +1,6 @@
 package JAVARuntime;
 
-//<REMOVE-BRIDGE>
-import com.itsmagic.engine.Activities.Editor.Interface.Objects.PercentageRect;
-import com.itsmagic.engine.Activities.Editor.Panels.Scripting.Interfaces.Utils.IgnoreAutoComplete;
-import com.itsmagic.engine.Engines.Engine.TextRender.Font;
-//>REMOVE-BRIDGE<
+//
 
 
 /**
@@ -141,12 +137,5 @@ public final class GUIText extends GUIElement {
         this.font = font;
     }
 
-    //<REMOVE-BRIDGE>
-    @IgnoreAutoComplete
-    @Override
-    @MethodArgs(args ={"graphicsEngine","rect"})
-    public void drawRender(PercentageRect rect){
-        throw new RuntimeException("GUIText can't be drawed by image!");
-    }
-    //>REMOVE-BRIDGE<
+    //
 }

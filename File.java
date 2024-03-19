@@ -1,9 +1,6 @@
 package JAVARuntime;
 
-//<REMOVE-BRIDGE>
-import com.itsmagic.engine.Core.Components.ProjectController.ProjectController;
-import com.itsmagic.engine.Core.Core;
-//>REMOVE-BRIDGE<
+//
 
 import java.io.FileFilter;
 import java.io.FilenameFilter;
@@ -273,51 +270,19 @@ public class File extends java.io.File {
      * Check if the address is inside the folders accessible by ITsMagic
      */
     public boolean isAccessible(){
-        //<REMOVE-BRIDGE>
-        /*
-        //>REMOVE-BRIDGE<
+        //
         return false;
-        //<REMOVE-BRIDGE>
-        */
-        //>REMOVE-BRIDGE<
+        //
 
-        //<REMOVE-BRIDGE>
-        if(!ProjectController.getLoadedProjectName().equals("@compiled@")) {
-            if (!super.getAbsolutePath().contains(Directories.getProjectFolder())) {
-                throw new InaccessibleFilePathException(super.getAbsolutePath());
-            } else {
-                return true;
-            }
-        }
-        // Check compilled
-        if (!super.getAbsolutePath().contains(Directories.internal())) {
-            throw new InaccessibleFilePathException(super.getAbsolutePath());
-        }
-        return true;
-        //>REMOVE-BRIDGE<
+        //
     }
     @MethodArgs(args ={"path"})
     public boolean isAccessible(String path){
-        //<REMOVE-BRIDGE>
-        /*
-        //>REMOVE-BRIDGE<
+        //
         return false;
-        //<REMOVE-BRIDGE>
-        */
-        //>REMOVE-BRIDGE<
+        //
 
-        //<REMOVE-BRIDGE>
-        if(!Core.projectController.getLoadedProjectName().equals("@compiled@")) {
-            if (!path.contains(Directories.getProjectFolder())) {
-                throw new InaccessibleFilePathException(super.getAbsolutePath());
-            }
-        }
-        // Check compilled
-        if (!path.contains(Directories.internal())) {
-            throw new InaccessibleFilePathException(super.getAbsolutePath());
-        }
-        return true;
-        //>REMOVE-BRIDGE<
+        //
     }
 }
 

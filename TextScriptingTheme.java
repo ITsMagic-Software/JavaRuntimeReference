@@ -1,8 +1,6 @@
 package JAVARuntime;
 
-//<REMOVE-BRIDGE>
 //
-//>REMOVE-BRIDGE<
 
 public class TextScriptingTheme {
     public transient Color textColor = new Color("#ABB7C5");
