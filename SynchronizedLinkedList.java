@@ -1,6 +1,8 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+import java.util.LinkedList;
+//>REMOVE-BRIDGE<
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  * A bridge that calls between java runtime and Java Collections.synchronizedList
@@ -10,6 +12,8 @@ package JAVARuntime;
 public class SynchronizedLinkedList extends SynchronizedList {
 
     public SynchronizedLinkedList() {
-        //
+        //<REMOVE-BRIDGE>
+        super(new LinkedList<>());
+        //>REMOVE-BRIDGE<
     }
 }

@@ -1,13 +1,17 @@
 package JAVARuntime;
 
+//<REMOVE-BRIDGE>
+import com.itsmagic.engine.Activities.Editor.Panels.Scripting.Interfaces.Utils.IgnoreAutoComplete;
+
 //
+//>REMOVE-BRIDGE<
 
 public class TextScriptingStyleSpan {
-    public Color color;
-    public boolean bold = false;
-    public boolean italic = false;
-    public boolean underline = false;
-    public boolean strikethrough = false;
+    public transient Color color;
+    public transient boolean bold = false;
+    public transient boolean italic = false;
+    public transient boolean underline = false;
+    public transient boolean strikethrough = false;
 
     @MethodArgs(args ={"color"})
     public TextScriptingStyleSpan(Color color) {

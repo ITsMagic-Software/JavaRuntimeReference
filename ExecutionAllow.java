@@ -1,8 +1,8 @@
 package JAVARuntime;
 
 public class ExecutionAllow{
-    private boolean onGameStopped;
-    private boolean onGameRunning;
+    private transient boolean onGameStopped;
+    private transient boolean onGameRunning;
 
     @MethodArgs(args ={"onGameStopped", "onGameRunning"})
     public ExecutionAllow(boolean onGameStopped, boolean onGameRunning) {

@@ -1,6 +1,8 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+import com.itsmagic.engine.Activities.Editor.Panels.Scripting.Interfaces.Utils.IgnoreAutoComplete;
+//>REMOVE-BRIDGE<
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -15,14 +17,20 @@ import java.util.ListIterator;
  */
 @ClassCategory(cat ={"Lists"})
 public class SynchronizedList implements List {
-    //
-    private List list;
+    //<REMOVE-BRIDGE>
+    @IgnoreAutoComplete
+    //>REMOVE-BRIDGE<
+    private transient List list;
 
     public SynchronizedList() {
-        //
+        //<REMOVE-BRIDGE>
+        this.list = Collections.synchronizedList(new ArrayList<>());
+        //>REMOVE-BRIDGE<
     }
     public SynchronizedList(List list) {
-        //
+        //<REMOVE-BRIDGE>
+        this.list = Collections.synchronizedList(list);
+        //>REMOVE-BRIDGE<
     }
 
     public int size() {

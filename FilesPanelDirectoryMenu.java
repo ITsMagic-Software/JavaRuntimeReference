@@ -2,7 +2,7 @@ package JAVARuntime;
 
 @ClassCategory(cat ={"Files"})
 public class FilesPanelDirectoryMenu {
-    private String menu;
+    private transient String menu;
 
     @MethodArgs(args ={"menu"})
     public FilesPanelDirectoryMenu(String menu) {

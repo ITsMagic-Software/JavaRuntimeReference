@@ -1,6 +1,10 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+import com.itsmagic.engine.Activities.Editor.Interface.Objects.PercentageRect;
+import com.itsmagic.engine.Activities.Editor.Panels.Scripting.Interfaces.Utils.IgnoreAutoComplete;
+import com.itsmagic.engine.Engines.Engine.Screen;
+//>REMOVE-BRIDGE<
 
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
@@ -8,8 +12,8 @@ package JAVARuntime;
 @ClassCategory(cat ={"GUI"})
 public class GUIElement {
 
-    private int layer, x, y, width, height;
-    private Quaternion rotation = null;
+    private transient int layer, x, y, width, height;
+    private transient Quaternion rotation = null;
 
     public GUIElement() {
     }
@@ -28,16 +32,24 @@ public class GUIElement {
 
     @HideGetSet
     public int getLayer(){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return 0;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        return layer;
+        //>REMOVE-BRIDGE<
     }
     @HideGetSet
     @MethodArgs(args ={"value"})
     public GUIElement setLayer(int value){
-        //
+        //<REMOVE-BRIDGE>
+        layer = value;
+        //>REMOVE-BRIDGE<
         return this;
     }
 
@@ -107,17 +119,67 @@ public class GUIElement {
 
     @MethodArgs(args ={"v"})
     public void setRotationX(float v){
-        //
+        //<REMOVE-BRIDGE>
+        if(this.rotation == null){
+            this.rotation = new Quaternion();
+        }
+        this.rotation.setX(v);
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"v"})
     public void setRotationY(float v){
-        //
+        //<REMOVE-BRIDGE>
+        if(this.rotation == null){
+            this.rotation = new Quaternion();
+        }
+        this.rotation.setY(v);
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"v"})
     public void setRotationZ(float v){
-        //
+        //<REMOVE-BRIDGE>
+        if(this.rotation == null){
+            this.rotation = new Quaternion();
+        }
+        this.rotation.setZ(v);
+        //>REMOVE-BRIDGE<
     }
 
-    //
+    //<REMOVE-BRIDGE>
+    @IgnoreAutoComplete
+    @MethodArgs(args ={"rect"})
+    public float getGameViewX(PercentageRect rect){
+        if(rect == null){
+            return (float) x / (float) Screen.getWidth();
+        }
+        //
+        return (float) x / (float) Screen.getWidth();
+    }
+    @IgnoreAutoComplete
+    @MethodArgs(args ={"rect"})
+    public float getGameViewY(PercentageRect rect){
+        if(rect == null){
+            return (float) y / (float) Screen.getHeight();
+        }
+        //
+        return (float) y / (float) Screen.getHeight();
+    }
+    @IgnoreAutoComplete
+    @MethodArgs(args ={"rect"})
+    public float getGameViewW(PercentageRect rect){
+        return (float) width / (float) Screen.getWidth();
+    }
+    @IgnoreAutoComplete
+    @MethodArgs(args ={"rect"})
+    public float getGameViewH(PercentageRect rect){
+        return (float) height / (float) Screen.getHeight();
+    }
+
+    @IgnoreAutoComplete
+    @MethodArgs(args ={"graphicsEngine","rect"})
+    public void drawRender(PercentageRect rect){
+
+    }
+    //>REMOVE-BRIDGE<
 
 }

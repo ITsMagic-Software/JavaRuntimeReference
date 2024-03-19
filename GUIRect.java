@@ -1,14 +1,15 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+//>REMOVE-BRIDGE<
 
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 @ClassCategory(cat ={"GUI"})
-public class GUIRect {
+public final class GUIRect {
 
-    private int x, y, width, height;
+    private transient int x, y, width, height;
 
     public GUIRect() {
     }

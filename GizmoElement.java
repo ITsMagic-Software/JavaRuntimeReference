@@ -1,6 +1,9 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+import com.itsmagic.engine.Engines.Graphics.GraphicsEngine;
+
+//>REMOVE-BRIDGE<
 
 
 /**
@@ -12,7 +15,7 @@ public class GizmoElement {
         Triangles, WireFrame, Both, SimpleWireFrame
     }
 
-    private Object userPointer = null;
+    private transient Object userPointer = null;
     public Object getUserPointer() { return userPointer; }
     @MethodArgs(args ={"userPointer"})
     public void setUserPointer(Object userPointer) { this.userPointer = userPointer; }
@@ -33,11 +36,17 @@ public class GizmoElement {
         return null;
     }
     public int getWireFrameWidth(){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return 0;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        return GraphicsEngine.Utils.lineWidth;
+        //>REMOVE-BRIDGE<
     }
     public boolean isEnableTransparency() {
         return false;

@@ -1,7 +1,8 @@
 package JAVARuntime;
 
 import java.util.List;
-//
+//<REMOVE-BRIDGE>
+//>REMOVE-BRIDGE<
 
 public class TextScriptingProvider {
 

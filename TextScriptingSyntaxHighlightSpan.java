@@ -1,9 +1,9 @@
 package JAVARuntime;
 
 public class TextScriptingSyntaxHighlightSpan {
-    public TextScriptingStyleSpan span;
-    public int start;
-    public int end;
+    public transient TextScriptingStyleSpan span;
+    public transient int start;
+    public transient int end;
 
     public TextScriptingSyntaxHighlightSpan() { }
     @MethodArgs(args ={"span","start","end"})

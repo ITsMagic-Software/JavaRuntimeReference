@@ -1,6 +1,7 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+//>REMOVE-BRIDGE<
 
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
@@ -8,7 +9,7 @@ package JAVARuntime;
 @ClassCategory(cat ={"Debug"})
 public class GizmoMatrix extends GizmoElement{
 
-    private float[] matrix;
+    private transient float[] matrix;
 
     public GizmoMatrix() {
 
@@ -17,11 +18,17 @@ public class GizmoMatrix extends GizmoElement{
     @Override
     @HideGetSet
     public float[] getMatrix(){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return null;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        return matrix;
+        //>REMOVE-BRIDGE<
     }
     @HideGetSet
     @MethodArgs(args ={"matrix"})

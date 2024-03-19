@@ -1,7 +1,7 @@
 package JAVARuntime;
 
 public class ObjectsPanelMenu {
-    private String menu;
+    private transient String menu;
 
     @MethodArgs(args ={"menu"})
     public ObjectsPanelMenu(String menu) {

@@ -1,6 +1,13 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+import android.opengl.GLES30;
+
+import com.itsmagic.engine.Core.Components.JCompiler.Interfaces.BuildClassConstructor;
+import com.itsmagic.engine.Engines.Engine.Engine;
+import com.itsmagic.engine.Engines.Graphics.OGL.GL;
+import com.itsmagic.engine.Engines.Native.BufferUtils;
+//>REMOVE-BRIDGE<
 import java.nio.IntBuffer;
 
 /**
@@ -8,7 +15,12 @@ import java.nio.IntBuffer;
  */
 @ClassCategory(cat ={"OGL"})
 public class OGLES3 extends JAVARuntime.OGLES2 {
-    //
+    //<REMOVE-BRIDGE>
+    @BuildClassConstructor
+    public OGLES3(Engine engine) {
+        super(engine);
+    }
+    //>REMOVE-BRIDGE<
 
     public OGLES3(){
         super();
@@ -17,49 +29,111 @@ public class OGLES3 extends JAVARuntime.OGLES2 {
          */
     }
 
-    //
+    //<REMOVE-BRIDGE>
+    @Override
+    //>REMOVE-BRIDGE<
     @MethodArgs(args ={"indices"})
     public void drawTriangles(int[] indices){
-        //
+        //<REMOVE-BRIDGE>
+        if(validate()){
+            IntBuffer intBuffer = BufferUtils.createIntBuffer(indices);
+            GL.glDrawElements(GLES30.GL_TRIANGLES, intBuffer.capacity(),
+                    GLES30.GL_UNSIGNED_INT, intBuffer);
+            Engine.tempDrawCalls++;
+        }
+        //>REMOVE-BRIDGE<
     }
-    //
+    //<REMOVE-BRIDGE>
+    @Override
+    //>REMOVE-BRIDGE<
     @MethodArgs(args ={"indices"})
     public void drawTriangles(IntBuffer indices){
-        //
+        //<REMOVE-BRIDGE>
+        if(validate()){
+            indices.position(0);
+            GL.glDrawElements(GLES30.GL_TRIANGLES, indices.capacity(),
+                    GLES30.GL_UNSIGNED_INT, indices);
+            Engine.tempDrawCalls++;
+        }
+        //>REMOVE-BRIDGE<
     }
-    //
+    //<REMOVE-BRIDGE>
+    @Override
+    //>REMOVE-BRIDGE<
     @MethodArgs(args ={"buffr"})
     public void drawTriangles(NativeIntBuffer buffer){
-        //
+        //<REMOVE-BRIDGE>
+        if(validate()){
+            buffer.buffer.drawElements(GLES30.GL_TRIANGLES);
+            Engine.tempDrawCalls++;
+        }
+        //>REMOVE-BRIDGE<
     }
 
-    //
+    //<REMOVE-BRIDGE>
+    @Override
+    //>REMOVE-BRIDGE<
     @MethodArgs(args ={"indices"})
     public void drawLines(int[] indices){
-        //
+        //<REMOVE-BRIDGE>
+        if(validate()){
+            IntBuffer intBuffer = BufferUtils.createIntBuffer(indices);
+            GL.glDrawElements(GLES30.GL_TRIANGLES, intBuffer.capacity(),
+                    GLES30.GL_LINE_LOOP, intBuffer);
+        }
+        //>REMOVE-BRIDGE<
     }
-    //
+    //<REMOVE-BRIDGE>
+    @Override
+    //>REMOVE-BRIDGE<
     @MethodArgs(args ={"indices"})
     public void drawLines(IntBuffer indices){
-        //
+        //<REMOVE-BRIDGE>
+        if(validate()){
+            GL.glDrawElements(GLES30.GL_TRIANGLES, indices.capacity(),
+                    GLES30.GL_LINE_LOOP, indices);
+        }
+        //>REMOVE-BRIDGE<
     }
-    //
+    //<REMOVE-BRIDGE>
+    @Override
+    //>REMOVE-BRIDGE<
     @MethodArgs(args ={"buffer"})
     public void drawLines(NativeIntBuffer buffer){
-        //
+        //<REMOVE-BRIDGE>
+        if(validate()){
+            buffer.buffer.drawElements(GLES30.GL_LINE_LOOP);
+            Engine.tempDrawCalls++;
+        }
+        //>REMOVE-BRIDGE<
     }
 
-    //
+    //<REMOVE-BRIDGE>
+    @Override
+    //>REMOVE-BRIDGE<
     public void clearColorBuffer(){
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestOpenglEngineThread();
+        GL.glClear(GLES30.GL_COLOR_BUFFER_BIT);
+        //>REMOVE-BRIDGE<
     }
-    //
+    //<REMOVE-BRIDGE>
+    @Override
+    //>REMOVE-BRIDGE<
     public void clearDepthBuffer(){
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestOpenglEngineThread();
+        GL.glClear(GLES30.GL_DEPTH_BUFFER_BIT);
+        //>REMOVE-BRIDGE<
     }
-    //
+    //<REMOVE-BRIDGE>
+    @Override
+    //>REMOVE-BRIDGE<
     public void clearColorDepthBuffer(){
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestOpenglEngineThread();
+        GL.glClear(GLES30.GL_COLOR_BUFFER_BIT | GLES30.GL_DEPTH_BUFFER_BIT);
+        //>REMOVE-BRIDGE<
     }
 
     public static final int GL_ACTIVE_UNIFORM_BLOCKS = 35382;

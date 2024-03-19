@@ -2,9 +2,9 @@ package JAVARuntime;
 
 @ClassCategory(cat ={"Java"})
 public class JClass {
-    public Class classAddress;
-    public String name;
-    public boolean isEngineNative;
+    public transient Class classAddress;
+    public transient String name;
+    public transient boolean isEngineNative;
 
     @MethodArgs(args ={"classAddress","name","isEngineNative"})
     public JClass(Class classAddress, String name, boolean isEngineNative) {

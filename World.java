@@ -1,5 +1,5 @@
 package JAVARuntime;
 
 @ClassCategory(cat ={"World"})
-public class World {
+public final class World {
 }

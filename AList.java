@@ -1,6 +1,8 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+import com.itsmagic.engine.Activities.Editor.Panels.Scripting.Interfaces.Utils.IgnoreAutoComplete;
+//>REMOVE-BRIDGE<
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
@@ -13,14 +15,20 @@ import java.util.ListIterator;
  */
 @ClassCategory(cat ={"Lists"})
 public class AList implements java.util.List {
-    //
-    private java.util.List list;
+    //<REMOVE-BRIDGE>
+    @IgnoreAutoComplete
+    //>REMOVE-BRIDGE<
+    private transient java.util.List list;
 
     public AList() {
-        //
+        //<REMOVE-BRIDGE>
+        this.list = new ArrayList<>();
+        //>REMOVE-BRIDGE<
     }
     public AList(java.util.List list) {
-        //
+        //<REMOVE-BRIDGE>
+        this.list = new ArrayList(list);
+        //>REMOVE-BRIDGE<
     }
 
     public int size() {

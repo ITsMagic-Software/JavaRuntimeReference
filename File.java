@@ -1,6 +1,9 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+import com.itsmagic.engine.Core.Components.ProjectController.ProjectController;
+import com.itsmagic.engine.Core.Core;
+//>REMOVE-BRIDGE<
 
 import java.io.FileFilter;
 import java.io.FilenameFilter;
@@ -17,6 +20,10 @@ public class File extends java.io.File {
     public File(String pathname) {
         super(pathname);
         isAccessible();
+    }
+    @MethodArgs(args ={"file"})
+    public File(java.io.File file) {
+        super(file.getAbsolutePath());
     }
     @MethodArgs(args ={"parent","child"})
     public File(String parent, String child) {
@@ -42,9 +49,9 @@ public class File extends java.io.File {
         isAccessible();
         return super.getParent();
     }
-    public java.io.File getParentFile() {
+    public File getParentFile() {
         isAccessible();
-        return super.getParentFile();
+        return new File(super.getParentFile());
     }
     public String getPath() {
         /**
@@ -64,11 +71,11 @@ public class File extends java.io.File {
          */
         return super.getAbsolutePath();
     }
-    public java.io.File getAbsoluteFile() {
+    public File getAbsoluteFile() {
         /**
          * Don't check here, it will throw a stack overflow error
          */
-        return super.getAbsoluteFile();
+        return new File(super.getAbsoluteFile());
     }
     public String getCanonicalPath() throws IOException {
         /**
@@ -76,11 +83,11 @@ public class File extends java.io.File {
          */
         return super.getCanonicalPath();
     }
-    public java.io.File getCanonicalFile() throws IOException {
+    public File getCanonicalFile() throws IOException {
         /**
          * Don't check here, it will throw a stack overflow error
          */
-        return super.getCanonicalFile();
+        return new File(super.getCanonicalFile());
     }
     public URL toURL() throws MalformedURLException {
         isAccessible();
@@ -143,19 +150,37 @@ public class File extends java.io.File {
         isAccessible();
         return super.list(filter);
     }
-    public java.io.File[] listFiles() {
+    public File[] listFiles() {
         isAccessible();
-        return super.listFiles();
+        java.io.File[] files = super.listFiles();
+        if(files == null) return null;
+        File[] out = new File[files.length];
+        for (int i = 0; i < files.length; i++) {
+            out[i] = new File(files[i]);
+        }
+        return out;
     }
     @MethodArgs(args ={"filter"})
-    public java.io.File[] listFiles(FilenameFilter filter) {
+    public File[] listFiles(FilenameFilter filter) {
         isAccessible();
-        return super.listFiles(filter);
+        java.io.File[] files = super.listFiles(filter);
+        if(files == null) return null;
+        File[] out = new File[files.length];
+        for (int i = 0; i < files.length; i++) {
+            out[i] = new File(files[i]);
+        }
+        return out;
     }
     @MethodArgs(args ={"filter"})
-    public java.io.File[] listFiles(FileFilter filter) {
+    public File[] listFiles(FileFilter filter) {
         isAccessible();
-        return super.listFiles(filter);
+        java.io.File[] files = super.listFiles(filter);
+        if(files == null) return null;
+        File[] out = new File[files.length];
+        for (int i = 0; i < files.length; i++) {
+            out[i] = new File(files[i]);
+        }
+        return out;
     }
     public boolean mkdir() {
         isAccessible();
@@ -166,7 +191,7 @@ public class File extends java.io.File {
         return super.mkdirs();
     }
     @MethodArgs(args ={"destination"})
-    public boolean renameTo(java.io.File dest) {
+    public boolean renameTo(File dest) {
         isAccessible();
         return super.renameTo(dest);
     }
@@ -226,7 +251,7 @@ public class File extends java.io.File {
         return super.getUsableSpace();
     }
     @MethodArgs(args ={"pathname"})
-    public int compareTo(java.io.File pathname) {
+    public int compareTo(File pathname) {
         isAccessible();
         return super.compareTo(pathname);
     }
@@ -239,40 +264,60 @@ public class File extends java.io.File {
         isAccessible();
         return super.hashCode();
     }
-    public String toString() {
-        isAccessible();
-        return super.toString();
-    }
     public Path toPath() {
         isAccessible();
         return super.toPath();
-    }
-    protected Object clone() throws CloneNotSupportedException {
-        isAccessible();
-        return super.clone();
-    }
-    protected void finalize() throws Throwable {
-        isAccessible();
-        super.finalize();
     }
 
     /**
      * Check if the address is inside the folders accessible by ITsMagic
      */
     public boolean isAccessible(){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return false;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        if(!ProjectController.getLoadedProjectName().equals("@compiled@")) {
+            if (!super.getAbsolutePath().contains(Directories.getProjectFolder())) {
+                throw new InaccessibleFilePathException(super.getAbsolutePath());
+            } else {
+                return true;
+            }
+        }
+        // Check compilled
+        if (!super.getAbsolutePath().contains(Directories.internal())) {
+            throw new InaccessibleFilePathException(super.getAbsolutePath());
+        }
+        return true;
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"path"})
     public boolean isAccessible(String path){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return false;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        if(!Core.projectController.getLoadedProjectName().equals("@compiled@")) {
+            if (!path.contains(Directories.getProjectFolder())) {
+                throw new InaccessibleFilePathException(super.getAbsolutePath());
+            }
+        }
+        // Check compilled
+        if (!path.contains(Directories.internal())) {
+            throw new InaccessibleFilePathException(super.getAbsolutePath());
+        }
+        return true;
+        //>REMOVE-BRIDGE<
     }
 }
 

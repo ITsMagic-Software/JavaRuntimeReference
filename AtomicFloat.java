@@ -7,9 +7,9 @@ import static java.lang.Float.*;
  * Found at https://stackoverflow.com/questions/5505460/java-is-there-no-atomicfloat-or-atomicdouble/34797921
  */
 @ClassCategory(cat ={"Atomic"})
-public class AtomicFloat extends Number {
+public final class AtomicFloat extends Number {
 
-    private final AtomicInteger bits;
+    private transient final AtomicInteger bits;
 
     public AtomicFloat() {
         this(0f);

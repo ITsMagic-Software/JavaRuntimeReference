@@ -1,53 +1,115 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+import com.itsmagic.engine.Activities.Editor.Panels.Scripting.Interfaces.Utils.IgnoreAutoComplete;
+import com.itsmagic.engine.Core.Core;
+import com.itsmagic.engine.Engines.Engine.Color.ColorINT;
+import com.itsmagic.engine.Engines.Engine.Material.MaterialManager;
+import com.itsmagic.engine.Engines.Engine.Vector.Vector2;
+//>REMOVE-BRIDGE<
 
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 @ClassCategory(cat ={"Material"})
-public class Material {
-    //
+public final class Material {
+    //<REMOVE-BRIDGE>
+    @IgnoreAutoComplete
+    public transient com.itsmagic.engine.Engines.Engine.Material.Material material;
+    @IgnoreAutoComplete
+    public Material(com.itsmagic.engine.Engines.Engine.Material.Material material) {
+        this.material = material;
+    }
+    //>REMOVE-BRIDGE<
 
     public Material() {
-        //
+        //<REMOVE-BRIDGE>
+        this.material = new com.itsmagic.engine.Engines.Engine.Material.Material();
+        if(Thread.isEngineThread()){
+            this.material.updateShader();
+        }
+        //>REMOVE-BRIDGE<
     }
 
     @HideGetSet
     public String getShader(){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return null;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        return this.material.getShaderName();
+        //>REMOVE-BRIDGE<
     }
     @HideGetSet
     @MethodArgs(args ={"shaderName"})
     public void setShader(String shaderName){
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        this.material.setShaderName(shaderName);
+        //>REMOVE-BRIDGE<
     }
 
+    @HideGetSet
+    public <T extends MaterialShader> T getCustomShader(){
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
+        return null;
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
+        //<REMOVE-BRIDGE>
+        if(material.materialShader == null) return null;
+        return (T) material.materialShader.getRuntimeComponent();
+        //>REMOVE-BRIDGE<
+    }
 
     @MethodArgs(args ={"entryName"})
     public Color getColor(String entryName){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return null;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        return findColor(entryName);
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"entryName"})
     public Color findColor(String entryName){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return null;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        ColorINT color = this.material.findColor(entryName);
+        if(color != null) {
+            return color.toJAVARuntime();
+        }
+        return null;
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"entryName","color"})
     public void setColor(String entryName, Color color){
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        this.material.setColor(entryName, color.instance);
+        //>REMOVE-BRIDGE<
     }
 
     @MethodArgs(args ={"color"})
@@ -57,44 +119,81 @@ public class Material {
 
     @MethodArgs(args ={"entryName"})
     public JAVARuntime.Vector2 getVector2(String entryName){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return null;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        return findVector2(entryName);
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"entryName"})
     public JAVARuntime.Vector2 findVector2(String entryName){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return null;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        Vector2 color = this.material.findVector2(entryName);
+        if(color != null) {
+            return color.toJAVARuntime();
+        }
+        return null;
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"entryName","vector2"})
     public void setVector2(String entryName, JAVARuntime.Vector2 vector2){
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        this.material.setVector2(entryName, vector2.instance);
+        //>REMOVE-BRIDGE<
     }
 
     @MethodArgs(args ={"entryName"})
     public boolean getBoolean(String entryName){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return false;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        return findBoolean(entryName);
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"entryName"})
     public boolean findBoolean(String entryName){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return false;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        boolean color = this.material.findBoolean(entryName);
+        return color;
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"entryName","value"})
     public void setBoolean(String entryName, boolean value){
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        this.material.setBoolean(entryName, value);
+        //>REMOVE-BRIDGE<
     }
 
     @MethodArgs(args ={"value"})
@@ -104,23 +203,40 @@ public class Material {
 
     @MethodArgs(args ={"entryName"})
     public float getFloat(String entryName){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return 0;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        return findFloat(entryName);
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"entryName"})
     public float findFloat(String entryName){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return 0;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        float color = this.material.findFloat(entryName);
+        return color;
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"entryName","value"})
     public void setFloat(String entryName, float value){
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        this.material.setFloat(entryName, value);
+        //>REMOVE-BRIDGE<
     }
 
     @MethodArgs(args ={"value"})
@@ -152,28 +268,51 @@ public class Material {
 
     @MethodArgs(args ={"entryName"})
     public Texture getTexture(String entryName){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return null;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        return findTexture(entryName);
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"entryName"})
     public Texture findTexture(String entryName){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return null;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        com.itsmagic.engine.Engines.Engine.Texture.TextureInstance texture = this.material.findTexture(entryName);
+        if(texture != null) {
+            return texture.toJAVARuntime();
+        }
+        return null;
+        //>REMOVE-BRIDGE<
     }
 
     @MethodArgs(args ={"entryName","texture"})
     public void setTexture(String entryName, Texture texture){
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        this.material.setTexture(entryName, texture.instance);
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"entryName","textureFile"})
     public void setTextureFile(String entryName, TextureFile textureFile){
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        this.material.setTextureFile(entryName, textureFile.getFilePath());
+        //>REMOVE-BRIDGE<
     }
 
     @MethodArgs(args ={"texture"})
@@ -251,23 +390,51 @@ public class Material {
 
 
     public void reloadEntries(){
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        this.material.updateShader();
+        //>REMOVE-BRIDGE<
     }
 
     public String toJson(){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return "";
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        Thread.requestEngineThread();
+        return Core.classExporter.getBuilder().toJson(material);
+        //>REMOVE-BRIDGE<
     }
 
     @MethodArgs(args ={"file"})
     public static Material loadFile(MaterialFile materialFile){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return null;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        if(materialFile == null){ throw new NullPointerException("MaterialFile can't be null"); }
+
+        com.itsmagic.engine.Engines.Engine.Material.Material find = MaterialManager.findMaterial(materialFile.getFilePath());
+
+        if (find != null) {
+            return find.toJAVARuntime();
+        } else {
+            find = MaterialManager.load(materialFile.getFilePath());
+            if (find != null) {
+                return find.toJAVARuntime();
+            }
+        }
+        return null;
+        //>REMOVE-BRIDGE<
     }
 }

@@ -1,9 +1,10 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+//>REMOVE-BRIDGE<
 
 @ClassCategory(cat ={"Files"})
-public class FormatDictionaries {
+public final class FormatDictionaries {
     public static String BACKUP                = ".itsmbp";
     public static String TEXTURE               = ".png|.jpg|.jpeg|.bmp|.webp|.heif|.ppm|.tif|.tga";
     public static String Brush                 = ".png|.jpg|.jpeg|.bmp|.webp|.heif|.ppm"; // only native supported images
@@ -51,10 +52,20 @@ public class FormatDictionaries {
 
     @MethodArgs(args ={"format"})
     public static String createFrom(String format){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return null;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        if(format.startsWith(".")){
+            return format;
+        } else {
+            return "." + format;
+        }
+        //>REMOVE-BRIDGE<
     }
 }

@@ -1,6 +1,31 @@
 package JAVARuntime;
 
+//<REMOVE-BRIDGE>
+import android.content.Context;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.reflect.TypeToken;
 //
+import com.itsmagic.engine.Activities.Editor.Panels.Scripting.Interfaces.Utils.IgnoreAutoComplete;
+import com.itsmagic.engine.Core.Components.JCompiler.GhostList;
+import com.itsmagic.engine.Core.Components.JCompiler.JCompiler;
+import com.itsmagic.engine.Engines.Utils.Variable;
+import com.itsmagic.engine.Engines.Engine.ClassInspector.ClassInspectorEntry;
+import com.itsmagic.engine.Engines.Engine.ClassInspector.ClassInterface;
+import com.itsmagic.engine.Engines.Engine.ClassInspector.GetSetterListener;
+import com.itsmagic.engine.Engines.Engine.ClassInspector.UserPointer;
+import com.itsmagic.engine.R;
+
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.lang.reflect.Field;
+//>REMOVE-BRIDGE<
 
 import java.util.ArrayList;
 
@@ -9,14 +34,62 @@ import java.util.ArrayList;
  */
 @ClassCategory(cat ={"Lists"})
 public class Map2 {
-    //
+    //<REMOVE-BRIDGE>
+    @IgnoreAutoComplete
+    public static ClassInspectorEntry inspectorController(){
+        Class thisClass = Map2.class;
+        return new ClassInspectorEntry(new ClassInterface() {
+            @Override
+            public boolean match(String className, UserPointer userPointer) {
+                if(JCompiler.correctName(thisClass.getName()).equals(JCompiler.correctName(className))){
+                    return true;
+                }
+                return false;
+            }
 
-    private Class keyClass = null;
-    private Class valueClass = null;
+            @Override
+            public String getSimpleName(UserPointer userPointer) {
+                return thisClass.getSimpleName();
+            }
 
-    private int count;
-    private ArrayList keyList;
-    private ArrayList valueList;
+            //
+            @Override
+            public Variable save(String fieldName, Object value, UserPointer userPointer) {
+                Map2 map2 = (Map2) value;
+                if(map2 != null) {
+                    return new Variable(fieldName, map2.toJson());
+                } else {
+                    return new Variable(fieldName, "");
+                }
+            }
+
+            @Override
+            public boolean isRestorable() {
+                return true;
+            }
+
+            @Override
+            public Object restore(Variable variable, UserPointer userPointer) {
+                if(variable.type == Variable.Type.String){
+                    return Map2.fromJson(variable.str_value);
+                }
+                return null;
+            }
+
+            @Override
+            public Object newInstance(UserPointer userPointer) {
+                return null;
+            }
+        });
+    }
+    //>REMOVE-BRIDGE<
+
+    private transient Class keyClass = null;
+    private transient Class valueClass = null;
+
+    private transient int count;
+    private transient ArrayList keyList;
+    private transient ArrayList valueList;
 
     @MethodArgs(args ={"key","value"})
     public Map2(Class keyClass, Class valueClass) {
@@ -199,11 +272,32 @@ public class Map2 {
     }
 
     public String toJson(){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return null;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        Gson gson = new Gson();
+
+        JsonObject jsonObject = new JsonObject();
+        jsonObject.addProperty("keyClass", keyClass.getName());
+        jsonObject.addProperty("valueClass", valueClass.getName());
+        jsonObject.addProperty("count", count);
+
+        JsonElement keyListElement = gson.toJsonTree(keyList, new TypeToken<ArrayList>() {}.getType());
+        JsonArray keyListArray = keyListElement.getAsJsonArray();
+        jsonObject.add("keyList", keyListArray);
+
+        JsonElement valueListElement = gson.toJsonTree(valueList, new TypeToken<ArrayList>() {}.getType());
+        JsonArray valueListArray = valueListElement.getAsJsonArray();
+        jsonObject.add("valueList", valueListArray);
+
+        return jsonObject.toString();
+        //>REMOVE-BRIDGE<
     }
 
     public void clear(){
@@ -217,10 +311,44 @@ public class Map2 {
 
     @MethodArgs(args ={"json"})
     public static Map2 fromJson(String json){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return null;
-        //
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
 
-        //
+        //<REMOVE-BRIDGE>
+        if(json == null || json.isEmpty()){
+            return null;
+        }
+
+        Map2 map2 = new Map2(null, null);
+        try {
+            JSONObject jsonObject = new JSONObject(json);
+
+            map2.keyClass = Class.forName(jsonObject.getString("keyClass"));
+            map2.valueClass = Class.forName(jsonObject.getString("valueClass"));
+            map2.count = jsonObject.getInt("count");
+
+            JSONArray keyListArray = jsonObject.getJSONArray("keyList");
+            for (int i = 0; i < keyListArray.length(); i++) {
+                map2.keyList.add(keyListArray.get(i));
+            }
+
+            JSONArray valueListArray = jsonObject.getJSONArray("valueList");
+            for (int i = 0; i < valueListArray.length(); i++) {
+                map2.valueList.add(valueListArray.get(i));
+            }
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        return map2;
+        //>REMOVE-BRIDGE<
     }
 }

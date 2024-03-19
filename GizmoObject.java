@@ -1,6 +1,9 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+import com.itsmagic.engine.Engines.Graphics.GraphicsEngine;
+
+//>REMOVE-BRIDGE<
 
 
 /**
@@ -9,19 +12,25 @@ package JAVARuntime;
 @ClassCategory(cat ={"Debug"})
 public class GizmoObject extends GizmoTransform {
 
-    private Vertex vertex;
-    private Color color = new Color();
-    private Texture texture;
-    private boolean dualFaceRender = false;
-    private RenderMode renderMode = RenderMode.Triangles;
-    private Object userPointer = null;
-    private boolean enableTransparency = false;
-    private boolean scaleBasedCamera;
+    private transient Vertex vertex;
+    private transient Color color = new Color();
+    private transient Texture texture;
+    private transient boolean dualFaceRender = false;
+    private transient RenderMode renderMode = RenderMode.Triangles;
+    private transient Object userPointer = null;
+    private transient boolean enableTransparency = false;
+    private transient boolean scaleBasedCamera;
 
-    //
+    //<REMOVE-BRIDGE>
+    /*
+    //>REMOVE-BRIDGE<
     private int wireFrameWidth = 0;
-    //
-    //
+    //<REMOVE-BRIDGE>
+    */
+    //>REMOVE-BRIDGE<
+    //<REMOVE-BRIDGE>
+    private transient int wireFrameWidth = GraphicsEngine.Utils.lineWidth;
+    //>REMOVE-BRIDGE<
 
     public GizmoObject() {
     }
@@ -73,7 +82,18 @@ public class GizmoObject extends GizmoTransform {
     @HideGetSet
     @MethodArgs(args ={"vertex"})
     public void setVertex(Vertex vertex) {
-        //
+        //<REMOVE-BRIDGE>
+        if(this.vertex != null && this.vertex == vertex){
+            return;
+        }
+        if(this.vertex != null){
+            this.vertex.vertex.removeLink(this);
+        }
+        this.vertex = vertex;
+        if(this.vertex != null){
+            this.vertex.vertex.addLink(this);
+        }
+        //>REMOVE-BRIDGE<
     }
 
     @Override

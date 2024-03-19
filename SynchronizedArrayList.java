@@ -1,6 +1,8 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+import java.util.LinkedList;
+//>REMOVE-BRIDGE<
 
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
@@ -11,6 +13,8 @@ package JAVARuntime;
 public class SynchronizedArrayList extends SynchronizedList {
 
     public SynchronizedArrayList() {
-        //
+        //<REMOVE-BRIDGE>
+        super(new LinkedList<>());
+        //>REMOVE-BRIDGE<
     }
 }

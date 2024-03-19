@@ -1,7 +1,26 @@
 package JAVARuntime;
 
 import android.text.Editable;
+//<REMOVE-BRIDGE>
+import android.content.Context;
+import android.text.TextWatcher;
+import android.view.Gravity;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.PopupWindow;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+
 //
+import com.itsmagic.engine.Core.Components.JCompiler.Interfaces.Interface;
+import com.itsmagic.engine.Core.Components.JCompiler.JavaJar;
+import com.itsmagic.engine.Core.Core;
+import com.itsmagic.engine.R;
+
+import java.util.List;
+
+//>REMOVE-BRIDGE<
 
 public class TextScriptingExtension extends ScriptingExtension{
     public enum LineTip{
@@ -12,28 +31,46 @@ public class TextScriptingExtension extends ScriptingExtension{
 
     // Util methods
     public String getText(){
-        //
+        //<REMOVE-BRIDGE>
+        /*
+        //>REMOVE-BRIDGE<
         return "";
+        //<REMOVE-BRIDGE>
+        */
+        //>REMOVE-BRIDGE<
+
+        //<REMOVE-BRIDGE>
+        //
+        return null;
         //
 
         //
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"str"})
     public void setText(String str){
+        //<REMOVE-BRIDGE>
         //
+        //>REMOVE-BRIDGE<
     }
 
     @MethodArgs(args ={"theme"})
     public void setTheme(TextScriptingTheme theme){
+        //<REMOVE-BRIDGE>
         //
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"textScriptingProvider"})
     public void setProvider(TextScriptingProvider textScriptingProvider){
+        //<REMOVE-BRIDGE>
         //
+        //>REMOVE-BRIDGE<
     }
     @MethodArgs(args ={"textScriptingStyler"})
     public void setStyler(TextScriptingStyler textScriptingStyler){
+        //<REMOVE-BRIDGE>
         //
+        //>REMOVE-BRIDGE<
     }
 
     // Override methods

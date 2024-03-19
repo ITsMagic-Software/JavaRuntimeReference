@@ -1,21 +1,38 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+
+import com.itsmagic.engine.Activities.Editor.Interface.Objects.PercentageRect;
+import com.itsmagic.engine.Activities.Editor.Panels.Scripting.Interfaces.Utils.IgnoreAutoComplete;
+import com.itsmagic.engine.Engines.Engine.Quaternion.Quaternion;
+import com.itsmagic.engine.Engines.Engine.Texture.Manager.TextureManager;
+import com.itsmagic.engine.Engines.Graphics.Utils.QuadImage;
+import com.itsmagic.engine.Engines.Graphics.GraphicsEngine;
+//>REMOVE-BRIDGE<
 
 
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 @ClassCategory(cat ={"GUI"})
-public class GUIImage extends GUIElement {
+public final class GUIImage extends GUIElement {
 
-    private Color color;
-    private Texture texture;
-    private boolean flipX = false;
-    private boolean flipY = false;
-    private boolean overrideAlpha = false;
-    private float alpha = 1;
-    //
+    private transient Color color;
+    private transient Texture texture;
+    private transient boolean flipX = false;
+    private transient boolean flipY = false;
+    private transient boolean overrideAlpha = false;
+    private transient float alpha = 1;
+    //<REMOVE-BRIDGE>
+    private transient float directDrawLayer = 0f;
+    public float getDirectDrawLayer() { return directDrawLayer; }
+    public void setDirectDrawLayer(float directDrawLayer) {
+        if(directDrawLayer > 1 || directDrawLayer < -1){
+            throw new IllegalArgumentException("directdrawlayer needs to be -1 < 0 > 1");
+        }
+        this.directDrawLayer = directDrawLayer;
+    }
+    //>REMOVE-BRIDGE<
 
     public GUIImage() {
         this.color = new Color();
@@ -119,6 +136,49 @@ public class GUIImage extends GUIElement {
         this.alpha = alpha;
     }
 
-    //
+    //<REMOVE-BRIDGE>
+    @IgnoreAutoComplete
+    @Override
+    @MethodArgs(args ={"graphicsEngine","rect"})
+    public void drawRender(PercentageRect rect){
+
+        Quaternion rot = null;
+        if(getRotation() != null){ rot = getRotation().instance; }
+        if(color == null){ color = new Color(); }
+        if(texture != null && texture.instance != null && texture.instance.isRenderable()) {
+            QuadImage.draw(texture.instance.getID(),
+                    color.instance,
+                    GraphicsEngine.Utils.shaderManager,
+                    getGameViewW(rect),
+                    getGameViewH(rect),
+                    getGameViewX(rect),
+                    getGameViewY(rect),
+                    rot,
+                    flipX,
+                    flipY,
+                    overrideAlpha,
+                    alpha,
+                    -directDrawLayer);
+        } else {
+            try {
+                QuadImage.draw(TextureManager.whiteTexture.getID(),
+                        color.instance,
+                        GraphicsEngine.Utils.shaderManager,
+                        getGameViewW(rect),
+                        getGameViewH(rect),
+                        getGameViewX(rect),
+                        getGameViewY(rect),
+                        rot,
+                        flipX,
+                        flipY,
+                        overrideAlpha,
+                        alpha,
+                        -directDrawLayer);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    //>REMOVE-BRIDGE<
 
 }

@@ -1,5 +1,8 @@
 package JAVARuntime;
+//<REMOVE-BRIDGE>
+import com.itsmagic.engine.Activities.Editor.Panels.Scripting.Interfaces.Utils.IgnoreAutoComplete;
 //
+//>REMOVE-BRIDGE<
 
 public class ScriptingExtension {
 

@@ -1,6 +1,8 @@
 package JAVARuntime;
 
+//<REMOVE-BRIDGE>
 //
+//>REMOVE-BRIDGE<
 
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
@@ -10,14 +12,18 @@ package JAVARuntime;
 public class CanvasPanel extends EditorPanel {
     public enum DrawMode{ CopyPixels, DirectDraw }
     public static class DrawParams{
-        public Texture texture;
-        public DrawMode drawMode;
+        public transient Texture texture;
+        public transient DrawMode drawMode;
     }
 
+    //<REMOVE-BRIDGE>
     //
+    //>REMOVE-BRIDGE<
 
     public CanvasPanel(String tittle) {
+        //<REMOVE-BRIDGE>
         //
+        //>REMOVE-BRIDGE<
     }
 
     public void start() {
@@ -37,10 +43,6 @@ public class CanvasPanel extends EditorPanel {
     }
 
     public void update() {
-
-    }
-
-    public void posUpdate() {
 
     }
 

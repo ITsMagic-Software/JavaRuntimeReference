@@ -1,24 +1,28 @@
 package JAVARuntime;
 
-//
+//<REMOVE-BRIDGE>
+import com.itsmagic.engine.Activities.Editor.Interface.Objects.PercentageRect;
+import com.itsmagic.engine.Activities.Editor.Panels.Scripting.Interfaces.Utils.IgnoreAutoComplete;
+import com.itsmagic.engine.Engines.Engine.TextRender.Font;
+//>REMOVE-BRIDGE<
 
 
 /**
  * @Author Lucas Leandro (ITsMagic Founder)
  */
 @ClassCategory(cat ={"GUI"})
-public class GUIText extends GUIElement {
+public final class GUIText extends GUIElement {
     public enum Alignment{
         TopLeft, TopCenter, TopRight,
         MiddleLeft, MiddleCenter, MiddleRight,
         BottomLeft, BottomCenter, BottomRight
     }
 
-    private Color color;
-    private String text;
-    private Font font;
-    private float scale = 1f;
-    private Alignment alignment = Alignment.TopLeft;
+    private transient Color color;
+    private transient String text;
+    private transient Font font;
+    private transient float scale = 1f;
+    private transient Alignment alignment = Alignment.TopLeft;
 
     public GUIText() {
         this.color = new Color();
@@ -137,5 +141,12 @@ public class GUIText extends GUIElement {
         this.font = font;
     }
 
-    //
+    //<REMOVE-BRIDGE>
+    @IgnoreAutoComplete
+    @Override
+    @MethodArgs(args ={"graphicsEngine","rect"})
+    public void drawRender(PercentageRect rect){
+        throw new RuntimeException("GUIText can't be drawed by image!");
+    }
+    //>REMOVE-BRIDGE<
 }
