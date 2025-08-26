@@ -1,39 +1,43 @@
 package JAVARuntime;
 
 public class TextScriptingSyntaxHighlightSpan {
-    public transient TextScriptingStyleSpan span;
-    public transient int start;
-    public transient int end;
+  public transient TextScriptingStyleSpan span;
+  public transient int start;
+  public transient int end;
 
-    public TextScriptingSyntaxHighlightSpan() { }
-    @MethodArgs(args ={"span","start","end"})
-    public TextScriptingSyntaxHighlightSpan(TextScriptingStyleSpan span, int start, int end) {
-        this.span = span;
-        this.start = start;
-        this.end = end;
-    }
+  public TextScriptingSyntaxHighlightSpan() {}
 
-    public TextScriptingStyleSpan getSpan() {
-        return span;
-    }
-    @MethodArgs(args ={"span"})
-    public void setSpan(TextScriptingStyleSpan span) {
-        this.span = span;
-    }
+  @MethodArgs({"span", "start", "end"})
+  public TextScriptingSyntaxHighlightSpan(TextScriptingStyleSpan span, int start, int end) {
+    this.span = span;
+    this.start = start;
+    this.end = end;
+  }
 
-    public int getStart() {
-        return start;
-    }
-    @MethodArgs(args ={"start"})
-    public void setStart(int start) {
-        this.start = start;
-    }
+  public TextScriptingStyleSpan getSpan() {
+    return span;
+  }
 
-    public int getEnd() {
-        return end;
-    }
-    @MethodArgs(args ={"end"})
-    public void setEnd(int end) {
-        this.end = end;
-    }
+  @MethodArgs({"span"})
+  public void setSpan(TextScriptingStyleSpan span) {
+    this.span = span;
+  }
+
+  public int getStart() {
+    return start;
+  }
+
+  @MethodArgs({"start"})
+  public void setStart(int start) {
+    this.start = start;
+  }
+
+  public int getEnd() {
+    return end;
+  }
+
+  @MethodArgs({"end"})
+  public void setEnd(int end) {
+    this.end = end;
+  }
 }

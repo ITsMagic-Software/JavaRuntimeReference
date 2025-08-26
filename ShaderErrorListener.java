@@ -1,7 +1,7 @@
 package JAVARuntime;
 
-@ClassCategory(cat ={"Shaders"})
+@ClassCategory(cat = {"Shaders"})
 public interface ShaderErrorListener {
-    @MethodArgs(args ={"programError","shaderError"})
-    void onError(String programError, String shaderError);
+  @MethodArgs({"programError", "shaderError"})
+  void onError(String programError, String shaderError);
 }

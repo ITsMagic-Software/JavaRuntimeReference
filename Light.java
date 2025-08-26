@@ -1,219 +1,161 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Rendering", "Components"})
+public final class Light extends Component {
+  public static final int TYPE_SUN = 0;
+  public static final int TYPE_POINT = 1;
+  public static final int TYPE_SPOT = 2;
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"Rendering","Components"})
-public final class Light extends Component{
-    public static final int TYPE_SUN = 0;
-    public static final int TYPE_POINT = 1;
-    public static final int TYPE_SPOT = 2;
+  public Light() {
 
-    //
+    super();
+  }
 
-    public Light() {
-        //
-        super();
-        //
+  @MethodArgs({"type"})
+  public Light(int type) {
 
-        //
-    }
-    @MethodArgs(args ={"type"})
-    public Light(int type) {
-        //
-        super();
-        //
+    super();
+  }
 
-        //
-    }
+  @HideGetSet
+  public int getType() {
 
-    @HideGetSet
-    public float getMinAngle(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setMinAngle(float value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"type"})
+  public void setType(int type) {}
 
+  @HideGetSet
+  public float getMinAngle() {
 
-    @HideGetSet
-    public float getMaxAngle(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setMaxAngle(float value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setMinAngle(float value) {}
 
-    @HideGetSet
-    public float getIntensity(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public float getMaxAngle() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setIntensity(float value){
-        //
-    }
+    return 0;
+  }
 
-    @HideGetSet
-    public float getDiameter(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setMaxAngle(float value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setDiameter(float value){
-        //
-    }
+  @HideGetSet
+  public float getIntensity() {
 
-    @HideGetSet
-    public float getDistance(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setDistance(float value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setIntensity(float value) {}
 
-    @HideGetSet
-    public Color getColor(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public float getDiameter() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setColor(Color value){
-        //
-    }
+    return 0;
+  }
 
-    @HideGetSet
-    public boolean isShadowEnabled(){
-        //
-        return false;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setDiameter(float value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setShadowEnabled(boolean value){
-        //
-    }
+  @HideGetSet
+  public float getDistance() {
 
-    @HideGetSet
-    public int getShadowResolution(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setShadowResolution(int value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setDistance(float value) {}
 
-    @HideGetSet
-    public float getShadowBlurSize(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public Color getColor() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setShadowBlurSize(float value){
-        //
-    }
+    return null;
+  }
 
-    @HideGetSet
-    public float getShadowBlur(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setColor(Color value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setShadowBlur(float value){
-        //
-    }
+  @HideGetSet
+  public boolean isShadowEnabled() {
 
-    @HideGetSet
-    public float getShadowStrength(){
-        //
-        return 0;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setShadowStrength(float value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setShadowEnabled(boolean value) {}
 
-    @HideGetSet
-    public float getShadowVisibleDistance(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public int getShadowResolution() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setShadowVisibleDistance(float value){
-        //
-    }
+    return 0;
+  }
 
-    @MethodArgs(args ={"idx"})
-    public void forcePriority(int idx){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setShadowResolution(int value) {}
 
-    public CustomLightShadowViewCalculator getCustomLightShadowViewCalculator(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public float getShadowBlurSize() {
 
-        //
-    }
-    @MethodArgs(args ={"listener"})
-    public void setCustomLightShadowViewCalculator(CustomLightShadowViewCalculator customLightShadowViewCalculator){
-        //
-    }
+    return 0;
+  }
 
-    //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setShadowBlurSize(float value) {}
+
+  @HideGetSet
+  public float getShadowBlur() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setShadowBlur(float value) {}
+
+  @HideGetSet
+  public float getShadowStrength() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setShadowStrength(float value) {}
+
+  @HideGetSet
+  public float getShadowVisibleDistance() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setShadowVisibleDistance(float value) {}
+
+  @MethodArgs({"idx"})
+  public void forcePriority(int idx) {}
+
+  public CustomLightShadowViewCalculator getCustomLightShadowViewCalculator() {
+
+    return null;
+  }
+
+  @MethodArgs({"listener"})
+  public void setCustomLightShadowViewCalculator(CustomLightShadowViewCalculator customLightShadowViewCalculator) {}
 }

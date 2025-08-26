@@ -1,124 +1,126 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Sound", "Components"})
+public final class SoundPlayer extends Component {
 
-import java.util.ArrayList;
+  public SoundPlayer() {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"Sound","Components"})
-public final class SoundPlayer extends Component{
-    //
+    super();
+  }
 
-    public SoundPlayer() {
-        //
-        super();
-        //
+  @HideGetSet
+  public boolean isLoop() {
 
-        //
-    }
+    return false;
+  }
 
-    @HideGetSet
-    public boolean isLoop(){
-        //
-        return false;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setLoop(boolean value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setLoop(boolean value){
-        //
-    }
+  @UnimplementedDoc
+  @MethodArgs({"file"})
+  public void setSoundFile(SoundFile pFile) {}
 
-    @UnimplementedDoc
-    @MethodArgs(args ={"file"})
-    public void setSoundFile(SoundFile pFile){
-        //
-    }
+  @UnimplementedDoc
+  @MethodArgs({"file"})
+  public void setSoundFile(File pFile) {}
 
-    public void play(){
-        //
-    }
-    public void stop(){
-        //
-    }
-    public void pause(){
-        //
-    }
-    public void unPause(){
-        //
-    }
+  public void play() {}
 
-    @HideGetSet
-    public boolean isPlaying(){
-        //
-        return false;
-        //
+  public void stop() {}
 
-        //
-    }
-    @HideGetSet
-    public boolean isPaused(){
-        //
-        return false;
-        //
+  public void pause() {}
 
-        //
-    }
-    @HideGetSet
-    public boolean isStopped(){
-        //
-        return false;
-        //
+  public void unPause() {}
 
-        //
-    }
+  @HideGetSet
+  public boolean isPlaying() {
 
-    @HideGetSet
-    public float getVolume(){
-        //
-        return 0;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setVolume(float value){
-        //
-    }
+  @HideGetSet
+  public boolean isPaused() {
 
-    @HideGetSet
-    public float getSpeed(){
-        //
-        return 0;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setSpeed(float value){
-        //
-    }
+  @HideGetSet
+  public boolean isStopped() {
 
-    @HideGetSet
-    public float getPitch(){
-        //
-        return 0;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setPitch(float value){
-        //
-    }
+  @HideGetSet
+  public float getVolume() {
 
+    return 0;
+  }
 
-    //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setVolume(float value) {}
+
+  @HideGetSet
+  public float getDiameter() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setDiameter(float value) {}
+
+  @HideGetSet
+  public float getSpeed() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setSpeed(float value) {}
+
+  @HideGetSet
+  public float getPitch() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setPitch(float value) {}
+
+  public enum LoadMode {
+    Stream,
+    Async,
+    Immediate
+  }
+
+  public enum Mode {
+    Play_3D,
+    Play_2D
+  }
+
+  @HideGetSet
+  public LoadMode getLoadMode() {
+
+    return null;
+  }
+
+  @HideGetSet
+  public Mode getMode() {
+
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setLoadMode(LoadMode value) {}
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setMode(Mode value) {}
 }

@@ -1,76 +1,50 @@
 package JAVARuntime;
-//
 
-@ClassCategory(cat ={"Buffers"})
+@ClassCategory(cat = {"Buffers"})
 public class OHDataBase {
 
-    //
+  @MethodArgs({"capacity"})
+  public OHDataBase(int capacity) {}
 
-    @MethodArgs(args ={"capacity"})
-    public OHDataBase(int capacity){
-        //
-    }
+  @MethodArgs({"size"})
+  public void incrementSize(int size) {}
 
-    @MethodArgs(args ={"size"})
-    public void incrementSize(int size){
-        //
-    }
-    @MethodArgs(args ={"size"})
-    public void decrementSize(int size){
-        //
-    }
+  @MethodArgs({"size"})
+  public void decrementSize(int size) {}
 
-    @MethodArgs(args ={"capacity"})
-    public void resize(int newCapacity){
-        //
-    }
-    @MethodArgs(args ={"capacity","copyData"})
-    public void resize(int newCapacity, boolean copyData){
-        //
-    }
+  @MethodArgs({"capacity"})
+  public void resize(int newCapacity) {}
 
-    @MethodArgs(args ={"position"})
-    public void position(int position){
-        //
-    }
+  @MethodArgs({"capacity", "copyData"})
+  public void resize(int newCapacity, boolean copyData) {}
 
-    @MethodArgs(args ={"bytes"})
-    public void put(byte[] bytes){
-        //
-    }
-    @MethodArgs(args ={"position","value"})
-    public void set(int position, byte value){
-        //
-    }
+  @MethodArgs({"position"})
+  public void position(int position) {}
 
-    @MethodArgs(args ={"idx"})
-    public byte get(int idx){
-        //
-        return 0;
-        //
+  @MethodArgs({"bytes"})
+  public void put(byte[] bytes) {}
 
-        //
-    }
-    public byte[] getBytes(){
-        //
-        return null;
-        //
+  @MethodArgs({"position", "value"})
+  public void set(int position, byte value) {}
 
-        //
-    }
+  @MethodArgs({"idx"})
+  public byte get(int idx) {
 
-    public int size(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    public int capacity(){
-        //
-        return 0;
-        //
+  public byte[] getBytes() {
 
-        //
-    }
+    return null;
+  }
+
+  public int size() {
+
+    return 0;
+  }
+
+  public int capacity() {
+
+    return 0;
+  }
 }

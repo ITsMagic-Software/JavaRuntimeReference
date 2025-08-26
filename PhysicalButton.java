@@ -1,41 +1,26 @@
 package JAVARuntime;
 
-//
-
 /*
  * @Author Daniel Oschepkov (SpeakerFish)
  */
 
-@ClassCategory(cat={"Prototyping","Components"})
+@ClassCategory(cat = {"Prototyping", "Components"})
 public final class PhysicalButton extends Component {
-    //
 
-    public PhysicalButton() {
-        //
-    }
+  public PhysicalButton() {}
 
-    public boolean isLocked() {
-        //
-        return false;
-        //
+  public boolean isLocked() {
 
-        //
-    }
-    @MethodArgs(args={"isLocked"})
-    public void setLocked(boolean isLocked) {
-        //
-    }
+    return false;
+  }
 
-    public boolean isPressed() {
-        //
-        return false;
-        //
+  @MethodArgs({"isLocked"})
+  public void setLocked(boolean isLocked) {}
 
-        //
-    }
-    public void press() {
-        //
-    }
+  public boolean isPressed() {
 
-    //
+    return false;
+  }
+
+  public void press() {}
 }

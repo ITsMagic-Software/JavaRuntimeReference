@@ -1,6 +1,7 @@
 package JAVARuntime;
 
-@ClassCategory(cat ={"SupremeUI"})
+@ClassCategory(cat = {"SupremeUI"})
 public enum SLinearOrientation {
-    Horizontal, Vertical
+  Horizontal,
+  Vertical
 }

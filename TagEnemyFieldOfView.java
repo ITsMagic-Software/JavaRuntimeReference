@@ -1,91 +1,61 @@
 package JAVARuntime;
 
-//
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-
-@ClassCategory(cat ={"Prototyping"})
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Prototyping"})
 public final class TagEnemyFieldOfView {
 
-    //
+  public TagEnemyFieldOfView() {
 
-    public TagEnemyFieldOfView() {
-        //
-        super();
-        //
+    super();
+  }
 
-        //
-    }
+  @HideGetSet
+  public float getFov() {
 
-    @HideGetSet
-    public float getFov(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setFov(float value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setFov(float value) {}
 
-    @HideGetSet
-    public float getMaxDistance(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public float getMaxDistance() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setMaxDistance(float value){
-        //
-    }
+    return 0;
+  }
 
-    @HideGetSet
-    public float getMinDistance(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setMaxDistance(float value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setMinDistance(float value){
-        //
-    }
+  @HideGetSet
+  public float getMinDistance() {
 
-    @HideGetSet
-    public String getTargetTag(){
-        //
-        return null;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setTargetsTag(String value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setMinDistance(float value) {}
 
-    @HideGetSet
-    public boolean isActive(){
-        //
-        return false;
-        //
+  @HideGetSet
+  public String getTargetTag() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setActive(boolean value){
-        //
-    }
+    return null;
+  }
 
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setTargetsTag(String value) {}
+
+  @HideGetSet
+  public boolean isActive() {
+
+    return false;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setActive(boolean value) {}
 }

@@ -1,35 +1,21 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"SupremeUI", "Components"})
+public final class SUILinearLayout extends Component {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"SupremeUI","Components"})
-public final class SUILinearLayout extends Component{
-    //
+  public SUILinearLayout() {
 
-    public SUILinearLayout() {
-        //
-        super();
-        //
+    super();
+  }
 
-        //
-    }
+  @HideGetSet
+  public SLinearOrientation getOrientation() {
 
-    @HideGetSet
-    public SLinearOrientation getOrientation(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setOrientation(SLinearOrientation value){
-        //
-    }
-
-    //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setOrientation(SLinearOrientation value) {}
 }

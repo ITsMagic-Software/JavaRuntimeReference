@@ -1,6 +1,7 @@
 package JAVARuntime;
 
 public interface JsonSerializer {
-    String serializeToString();
-    void deserializeLocal(String str);
+  String serializeToString();
+
+  void deserializeLocal(String str);
 }

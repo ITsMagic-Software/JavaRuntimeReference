@@ -1,52 +1,33 @@
 package JAVARuntime;
 
-//
-
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"Framerate"})
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Framerate"})
 public final class FixedFraming {
-    //
 
-    @MethodArgs(args ={"framesPerSecond", "FixedFrameListener", "fixedFrameListener"})
-    public FixedFraming(int framesPerSecond, FixedFrameListener fixedFrameListener) {
-        //
-    }
+  @MethodArgs({"framesPerSecond", "FixedFrameListener", "fixedFrameListener"})
+  public FixedFraming(int framesPerSecond, FixedFrameListener fixedFrameListener) {}
 
-    public void engineRepeat(){
-        //
-    }
+  public void engineRepeat() {}
 
-    @MethodArgs(args ={"allowTimeScale"})
-    public void setAllowTimeScale(boolean allowTimeScale) {
-        //
-    }
-    @MethodArgs(args ={"desyncLowFrameRate"})
-    public void setDesyncLowFrameRate(boolean desyncLowFrameRate) {
-        //
-    }
-    @MethodArgs(args ={"desyncHighFrameRate"})
-    public void setDesyncHighFrameRate(boolean desyncHighFrameRate) {
-        //
-    }
+  @MethodArgs({"allowTimeScale"})
+  public void setAllowTimeScale(boolean allowTimeScale) {}
 
-    @HideGetSet
-    public float getFixedFrames() {
-        //
-        return 0;
-        //
+  @MethodArgs({"desyncLowFrameRate"})
+  public void setDesyncLowFrameRate(boolean desyncLowFrameRate) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"framesPerSecond"})
-    public void setFixedFrames(int framesPerSecond) {
-        //
-    }
+  @MethodArgs({"desyncHighFrameRate"})
+  public void setDesyncHighFrameRate(boolean desyncHighFrameRate) {}
 
-    @MethodArgs(args ={"fixedFrameListener"})
-    public void setFixedFrameListener(FixedFrameListener fixedFrameListener) {
-        //
-    }
+  @HideGetSet
+  public float getFixedFrames() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"framesPerSecond"})
+  public void setFixedFrames(int framesPerSecond) {}
+
+  @MethodArgs({"fixedFrameListener"})
+  public void setFixedFrameListener(FixedFrameListener fixedFrameListener) {}
 }

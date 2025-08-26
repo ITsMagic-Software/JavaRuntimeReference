@@ -1,39 +1,30 @@
 package JAVARuntime;
-//
 
 public class ScriptingExtension {
 
-    //
+  // <editor>
 
-    public void replaceScript(File newScript) {
+  // >editor<
 
-    }
+  public void replaceScript(File newScript) {}
 
-    public void openScript(File script) {
+  public void openScript(File script) {}
 
-    }
+  public void onClose() {}
 
-    public void onClose() {
+  public void init() {}
 
-    }
+  public void unload() {}
 
-    public void init() {
+  public boolean saveScript() {
+    return false;
+  }
 
-    }
+  public boolean hasScript() {
+    return false;
+  }
 
-    public void unload() {
-
-    }
-
-    public boolean saveScript() {
-        return false;
-    }
-
-    public boolean hasScript() {
-        return false;
-    }
-
-    public boolean supportFile(File file) {
-        return false;
-    }
+  public boolean supportFile(File file) {
+    return false;
+  }
 }

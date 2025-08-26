@@ -1,120 +1,68 @@
 package JAVARuntime;
 
-//
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-
-@ClassCategory(cat ={"Admob"})
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Admob"})
 public final class RewardedAd {
 
-    //
+  public RewardedAd(String id) {
+    throw new RuntimeException("Admob supported was removed, since CloudBuild was removed, and its not possible to export Admob with offline apk builder");
+  }
 
-    public RewardedAd(String id){
-        //
-        super();
-        //
+  @HideGetSet
+  public String getError() {
+    throw new RuntimeException("Admob supported was removed, since CloudBuild was removed, and its not possible to export Admob with offline apk builder");
+  }
 
-        //
-    }
+  @HideGetSet
+  public String getId() {
+    throw new RuntimeException("Admob supported was removed, since CloudBuild was removed, and its not possible to export Admob with offline apk builder");
+  }
 
-    @HideGetSet
-    public String getError(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public int getRewardAmount() {
+    throw new RuntimeException("Admob supported was removed, since CloudBuild was removed, and its not possible to export Admob with offline apk builder");
+  }
 
-        //
-    }
+  @HideGetSet
+  public String getRewardType() {
+    throw new RuntimeException("Admob supported was removed, since CloudBuild was removed, and its not possible to export Admob with offline apk builder");
+  }
 
-    @HideGetSet
-    public String getId(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public boolean isDisplayError() {
+    throw new RuntimeException("Admob supported was removed, since CloudBuild was removed, and its not possible to export Admob with offline apk builder");
+  }
 
-        //
-    }
+  @HideGetSet
+  public boolean isDisplayed() {
+    throw new RuntimeException("Admob supported was removed, since CloudBuild was removed, and its not possible to export Admob with offline apk builder");
+  }
 
-    @HideGetSet
-    public int getRewardAmount(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public boolean isLoaded() {
+    throw new RuntimeException("Admob supported was removed, since CloudBuild was removed, and its not possible to export Admob with offline apk builder");
+  }
 
-        //
-    }
+  @HideGetSet
+  public boolean isLoading() {
+    throw new RuntimeException("Admob supported was removed, since CloudBuild was removed, and its not possible to export Admob with offline apk builder");
+  }
 
-    @HideGetSet
-    public String getRewardType(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public boolean isLoadingError() {
+    throw new RuntimeException("Admob supported was removed, since CloudBuild was removed, and its not possible to export Admob with offline apk builder");
+  }
 
-        //
-    }
+  @HideGetSet
+  public boolean isOnUserEarned() {
+    throw new RuntimeException("Admob supported was removed, since CloudBuild was removed, and its not possible to export Admob with offline apk builder");
+  }
 
-    @HideGetSet
-    public boolean isDisplayError(){
-        //
-        return false;
-        //
+  public void load() {
+    throw new RuntimeException("Admob supported was removed, since CloudBuild was removed, and its not possible to export Admob with offline apk builder");
+  }
 
-        //
-    }
-
-    @HideGetSet
-    public boolean isDisplayed(){
-        //
-        return false;
-        //
-
-        //
-    }
-
-    @HideGetSet
-    public boolean isLoaded(){
-        //
-        return false;
-        //
-
-        //
-    }
-
-    @HideGetSet
-    public boolean isLoading(){
-        //
-        return false;
-        //
-
-        //
-    }
-
-    @HideGetSet
-    public boolean isLoadingError(){
-        //
-        return false;
-        //
-
-        //
-    }
-
-    @HideGetSet
-    public boolean isOnUserEarned(){
-        //
-        return false;
-        //
-
-        //
-    }
-
-    public void load(){
-        //
-    }
-
-    public void show(){
-        //
-    }
-
-
+  public void show() {
+    throw new RuntimeException("Admob supported was removed, since CloudBuild was removed, and its not possible to export Admob with offline apk builder");
+  }
 }

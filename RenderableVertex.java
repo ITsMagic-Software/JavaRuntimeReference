@@ -4,39 +4,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class RenderableVertex {
-    //
 
-    public RenderableVertex() {}
+  public RenderableVertex() {}
 
-    @HideGetSet
-    public Vertex getVertex() {
-        //
-        return null;
-        //
+  @HideGetSet
+  public Vertex getVertex() {
 
-        //
-    }
-    @HideGetSet
-    public void setVertex(Vertex vertex) {
-        //
-    }
+    return null;
+  }
 
-    public int objectCount(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public void setVertex(Vertex vertex) {}
 
-        //
-    }
-    @MethodArgs(args ={"idx"})
-    public RenderableObject objectAt(int idx){
-        //
-        return null;
-        //
+  public int objectCount() {
 
-        //
-    }
-    public void addObject(RenderableObject object){
-        //
-    }
+    return 0;
+  }
+
+  @MethodArgs({"idx"})
+  public RenderableObject objectAt(int idx) {
+
+    return null;
+  }
+
+  public void addObject(RenderableObject object) {}
 }

@@ -1,25 +1,32 @@
 package JAVARuntime;
 
-@ClassCategory(cat ={"Files"})
+import android.view.View;
+
+@ClassCategory(cat = {"Files"})
 public class FilesPanelFileMenu {
-    private transient String menu;
+  private transient String menu;
 
-    @MethodArgs(args ={"menu"})
-    public FilesPanelFileMenu(String menu) {
-        this.menu = menu;
-    }
+  @MethodArgs({"menu"})
+  public FilesPanelFileMenu(String menu) {
+    this.menu = menu;
+  }
 
-    public String getMenu() {
-        return menu;
-    }
-    @MethodArgs(args ={"menu"})
-    public void setMenu(String menu) {
-        this.menu = menu;
-    }
+  public String getMenu() {
+    return menu;
+  }
 
-    @MethodArgs(args ={"file"})
-    public void onClick(File file){
+  @MethodArgs({"menu"})
+  public void setMenu(String menu) {
+    this.menu = menu;
+  }
 
-    }
+  @MethodArgs({"file"})
+  public void onClick(File file) {}
+
+  @MethodArgs({"file"})
+  public void onClick(File file, View view) {}
+
+  public boolean filterFormat(String format) {
+    return true;
+  }
 }
-

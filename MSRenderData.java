@@ -1,43 +1,34 @@
 package JAVARuntime;
 
-//
-
-@ClassCategory(cat ={"Shaders"})
+@ClassCategory(cat = {"Shaders"})
 public class MSRenderData {
 
-    //
+  private MSRenderData() {}
 
-    private MSRenderData() { }
+  public int vertexCount() {
 
-    public int vertexCount(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @MethodArgs(args ={"idx"})
-    public RenderableVertex renderableVertexAt(int idx){
-        //
-        return null;
-        //
+  @MethodArgs({"idx"})
+  public RenderableVertex renderableVertexAt(int idx) {
 
-        //
-    }
+    return null;
+  }
 
-    public int lightCount(){
-        //
-        return 0;
-        //
+  public int lightCount() {
 
-        //
-    }
-    @MethodArgs(args ={"idx"})
-    public Light lightAt(int idx){
-        //
-        return null;
-        //
+    return 0;
+  }
 
-        //
-    }
+  @MethodArgs({"idx"})
+  public Light lightAt(int idx) {
+
+    return null;
+  }
+
+  public boolean isRenderingShadowDepth() {
+
+    return false;
+  }
 }

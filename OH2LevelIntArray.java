@@ -1,44 +1,31 @@
 package JAVARuntime;
 
-//
-
-@ClassCategory(cat ={"Buffers"})
+@ClassCategory(cat = {"Buffers"})
 public class OH2LevelIntArray extends OHIntDataBase {
 
-    //
+  @MethodArgs({"countX", "countY"})
+  public OH2LevelIntArray(int countX, int countY) {
+    this(countX, countY, true);
+  }
 
-    @MethodArgs(args ={"countX","countY"})
-    public OH2LevelIntArray(int countX, int countY) {
-        this(countX, countY, true);
-    }
-    @MethodArgs(args ={"countX","countY","fill"})
-    public OH2LevelIntArray(int countX, int countY, boolean fill) {
-        //
-        super(countX * countY);
-        //
+  @MethodArgs({"countX", "countY", "fill"})
+  public OH2LevelIntArray(int countX, int countY, boolean fill) {
 
-        //
-    }
+    super(countX * countY);
+  }
 
-    @MethodArgs(args ={"x","y"})
-    public int get(int x, int y){
-        //
-        return 0;
-        //
+  @MethodArgs({"x", "y"})
+  public int get(int x, int y) {
 
-        //
-    }
-    @MethodArgs(args ={"x","y","value"})
-    public void set(int x, int y, int value){
-        //
-    }
+    return 0;
+  }
 
-    @MethodArgs(args ={"x","y"})
-    private int determineIndex(int x, int y){
-        //
-        return 0;
-        //
+  @MethodArgs({"x", "y", "value"})
+  public void set(int x, int y, int value) {}
 
-        //
-    }
+  @MethodArgs({"x", "y"})
+  private int determineIndex(int x, int y) {
+
+    return 0;
+  }
 }

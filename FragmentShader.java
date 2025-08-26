@@ -1,33 +1,26 @@
 package JAVARuntime;
 
-//
-
 import java.io.IOException;
 import java.io.InputStream;
 
-@ClassCategory(cat ={"Shaders"})
+@ClassCategory(cat = {"Shaders"})
 public class FragmentShader {
-    public transient String code;
-    public FragmentShader(String code) {
-        this.code = code;
-    }
+  public transient String code;
 
-    /// Abstract
-    @MethodArgs(args={"materialShader", "shaderName"})
-    public static FragmentShader loadFile(MaterialShader materialShader, String shaderName){
-        //
-        return null;
-        //
+  public FragmentShader(String code) {
+    this.code = code;
+  }
 
-        //
-    }
+  /// Abstract
+  @MethodArgs({"customShader", "shaderName"})
+  public static FragmentShader loadFile(CustomShader customShader, String shaderName) {
 
-    @MethodArgs(args ={"inputStream"})
-    public static FragmentShader loadInputStream(InputStream inputStream) throws IOException {
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
+  @MethodArgs({"inputStream"})
+  public static FragmentShader loadInputStream(InputStream inputStream) throws IOException {
+
+    return null;
+  }
 }

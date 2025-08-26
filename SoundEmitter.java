@@ -1,160 +1,108 @@
 package JAVARuntime;
 
-//
-
 import java.io.File;
 
 public class SoundEmitter {
 
-    //
+  public SoundEmitter(NativeFloatBuffer leftChannel, int sampleRate) {}
 
-    public SoundEmitter(NativeFloatBuffer leftChannel, NativeFloatBuffer rightChannel, int sampleRate) {
-        //
-    }
-    public SoundEmitter(SoundData data) {
-        //
-    }
-    public SoundEmitter(File file) throws Exception {
-        //
-    }
+  public SoundEmitter(float[] leftChannel, int sampleRate) {}
 
-    @HideGetSet
-    public float getLeftVolume() {
-        //
-        return 0;
-        //
+  public SoundEmitter(SoundData data) {}
 
-        //
-    }
-    @HideGetSet
-    public void setLeftVolume(float leftVolume) {
-        //
-    }
+  public SoundEmitter(File file) throws Exception {}
 
-    @HideGetSet
-    public float getRightVolume() {
-        //
-        return 0;
-        //
+  @HideGetSet
+  public float getLeftVolume() {
 
-        //
-    }
-    @HideGetSet
-    public void setRightVolume(float rightVolume) {
-        //
-    }
+    return 0;
+  }
 
-    public void setVolumes(float left, float right){
-        //
-    }
-    public void setVolumes(float left, float right, float volume){
-        //
-    }
+  @HideGetSet
+  public void setLeftVolume(float leftVolume) {}
 
-    @HideGetSet
-    public float getSpeed() {
-        //
-        return 0;
-        //
+  @HideGetSet
+  public float getRightVolume() {
 
-        //
-    }
-    @HideGetSet
-    public void setSpeed(float speed) {
-        //
-    }
+    return 0;
+  }
 
-    @HideGetSet
-    public float getPitch() {
-        //
-        return 0;
-        //
+  @HideGetSet
+  public void setRightVolume(float rightVolume) {}
 
-        //
-    }
-    @HideGetSet
-    public void setPitch(float pitch) {
-        //
-    }
+  public void setVolumes(float left, float right) {}
 
-    @HideGetSet
-    public float getVolume() {
-        //
-        return 0;
-        //
+  public void setVolumes(float left, float right, float volume) {}
 
-        //
-    }
-    @HideGetSet
-    public void setVolume(float volume) {
-        //
-    }
+  @HideGetSet
+  public float getSpeed() {
 
-    private int getStepsCount(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    public float getCurrentSecond(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public void setSpeed(float speed) {}
 
-        //
-    }
-    public float getTotalSeconds(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public float getPitch() {
 
-        //
-    }
-    public void seekToSecond(float second){
-        //
-    }
+    return 0;
+  }
 
-    public boolean isLoop() {
-        //
-        return false;
-        //
+  @HideGetSet
+  public void setPitch(float pitch) {}
 
-        //
-    }
-    public void setLoop(boolean loop) {
-        //
-    }
+  @HideGetSet
+  public float getVolume() {
 
-    public void play(){
-        //
-    }
-    public void pause(){
-        //
-    }
-    public void stop(){
-        //
-    }
+    return 0;
+  }
 
-    public boolean isPaused(){
-        //
-        return false;
-        //
+  @HideGetSet
+  public void setVolume(float volume) {}
 
-        //
-    }
-    public boolean isPlaying(){
-        //
-        return false;
-        //
+  private int getStepsCount() {
 
-        //
-    }
-    public boolean isStopped(){
-        //
-        return false;
-        //
+    return 0;
+  }
 
-        //
-    }
+  public float getCurrentSecond() {
+
+    return 0;
+  }
+
+  public float getTotalSeconds() {
+
+    return 0;
+  }
+
+  public void seekToSecond(float second) {}
+
+  public boolean isLoop() {
+
+    return false;
+  }
+
+  public void setLoop(boolean loop) {}
+
+  public void play() {}
+
+  public void pause() {}
+
+  public void stop() {}
+
+  public boolean isPaused() {
+
+    return false;
+  }
+
+  public boolean isPlaying() {
+
+    return false;
+  }
+
+  public boolean isStopped() {
+
+    return false;
+  }
 }

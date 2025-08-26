@@ -1,107 +1,75 @@
 package JAVARuntime;
 
-//
-
 /*
  * @Author Daniel Oschepkov (SpeakerFish)
  */
 
-@ClassCategory(cat={"Prototyping","Components"})
+@ClassCategory(cat = {"Prototyping", "Components"})
 public final class BlinkLight extends Component {
-    //
 
-    public BlinkLight() {
-        //
-    }
+  public BlinkLight() {}
 
-    @HideGetSet
-    public String getPattern() {
-        //
-        return "";
-        //
+  @HideGetSet
+  public String getPattern() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"pattern"})
-    public void setPattern(String pattern) {
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"pattern"})
-    public void setPattern(OHString pattern) {
-        //
-    }
+    return "";
+  }
 
-    @HideGetSet
-    public float getFrequency() {
-        //
-        return 0;
-        //
+  @HideGetSet
+  @MethodArgs({"pattern"})
+  public void setPattern(String pattern) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"frequency"})
-    public void setFrequency(float frequency) {
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"pattern"})
+  public void setPattern(OHString pattern) {}
 
-    @HideGetSet
-    public float getOffIntensity() {
-        //
-        return 0;
-        //
+  @HideGetSet
+  public float getFrequency() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"value"})
-    public void setOffIntensity(float value) {
-        //
-    }
+    return 0;
+  }
 
-    @HideGetSet
-    public float getOnIntensity() {
-        //
-        return 0;
-        //
+  @HideGetSet
+  @MethodArgs({"frequency"})
+  public void setFrequency(float frequency) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"value"})
-    public void setOnIntensity(float value) {
-        //
-    }
+  @HideGetSet
+  public float getOffIntensity() {
 
-    @HideGetSet
-    public float getLerpSpeed() {
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"value"})
-    public void setLerpSpeed(float value) {
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setOffIntensity(float value) {}
 
-    @HideGetSet
-    public boolean isReverse() {
-        //
-        return false;
-        //
+  @HideGetSet
+  public float getOnIntensity() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"value"})
-    public void setReverse(boolean value) {
-        //
-    }
+    return 0;
+  }
 
-    //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setOnIntensity(float value) {}
+
+  @HideGetSet
+  public float getLerpSpeed() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setLerpSpeed(float value) {}
+
+  @HideGetSet
+  public boolean isReverse() {
+
+    return false;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setReverse(boolean value) {}
 }

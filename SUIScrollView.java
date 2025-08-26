@@ -1,92 +1,62 @@
 package JAVARuntime;
 
-//
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-
-@ClassCategory(cat ={"SupremeUI","Components"})
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"SupremeUI", "Components"})
 public final class SUIScrollView extends Component {
 
-    //
+  public SUIScrollView() {
 
-        public SUIScrollView() {
-        //
-        super();
-        //
+    super();
+  }
 
-        //
-    }
+  public enum LayoutObject {
+    Child0,
+    Other
+  }
 
-    public enum LayoutObject {
-        Child0, Other
-    }
-    //
+  public enum Orientation {
+    Horizontal,
+    Vertical,
+    Both
+  }
 
-    public enum Orientation {
-        Horizontal, Vertical, Both
-    }
-    //
+  @HideGetSet
+  public LayoutObject getLayoutObject() {
 
-    @HideGetSet
-    public LayoutObject getLayoutObject(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
+  @HideGetSet
+  public Orientation getOrientation() {
 
-    @HideGetSet
-    public Orientation getOrientation(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
+  @HideGetSet
+  public int getScrollX() {
 
-    @HideGetSet
-    public int getScrollX(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
+  @HideGetSet
+  public int getScrollY() {
 
-    @HideGetSet
-    public int getScrollY(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setLayoutObject(LayoutObject value) {}
 
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setLayoutObject(LayoutObject value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setOrientation(Orientation value) {}
 
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setOrientation(Orientation value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setScrollX(int value) {}
 
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setScrollX(int value){
-        //
-    }
-
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setScrollY(int value){
-        //
-    }
-
-
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setScrollY(int value) {}
 }

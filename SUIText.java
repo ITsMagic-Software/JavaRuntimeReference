@@ -1,207 +1,148 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"SupremeUI", "Components"})
+public final class SUIText extends Component {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"SupremeUI","Components"})
-public final class SUIText extends Component{
-    //
+  public SUIText() {
 
-    public SUIText() {
-        //
-        super();
-        //
+    super();
+  }
 
-        //
-    }
+  @HideGetSet
+  public Color getColor() {
 
-    @HideGetSet
-    public Color getColor(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"color"})
-    public void setColor(Color color){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"color"})
+  public void setColor(Color color) {}
 
-    @HideGetSet
-    public String getText(){
-        //
-        return "";
-        //
+  @HideGetSet
+  public String getText() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"text"})
-    public void setText(String text){
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"textLines"})
-    public void setText(String... text){
-        //
-    }
-    @UnimplementedDoc
-    @HideGetSet
-    @MethodArgs(args ={"text"})
-    public void setText(float text){
-        //
-    }
-    @UnimplementedDoc
-    @HideGetSet
-    @MethodArgs(args ={"text"})
-    public void setText(int text){
-        //
-    }
-    @UnimplementedDoc
-    @HideGetSet
-    @MethodArgs(args ={"text"})
-    public void setText(double text){
-        //
-    }
-    @UnimplementedDoc
-    @HideGetSet
-    @MethodArgs(args ={"text"})
-    public void setText(boolean text){
-        //
-    }
-    @UnimplementedDoc
-    @HideGetSet
-    @MethodArgs(args ={"text"})
-    public void setText(short text){
-        //
-    }
-    @UnimplementedDoc
-    @HideGetSet
-    @MethodArgs(args ={"text"})
-    public void setText(byte text){
-        //
-    }
+    return "";
+  }
 
-    @HideGetSet
-    public int getResolution(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  @MethodArgs({"text"})
+  public void setText(String text) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setResolution(int value){
-        //
-    }
-    @HideGetSet
-    public SUnitType getResolutionUnitType(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"textLines"})
+  public void setText(String... text) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setResolutionUnitType(SUnitType value){
-        //
-    }
-    @MethodArgs(args ={"value","unitType"})
-    public void setResolution(int value, SUnitType unitType){
-        //
-    }
+  @UnimplementedDoc
+  @HideGetSet
+  @MethodArgs({"text"})
+  public void setText(float text) {}
 
-    public float measureWidth(String text){
-        //
-        return 0;
-        //
+  @UnimplementedDoc
+  @HideGetSet
+  @MethodArgs({"text"})
+  public void setText(int text) {}
 
-        //
-    }
-    public float measureWidth(String[] lines){
-        //
-        return 0;
-        //
+  @UnimplementedDoc
+  @HideGetSet
+  @MethodArgs({"text"})
+  public void setText(double text) {}
 
-        //
-    }
-    public float measureHeight(String text){
-        //
-        return 0;
-        //
+  @UnimplementedDoc
+  @HideGetSet
+  @MethodArgs({"text"})
+  public void setText(boolean text) {}
 
-        //
-    }
-    public float measureHeight(String[] lines){
-        //
-        return 0;
-        //
+  @UnimplementedDoc
+  @HideGetSet
+  @MethodArgs({"text"})
+  public void setText(short text) {}
 
-        //
-    }
+  @UnimplementedDoc
+  @HideGetSet
+  @MethodArgs({"text"})
+  public void setText(byte text) {}
 
-    @HideGetSet
-    public float getScale(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public int getResolution() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setScale(float value){
-        //
-    }
+    return 0;
+  }
 
-    @HideGetSet
-    public STextAlignment getAlignment(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setResolution(int value) {}
 
-        //
-    }
-    @HideGetSet
+  @HideGetSet
+  public SUnitType getResolutionUnitType() {
 
-    @MethodArgs(args ={"value"})
-    public void setAlignment(STextAlignment value){
-        //
-    }
+    return null;
+  }
 
-    @HideGetSet
-    public boolean isIgnoreMask(){
-        //
-        return false;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setResolutionUnitType(SUnitType value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setIgnoreMask(boolean value){
-        //
-    }
+  @MethodArgs({"value", "unitType"})
+  public void setResolution(int value, SUnitType unitType) {}
 
-    @HideGetSet
-    public Font getFont(){
-        //
-        return null;
-        //
+  public float measureWidth(String text) {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setFont(Font value){
-        //
-    }
+    return 0;
+  }
 
-    //
+  public float measureWidth(String[] lines) {
+
+    return 0;
+  }
+
+  public float measureHeight(String text) {
+
+    return 0;
+  }
+
+  public float measureHeight(String[] lines) {
+
+    return 0;
+  }
+
+  @HideGetSet
+  public float getScale() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setScale(float value) {}
+
+  @HideGetSet
+  public STextAlignment getAlignment() {
+
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setAlignment(STextAlignment value) {}
+
+  @HideGetSet
+  public boolean isIgnoreMask() {
+
+    return false;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setIgnoreMask(boolean value) {}
+
+  @HideGetSet
+  public Font getFont() {
+
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setFont(Font value) {}
 }

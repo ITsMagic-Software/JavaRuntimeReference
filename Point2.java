@@ -1,339 +1,237 @@
 package JAVARuntime;
 
-//
-
-
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"Vector"})
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Vector"})
 public final class Point2 {
-    //
 
-    //
+  public Point2() {}
 
-    public Point2() {
-        //
-    }
-    @MethodArgs(args ={"x","y"})
-    public Point2(int x, int y) {
-        //
-    }
+  @MethodArgs({"x", "y"})
+  public Point2(int x, int y) {}
 
-    @HideGetSet
-    public int getX(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public int getX() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setX(int value){
-        //
-    }
-    @HideGetSet
-    public int getY(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setY(int value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setX(int value) {}
 
+  @HideGetSet
+  public int getY() {
 
-    /// Calcs
-    @MethodArgs(args ={"value"})
-    public Point2 mul(Point2 value){
-        //
-        return null;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @MethodArgs(args ={"x","y"})
-    public Point2 mul(int x, int y){
-        //
-       return null;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setY(int value) {}
 
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public Point2 mul(int a){
-        //
-       return null;
-        //
+  /// Calcs
+  @MethodArgs({"value"})
+  public Point2 mul(Point2 value) {
 
-        //
-    }
+    return null;
+  }
 
-    @MethodArgs(args ={"value"})
-    public Point2 div(Point2 value){
-        //
-       return null;
-        //
+  @MethodArgs({"x", "y"})
+  public Point2 mul(int x, int y) {
 
-        //
-    }
-    @MethodArgs(args ={"x","y"})
-    public Point2 div(int x, int y){
-        //
-       return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public Point2 div(int a){
-        //
-       return null;
-        //
+  @MethodArgs({"a"})
+  public Point2 mul(int a) {
 
-        //
-    }
+    return null;
+  }
 
-    @MethodArgs(args ={"value"})
-    public Point2 sum(Point2 value){
-        //
-       return null;
-        //
+  @MethodArgs({"value"})
+  public Point2 div(Point2 value) {
 
-        //
-    }
-    @MethodArgs(args ={"x","y"})
-    public Point2 sum(int x, int y){
-        //
-       return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public Point2 sum(int a){
-        //
-       return null;
-        //
+  @MethodArgs({"x", "y"})
+  public Point2 div(int x, int y) {
 
-        //
-    }
+    return null;
+  }
 
-    @MethodArgs(args ={"value"})
-    public Point2 sub(Point2 value){
-        //
-       return null;
-        //
+  @MethodArgs({"a"})
+  public Point2 div(int a) {
 
-        //
-    }
-    @MethodArgs(args ={"x","y"})
-    public Point2 sub(int x, int y){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public Point2 sub(int a){
-        //
-        return null;
-        //
+  @MethodArgs({"value"})
+  public Point2 sum(Point2 value) {
 
-        //
-    }
+    return null;
+  }
 
+  @MethodArgs({"x", "y"})
+  public Point2 sum(int x, int y) {
 
-    /// Utils
-    @MethodArgs(args ={"point2"})
-    public boolean equals(Point2 vector){
-        //
-        return false;
-        //
+    return null;
+  }
 
-        //
-    }
-    @MethodArgs(args ={"x","y"})
-    public boolean equals(int x, int y){
-        //
-        return false;
-        //
+  @MethodArgs({"a"})
+  public Point2 sum(int a) {
 
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public boolean equals(int a){
-        //
-        return false;
-        //
+    return null;
+  }
 
-        //
-    }
+  @MethodArgs({"value"})
+  public Point2 sub(Point2 value) {
 
-    @MethodArgs(args ={"point2"})
-    public void set(Point2 vector3){
-        //
-    }
-    @MethodArgs(args ={"x","y"})
-    public void set(int x, int y){
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public void set(int a){
-        //
-    }
+    return null;
+  }
 
-    @MethodArgs(args ={"point2","speed"})
-    public void lerp(Point2 vector3, int speed){
-        //
-    }
-    @MethodArgs(args ={"x","y","speed"})
-    public void lerp(int x, int y, int speed){
-        //
-    }
-    @MethodArgs(args ={"a","speed"})
-    public void lerp(int a, int speed){
-        //
-    }
+  @MethodArgs({"x", "y"})
+  public Point2 sub(int x, int y) {
 
-    @MethodArgs(args ={"point2","speed"})
-    public void lerpInSeconds(Point2 vector3, int speed){
-        //
-    }
-    @MethodArgs(args ={"x","y","speed"})
-    public void lerpInSeconds(int x, int y, int speed){
-        //
-    }
-    @MethodArgs(args ={"a","speed"})
-    public void lerpInSeconds(int a, int speed){
-        //
-    }
+    return null;
+  }
 
-    @MethodArgs(args ={"point2","blend"})
-    public void blend(Point2 vector3, int blend){
-        //
-    }
-    @MethodArgs(args ={"x","y","blend"})
-    public void blend(int x, int y, int blend){
-        //
-    }
-    @MethodArgs(args ={"a","blend"})
-    public void blend(int a, int blend){
-        //
-    }
+  @MethodArgs({"a"})
+  public Point2 sub(int a) {
 
-    public Point2 normalize(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    public void normalizeLocal(){
-        //
-    }
+  /// Utils
+  @MethodArgs({"point2"})
+  public boolean equals(Point2 vector) {
 
-    public float length(){
-        //
-       return 0;
-        //
+    return false;
+  }
 
-        //
-    }
-    public float sqrLength(){
-        //
-       return 0;
-        //
+  @MethodArgs({"x", "y"})
+  public boolean equals(int x, int y) {
 
-        //
-    }
-    @MethodArgs(args ={"point2"})
-    public float distance(Point2 vector3){
-        //
-       return 0;
-        //
+    return false;
+  }
 
-        //
-    }
-    @MethodArgs(args ={"point2"})
-    public float sqrDistance(Point2 vector3){
-        //
-       return 0;
-        //
+  @MethodArgs({"a"})
+  public boolean equals(int a) {
 
-        //
-    }
+    return false;
+  }
 
-    @MethodArgs(args ={"point2"})
-    public float dot(Point2 vector3){
-        //
-       return 0;
-        //
+  @MethodArgs({"point2"})
+  public void set(Point2 vector3) {}
 
-        //
-    }
-    @MethodArgs(args ={"x","y"})
-    public float dot(int x, int y){
-        //
-       return 0;
-        //
+  @MethodArgs({"vector2"})
+  public void set(Vector2 vector3) {}
 
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public float dot(int a){
-        //
-       return 0;
-        //
+  @MethodArgs({"x", "y"})
+  public void set(int x, int y) {}
 
-        //
-    }
+  @MethodArgs({"a"})
+  public void set(int a) {}
 
-    @MethodArgs(args ={"point2"})
-    public Vector3 cross(Point2 value){
-        //
-        return null;
-        //
+  @MethodArgs({"point2", "speed"})
+  public void lerp(Point2 vector3, int speed) {}
 
-        //
-    }
-    @MethodArgs(args ={"x","y"})
-    public Vector3 cross(int x, int y){
-        //
-        return null;
-        //
+  @MethodArgs({"x", "y", "speed"})
+  public void lerp(int x, int y, int speed) {}
 
-        //
-    }
+  @MethodArgs({"a", "speed"})
+  public void lerp(int a, int speed) {}
 
-    public Point2 copy(){
-        //
-        return null;
-        //
+  @MethodArgs({"point2", "speed"})
+  public void lerpInSeconds(Point2 vector3, int speed) {}
 
-        //
-    }
+  @MethodArgs({"x", "y", "speed"})
+  public void lerpInSeconds(int x, int y, int speed) {}
 
-    public String toString() {
-        //
-        return null;
-        //
+  @MethodArgs({"a", "speed"})
+  public void lerpInSeconds(int a, int speed) {}
 
-        //
-    }
+  @MethodArgs({"point2", "blend"})
+  public void blend(Point2 vector3, int blend) {}
 
-    /// Abstracts
-    public static Point2 zero(){
-        //
-        return null;
-        //
+  @MethodArgs({"x", "y", "blend"})
+  public void blend(int x, int y, int blend) {}
 
-        //
-    }
+  @MethodArgs({"a", "blend"})
+  public void blend(int a, int blend) {}
+
+  public Point2 normalize() {
+
+    return null;
+  }
+
+  public void normalizeLocal() {}
+
+  public float length() {
+
+    return 0;
+  }
+
+  public float sqrLength() {
+
+    return 0;
+  }
+
+  @MethodArgs({"point2"})
+  public float distance(Point2 vector3) {
+
+    return 0;
+  }
+
+  @MethodArgs({"point2"})
+  public float sqrDistance(Point2 vector3) {
+
+    return 0;
+  }
+
+  @MethodArgs({"point2"})
+  public float dot(Point2 vector3) {
+
+    return 0;
+  }
+
+  @MethodArgs({"x", "y"})
+  public float dot(int x, int y) {
+
+    return 0;
+  }
+
+  @MethodArgs({"a"})
+  public float dot(int a) {
+
+    return 0;
+  }
+
+  @MethodArgs({"point2"})
+  public Vector3 cross(Point2 value) {
+
+    return null;
+  }
+
+  @MethodArgs({"x", "y"})
+  public Vector3 cross(int x, int y) {
+
+    return null;
+  }
+
+  public Point2 copy() {
+
+    return null;
+  }
+
+  public String toString() {
+
+    return null;
+  }
+
+  /// Abstracts
+  public static Point2 zero() {
+
+    return null;
+  }
 }

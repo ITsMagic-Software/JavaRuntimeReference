@@ -1,159 +1,109 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"SupremeUI", "Components"})
+public final class SUIJoystick extends Component {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"SupremeUI","Components"})
-public final class SUIJoystick extends Component{
-    //
+  public SUIJoystick() {
 
-    public SUIJoystick() {
-        //
-        super();
-        //
+    super();
+  }
 
-        //
-    }
+  @HideGetSet
+  public float getLerp() {
 
-    @HideGetSet
-    public float getLerp(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setLerp(float value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setLerp(float value) {}
 
-    @HideGetSet
-    public Vector2 getValue(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public Vector2 getValue() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setValue(Vector2 value){
-        //
-    }
+    return null;
+  }
 
-    @HideGetSet
-    public String getAxisName(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setValue(Vector2 value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setAxisName(String name){
-        //
-    }
+  @HideGetSet
+  public String getAxisName() {
 
-    @HideGetSet
-    public Axis getAxis(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setAxis(Axis axis){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setAxisName(String name) {}
 
-    @HideGetSet
-    public boolean isSpherical(){
-        //
-        return false;
-        //
+  @HideGetSet
+  public Axis getAxis() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setSpherical(boolean value){
-        //
-    }
+    return null;
+  }
 
-    @HideGetSet
-    public boolean isPressed(){
-        //
-        return false;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setAxis(Axis axis) {}
 
-        //
-    }
+  @HideGetSet
+  public boolean isSpherical() {
 
-    @HideGetSet
-    public boolean isDown(){
-        //
-        return false;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    public boolean isUp(){
-        //
-        return false;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setSpherical(boolean value) {}
 
-        //
-    }
+  @HideGetSet
+  public boolean isPressed() {
 
-    @HideGetSet
-    public boolean isClickable(){
-        //
-        return false;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setClickable(boolean value){
-        //
-    }
+  @HideGetSet
+  public boolean isDown() {
 
-    @HideGetSet
-    public STargetRect getTargetRectType(){
-        //
-        return null;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setTargetRectType(STargetRect value){
-        //
-    }
+  @HideGetSet
+  public boolean isUp() {
 
-    @HideGetSet
-    public SpatialObject getTargetRectObject(){
-        //
-        return null;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"object"})
-    public void setTargetRectObject(SpatialObject object){
-        //
-    }
+  @HideGetSet
+  public boolean isClickable() {
 
-    //
+    return false;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setClickable(boolean value) {}
+
+  @HideGetSet
+  public STargetRect getTargetRectType() {
+
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setTargetRectType(STargetRect value) {}
+
+  @HideGetSet
+  public SpatialObject getTargetRectObject() {
+
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"object"})
+  public void setTargetRectObject(SpatialObject object) {}
 }

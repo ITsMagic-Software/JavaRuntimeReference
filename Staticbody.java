@@ -1,32 +1,38 @@
 package JAVARuntime;
 
-//
+@ClassCategory(cat = {"Physics"})
+public final class Staticbody extends PhysicsEntity {
 
+  public Staticbody() {
 
-@ClassCategory(cat ={"Physics"})
-public final class Staticbody extends PhysicsEntity{
+    super();
+  }
 
-    //
+  @JRDoc_EN("Returns the PhysicsLayer of the Staticbody.")
+  @JRDoc_PT("Retorna a PhysicsLayer do Staticbody.")
+  @HideGetSet
+  public JAVARuntime.PhysicsLayer getPhysicsLayer() {
 
-    public Staticbody() {
-        //
-        super();
-        //
+    return null;
+  }
 
-        //
-    }
+  @JRDoc_EN("Sets the PhysicsLayer of the Staticbody to the specified layer.")
+  @JRDoc_PT("Define a PhysicsLayer do Staticbody para o layer especificado.")
+  @HideGetSet
+  @MethodArgs({"layer"})
+  public void setPhysicsLayer(PhysicsLayer layer) {}
 
-    @HideGetSet
-    public JAVARuntime.PhysicsLayer getPhysicsLayer() {
-        //
-        return null;
-        //
+  @JRDoc_EN("Returns the bounciness of the Staticbody.")
+  @JRDoc_PT("Retorna a elasticidade do Staticbody.")
+  @HideGetSet
+  public float getBounciness() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"layer"})
-    public void setPhysicsLayer(PhysicsLayer layer){
-        //
-    }
+    return 0;
+  }
+
+  @JRDoc_EN("Sets the bounciness of the Staticbody.")
+  @JRDoc_PT("Define a elasticidade do Staticbody.")
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setBounciness(float value) {}
 }

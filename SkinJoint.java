@@ -1,31 +1,17 @@
 package JAVARuntime;
 
-//
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-
-@ClassCategory(cat ={"Skin","Components"})
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Skin", "Components"})
 public final class SkinJoint extends Component {
 
-    //
+  public SkinJoint() {
 
-        public SkinJoint() {
-        //
-        super();
-        //
+    super();
+  }
 
-        //
-    }
+  @HideGetSet
+  public int getIndex() {
 
-    @HideGetSet
-    public int getIndex(){
-        //
-        return 0;
-        //
-
-        //
-    }
-
-
+    return 0;
+  }
 }

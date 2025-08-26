@@ -1,46 +1,31 @@
 package JAVARuntime;
 
-//
-
 /*
  * @Author Daniel Oschepkov (SpeakerFish)
  */
 
-@ClassCategory(cat={"Prototyping","Components"})
+@ClassCategory(cat = {"Prototyping", "Components"})
 public class VehicleAIWheel extends Component {
-    //
 
-    public VehicleAIWheel() {
-        //
-    }
+  public VehicleAIWheel() {}
 
-    @HideGetSet
-    public boolean isSteerWheel() {
-        //
-        return false;
-        //
+  @HideGetSet
+  public boolean isSteerWheel() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"steerWheel"})
-    public void setSteerWheel(boolean steerWheel) {
-        //
-    }
+    return false;
+  }
 
-    @HideGetSet
-    public boolean isTorqueWheel() {
-        //
-        return false;
-        //
+  @HideGetSet
+  @MethodArgs({"steerWheel"})
+  public void setSteerWheel(boolean steerWheel) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args={"steerWheel"})
-    public void setTorqueWheel(boolean steerWheel) {
-        //
-    }
+  @HideGetSet
+  public boolean isTorqueWheel() {
 
-    //
+    return false;
+  }
+
+  @HideGetSet
+  @MethodArgs({"steerWheel"})
+  public void setTorqueWheel(boolean steerWheel) {}
 }

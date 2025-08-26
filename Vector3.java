@@ -1,985 +1,806 @@
 package JAVARuntime;
 
-//
-
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"Vector"})
-public final class Vector3 implements
-        SumOperator, SubOperator, MulOperator, DivOperator,
-        SumEqualOperator, SubEqualOperator, MulEqualOperator, DivEqualOperator,
-        EqualsComparator, GreaterThanComparator, LessThanComparator,
-        AddAddOperator, RemoveRemoveOperator, JsonSerializer
-{
-
-    //
-
-    //
-
-    public Vector3() {
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public Vector3(float a) {
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public Vector3(int a) {
-        //
-    }
-
-    @MethodArgs(args ={"x","y","z"})
-    public Vector3(float x, float y, float z) {
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public Vector3(int x, int y, int z) {
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public Vector3(float x, float y, int z) {
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public Vector3(int x, float y, int z) {
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public Vector3(int x, float y, float z) {
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public Vector3(int x, int y, float z) {
-        //
-    }
-
-    @HideGetSet
-    public float getX(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setX(float value){
-        //
-    }
-    @HideGetSet
-    public float getY(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setY(float value){
-        //
-    }
-    @HideGetSet
-    public float getZ(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setZ(float value){
-        //
-    }
-
-    @HideGetSet
-    public Vector2 getXY(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @HideGetSet
-    public Vector2 getXZ(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @HideGetSet
-    public Vector2 getYZ(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @HideGetSet
-    public Vector2 getYX(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @HideGetSet
-    public Vector2 getZX(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @HideGetSet
-    public Vector2 getZY(){
-        //
-        return null;
-        //
-
-        //
-    }
-
-    @HideGetSet
-    public void SetXY(Vector2 v){
-        //
-    }
-    @HideGetSet
-    public void SetXZ(Vector2 v){
-        //
-    }
-    @HideGetSet
-    public void SetYZ(Vector2 v){
-        //
-    }
-    @HideGetSet
-    public void SetYX(Vector2 v){
-        //
-    }
-    @HideGetSet
-    public void SetZX(Vector2 v){
-        //
-    }
-    @HideGetSet
-    public void SetZY(Vector2 v){
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public void sumX(float value){
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void sumY(float value){
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void sumZ(float value){
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public void subX(float value){
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void subY(float value){
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void subZ(float value){
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public void mulX(float value){
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void mulY(float value){
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void mulZ(float value){
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public void divX(float value){
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void divY(float value){
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void divZ(float value){
-        //
-    }
-
-    /// Calcs
-    @MethodArgs(args ={"value"})
-    public Vector3 mul(Vector3 value){
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public Vector3 mul(float x, float y, float z){
-        //
-       return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public Vector3 mul(float a){
-        //
-       return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void mulLocal(Vector3 value){
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void mulLocal(Vector2 value){
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public void mulLocal(float x, float y, float z){
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public void mulLocal(float a){
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public Vector3 div(Vector3 value){
-        //
-       return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public Vector3 div(float x, float y, float z){
-        //
-       return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public Vector3 div(float a){
-        //
-       return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void divLocal(Vector3 value){
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void divLocal(Vector2 value){
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public void divLocal(float x, float y, float z){
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public void divLocal(float a){
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public Vector3 sum(Vector3 value){
-        //
-       return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public Vector3 sum(float x, float y, float z){
-        //
-       return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public Vector3 sum(float a){
-        //
-       return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void sumLocal(Vector3 value){
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void sumLocal(Vector2 value){
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public void sumLocal(float x, float y, float z){
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public void sumLocal(float a){
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public Vector3 sub(Vector3 value){
-        //
-       return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public Vector3 sub(float x, float y, float z){
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public Vector3 sub(float a){
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void subLocal(Vector3 value){
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void subLocal(Vector2 value){
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public void subLocal(float x, float y, float z){
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public void subLocal(float a){
-        //
-    }
-
-
-    /// Utils
-    @MethodArgs(args ={"value"})
-    public boolean equals(Vector3 vector){
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public boolean equals(float x, float y, float z){
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public boolean equals(float a){
-        //
-        return false;
-        //
-
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public void set(Vector3 vector3){
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public void set(float x, float y, float z){
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public void set(float a){
-        //
-    }
-
-    @MethodArgs(args ={"value","speed"})
-    public void lerp(Vector3 vector3, float speed){
-        //
-    }
-    @MethodArgs(args ={"x","y","z","speed"})
-    public void lerp(float x, float y, float z, float speed){
-        //
-    }
-    @MethodArgs(args ={"a","speed"})
-    public void lerp(float a, float speed){
-        //
-    }
-
-    @MethodArgs(args ={"value","speed"})
-    public void lerpInSeconds(Vector3 vector3, float speed){
-        //
-    }
-    @MethodArgs(args ={"x","y","z","speed"})
-    public void lerpInSeconds(float x, float y, float z, float speed){
-        //
-    }
-    @MethodArgs(args ={"a","speed"})
-    public void lerpInSeconds(float a, float speed){
-        //
-    }
-
-    @MethodArgs(args ={"value","blend"})
-    public void blend(Vector3 vector3, float blend){
-        //
-    }
-    @MethodArgs(args ={"x","y","z","blend"})
-    public void blend(float x, float y, float z, float blend){
-        //
-    }
-    @MethodArgs(args ={"a","blend"})
-    public void blend(float a, float blend){
-        //
-    }
-
-    public Vector3 normalize(){
-        //
-        return null;
-        //
-
-        //
-    }
-    public Vector3 sqrNormalize(){
-        //
-        return null;
-        //
-
-        //
-    }
-    public void normalizeLocal(){
-        //
-    }
-    public void sqrNormalizeLocal(){
-        //
-    }
-
-    public float length(){
-        //
-       return 0;
-        //
-
-        //
-    }
-    public float sqrLength(){
-        //
-       return 0;
-        //
-
-        //
-    }
-    public float magnitude(){
-        //
-       return 0;
-        //
-
-        //
-    }
-    public float sqrMagnitude(){
-        //
-       return 0;
-        //
-
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public float distance(Vector3 vector3){
-        //
-       return 0;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public float sqrDistance(Vector3 vector3){
-        //
-       return 0;
-        //
-
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public float dot(Vector3 vector3){
-        //
-       return 0;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public float dot(float x, float y, float z){
-        //
-       return 0;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"a"})
-    public float dot(float a){
-        //
-       return 0;
-        //
-
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public Vector3 cross(Vector3 value){
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public Vector3 cross(float x, float y, float z){
-        //
-        return null;
-        //
-
-        //
-    }
-
-    public Vector3 copy(){
-        //
-        return null;
-        //
-
-        //
-    }
-
-    public String toString() {
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"decimals"})
-    public String toString(int decimals) {
-        //
-        return null;
-        //
-
-        //
-    }
-
-    /// Abstracts
-    public static Vector3 zero(){
-        //
-        return null;
-        //
-
-        //
-    }
-    public static Vector3 one(){
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"a","b","velocity","smoothTime", "maxSeed","deltaTime"})
-    public static Vector3 smoothDamp(Vector3 a, Vector3 b, Vector3 velocity, float smoothTime, float maxSpeed, float deltaTime){
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"a","b","velocity","smoothTime", "maxSeed","deltaTime","out"})
-    public static Vector3 smoothDamp(Vector3 a, Vector3 b, Vector3 velocity, float smoothTime, float maxSpeed, float deltaTime, Vector3 out){
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"dir","normal"})
-    public static Vector3 reflect(Vector3 dir, Vector3 normal){
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"dir","normal","out"})
-    public static Vector3 reflect(Vector3 dir, Vector3 normal, Vector3 out){
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"a","b"})
-    public static float angle(Vector3 a, Vector3 b){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"a","b","c"})
-    public static Vector3 triangleNormal(Vector3 a, Vector3 b, Vector3 c){
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"a","b","c","out"})
-    public static Vector3 triangleNormal(Vector3 a, Vector3 b, Vector3 c, Vector3 out){
-        //
-        return null;
-        //
-
-        //
-    }
-
-    public static Vector3 Max(Vector3 value1, Vector3 value2){
-        //
-        return null;
-        //
-
-        //
-    }
-    public static Vector3 Min(Vector3 value1, Vector3 value2){
-        //
-        return null;
-        //
-
-        //
-    }
-
-    public static Vector3 Negate(Vector3 value)
-    {
-        //
-        return null;
-        //
-
-        //
-    }
-
-    public static Vector3 up() {
-        return new Vector3 (0,1,0);
-    }
-    public static Vector3 down() {
-        return new Vector3 (0,-1,0);
-    }
-    public static Vector3 back() {
-        return new Vector3 (0,0,-1);
-    }
-    public static Vector3 forward() {
-        return new Vector3 (0,0,1);
-    }
-    public static Vector3 left() {
-        return new Vector3 (-1,0,0);
-    }
-    public static Vector3 right() {
-        return new Vector3 (1,0,0);
-    }
-
-
-    /// Comparators
-    @MethodArgs(args ={"value"})
-    public boolean equals(Object otherObject){
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean pointerEquals(Object otherObject){
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean notEquals(Object otherObject){
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public static boolean isNull(Object value){
-        //
-        return false;
-        //
-
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public boolean greaterThan(Object otherObject) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean greaterThan(float v) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean greaterThan(int v) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean greaterThan(long v) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean greaterThan(double v) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean greaterOrEqualsThan(Object otherObject) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean greaterOrEqualsThan(float v) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean greaterOrEqualsThan(int v) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean greaterOrEqualsThan(long v) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean greaterOrEqualsThan(double v) {
-        //
-        return false;
-        //
-
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public boolean lessThan(Object otherObject) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean lessThan(float v) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean lessThan(int v) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean lessThan(long v) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean lessThan(double v) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean lessOrEqualsThan(Object otherObject) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean lessOrEqualsThan(float v) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean lessOrEqualsThan(int v) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean lessOrEqualsThan(long v) {
-        //
-        return false;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public boolean lessOrEqualsThan(double v) {
-        //
-        return false;
-        //
-
-        //
-    }
-
-    /// Operators
-    @MethodArgs(args ={"value"})
-    public <T> T sum(Object otherObject) {
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void sumEqual(Object otherObject) {
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public <T> T div(Object otherObject) {
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void divEqual(Object otherObject) {
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public <T> T mul(Object otherObject) {
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void mulEqual(Object otherObject) {
-        //
-    }
-
-    @MethodArgs(args ={"value"})
-    public <T> T sub(Object otherObject) {
-        //
-        return null;
-        //
-
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void subEqual(Object otherObject) {
-        //
-    }
-
-    public void addAdd() {
-        //
-    }
-    public void removeRemove() {
-        //
-    }
-
-    //
-    public String serializeToString() {
-        //
-        return null;
-        //
-
-        //
-    }
-
-    //
-    public void deserializeLocal(String str) {
-        //
-    }
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Vector"})
+public final class Vector3 implements SumOperator, SubOperator, MulOperator, DivOperator, SumEqualOperator, SubEqualOperator, MulEqualOperator, DivEqualOperator, EqualsComparator, GreaterThanComparator, LessThanComparator, AddAddOperator, RemoveRemoveOperator, JsonSerializer {
+
+  public Vector3() {}
+
+  @MethodArgs({"a"})
+  public Vector3(float a) {}
+
+  @MethodArgs({"a"})
+  public Vector3(int a) {}
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3(float x, float y, float z) {}
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3(int x, int y, int z) {}
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3(float x, float y, int z) {}
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3(int x, float y, int z) {}
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3(int x, float y, float z) {}
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3(int x, int y, float z) {}
+
+  @HideGetSet
+  public float getX() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setX(float value) {}
+
+  @HideGetSet
+  public float getY() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setY(float value) {}
+
+  @HideGetSet
+  public float getZ() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setZ(float value) {}
+
+  public Vector2 getXY() {
+
+    return null;
+  }
+
+  public Vector2 getXZ() {
+
+    return null;
+  }
+
+  public Vector2 getYZ() {
+
+    return null;
+  }
+
+  public Vector2 getYX() {
+
+    return null;
+  }
+
+  public Vector2 getZX() {
+
+    return null;
+  }
+
+  public Vector2 getZY() {
+
+    return null;
+  }
+
+  public void setXY(Vector2 v) {}
+
+  public void setXZ(Vector2 v) {}
+
+  public void setYZ(Vector2 v) {}
+
+  public void setYX(Vector2 v) {}
+
+  public void setZX(Vector2 v) {}
+
+  public void setZY(Vector2 v) {}
+
+  public void setXY(float x, float y) {}
+
+  public void setXZ(float x, float z) {}
+
+  public void setYZ(float y, float z) {}
+
+  public void setYX(float y, float x) {}
+
+  public void setZX(float z, float x) {}
+
+  public void setZY(float z, float y) {}
+
+  @MethodArgs({"value"})
+  public void sumX(float value) {}
+
+  @MethodArgs({"value"})
+  public void sumY(float value) {}
+
+  @MethodArgs({"value"})
+  public void sumZ(float value) {}
+
+  @MethodArgs({"value"})
+  public void subX(float value) {}
+
+  @MethodArgs({"value"})
+  public void subY(float value) {}
+
+  @MethodArgs({"value"})
+  public void subZ(float value) {}
+
+  @MethodArgs({"value"})
+  public void mulX(float value) {}
+
+  @MethodArgs({"value"})
+  public void mulY(float value) {}
+
+  @MethodArgs({"value"})
+  public void mulZ(float value) {}
+
+  @MethodArgs({"value"})
+  public void divX(float value) {}
+
+  @MethodArgs({"value"})
+  public void divY(float value) {}
+
+  @MethodArgs({"value"})
+  public void divZ(float value) {}
+
+  /// Calcs
+  @MethodArgs({"value"})
+  public Vector3 mul(Vector3 value) {
+
+    return null;
+  }
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3 mul(float x, float y, float z) {
+
+    return null;
+  }
+
+  @MethodArgs({"a"})
+  public Vector3 mul(float a) {
+
+    return null;
+  }
+
+  @MethodArgs({"value"})
+  public void mulLocal(Vector3 value) {}
+
+  @MethodArgs({"value"})
+  public void mulLocal(Vector2 value) {}
+
+  @MethodArgs({"x", "y", "z"})
+  public void mulLocal(float x, float y, float z) {}
+
+  @MethodArgs({"a"})
+  public void mulLocal(float a) {}
+
+  @MethodArgs({"value"})
+  public Vector3 multiply(Vector3 value) {
+
+    return null;
+  }
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3 multiply(float x, float y, float z) {
+
+    return null;
+  }
+
+  @MethodArgs({"a"})
+  public Vector3 multiply(float a) {
+
+    return null;
+  }
+
+  @MethodArgs({"value"})
+  public Vector3 div(Vector3 value) {
+
+    return null;
+  }
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3 div(float x, float y, float z) {
+
+    return null;
+  }
+
+  @MethodArgs({"a"})
+  public Vector3 div(float a) {
+
+    return null;
+  }
+
+  @MethodArgs({"value"})
+  public void divLocal(Vector3 value) {}
+
+  @MethodArgs({"value"})
+  public void divLocal(Vector2 value) {}
+
+  @MethodArgs({"x", "y", "z"})
+  public void divLocal(float x, float y, float z) {}
+
+  @MethodArgs({"a"})
+  public void divLocal(float a) {}
+
+  @MethodArgs({"value"})
+  public Vector3 divide(Vector3 value) {
+
+    return null;
+  }
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3 divide(float x, float y, float z) {
+
+    return null;
+  }
+
+  @MethodArgs({"a"})
+  public Vector3 divide(float a) {
+
+    return null;
+  }
+
+  @MethodArgs({"value"})
+  public Vector3 sum(Vector3 value) {
+
+    return null;
+  }
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3 sum(float x, float y, float z) {
+
+    return null;
+  }
+
+  @MethodArgs({"a"})
+  public Vector3 sum(float a) {
+
+    return null;
+  }
+
+  @MethodArgs({"value"})
+  public void sumLocal(Vector3 value) {}
+
+  @MethodArgs({"value"})
+  public void sumLocal(Vector2 value) {}
+
+  @MethodArgs({"x", "y", "z"})
+  public void sumLocal(float x, float y, float z) {}
+
+  @MethodArgs({"a"})
+  public void sumLocal(float a) {}
+
+  @MethodArgs({"value"})
+  public Vector3 add(Vector3 value) {
+
+    return null;
+  }
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3 add(float x, float y, float z) {
+
+    return null;
+  }
+
+  @MethodArgs({"a"})
+  public Vector3 add(float a) {
+
+    return null;
+  }
+
+  @MethodArgs({"value"})
+  public Vector3 sub(Vector3 value) {
+
+    return null;
+  }
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3 sub(float x, float y, float z) {
+
+    return null;
+  }
+
+  @MethodArgs({"a"})
+  public Vector3 sub(float a) {
+
+    return null;
+  }
+
+  @MethodArgs({"value"})
+  public void subLocal(Vector3 value) {}
+
+  @MethodArgs({"value"})
+  public void subLocal(Vector2 value) {}
+
+  @MethodArgs({"x", "y", "z"})
+  public void subLocal(float x, float y, float z) {}
+
+  @MethodArgs({"a"})
+  public void subLocal(float a) {}
+
+  @MethodArgs({"value"})
+  public Vector3 subtract(Vector3 value) {
+
+    return null;
+  }
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3 subtract(float x, float y, float z) {
+
+    return null;
+  }
+
+  @MethodArgs({"a"})
+  public Vector3 subtract(float a) {
+
+    return null;
+  }
+
+  /// Utils
+  @MethodArgs({"value"})
+  public boolean equals(Vector3 vector) {
+
+    return false;
+  }
+
+  @MethodArgs({"x", "y", "z"})
+  public boolean equals(float x, float y, float z) {
+
+    return false;
+  }
+
+  @MethodArgs({"a"})
+  public boolean equals(float a) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public void set(Vector3 vector3) {}
+
+  @MethodArgs({"x", "y", "z"})
+  public void set(float x, float y, float z) {}
+
+  @MethodArgs({"a"})
+  public void set(float a) {}
+
+  @MethodArgs({"value", "speed"})
+  public void lerp(Vector3 vector3, float speed) {}
+
+  @MethodArgs({"x", "y", "z", "speed"})
+  public void lerp(float x, float y, float z, float speed) {}
+
+  @MethodArgs({"a", "speed"})
+  public void lerp(float a, float speed) {}
+
+  @MethodArgs({"value", "speed"})
+  public void lerpInSeconds(Vector3 vector3, float speed) {}
+
+  @MethodArgs({"x", "y", "z", "speed"})
+  public void lerpInSeconds(float x, float y, float z, float speed) {}
+
+  @MethodArgs({"a", "speed"})
+  public void lerpInSeconds(float a, float speed) {}
+
+  @MethodArgs({"value", "blend"})
+  public void blend(Vector3 vector3, float blend) {}
+
+  @MethodArgs({"x", "y", "z", "blend"})
+  public void blend(float x, float y, float z, float blend) {}
+
+  @MethodArgs({"a", "blend"})
+  public void blend(float a, float blend) {}
+
+  public Vector3 normalize() {
+
+    return null;
+  }
+
+  public void normalizeLocal() {}
+
+  public float length() {
+
+    return 0;
+  }
+
+  public float sqrLength() {
+
+    return 0;
+  }
+
+  public float magnitude() {
+
+    return 0;
+  }
+
+  public float sqrMagnitude() {
+
+    return 0;
+  }
+
+  @MethodArgs({"angleX", "angleY", "angleZ"})
+  public Vector3 rotate(float angleX, float angleY, float angleZ) {
+
+    return null;
+  }
+
+  @MethodArgs({"rotation"})
+  public Vector3 rotate(Vector3 rotation) {
+
+    return null;
+  }
+
+  @MethodArgs({"rotation"})
+  public Vector3 rotate(Quaternion rotation) {
+
+    return null;
+  }
+
+  @MethodArgs({"angleX", "angleY", "angleZ", "pivot"})
+  public Vector3 rotateAroundPivot(float angleX, float angleY, float angleZ, Vector3 pivot) {
+
+    return null;
+  }
+
+  @MethodArgs({"rotation", "pivot"})
+  public Vector3 rotateAroundPivot(Vector3 rotation, Vector3 pivot) {
+
+    return null;
+  }
+
+  @MethodArgs({"rotation", "pivot"})
+  public Vector3 rotateAroundPivot(Quaternion rotation, Vector3 pivot) {
+
+    return null;
+  }
+
+  @MethodArgs({"value"})
+  public float distance(Vector3 vector3) {
+
+    return 0;
+  }
+
+  @MethodArgs({"value"})
+  public float sqrDistance(Vector3 vector3) {
+
+    return 0;
+  }
+
+  @MethodArgs({"value"})
+  public float dot(Vector3 vector3) {
+
+    return 0;
+  }
+
+  @MethodArgs({"x", "y", "z"})
+  public float dot(float x, float y, float z) {
+
+    return 0;
+  }
+
+  @MethodArgs({"a"})
+  public float dot(float a) {
+
+    return 0;
+  }
+
+  @MethodArgs({"value"})
+  public Vector3 cross(Vector3 value) {
+
+    return null;
+  }
+
+  @MethodArgs({"x", "y", "z"})
+  public Vector3 cross(float x, float y, float z) {
+
+    return null;
+  }
+
+  public Vector3 copy() {
+
+    return null;
+  }
+
+  public String toString() {
+
+    return null;
+  }
+
+  @MethodArgs({"decimals"})
+  public String toString(int decimals) {
+
+    return null;
+  }
+
+  /// Abstracts
+  public static Vector3 zero() {
+
+    return null;
+  }
+
+  public static Vector3 one() {
+
+    return null;
+  }
+
+  @MethodArgs({"a", "b", "velocity", "smoothTime", "maxSeed", "deltaTime"})
+  public static Vector3 smoothDamp(Vector3 a, Vector3 b, Vector3 velocity, float smoothTime, float maxSpeed, float deltaTime) {
+
+    return null;
+  }
+
+  @MethodArgs({"a", "b", "velocity", "smoothTime", "maxSeed", "deltaTime", "out"})
+  public static Vector3 smoothDamp(Vector3 a, Vector3 b, Vector3 velocity, float smoothTime, float maxSpeed, float deltaTime, Vector3 out) {
+
+    return null;
+  }
+
+  @MethodArgs({"dir", "normal"})
+  public static Vector3 reflect(Vector3 dir, Vector3 normal) {
+
+    return null;
+  }
+
+  @MethodArgs({"dir", "normal", "out"})
+  public static Vector3 reflect(Vector3 dir, Vector3 normal, Vector3 out) {
+
+    return null;
+  }
+
+  @MethodArgs({"a", "b"})
+  public static float angle(Vector3 a, Vector3 b) {
+
+    return 0;
+  }
+
+  @MethodArgs({"a", "b", "c"})
+  public static Vector3 triangleNormal(Vector3 a, Vector3 b, Vector3 c) {
+
+    return null;
+  }
+
+  @MethodArgs({"a", "b", "c", "out"})
+  public static Vector3 triangleNormal(Vector3 a, Vector3 b, Vector3 c, Vector3 out) {
+
+    return null;
+  }
+
+  public static Vector3 Max(Vector3 value1, Vector3 value2) {
+
+    return null;
+  }
+
+  public static Vector3 Min(Vector3 value1, Vector3 value2) {
+
+    return null;
+  }
+
+  public static Vector3 Negate(Vector3 value) {
+
+    return null;
+  }
+
+  public static Vector3 up() {
+    return new Vector3(0, 1, 0);
+  }
+
+  public static Vector3 down() {
+    return new Vector3(0, -1, 0);
+  }
+
+  public static Vector3 back() {
+    return new Vector3(0, 0, -1);
+  }
+
+  public static Vector3 forward() {
+    return new Vector3(0, 0, 1);
+  }
+
+  public static Vector3 left() {
+    return new Vector3(-1, 0, 0);
+  }
+
+  public static Vector3 right() {
+    return new Vector3(1, 0, 0);
+  }
+
+  /// Comparators
+  @MethodArgs({"value"})
+  public boolean equals(Object otherObject) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean pointerEquals(Object otherObject) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean notEquals(Object otherObject) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public static boolean isNull(Object value) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean greaterThan(Object otherObject) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean greaterThan(float v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean greaterThan(int v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean greaterThan(long v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean greaterThan(double v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean greaterOrEqualsThan(Object otherObject) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean greaterOrEqualsThan(float v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean greaterOrEqualsThan(int v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean greaterOrEqualsThan(long v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean greaterOrEqualsThan(double v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean lessThan(Object otherObject) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean lessThan(float v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean lessThan(int v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean lessThan(long v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean lessThan(double v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean lessOrEqualsThan(Object otherObject) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean lessOrEqualsThan(float v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean lessOrEqualsThan(int v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean lessOrEqualsThan(long v) {
+
+    return false;
+  }
+
+  @MethodArgs({"value"})
+  public boolean lessOrEqualsThan(double v) {
+
+    return false;
+  }
+
+  /// Operators
+  @MethodArgs({"value"})
+  public <T> T sum(Object otherObject) {
+
+    return null;
+  }
+
+  @MethodArgs({"value"})
+  public void sumEqual(Object otherObject) {}
+
+  @MethodArgs({"value"})
+  public <T> T div(Object otherObject) {
+
+    return null;
+  }
+
+  @MethodArgs({"value"})
+  public void divEqual(Object otherObject) {}
+
+  @MethodArgs({"value"})
+  public <T> T mul(Object otherObject) {
+
+    return null;
+  }
+
+  @MethodArgs({"value"})
+  public void mulEqual(Object otherObject) {}
+
+  @MethodArgs({"value"})
+  public <T> T sub(Object otherObject) {
+
+    return null;
+  }
+
+  @MethodArgs({"value"})
+  public void subEqual(Object otherObject) {}
+
+  public void addAdd() {}
+
+  public void removeRemove() {}
+
+  public String serializeToString() {
+
+    return null;
+  }
+
+  public void deserializeLocal(String str) {}
 }

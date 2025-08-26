@@ -1,21 +1,11 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"AI", "Components"})
+public final class Route extends Component {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"AI","Components"})
-public final class Route extends Component{
-    //
+  public Route() {
 
-    public Route() {
-        //
-        super();
-        //
-
-        //
-    }
-
-    //
+    super();
+  }
 }

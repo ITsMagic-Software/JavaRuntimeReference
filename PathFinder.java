@@ -1,157 +1,58 @@
 package JAVARuntime;
 
-//
-
 import java.util.LinkedList;
 import java.util.List;
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"AI","Components"})
-public final class PathFinder extends Component{
-    public enum LookTo{
-        Disabled, Path, Target
-    }
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"AI", "Components"})
+public final class PathFinder extends Component {
+  public enum LookTo {
+    Disabled,
+    Path,
+    Target
+  }
 
-    //
+  public PathFinder() {
 
-    public PathFinder() {
-        //
-        super();
-        //
+    super();
+  }
 
-        //
-    }
+  @HideGetSet
+  public SpatialObject getTarget() {
 
-    public Vector3 findNearestPoint(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    public Vector3 getNearestPoint(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"object"})
+  public void setTarget(SpatialObject object) {}
 
-        //
-    }
-    public int findNearestPointIndex(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public float getSearchDelay() {
 
-        //
-    }
-    public int getNearestPointIndex(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setSearchDelay(float value) {}
 
-    @HideGetSet
-    public Vector3 getFindNearestPoint(){
-        //
-        return null;
-        //
+  public float getTargetDistance() {
 
-        //
-    }
-    @HideGetSet
-    public int getFindNearestPointIndex(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
+  public float getTargetDistanceInPath() {
 
-    @HideGetSet
-    public SpatialObject getTarget(){
-        //
-        return null;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"object"})
-    public void setTarget(SpatialObject object){
-        //
-    }
+  public boolean hasPath() {
 
-    @HideGetSet
-    public LookTo getLookTo(){
-        //
-        return null;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"lookTo"})
-    public void setLookTo(LookTo lookToo){
-        //
-    }
+  public boolean hasTarget() {
 
-    @HideGetSet
-    public float getSearchDelay(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setSearchDelay(float value){
-        //
-    }
-
-    public float getTargetDistance(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    public float getTargetDistanceInPath(){
-        //
-        return 0;
-        //
-
-        //
-    }
-
-    public void forceSearch(){
-        //
-    }
-
-    @HideGetSet
-    public List<Vector3> getPath(){
-        //
-        return null;
-        //
-
-        //
-    }
-    public boolean hasPath(){
-        //
-        return false;
-        //
-
-        //
-    }
-    public boolean hasTarget(){
-        //
-        return false;
-        //
-
-        //
-    }
-
-    //
+    return false;
+  }
 }

@@ -1,55 +1,36 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) MethodArgs filled by Carlos at 22-04-2022 */
+@ClassCategory(cat = {"CameraFilters"})
+public class CameraFilter {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- * MethodArgs filled by Carlos at 22-04-2022
- */
-@ClassCategory(cat ={"CameraFilters"})
-public class CameraFilter{
+  // USED TO ACCESS MYOBJECT FROM JAVA SCRIPTS
+  public transient Camera myCamera;
 
-    //
+  public CameraFilter() {}
 
-    // USED TO ACCESS MYOBJECT FROM JAVA SCRIPTS
-    public transient Camera myCamera;
+  @MethodArgs({"tittle"})
+  public CameraFilter(String tittle) {}
 
-    public CameraFilter() {
-    }
-    @MethodArgs(args ={"tittle"})
-    public CameraFilter(String tittle) {
-        //
-    }
+  public void start() {}
 
-    public void start(){
+  public void preDraw() {}
 
-    }
+  public void posDraw() {}
 
-    public void preDraw(){
-        //
-    }
-    public void posDraw(){
-        //
-    }
-    public void onDestroy(){
-        //
-    }
+  public void onDestroy() {}
 
-    @HideGetSet
-    public String getTittle(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public String getTittle() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"tittle"})
-    public void setTittle(String tittle){
-        //
-    }
+    return null;
+  }
 
-    public String getFilterMenu(){
-        return null;
-    }
+  @HideGetSet
+  @MethodArgs({"tittle"})
+  public void setTittle(String tittle) {}
+
+  public String getFilterMenu() {
+    return null;
+  }
 }

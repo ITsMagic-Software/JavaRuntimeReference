@@ -1,92 +1,61 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"SupremeUI", "Components"})
+public final class SUICircularProgressBar extends Component {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"SupremeUI","Components"})
-public final class SUICircularProgressBar extends Component{
-    //
+  public SUICircularProgressBar() {
 
-    public SUICircularProgressBar() {
-        //
-        super();
-        //
+    super();
+  }
 
-        //
-    }
+  @HideGetSet
+  public float getValue() {
 
+    return 0;
+  }
 
-    @HideGetSet
-    public float getValue() {
-        //
-        return 0;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setValue(float value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setValue(float value) {
-        //
-    }
+  @HideGetSet
+  public float getMaxValue() {
 
-    @HideGetSet
-    public float getMaxValue() {
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setMaxValue(float value) {
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setMaxValue(float value) {}
 
-    @HideGetSet
-    public float getMaskMaxLength() {
-        //
-        return 0;
-        //
+  @HideGetSet
+  public float getMaskMaxLength() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setMaskMaxLength(float value) {
-        //
-    }
+    return 0;
+  }
 
-    @HideGetSet
-    public boolean isTextEnabled() {
-        //
-        return false;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setMaskMaxLength(float value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setTextEnabled(boolean value) {
-        //
-    }
+  @HideGetSet
+  public boolean isTextEnabled() {
 
-    @HideGetSet
-    public boolean isSetMask() {
-        //
-        return false;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setMaskEnabled(boolean value) {
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setTextEnabled(boolean value) {}
 
-    //
+  @HideGetSet
+  public boolean isSetMask() {
+
+    return false;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setMaskEnabled(boolean value) {}
 }

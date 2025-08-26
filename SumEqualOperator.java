@@ -1,7 +1,9 @@
 package JAVARuntime;
 
-@ClassCategory(cat ={"EngineOverride"})
+@ClassCategory(cat = {"EngineOverride"})
 public interface SumEqualOperator {
-    @MethodArgs(args ={"otherObject"})
-    void sumEqual(Object otherObject);
+  @JRDoc_EN("Adds the given object to the current value and assigns the result.")
+  @JRDoc_PT("Adiciona o objeto fornecido ao valor atual e atribui o resultado.")
+  @MethodArgs({"otherObject"})
+  void sumEqual(Object otherObject);
 }

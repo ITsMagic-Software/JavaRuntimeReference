@@ -1,14 +1,11 @@
 package JAVARuntime;
 
-@ClassCategory(cat ={"Java"})
+@ClassCategory(cat = {"Java"})
 public final class JavaUtils {
 
-    @MethodArgs(args ={"value"})
-    public static boolean isNull(Object value){
-        //
-        return false;
-        //
+  @MethodArgs({"value"})
+  public static boolean isNull(Object value) {
 
-        //
-    }
+    return false;
+  }
 }

@@ -1,6 +1,8 @@
 package JAVARuntime;
 
-@ClassCategory(cat ={"SupremeUI"})
+@ClassCategory(cat = {"SupremeUI"})
 public enum STargetRect {
-    MySelf, Parent, Other
+  MySelf,
+  Parent,
+  Other
 }

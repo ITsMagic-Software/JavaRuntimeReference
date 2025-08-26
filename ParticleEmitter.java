@@ -1,330 +1,245 @@
 package JAVARuntime;
 
-//
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-
-@ClassCategory(cat ={"Particles"})
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Particles"})
 public final class ParticleEmitter extends Component {
 
-    //
+  public ParticleEmitter() {
 
-    public ParticleEmitter() {
-        //
-        super();
-        //
+    super();
+  }
 
-        //
-    }
+  public enum AlphaBased {
+    None,
+    AlphaOverLifetime,
+    BySpeed
+  }
 
-    public enum AlphaBased {
-        None, AlphaOverLifetime, BySpeed
-    }
-    //
+  public enum ColorBased {
+    Constant,
+    ColorOverLifetime,
+    BySpeed
+  }
 
-    public enum ColorBased {
-        Constant, ColorOverLifetime, BySpeed
-    }
-    //
+  public enum ColorMode {
+    Normal,
+    Additive
+  }
 
-    public enum ColorMode {
-        Normal, Additive
-    }
-    //
+  public enum EmissionShape {
+    Sphere,
+    Cone
+  }
 
-    public enum EmissionShape {
-        Sphere, Cone
-    }
-    //
+  public enum SizeBased {
+    SizeOverLifetime,
+    Constant,
+    BySpeed
+  }
 
-    public enum SizeBased {
-        SizeOverLifetime, Constant, BySpeed
-    }
-    //
+  public enum TransparencyBased {
+    Disabled,
+    Alpha,
+    GreyScale
+  }
 
-    public enum TransparencyBased {
-        Disabled, Alpha, GreyScale
-    }
-    //
+  @MethodArgs({"position", "movement"})
+  public Particle emit(Vector3 position, Vector3 movement) {
 
-    @MethodArgs(args ={"position","movement"})
-    public Particle emit(Vector3 position, Vector3 movement){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
+  @HideGetSet
+  @UnimplementedDoc
+  public boolean isAllowEmission() {
 
-    @HideGetSet
-    @UnimplementedDoc
-    public boolean isAllowEmission(){
-        //
-        return false;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    @UnimplementedDoc
-    public void setAllowEmission(boolean value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  @UnimplementedDoc
+  public void setAllowEmission(boolean value) {}
 
-    @HideGetSet
-    public AlphaBased getAlphaBased(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public AlphaBased getAlphaBased() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setAlphaBased(AlphaBased value){
-        //
-    }
+    return null;
+  }
 
-    @HideGetSet
-    public Curve getAlphaOverLifeTimeCurve(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setAlphaBased(AlphaBased value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setAlphaOverLifeTimeCurve(Curve value){
-        //
-    }
+  @HideGetSet
+  public Curve getAlphaOverLifeTimeCurve() {
 
-    @HideGetSet
-    public Color getColor(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setColor(Color value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setAlphaOverLifeTimeCurve(Curve value) {}
 
-    @HideGetSet
-    public ColorBased getColorBased(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public Color getColor() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setColorBased(ColorBased value){
-        //
-    }
+    return null;
+  }
 
-    @HideGetSet
-    public ColorMode getColorMode(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setColor(Color value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setColorMode(ColorMode value){
-        //
-    }
+  @HideGetSet
+  public ColorBased getColorBased() {
 
-    @HideGetSet
-    public ParticleConeShapeOptions getConeShapeOptions(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @HideGetSet
-    public ParticleSphereShapeOptions getSphereShapeOptions(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setColorBased(ColorBased value) {}
 
-        //
-    }
+  @HideGetSet
+  public ColorMode getColorMode() {
 
-    @HideGetSet
-    public EmissionShape getEmissionShape(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setEmissionShape(EmissionShape value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setColorMode(ColorMode value) {}
 
-    @HideGetSet
-    public float getEmitDelaySeconds(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public ParticleConeShapeOptions getConeShapeOptions() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setEmitDelaySeconds(float value){
-        //
-    }
+    return null;
+  }
 
-    @HideGetSet
-    public float getGravityMultiplier(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public ParticleSphereShapeOptions getSphereShapeOptions() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setGravityMultiplier(float value){
-        //
-    }
+    return null;
+  }
 
-    @HideGetSet
-    public int getLayer(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public EmissionShape getEmissionShape() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setLayer(int value){
-        //
-    }
+    return null;
+  }
 
-    @HideGetSet
-    public float getMaxLifeSeconds(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setEmissionShape(EmissionShape value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setMaxLifeSeconds(float value){
-        //
-    }
+  @HideGetSet
+  public float getEmitDelaySeconds() {
 
-    @HideGetSet
-    public int getMaxParticles(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setMaxParticles(int value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setEmitDelaySeconds(float value) {}
 
-    @HideGetSet
-    public SizeBased getSizeBased(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public float getGravityMultiplier() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setSizeBased(SizeBased value){
-        //
-    }
+    return 0;
+  }
 
-    @HideGetSet
-    public Curve getSizeOverLifeTimeCurve(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setGravityMultiplier(float value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setSizeOverLifeTimeCurve(Curve value){
-        //
-    }
+  @HideGetSet
+  public int getLayer() {
 
-    @HideGetSet
-    public float getStartSize(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setStartSize(float value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setLayer(int value) {}
 
-    @HideGetSet
-    public float getStartSpeed(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public float getMaxLifeSeconds() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setStartSpeed(float value){
-        //
-    }
+    return 0;
+  }
 
-    @HideGetSet
-    public Texture getTextureInstance(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setMaxLifeSeconds(float value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setTextureInstance(Texture value){
-        //
-    }
+  @HideGetSet
+  public int getMaxParticles() {
 
-    @HideGetSet
-    public TransparencyBased getTransparencyBased(){
-        //
-        return null;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setTransparencyBased(TransparencyBased value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setMaxParticles(int value) {}
+
+  @HideGetSet
+  public SizeBased getSizeBased() {
+
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setSizeBased(SizeBased value) {}
+
+  @HideGetSet
+  public Curve getSizeOverLifeTimeCurve() {
+
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setSizeOverLifeTimeCurve(Curve value) {}
+
+  @HideGetSet
+  public float getStartSize() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setStartSize(float value) {}
+
+  @HideGetSet
+  public float getStartSpeed() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setStartSpeed(float value) {}
+
+  @HideGetSet
+  public Texture getTextureInstance() {
+
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setTextureInstance(Texture value) {}
+
+  @HideGetSet
+  public TransparencyBased getTransparencyBased() {
+
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setTransparencyBased(TransparencyBased value) {}
 }

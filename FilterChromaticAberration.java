@@ -1,33 +1,25 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"CameraFilters"})
+public final class FilterChromaticAberration extends CameraFilter {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"CameraFilters"})
-public final class FilterChromaticAberration extends CameraFilter{
-    //
+  public FilterChromaticAberration() {
 
-    public FilterChromaticAberration() {
-        //
-        super(null);
-        //
+    super(null);
+  }
 
-        //
-    }
+  @JRDoc_EN("Returns the intensity of the chromatic aberration effect.")
+  @JRDoc_PT("Retorna a intensidade do efeito de aberração cromática.")
+  @HideGetSet
+  public float getIntensity() {
 
-    @HideGetSet
-    public float getIntensity(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setIntensity(float value){
-        //
-    }
+  @JRDoc_EN("Sets the intensity of the chromatic aberration effect.")
+  @JRDoc_PT("Define a intensidade do efeito de aberração cromática.")
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setIntensity(float value) {}
 }

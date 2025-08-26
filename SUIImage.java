@@ -1,108 +1,74 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"SupremeUI", "Components"})
+public final class SUIImage extends Component {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"SupremeUI","Components"})
-public final class SUIImage extends Component{
-    //
+  public SUIImage() {
 
-    public SUIImage() {
-        //
-        super();
-        //
+    super();
+  }
 
-        //
-    }
+  @HideGetSet
+  public Color getColor() {
 
-    @HideGetSet
-    public Color getColor(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"color"})
-    public void setColor(Color color){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"color"})
+  public void setColor(Color color) {}
 
-    @HideGetSet
-    public Texture getImage(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public Texture getImage() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"texture"})
-    public void setImage(Texture texture){
-        //
-    }
+    return null;
+  }
 
-    @HideGetSet
-    public boolean isIgnoreMask(){
-        //
-        return false;
-        //
+  @HideGetSet
+  @MethodArgs({"texture"})
+  public void setImage(Texture texture) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setIgnoreMask(boolean value){
-        //
-    }
+  @HideGetSet
+  public boolean isIgnoreMask() {
 
-    @HideGetSet
-    public int getBorder(){
-        //
-        return 0;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setBorder(int value){
-        //
-    }
-    @HideGetSet
-    public SUnitType getBorderUnitType(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setIgnoreMask(boolean value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setBorderUnitType(SUnitType value){
-        //
-    }
-    @MethodArgs(args ={"value","unitType"})
-    public void setBorder(int value, SUnitType unitType){
-        //
-    }
+  @HideGetSet
+  public int getBorder() {
 
-    @HideGetSet
-    public SImageType getImageType(){
-        //
-        return null;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setImageType(SImageType sImageType){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setBorder(int value) {}
 
-    //
+  @HideGetSet
+  public SUnitType getBorderUnitType() {
+
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setBorderUnitType(SUnitType value) {}
+
+  @MethodArgs({"value", "unitType"})
+  public void setBorder(int value, SUnitType unitType) {}
+
+  @HideGetSet
+  public SImageType getImageType() {
+
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setImageType(SImageType sImageType) {}
 }

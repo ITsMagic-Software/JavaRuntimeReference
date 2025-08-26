@@ -1,153 +1,105 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Voxels", "Components"})
+public final class VoxelHand extends Component {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
+  public VoxelHand() {
 
-@ClassCategory(cat ={"Voxels","Components"})
-public final class VoxelHand extends Component{
+    super();
+  }
 
-    //
+  @HideGetSet
+  public float getDistance() {
 
-    public VoxelHand() {
-        //
-        super();
-        //
+    return 0;
+  }
 
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setDistance(float value) {}
 
+  @HideGetSet
+  public int getCrossHairSize() {
 
-    @HideGetSet
-    public float getDistance(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setDistance(float value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setCrossHairSize(int value) {}
 
-    @HideGetSet
-    public int getCrossHairSize(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public Color getCrossHairColor() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setCrossHairSize(int value){
-        //
-    }
+    return null;
+  }
 
-    @HideGetSet
-    public Color getCrossHairColor(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setCrossHairSize(Color value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setCrossHairSize(Color value){
-        //
-    }
+  @HideGetSet
+  public Texture getCrossHairTexture() {
 
-    @HideGetSet
-    public Texture getCrossHairTexture(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setCrossHairTexture(Texture value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setCrossHairTexture(Texture value) {}
 
-    @HideGetSet
-    public boolean isShowCrosshair(){
-        //
-        return false;
-        //
+  @HideGetSet
+  public boolean isShowCrosshair() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setShowCrosshair(boolean value){
-        //
-    }
+    return false;
+  }
 
-    @HideGetSet
-    public int getSelectedBlockID(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setShowCrosshair(boolean value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setSelectedBlockID(int value){
-        //
-    }
+  @HideGetSet
+  public int getSelectedBlockID() {
 
-    @HideGetSet
-    public int getLastHitBlockID(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setSelectedBlockID(int value) {}
 
-    public void requestPut(){
-        //
-    }
-    public void requestBreak(){
-        //
-    }
+  @HideGetSet
+  public int getLastHitBlockID() {
 
-    @HideGetSet
-    public boolean isBlockBroken(){
-        //
-        return false;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    public boolean isBlockPlaced(){
-        //
-        return false;
-        //
+  public void requestPut() {}
 
-        //
-    }
+  public void requestBreak() {}
 
-    public interface Listener{
-        void onBlockBroken(int blockType, int x, int y, int z);
-        void onBlockPlaced(int blockType, int x, int y, int z);
-        void onBlockSelected(int blockType, int x, int y, int z);
-    }
+  @HideGetSet
+  public boolean isBlockBroken() {
 
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setListener(Listener value){
-        //
-    }
+    return false;
+  }
 
-    //
+  @HideGetSet
+  public boolean isBlockPlaced() {
+
+    return false;
+  }
+
+  public interface Listener {
+    void onBlockBroken(int blockType, int x, int y, int z);
+
+    void onBlockPlaced(int blockType, int x, int y, int z);
+
+    void onBlockSelected(int blockType, int x, int y, int z);
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setListener(Listener value) {}
 }

@@ -1,113 +1,74 @@
 package JAVARuntime;
 
-//
-
-
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"Vector","Buffers"})
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Vector", "Buffers"})
 public class Point3Buffer {
-    //
 
-    public Point3Buffer(int vectorCount) {
-        //
-    }
-    public Point3Buffer(NativeIntBuffer nativeIntBuffer) {
-        //
-    }
+  public Point3Buffer(int vectorCount) {}
 
-    @MethodArgs(args ={"idx"})
-    public Point3 get(int idx){
-        //
-        return null;
-        //
+  public Point3Buffer(NativeIntBuffer nativeIntBuffer) {}
 
-        //
-    }
-    @MethodArgs(args ={"idx"})
-    public float getX(int idx){
-        //
-        return 0;
-        //
+  @MethodArgs({"idx"})
+  public Point3 get(int idx) {
 
-        //
-    }
-    @MethodArgs(args ={"idx"})
-    public float getY(int idx){
-        //
-        return 0;
-        //
+    return null;
+  }
 
-        //
-    }
-    @MethodArgs(args ={"idx"})
-    public float getZ(int idx){
-        //
-        return 0;
-        //
+  @MethodArgs({"idx"})
+  public float getX(int idx) {
 
-        //
-    }
+    return 0;
+  }
 
-    @MethodArgs(args ={"value"})
-    public void put(Point3 point3){
-        //
-    }
-    @MethodArgs(args ={"x","y","z"})
-    public void put(int x, int y, int z){
-        //
-    }
+  @MethodArgs({"idx"})
+  public float getY(int idx) {
 
-    @MethodArgs(args ={"idx","value"})
-    public void set(int idx, Point3 point3){
-        //
-    }
-    @MethodArgs(args ={"idx","x","y","z"})
-    public void set(int idx, int x, int y, int z){
-        //
-    }
+    return 0;
+  }
 
-    public int capacity(){
-        //
-        return 0;
-        //
+  @MethodArgs({"idx"})
+  public float getZ(int idx) {
 
-        //
-    }
+    return 0;
+  }
 
-    public Point3[] array(){
-        //
-        return null;
-        //
+  @MethodArgs({"value"})
+  public void put(Point3 point3) {}
 
-        //
-    }
+  @MethodArgs({"x", "y", "z"})
+  public void put(int x, int y, int z) {}
 
-    @MethodArgs(args ={"idx"})
-    public void position(int idx){
-        //
-    }
+  @MethodArgs({"idx", "value"})
+  public void set(int idx, Point3 point3) {}
 
-    @HideGetSet
-    public boolean isVboEnabled() {
-        //
-        return false;
-        //
+  @MethodArgs({"idx", "x", "y", "z"})
+  public void set(int idx, int x, int y, int z) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setVboEnabled(boolean value){
-        //
-    }
+  public int capacity() {
 
-    public JAVARuntime.NativeIntBuffer getFloatBuffer(){
-        //
-        return null;
-        //
+    return 0;
+  }
 
-        //
-    }
+  public Point3[] array() {
+
+    return null;
+  }
+
+  @MethodArgs({"idx"})
+  public void position(int idx) {}
+
+  @HideGetSet
+  public boolean isVboEnabled() {
+
+    return false;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setVboEnabled(boolean value) {}
+
+  public JAVARuntime.NativeIntBuffer getFloatBuffer() {
+
+    return null;
+  }
 }

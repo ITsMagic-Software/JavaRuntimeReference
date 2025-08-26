@@ -1,93 +1,60 @@
 package JAVARuntime;
 
-//
-import java.nio.ByteOrder;
-
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"Vector","Buffers"})
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Vector", "Buffers"})
 public class Point2Buffer {
-    //
 
-    public Point2Buffer() {
-        //
-    }
+  public Point2Buffer() {}
 
-    @MethodArgs(args ={"idx"})
-    public Point2 get(int idx){
-        //
-        return null;
-        //
+  @MethodArgs({"idx"})
+  public Point2 get(int idx) {
 
-        //
-    }
-    @MethodArgs(args ={"idx"})
-    public int getX(int idx){
-        //
-        return 0;
-        //
+    return null;
+  }
 
-        //
-    }
-    @MethodArgs(args ={"idx"})
-    public int getY(int idx){
-        //
-        return 0;
-        //
+  @MethodArgs({"idx"})
+  public int getX(int idx) {
 
-        //
-    }
+    return 0;
+  }
 
-    @MethodArgs(args ={"point2"})
-    public void put(Point2 vector3){
-        //
-    }
-    @MethodArgs(args ={"x","y"})
-    public void put(int x, int y){
-        //
-    }
+  @MethodArgs({"idx"})
+  public int getY(int idx) {
 
-    public int capacity(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
+  @MethodArgs({"point2"})
+  public void put(Point2 vector3) {}
 
-    public Point2[] array(){
-        //
-        return null;
-        //
+  @MethodArgs({"x", "y"})
+  public void put(int x, int y) {}
 
-        //
-    }
+  public int capacity() {
 
-    @MethodArgs(args ={"idx"})
-    public void position(int idx){
-        //
-    }
+    return 0;
+  }
 
-    @HideGetSet
-    public boolean isVboEnabled() {
-        //
-        return false;
-        //
+  public Point2[] array() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setVboEnabled(boolean value){
-        //
-    }
+    return null;
+  }
 
-    public JAVARuntime.NativeIntBuffer getFloatBuffer(){
-        //
-        return null;
-        //
+  @MethodArgs({"idx"})
+  public void position(int idx) {}
 
-        //
-    }
+  @HideGetSet
+  public boolean isVboEnabled() {
+
+    return false;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setVboEnabled(boolean value) {}
+
+  public JAVARuntime.NativeIntBuffer getFloatBuffer() {
+
+    return null;
+  }
 }

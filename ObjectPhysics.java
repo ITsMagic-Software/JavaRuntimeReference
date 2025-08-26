@@ -1,39 +1,38 @@
 package JAVARuntime;
 
-//
-
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"Physics"})
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Physics"})
 public final class ObjectPhysics {
 
-    //
+  @HideGetSet
+  public <T extends PhysicsEntity> T getEntity() {
 
-    @HideGetSet
-    public <T extends PhysicsEntity> T getPhysicsEntity(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @HideGetSet
-    public void setPhysicsEntity(PhysicsEntity physicsEntity){
-        //
-    }
+  @HideGetSet
+  public void setEntity(PhysicsEntity physicsEntity) {}
 
-    @HideGetSet
-    public VehiclePhysics getVehiclePhysics(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public <T extends PhysicsEntity> T getPhysicsEntity() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"vehiclePhysics"})
-    public void setVehiclePhysics(VehiclePhysics vehiclePhysics){
-        //
-    }
+    return null;
+  }
+
+  @HideGetSet
+  public void setPhysicsEntity(PhysicsEntity physicsEntity) {}
+
+  @Deprecated
+  @HideGetSet
+  public VehiclePhysics getVehiclePhysics() {
+
+    return null;
+  }
+
+  @Deprecated
+  @HideGetSet
+  @MethodArgs({"vehiclePhysics"})
+  public void setVehiclePhysics(VehiclePhysics vehiclePhysics) {
+    setPhysicsEntity(vehiclePhysics);
+  }
 }

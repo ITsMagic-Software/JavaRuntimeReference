@@ -1,16 +1,24 @@
 package JAVARuntime;
 
-@ClassCategory(cat ={"Files"})
+import android.widget.ImageView;
+
+@ClassCategory(cat = {"Files"})
 public class FilesPanelCustomIcon {
 
-    public FilesPanelCustomIcon() { }
+  public FilesPanelCustomIcon() {}
 
-    @MethodArgs(args ={"file"})
-    public File getIconForFile(File file){
-        return null;
-    }
-    @MethodArgs(args ={"file"})
-    public boolean supportFile(File file) {
-        return false;
-    }
+  @MethodArgs({"file"})
+  public File getIconForFile(File file) {
+    return null;
+  }
+
+  @MethodArgs({"file", "imageViw"})
+  public boolean applyIcon(File file, ImageView imageView) {
+    return false;
+  }
+
+  @MethodArgs({"file"})
+  public boolean supportFile(File file) {
+    return false;
+  }
 }

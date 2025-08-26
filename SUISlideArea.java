@@ -1,117 +1,79 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"SupremeUI", "Components"})
+public final class SUISlideArea extends Component {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"SupremeUI","Components"})
-public final class SUISlideArea extends Component{
-    //
+  public SUISlideArea() {
 
-    public SUISlideArea() {
-        //
-        super();
-        //
+    super();
+  }
 
-        //
-    }
+  @HideGetSet
+  public Axis getAxis() {
 
-    @HideGetSet
-    public Axis getAxis(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"key"})
-    public void setAxis(Axis axis){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"key"})
+  public void setAxis(Axis axis) {}
 
-    @HideGetSet
-    public String getAxisName(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public String getAxisName() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"name"})
-    public void setAxisName(String name){
-        //
-    }
+    return null;
+  }
 
-    @HideGetSet
-    public boolean isPressed(){
-        //
-        return false;
-        //
+  @HideGetSet
+  @MethodArgs({"name"})
+  public void setAxisName(String name) {}
 
-        //
-    }
+  @HideGetSet
+  public boolean isPressed() {
 
-    @HideGetSet
-    public boolean isDown(){
-        //
-        return false;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    public boolean isUp(){
-        //
-        return false;
-        //
+  @HideGetSet
+  public boolean isDown() {
 
-        //
-    }
+    return false;
+  }
 
-    @HideGetSet
-    public boolean isClickable(){
-        //
-        return false;
-        //
+  @HideGetSet
+  public boolean isUp() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setClickable(boolean value){
-        //
-    }
+    return false;
+  }
 
-    @HideGetSet
-    public STargetRect getTargetRectType(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public boolean isClickable() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setTargetRectType(STargetRect value){
-        //
-    }
+    return false;
+  }
 
-    @HideGetSet
-    public SpatialObject getTargetRectObject(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setClickable(boolean value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"object"})
-    public void setTargetRectObject(SpatialObject object){
-        //
-    }
+  @HideGetSet
+  public STargetRect getTargetRectType() {
 
-    //
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setTargetRectType(STargetRect value) {}
+
+  @HideGetSet
+  public SpatialObject getTargetRectObject() {
+
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"object"})
+  public void setTargetRectObject(SpatialObject object) {}
 }

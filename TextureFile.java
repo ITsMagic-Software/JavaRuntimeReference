@@ -1,22 +1,12 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Material", "Files"})
+public class TextureFile {
 
+  public TextureFile() {}
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"Material","Files"})
-public class TextureFile
-//
-{
-    //
-
-    private TextureFile() {
-        //
-    }
-
-    public String toString() {
-        return getClass().getName();
-    }
+  public String toString() {
+    return getClass().getName();
+  }
 }

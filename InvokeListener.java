@@ -1,5 +1,5 @@
 package JAVARuntime;
 
-public interface InvokeListener {
-    void run();
+public interface InvokeListener extends Runnable {
+  void run();
 }

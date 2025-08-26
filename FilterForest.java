@@ -1,33 +1,25 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"CameraFilters"})
+public final class FilterForest extends CameraFilter {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"CameraFilters"})
-public final class FilterForest extends CameraFilter{
-    //
+  public FilterForest() {
 
-    public FilterForest() {
-        //
-        super(null);
-        //
+    super(null);
+  }
 
-        //
-    }
+  @JRDoc_EN("Returns the strength of the filter.")
+  @JRDoc_PT("Retorna a intensidade do filtro.")
+  @HideGetSet
+  public float getStrength() {
 
-    @HideGetSet
-    public float getStrength(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setStrength(float value){
-        //
-    }
+  @JRDoc_EN("Sets the strength of the filter.")
+  @JRDoc_PT("Define a intensidade do filtro.")
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setStrength(float value) {}
 }

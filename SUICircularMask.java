@@ -1,78 +1,51 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"SupremeUI", "Components"})
+public final class SUICircularMask extends Component {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"SupremeUI","Components"})
-public final class SUICircularMask extends Component{
-    //
+  public SUICircularMask() {
 
-    public SUICircularMask() {
-        //
-        super();
-        //
+    super();
+  }
 
-        //
-    }
+  @HideGetSet
+  public float getRotation() {
 
+    return 0;
+  }
 
-    @HideGetSet
-    public float getRotation() {
-        //
-        return 0;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setRotation(float value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setRotation(float value) {
-        //
-    }
+  @HideGetSet
+  public float getLength() {
 
-    @HideGetSet
-    public float getLength() {
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setLength(float value) {
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setLength(float value) {}
 
-    @HideGetSet
-    public float getSmooth() {
-        //
-        return 0;
-        //
+  @HideGetSet
+  public float getSmooth() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setSmooth(float value) {
-        //
-    }
+    return 0;
+  }
 
-    @HideGetSet
-    public Texture getImage(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setSmooth(float value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"texture"})
-    public void setImage(Texture texture){
-        //
-    }
+  @HideGetSet
+  public Texture getImage() {
 
-    //
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"texture"})
+  public void setImage(Texture texture) {}
 }

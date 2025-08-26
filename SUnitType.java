@@ -1,7 +1,10 @@
 package JAVARuntime;
 
-@ClassCategory(cat ={"SupremeUI"})
+@ClassCategory(cat = {"SupremeUI"})
 public enum SUnitType {
-    Pixel, DIP, MatchParent, WrapContent, MatchConstraint
+  Pixel,
+  DIP,
+  MatchParent,
+  WrapContent,
+  MatchConstraint
 }
-

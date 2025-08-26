@@ -1,6 +1,8 @@
 package JAVARuntime;
 
-@ClassCategory(cat ={"SupremeUI"})
+@ClassCategory(cat = {"SupremeUI"})
 public enum SHorizontalConstraintTarget {
-    Unfixed, ToLeftOf, ToRightOf
+  Unfixed,
+  ToLeftOf,
+  ToRightOf
 }

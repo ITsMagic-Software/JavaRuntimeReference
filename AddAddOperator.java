@@ -1,6 +1,8 @@
 package JAVARuntime;
 
-@ClassCategory(cat ={"EngineOverride"})
+@ClassCategory(cat = {"EngineOverride"})
 public interface AddAddOperator {
-    void addAdd();
+  @JRDoc_EN("Add +1 to value.")
+  @JRDoc_PT("Adiciona +1 ao valor.")
+  void addAdd();
 }

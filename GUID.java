@@ -1,35 +1,32 @@
 package JAVARuntime;
 
-//
-
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
+/** @Author Lucas Leandro (ITsMagic Founder) */
 public final class GUID {
-    //
 
-    public GUID() {
-        //
-    }
+  public GUID() {}
 
-    @HideGetSet
-    @MethodArgs(args ={"guid"})
-    public void setDuplicableGUID(String guid){
-        //
-    }
-    @HideGetSet
-    public String getDuplicableGUID(){
-        //
-        return "";
-        //
+  @HideGetSet
+  public String getDuplicableGUID() {
 
-        //
-    }
-    public String getUniqueGUID(){
-        //
-        return "";
-        //
+    return "";
+  }
 
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"guid"})
+  public void setDuplicableGUID(String guid) {}
+
+  @HideGetSet
+  public String getMetaID() {
+
+    return "";
+  }
+
+  @HideGetSet
+  @MethodArgs({"guid"})
+  public void setMetaID(String guid) {}
+
+  public String getUniqueGUID() {
+
+    return "";
+  }
 }

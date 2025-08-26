@@ -1,75 +1,50 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Constraint", "Components"})
+public final class HingeConstraint extends Component {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"Constraint","Components"})
-public final class HingeConstraint extends Component{
-    //
+  public HingeConstraint() {
 
-    public HingeConstraint() {
-        //
-        super();
-        //
+    super();
+  }
 
-        //
-    }
+  @HideGetSet
+  public SpatialObject getObjectA() {
 
-    @HideGetSet
-    public SpatialObject getObjectA(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"object"})
-    public void setObjectA(SpatialObject object){
-        //
-    }
-    @HideGetSet
-    public SpatialObject getObjectB(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"object"})
+  public void setObjectA(SpatialObject object) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"object"})
-    public void setObjectB(SpatialObject object){
-        //
-    }
+  @HideGetSet
+  public SpatialObject getObjectB() {
 
-    @HideGetSet
-    public SpatialObject getPointA(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"object"})
-    public void setPointA(SpatialObject object){
-        //
-    }
-    @HideGetSet
-    public SpatialObject getPointB(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"object"})
+  public void setObjectB(SpatialObject object) {}
 
-        //
-    }
+  @HideGetSet
+  public SpatialObject getPointA() {
 
-    @MethodArgs(args ={"object"})
-    public void setPointB(SpatialObject object){
-        //
-    }
+    return null;
+  }
 
-    //
+  @HideGetSet
+  @MethodArgs({"object"})
+  public void setPointA(SpatialObject object) {}
+
+  @HideGetSet
+  public SpatialObject getPointB() {
+
+    return null;
+  }
+
+  @MethodArgs({"object"})
+  public void setPointB(SpatialObject object) {}
 }

@@ -1,57 +1,37 @@
 package JAVARuntime;
 
-import java.nio.ByteBuffer;
-//
-
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"Buffers"})
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Buffers"})
 public class NativeByteBuffer {
-    //
 
-    @MethodArgs(args ={"capacity"})
-    public NativeByteBuffer(int capacity) {
-        //
-    }
+  @MethodArgs({"capacity"})
+  public NativeByteBuffer(int capacity) {}
 
-    @MethodArgs(args ={"idx"})
-    public byte get(int index){
-        //
-        return 0;
-        //
+  @MethodArgs({"idx"})
+  public byte get(int index) {
 
-        //
-    }
-    @MethodArgs(args ={"idx","value"})
-    public void set(int index, byte value){
-        //
-    }
-    @MethodArgs(args ={"value"})
-    public void put(byte value){
-        //
-    }
+    return 0;
+  }
 
-    public int capacity(){
-        //
-        return 0;
-        //
+  @MethodArgs({"idx", "value"})
+  public void set(int index, byte value) {}
 
-        //
-    }
-    public int getPosition(){
-        //
-        return 0;
-        //
+  @MethodArgs({"value"})
+  public void put(byte value) {}
 
-        //
-    }
-    @MethodArgs(args ={"idx"})
-    public void Position(int idx){
-        //
-    }
-    @MethodArgs(args ={"idx"})
-    public void setPosition(int idx){
-        //
-    }
+  public int capacity() {
+
+    return 0;
+  }
+
+  public int getPosition() {
+
+    return 0;
+  }
+
+  @MethodArgs({"idx"})
+  public void Position(int idx) {}
+
+  @MethodArgs({"idx"})
+  public void setPosition(int idx) {}
 }

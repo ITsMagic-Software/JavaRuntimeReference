@@ -1,112 +1,73 @@
 package JAVARuntime;
 
-//
-
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"Vector","Buffers"})
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Vector", "Buffers"})
 public class Vector2Buffer {
-    //
 
-    public Vector2Buffer(int vectorCount) {
-        //
-    }
-    public Vector2Buffer(NativeFloatBuffer nativeFloatBuffer) {
-        //
-    }
+  public Vector2Buffer(int vectorCount) {}
 
-    @MethodArgs(args ={"idx"})
-    public Vector2 get(int idx){
-        //
-        return null;
-        //
+  public Vector2Buffer(NativeFloatBuffer nativeFloatBuffer) {}
 
-        //
-    }
-    @MethodArgs(args ={"idx"})
-    public float getX(int idx){
-        //
-        return 0;
-        //
+  @MethodArgs({"idx"})
+  public Vector2 get(int idx) {
 
-        //
-    }
-    @MethodArgs(args ={"idx"})
-    public float getY(int idx){
-        //
-        return 0;
-        //
+    return null;
+  }
 
-        //
-    }
+  @MethodArgs({"idx"})
+  public float getX(int idx) {
 
-    @MethodArgs(args ={"value"})
-    public void put(Vector2 vector){
-        //
-    }
-    @MethodArgs(args ={"x","y"})
-    public void put(float x, float y){
-        //
-    }
+    return 0;
+  }
 
-    @MethodArgs(args ={"idx","x","y"})
-    public void set(int idx, Vector2 vector){
-        //
-    }
-    @MethodArgs(args ={"idx","x","y"})
-    public void set(int idx, float x, float y){
-        //
-    }
+  @MethodArgs({"idx"})
+  public float getY(int idx) {
 
-    public int capacity(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
+  @MethodArgs({"value"})
+  public void put(Vector2 vector) {}
 
-    public Vector2[] array(){
-        //
-        return null;
-        //
+  @MethodArgs({"x", "y"})
+  public void put(float x, float y) {}
 
-        //
-    }
+  @MethodArgs({"idx", "x", "y"})
+  public void set(int idx, Vector2 vector) {}
 
-    @MethodArgs(args ={"idx"})
-    public void position(int idx){
-        //
-    }
+  @MethodArgs({"idx", "x", "y"})
+  public void set(int idx, float x, float y) {}
 
-    @HideGetSet
-    public boolean isVboEnabled() {
-        //
-        return false;
-        //
+  public int capacity() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setVboEnabled(boolean value){
-        //
-    }
+    return 0;
+  }
 
-    public Vector2Buffer copy(){
-        //
-        return null;
-        //
+  public Vector2[] array() {
 
-        //
-    }
+    return null;
+  }
 
-    public JAVARuntime.NativeFloatBuffer getFloatBuffer(){
-        //
-        return null;
-        //
+  @MethodArgs({"idx"})
+  public void position(int idx) {}
 
-        //
-    }
+  @HideGetSet
+  public boolean isVboEnabled() {
+
+    return false;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setVboEnabled(boolean value) {}
+
+  public Vector2Buffer copy() {
+
+    return null;
+  }
+
+  public JAVARuntime.NativeFloatBuffer getFloatBuffer() {
+
+    return null;
+  }
 }

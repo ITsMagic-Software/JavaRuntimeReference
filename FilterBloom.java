@@ -1,62 +1,39 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"CameraFilters"})
+public final class FilterBloom extends CameraFilter {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"CameraFilters"})
-public final class FilterBloom extends CameraFilter{
-    //
+  public FilterBloom() {
 
-    public FilterBloom() {
-        //
-        super(null);
-        //
+    super(null);
+  }
 
-        //
-    }
+  @JRDoc_EN("Returns the quality of the bloom effect.")
+  @JRDoc_PT("Retorna a qualidade do efeito de brilho.")
+  @HideGetSet
+  public float getQuality() {
 
-    @HideGetSet
-    public float getResolution(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setResolution(float value){
-        //
-    }
+  @JRDoc_EN("Sets the quality of the bloom effect.")
+  @JRDoc_PT("Define a qualidade do efeito de brilho.")
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setQuality(float value) {}
 
+  @JRDoc_EN("Returns the intensity of the bloom effect.")
+  @JRDoc_PT("Retorna a intensidade do efeito de brilho.")
+  @HideGetSet
+  public float getIntensity() {
 
-    @HideGetSet
-    public float getIntensity(){
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setIntensity(float value){
-        //
-    }
-
-    @HideGetSet
-    public float getSize(){
-        //
-        return 0;
-        //
-
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setSize(float value){
-        //
-    }
+  @JRDoc_EN("Sets the intensity of the bloom effect.")
+  @JRDoc_PT("Define a intensidade do efeito de brilho.")
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setIntensity(float value) {}
 }

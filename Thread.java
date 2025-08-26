@@ -1,222 +1,138 @@
 package JAVARuntime;
 
-//
-
-/**
- * ITsMagic Thread-safetying
- */
-@ClassCategory(cat ={"Thread"})
+/** ITsMagic Thread-safetying */
+@ClassCategory(cat = {"Thread"})
 public class Thread {
-    //
 
-    /**
-     * Syncs with the engine thread and execute interface
-     */
-    @MethodArgs(args ={"runnable"})
-    public static void runOnEngine(Runnable runnable){
-        //
-    }
+  /** Syncs with the engine thread and execute interface */
+  @MethodArgs({"runnable"})
+  public static void runOnEngine(Runnable runnable) {}
 
-    //
+  /** Syncs with the engine thread and execute interface */
+  @MethodArgs({"delaySeconds", "runnable"})
+  public static void runOnEngine(float delaySeconds, Runnable runnable) {}
 
-    public enum State {
-        NEW,
-        RUNNABLE,
-        BLOCKED,
-        WAITING,
-        TIMED_WAITING,
-        TERMINATED;
-    }
+  @MethodArgs({"runnable"})
+  public static void runOnUIThread(Runnable runnable) {}
 
-    public interface UncaughtExceptionHandler {
-        void uncaughtException(java.lang.Thread t, Throwable e);
-    }
-    
-    public Thread() {
-        //
-    }
-    @MethodArgs(args ={"target"})
-    public Thread(Runnable target) {
-        //
+  public enum State {
+    NEW,
+    RUNNABLE,
+    BLOCKED,
+    WAITING,
+    TIMED_WAITING,
+    TERMINATED;
+  }
 
-        //
+  public interface UncaughtExceptionHandler {
+    void uncaughtException(java.lang.Thread t, Throwable e);
+  }
 
-        //
-    }
-    @MethodArgs(args ={"group","target"})
-    public Thread(ThreadGroup group, Runnable target) {
-        //
+  public Thread() {}
 
-        //
+  @MethodArgs({"target"})
+  public Thread(Runnable target) {}
 
-        //
-    }
-    @MethodArgs(args ={"name"})
-    public Thread(String name) {
-        //
+  @MethodArgs({"group", "target"})
+  public Thread(ThreadGroup group, Runnable target) {}
 
-        //
+  @MethodArgs({"name"})
+  public Thread(String name) {}
 
-        //
-    }
-    @MethodArgs(args ={"group","name"})
-    public Thread(ThreadGroup group, String name) {
-        //
+  @MethodArgs({"group", "name"})
+  public Thread(ThreadGroup group, String name) {}
 
-        //
+  @MethodArgs({"target", "name"})
+  public Thread(Runnable target, String name) {}
 
-        //
-    }
-    @MethodArgs(args ={"target","name"})
-    public Thread(Runnable target, String name) {
-        //
+  @MethodArgs({"group", "target", "name"})
+  public Thread(ThreadGroup group, Runnable target, String name) {}
 
-        //
+  @MethodArgs({"group", "target", "name", "stackSize"})
+  public Thread(ThreadGroup group, Runnable target, String name, long stackSize) {}
 
-        //
-    }
-    @MethodArgs(args ={"group","target","name"})
-    public Thread(ThreadGroup group, Runnable target, String name) {
-        //
+  public void start() {}
 
-        //
+  public void run() {}
 
-        //
-    }
-    @MethodArgs(args ={"group","target","name","stackSize"})
-    public Thread(ThreadGroup group, Runnable target, String name, long stackSize) {
-        //
+  public void interrupt() {}
 
-        //
+  public boolean isInterrupted() {
 
-        //
-    }
+    return false;
+  }
 
-    public void start() {
-        //
-    }
+  public String toString() {
 
-    public void run() {
-        //
-    }
+    return null;
+  }
 
-    public void interrupt() {
-        //
-    }
+  public ClassLoader getContextClassLoader() {
 
-    public boolean isInterrupted() {
-        //
-        return false;
-        //
+    return null;
+  }
 
-        //
-    }
+  @MethodArgs({"value"})
+  public void setContextClassLoader(ClassLoader cl) {}
 
-    @Override
-    public String toString() {
-        //
-        return null;
-        //
+  public StackTraceElement[] getStackTrace() {
 
-        //
-    }
+    return null;
+  }
 
-    public ClassLoader getContextClassLoader() {
-        //
-        return null;
-        //
+  public long getId() {
 
-        //
-    }
+    return 0;
+  }
 
-    @MethodArgs(args ={"value"})
-    public void setContextClassLoader(ClassLoader cl) {
-        //
-    }
+  public State getState() {
 
-    public StackTraceElement[] getStackTrace() {
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
+  public UncaughtExceptionHandler getUncaughtExceptionHandler() {
 
-    public long getId() {
-        //
-        return 0;
-        //
+    return null;
+  }
 
-        //
-    }
+  @MethodArgs({"value"})
+  public void setUncaughtExceptionHandler(UncaughtExceptionHandler eh) {}
 
-    public State getState() {
-        //
-        return null;
-        //
+  public void join() throws InterruptedException {}
 
-        //
-    }
+  public void join(long millis) throws InterruptedException {}
 
-    public UncaughtExceptionHandler getUncaughtExceptionHandler() {
-        //
-        return null;
-        //
+  public void join(long millis, int nanos) throws InterruptedException {}
 
-        //
-    }
+  public boolean isAlive() {
 
-    @MethodArgs(args ={"value"})
-    public void setUncaughtExceptionHandler(UncaughtExceptionHandler eh) {
-        //
-    }
+    return false;
+  }
 
-    public boolean isAlive() {
-        //
-        return false;
-        //
+  @MethodArgs({"newPriority"})
+  public void setPriority(int newPriority) {}
 
-        //
-    }
+  public int getPriority() {
 
-    @MethodArgs(args ={"newPriority"})
-    public void setPriority(int newPriority) {
-        //
-    }
+    return 0;
+  }
 
-    public int getPriority() {
-        //
-        return 0;
-        //
+  @MethodArgs({"name"})
+  public void setName(String name) {}
 
-        //
-    }
+  public String getName() {
 
-    @MethodArgs(args ={"name"})
-    public void setName(String name) {
-        //
-    }
+    return null;
+  }
 
-    public String getName() {
-        //
-        return null;
-        //
+  public ThreadGroup getThreadGroup() {
 
-        //
-    }
+    return null;
+  }
 
-    public ThreadGroup getThreadGroup() {
-        //
-        return null;
-        //
+  public static void sleep(long milis) {}
 
-        //
-    }
+  public static void sleep(long milis, int nanos) {}
 
-    public static void sleep(long milis){
-        //
-    }
-    public static void sleep(long milis, int nanos){
-        //
-    }
+  public static void dumpStack() {}
 }

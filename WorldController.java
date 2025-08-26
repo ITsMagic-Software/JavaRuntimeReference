@@ -1,191 +1,149 @@
 package JAVARuntime;
 
-//
-
 import java.util.ArrayList;
 import java.util.List;
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
-@ClassCategory(cat ={"World"})
+
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"World"})
 public final class WorldController {
-    //
 
-    private WorldController() { }
+  private WorldController() {}
 
-    /// Abstracts
-    @MethodArgs(args ={"worldFile"})
-    public static void loadWorld(WorldFile worldFile){
-        //
-    }
-    @MethodArgs(args ={"worldFile"})
-    public static void loadWorldAsync(WorldFile worldFile){
-        //
-    }
+  /// Abstracts
+  @MethodArgs({"worldFile"})
+  public static void loadWorld(WorldFile worldFile) {}
 
-    @MethodArgs(args ={"name"})
-    public static SpatialObject findObject(String name){
-        //
-        return null;
-        //
+  @MethodArgs({"worldFile"})
+  public static void loadWorldAsync(WorldFile worldFile) {}
 
-        //
-    }
-    public static List<SpatialObject> getObjectList() {
-        //
-        return null;
-        //
+  @MethodArgs({"name"})
+  public static SpatialObject findObject(String name) {
 
-        //
-    }
-    public static int getObjectsCount() {
-        //
-        return 0;
-        //
+    return null;
+  }
 
-        //
-    }
-    @MethodArgs(args ={"index"})
-    public static SpatialObject getObject(int index) {
-        //
-        return null;
-        //
+  public static List<SpatialObject> getObjectList() {
 
-        //
-    }
+    return null;
+  }
 
-    @MethodArgs(args ={"classReference"})
-    public static JAVARuntime.Component findFirstComponent(Class classReference){
-        //
-        return null;
-        //
+  public static int getObjectsCount() {
 
-        //
-    }
-    @MethodArgs(args ={"tittle"})
-    public static List<JAVARuntime.Component> listAllComponents(String tittle){
-        //
-        return null;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @MethodArgs(args ={"classReference"})
-    public static List<JAVARuntime.Component> listAllComponents(Class classReference){
-        //
-        return null;
-        //
+  @MethodArgs({"index"})
+  public static SpatialObject getObject(int index) {
 
-        //
-    }
+    return null;
+  }
 
-    //
+  @MethodArgs({"classReference"})
+  public static <T extends JAVARuntime.Component> T findFirstComponent(Class classReference) {
 
-    public static float getLoadPercent(){
-        //
-        return 0;
-        //
+    return null;
+  }
 
-        //
-    }
-    public static float getLoadProgress(){
-        //
-        return 0;
-        //
+  @MethodArgs({"classReference"})
+  public static <T extends JAVARuntime.Component> T findFirstActiveComponent(Class classReference) {
 
-        //
-    }
-    public static int getLoadedCount(){
-        //
-        return 0;
-        //
+    return null;
+  }
 
-        //
-    }
-    public static int getLoadTotal(){
-        //
-        return 0;
-        //
+  @MethodArgs({"tittle"})
+  public static List<JAVARuntime.Component> listAllComponents(String tittle) {
 
-        //
-    }
-    public static String getLoadMessage(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    public static boolean isLoaded(){
-        //
-        return false;
-        //
+  @MethodArgs({"classReference"})
+  public static List<JAVARuntime.Component> listAllComponents(Class classReference) {
 
-        //
-    }
+    return null;
+  }
 
-    public static LightSettings getLightSettings(){
-        //
-        return null;
-        //
+  public static float getLoadPercent() {
 
-        //
-    }
-    public static PhysicsSettings getPhysicsSettings(){
-        //
-        return null;
-        //
+    return 0;
+  }
 
-        //
-    }
-    public static WorldPathFinder getPathFinder(){
-        //
-        return null;
-        //
+  public static float getLoadProgress() {
 
-        //
-    }
+    return 0;
+  }
 
-    @MethodArgs(args ={"tagName"})
-    public static SpatialObject findObjectWithTag(String tagName) {
-        //
-        return null;
-        //
+  public static int getLoadedCount() {
 
-        //
-    }
-    @MethodArgs(args ={"tagName"})
-    public static List<SpatialObject> findObjectsWithTag(String tagName) {
-        //
-        return null;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @MethodArgs(args ={"tagName"})
-    public static SpatialObject findRandomObjectWithTag(String tagName) {
-        //
-        return null;
-        //
+  public static int getLoadTotal() {
 
-        //
-    }
-    @MethodArgs(args ={"tagName"})
-    public static int countObjectsWithTag(String tagName) {
-        //
-        return 0;
-        //
+    return 0;
+  }
 
-        //
-    }
-    @MethodArgs(args ={"tagName"})
-    public static boolean hasObjectsWithTag(String tagName) {
-        //
-        return false;
-        //
+  public static String getLoadMessage() {
 
-        //
-    }
+    return null;
+  }
 
-    //
+  public static boolean isLoaded() {
+
+    return false;
+  }
+
+  public static boolean isLoading() {
+
+    return false;
+  }
+
+  public static GraphicsSettings getGraphicsSettings() {
+
+    return null;
+  }
+
+  public static LightSettings getLightSettings() {
+
+    return null;
+  }
+
+  public static PhysicsSettings getPhysicsSettings() {
+
+    return null;
+  }
+
+  public static WorldPathFinder getPathFinder() {
+
+    return null;
+  }
+
+  @MethodArgs({"tagName"})
+  public static SpatialObject findObjectWithTag(String tagName) {
+
+    return null;
+  }
+
+  @MethodArgs({"tagName"})
+  public static List<SpatialObject> findObjectsWithTag(String tagName) {
+
+    return null;
+  }
+
+  @MethodArgs({"tagName"})
+  public static SpatialObject findRandomObjectWithTag(String tagName) {
+
+    return null;
+  }
+
+  @MethodArgs({"tagName"})
+  public static int countObjectsWithTag(String tagName) {
+
+    return 0;
+  }
+
+  @MethodArgs({"tagName"})
+  public static boolean hasObjectsWithTag(String tagName) {
+
+    return false;
+  }
 }

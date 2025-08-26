@@ -1,6 +1,6 @@
 package JAVARuntime;
 
-@ClassCategory(cat ={"Inspector"})
+@ClassCategory(cat = {"Inspector"})
 public interface PropertiesButtonListener {
-    void onClicked();
+  void onClicked();
 }

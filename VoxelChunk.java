@@ -1,153 +1,105 @@
 package JAVARuntime;
 
-//
+/** @Author Lucas Leandro (ITsMagic Founder) */
+@ClassCategory(cat = {"Voxels", "Components"})
+public final class VoxelChunk extends Component {
 
-/**
- * @Author Lucas Leandro (ITsMagic Founder)
- */
+  public VoxelChunk() {
 
-@ClassCategory(cat ={"Voxels","Components"})
-public final class VoxelChunk extends Component{
+    super();
+  }
 
-    //
+  @HideGetSet
+  public int getWidth() {
 
-    public VoxelChunk() {
-        //
-        super();
-        //
+    return 0;
+  }
 
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setWidth(int value) {}
 
-    @HideGetSet
-    public int getWidth(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public int getHeight() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setWidth(int value){
-        //
-    }
+    return 0;
+  }
 
-    @HideGetSet
-    public int getHeight(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setHeight(int value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setHeight(int value){
-        //
-    }
+  @HideGetSet
+  public boolean isUsePositionAsCoordinatesOffset() {
 
-    @HideGetSet
-    public boolean isUsePositionAsCoordinatesOffset(){
-        //
-        return false;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setUsePositionAsCoordinatesOffset(boolean value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setUsePositionAsCoordinatesOffset(boolean value) {}
 
-    @HideGetSet
-    public Vector2 getOffset(){
-        //
-        return null;
-        //
+  @HideGetSet
+  public Vector2 getOffset() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setOffset(Vector2 value){
-        //
-    }
+    return null;
+  }
 
-    public void apply(){
-        //
-    }
-    public void invalidateBlocks(){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setOffset(Vector2 value) {}
 
-    @MethodArgs(args ={"worldX", "worldY", "worldZ"})
-    public int getBlock(int x, int y, int z){
-        //
-        return 0;
-        //
+  public void apply() {}
 
-        //
-    }
+  public void invalidateBlocks() {}
 
-    @MethodArgs(args ={"localX", "localY", "localZ"})
-    public int getBlockLocal(int x, int y, int z){
-        //
-        return 0;
-        //
+  public int getMaxVerticesCount() {
 
-        //
-    }
+    return 0;
+  }
 
-    @MethodArgs(args ={"worldX", "worldY", "worldZ", "blockType"})
-    public void setBlock(int x, int y, int z, int block){
-        //
-    }
-    @MethodArgs(args ={"localX", "localY", "localZ", "blockType"})
-    public void setLocalBlock(int x, int y, int z, int block){
-        //
-    }
+  @MethodArgs({"worldX", "worldY", "worldZ"})
+  public int getBlock(int x, int y, int z) {
 
-    @MethodArgs(args ={"worldX", "worldY", "worldZ"})
-    public boolean containsBlock(int x, int y, int z){
-        //
-        return false;
-        //
+    return 0;
+  }
 
-        //
-    }
+  @MethodArgs({"localX", "localY", "localZ"})
+  public int getBlockLocal(int x, int y, int z) {
 
-    @MethodArgs(args ={"localX", "localY", "localZ"})
-    public boolean containsLocalBlock(int x, int y, int z){
-        //
-        return false;
-        //
+    return 0;
+  }
 
-        //
-    }
+  @MethodArgs({"worldX", "worldY", "worldZ", "blockType"})
+  public void setBlock(int x, int y, int z, int block) {}
 
-    public boolean isReady(){
-        //
-        return false;
-        //
+  @MethodArgs({"localX", "localY", "localZ", "blockType"})
+  public void setLocalBlock(int x, int y, int z, int block) {}
 
-        //
-    }
+  @MethodArgs({"worldX", "worldY", "worldZ"})
+  public boolean containsBlock(int x, int y, int z) {
 
-    @HideGetSet
-    public OH3LevelIntArray getBlocksMatrixCritical(){
-        //
-        return null;
-        //
+    return false;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setBlocksMatrix(OH3LevelIntArray value){
-        //
-    }
+  @MethodArgs({"localX", "localY", "localZ"})
+  public boolean containsLocalBlock(int x, int y, int z) {
 
-    //
+    return false;
+  }
+
+  public boolean isReady() {
+
+    return false;
+  }
+
+  @HideGetSet
+  public OH3LevelIntArray getBlocksMatrixCritical() {
+
+    return null;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setBlocksMatrix(OH3LevelIntArray value) {}
 }

@@ -1,33 +1,26 @@
 package JAVARuntime;
 
-//
-
 import java.io.IOException;
 import java.io.InputStream;
 
-@ClassCategory(cat ={"Shaders"})
+@ClassCategory(cat = {"Shaders"})
 public class GeometryShader {
-    public transient String code;
-    public GeometryShader(String code) {
-        this.code = code;
-    }
+  public transient String code;
 
-    /// Abstract
-    @MethodArgs(args={"materialShader", "shaderName"})
-    public static GeometryShader loadFile(MaterialShader materialShader, String shaderName){
-        //
-        return null;
-        //
+  public GeometryShader(String code) {
+    this.code = code;
+  }
 
-        //
-    }
+  /// Abstract
+  @MethodArgs({"customShader", "shaderName"})
+  public static GeometryShader loadFile(CustomShader customShader, String shaderName) {
 
-    @MethodArgs(args ={"inputStream"})
-    public static GeometryShader loadInputStream(InputStream inputStream) throws IOException {
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
+  @MethodArgs({"inputStream"})
+  public static GeometryShader loadInputStream(InputStream inputStream) throws IOException {
+
+    return null;
+  }
 }

@@ -1,24 +1,22 @@
 package JAVARuntime;
 
 public class ObjectsPanelMenu {
-    private transient String menu;
+  private transient String menu;
 
-    @MethodArgs(args ={"menu"})
-    public ObjectsPanelMenu(String menu) {
-        this.menu = menu;
-    }
+  @MethodArgs({"menu"})
+  public ObjectsPanelMenu(String menu) {
+    this.menu = menu;
+  }
 
-    public String getMenu() {
-        return menu;
-    }
-    @MethodArgs(args ={"menu"})
-    public void setMenu(String menu) {
-        this.menu = menu;
-    }
+  public String getMenu() {
+    return menu;
+  }
 
-    @MethodArgs(args ={"object"})
-    public void onClick(SpatialObject object){
+  @MethodArgs({"menu"})
+  public void setMenu(String menu) {
+    this.menu = menu;
+  }
 
-    }
+  @MethodArgs({"object"})
+  public void onClick(SpatialObject object) {}
 }
-

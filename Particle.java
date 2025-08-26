@@ -1,96 +1,66 @@
 package JAVARuntime;
 
-//
-
 public class Particle {
 
-    //
+  public Particle() {}
 
-    public Particle() {
-        //
-    }
+  @HideGetSet
+  public Color getColor() {
 
-    @HideGetSet
-    public Color getColor(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setColor(Color value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setColor(Color value) {}
 
-    @HideGetSet
-    public float getLiteTime(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public float getLiteTime() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setLiteTime(float value){
-        //
-    }
+    return 0;
+  }
 
-    @HideGetSet
-    public Vector3 getMovement(){
-        //
-        return null;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setLiteTime(float value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setMovement(Vector3 value){
-        //
-    }
+  @HideGetSet
+  public Vector3 getMovement() {
 
-    @HideGetSet
-    public Vector3 getPosition(){
-        //
-        return null;
-        //
+    return null;
+  }
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setPosition(Vector3 value){
-        //
-    }
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setMovement(Vector3 value) {}
 
-    @HideGetSet
-    public float getRotation(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  public Vector3 getPosition() {
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setRotation(float value){
-        //
-    }
+    return null;
+  }
 
-    @HideGetSet
-    public float getScale(){
-        //
-        return 0;
-        //
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setPosition(Vector3 value) {}
 
-        //
-    }
-    @HideGetSet
-    @MethodArgs(args ={"value"})
-    public void setScale(float value){
-        //
-    }
+  @HideGetSet
+  public float getRotation() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setRotation(float value) {}
+
+  @HideGetSet
+  public float getScale() {
+
+    return 0;
+  }
+
+  @HideGetSet
+  @MethodArgs({"value"})
+  public void setScale(float value) {}
 }
