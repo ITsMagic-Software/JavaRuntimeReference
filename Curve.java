@@ -1,65 +1,98 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Vector"})
+//
+
+
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"Vector"})
 public final class Curve {
-  public enum WrapMode {
-    Loop,
-    ClampToBorder,
-    PingPong
-  }
+    public enum WrapMode{
+        Loop, ClampToBorder, PingPong
+    }
 
-  public Curve() {}
+    //
 
-  @MethodArgs({"x", "y"})
-  public void addPoint(float x, float y) {}
+    //
 
-  @MethodArgs({"idx", "x", "y"})
-  public void setPoint(int idx, float x, float y) {}
+    public Curve() {
+        //
+    }
 
-  @MethodArgs({"idx"})
-  public Vector2 pointAt(int idx) {
+    @MethodArgs({"x","y"})
+    public void addPoint(float x, float y){
+        //
+    }
+    @MethodArgs({"idx","x","y"})
+    public void setPoint(int idx, float x, float y){
+        //
+    }
+    @MethodArgs({"idx"})
+    public Vector2 pointAt(int idx){
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
+    @MethodArgs({"idx","out"})
+    public Vector2 pointAt(int idx, Vector2 out){
+        //
+        return null;
+        //
 
-  @MethodArgs({"idx", "out"})
-  public Vector2 pointAt(int idx, Vector2 out) {
+        //
+    }
+    public void clear(){
+        //
+    }
+    public int pointsCount(){
+        //
+        return 0;
+        //
 
-    return null;
-  }
+        //
+    }
 
-  public void clear() {}
+    @MethodArgs({"x"})
+    public float evaluate(float x){
+        //
+        return 0;
+        //
 
-  public int pointsCount() {
+        //
+    }
 
-    return 0;
-  }
+    public void apply(){
+        //
+    }
 
-  @MethodArgs({"x"})
-  public float evaluate(float x) {
+    public WrapMode getWrapMode() {
+        //
+        return null;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @MethodArgs({"wrapMode"})
+    public void setWrapMode(WrapMode wrapMode) {
+        //
+    }
 
-  public void apply() {}
+    public String toJson(){
+        //
+        return null;
+        //
 
-  public WrapMode getWrapMode() {
+        //
+    }
+    @MethodArgs({"json"})
+    public Curve fromJson(String json){
+        //
+        return null;
+        //
 
-    return null;
-  }
-
-  @MethodArgs({"wrapMode"})
-  public void setWrapMode(WrapMode wrapMode) {}
-
-  public String toJson() {
-
-    return null;
-  }
-
-  @MethodArgs({"json"})
-  public Curve fromJson(String json) {
-
-    return null;
-  }
+        //
+    }
 }

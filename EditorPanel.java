@@ -1,133 +1,197 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Editor"})
+//
+
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"Editor"})
 public class EditorPanel {
 
-  public EditorPanel() {}
+    //
 
-  @MethodArgs({"touch", "x", "y", "width", "height"})
-  public boolean isTouchInside(Touch touch) {
+    public EditorPanel() {
+        //
+    }
 
-    return false;
-  }
+    @MethodArgs({"touch","x","y","width","height"})
+    public boolean isTouchInside(Touch touch){
+        //
+        return false;
+        //
 
-  @MethodArgs({"touchFilter"})
-  public Touch determineTouch(GUIUtils.TouchFilter touchFilter) {
+        //
+    }
 
-    return null;
-  }
+    @MethodArgs({"touchFilter"})
+    public Touch determineTouch(GUIUtils.TouchFilter touchFilter){
+        //
+        return null;
+        //
 
-  @MethodArgs({"touchFilter", "offset"})
-  public Touch determineTouch(GUIUtils.TouchFilter touchFilter, int offset) {
+        //
+    }
+    @MethodArgs({"touchFilter","offset"})
+    public Touch determineTouch(GUIUtils.TouchFilter touchFilter, int offset){
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
 
-  @MethodArgs({"touch"})
-  public Vector2 determineTouchPosition(Touch touch) {
+    @MethodArgs({"touch"})
+    public Vector2 determineTouchPosition(Touch touch){
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
+    @MethodArgs({"touch","out"})
+    public Vector2 determineTouchPosition(Touch touch, Vector2 out){
+        //
+        return null;
+        //
 
-  @MethodArgs({"touch", "out"})
-  public Vector2 determineTouchPosition(Touch touch, Vector2 out) {
+        //
+    }
 
-    return null;
-  }
+    @HideGetSet
+    public int getContentXPixels(){
+        //
+        return 0;
+        //
 
-  @HideGetSet
-  public int getContentXPixels() {
+        //
+    }
+    @HideGetSet
+    public int getContentYPixels(){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @HideGetSet
+    public int getContentWidthPixels(){
+        //
+        return 0;
+        //
 
-  @HideGetSet
-  public int getContentYPixels() {
+        //
+    }
+    @HideGetSet
+    public int getContentHeightPixels(){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
 
-  @HideGetSet
-  public int getContentWidthPixels() {
+    @HideGetSet
+    public int getTotalXPixels(){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @HideGetSet
+    public int getTotalYPixels(){
+        //
+        return 0;
+        //
 
-  @HideGetSet
-  public int getContentHeightPixels() {
+        //
+    }
+    @HideGetSet
+    public int getTotalWidthPixels(){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @HideGetSet
+    public int getTotalHeightPixels(){
+        //
+        return 0;
+        //
 
-  @HideGetSet
-  public int getTotalXPixels() {
+        //
+    }
 
-    return 0;
-  }
+    public void requestDetach(){
+        //
+    }
 
-  @HideGetSet
-  public int getTotalYPixels() {
+    @HideGetSet
+    public String getTittle(){
+        //
+        return null;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"tittle"})
+    public void setTittle(String tittle) {
+        //
+    }
 
-  @HideGetSet
-  public int getTotalWidthPixels() {
+    @HideGetSet
+    public boolean isRequestCloseConfirmation() {
+        //
+        return false;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @HideGetSet
+    public void setRequestCloseConfirmation(boolean closeWhenClickOutside) {
+        //
+    }
 
-  @HideGetSet
-  public int getTotalHeightPixels() {
+    public void blink() {
+        //
+    }
 
-    return 0;
-  }
+    public boolean isAllowCloseX() {
+        //
+        return false;
+        //
 
-  public void requestDetach() {}
+        //
+    }
+    public void setAllowCloseX(boolean allowCloseX) {
+        //
+    }
 
-  @HideGetSet
-  public String getTittle() {
+    @HideGetSet
+    public boolean isVisible(){
+        //
+        return false;
+        //
 
-    return null;
-  }
+        //
+    }
 
-  @HideGetSet
-  @MethodArgs({"tittle"})
-  public void setTittle(String tittle) {}
+    @HideGetSet
+    public boolean isFloating(){
+        //
+        return false;
+        //
 
-  @HideGetSet
-  public boolean isRequestCloseConfirmation() {
+        //
+    }
 
-    return false;
-  }
+    public EditorPanel copy(){
+        //
+        return null;
+        //
 
-  @HideGetSet
-  public void setRequestCloseConfirmation(boolean closeWhenClickOutside) {}
-
-  public void blink() {}
-
-  public boolean isAllowCloseX() {
-
-    return false;
-  }
-
-  public void setAllowCloseX(boolean allowCloseX) {}
-
-  @HideGetSet
-  public boolean isVisible() {
-
-    return false;
-  }
-
-  @HideGetSet
-  public boolean isFloating() {
-
-    return false;
-  }
-
-  public EditorPanel copy() {
-
-    return null;
-  }
+        //
+    }
 }

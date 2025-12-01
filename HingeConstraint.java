@@ -1,50 +1,44 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Constraint", "Components"})
-public final class HingeConstraint extends Component {
+//
 
-  public HingeConstraint() {
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"Constraint","Components"})
+public final class HingeConstraint extends Component{
+    //
 
-    super();
-  }
+    public HingeConstraint() {
+        //
+        super();
+        //
 
-  @HideGetSet
-  public SpatialObject getObjectA() {
+        //
+    }
 
-    return null;
-  }
+    @HideGetSet
+    public SpatialObject getTarget(){
+        //
+        return null;
+        //
 
-  @HideGetSet
-  @MethodArgs({"object"})
-  public void setObjectA(SpatialObject object) {}
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"object"})
+    public void setTarget(SpatialObject object){
+        //
+    }
 
-  @HideGetSet
-  public SpatialObject getObjectB() {
+    @HideGetSet
+    public SpatialObject getPivot(){
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
 
-  @HideGetSet
-  @MethodArgs({"object"})
-  public void setObjectB(SpatialObject object) {}
-
-  @HideGetSet
-  public SpatialObject getPointA() {
-
-    return null;
-  }
-
-  @HideGetSet
-  @MethodArgs({"object"})
-  public void setPointA(SpatialObject object) {}
-
-  @HideGetSet
-  public SpatialObject getPointB() {
-
-    return null;
-  }
-
-  @MethodArgs({"object"})
-  public void setPointB(SpatialObject object) {}
+    //
 }

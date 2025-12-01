@@ -1,41 +1,59 @@
 package JAVARuntime;
 
+//
+
 import java.io.InputStream;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Files"})
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"Files"})
 @UnimplementedDoc
-public class ProjectFile {
+public class ProjectFile
+//
+{
+    //
 
-  @UnimplementedDoc
-  public ProjectFile(String format) {}
+    @UnimplementedDoc
+    public ProjectFile(String format) {
+        //
+    }
 
-  @UnimplementedDoc
-  public String getFormat() {
+    @UnimplementedDoc
+    public String getFormat() {
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
+    @UnimplementedDoc
+    public InputStream getInputStream(){
+        //
+        return null;
+        //
 
-  @UnimplementedDoc
-  public InputStream getInputStream() {
+        //
+    }
+    @UnimplementedDoc
+    public String loadText(){
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
+    @UnimplementedDoc
+    public String toString() {
+        return getClass().getName();
+    }
 
-  @UnimplementedDoc
-  public String loadText() {
+    @MethodArgs({"destination"})
+    public boolean copyTo(File destination){
+        //
+        return false;
+        //
 
-    return null;
-  }
-
-  @UnimplementedDoc
-  public String toString() {
-    return getClass().getName();
-  }
-
-  @MethodArgs({"destination"})
-  public boolean copyTo(File destination) {
-
-    return false;
-  }
+        //
+    }
 }

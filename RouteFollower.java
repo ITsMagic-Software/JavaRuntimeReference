@@ -1,63 +1,96 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"AI", "Components"})
-public final class RouteFollower extends Component {
+//
 
-  public RouteFollower() {
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"AI","Components"})
+public final class RouteFollower extends Component{
+    //
 
-    super();
-  }
+    public RouteFollower() {
+        //
+        super();
+        //
 
-  public Vector3 findNearestPoint() {
+        //
+    }
 
-    return null;
-  }
+    public Vector3 findNearestPoint(){
+        //
+        return null;
+        //
 
-  public Vector3 getNearestPoint() {
+        //
+    }
+    public Vector3 getNearestPoint(){
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
+    public int findNearestPointIndex(){
+        //
+        return 0;
+        //
 
-  public int findNearestPointIndex() {
+        //
+    }
+    public int getNearestPointIndex(){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
 
-  public int getNearestPointIndex() {
+    @HideGetSet
+    public Vector3 getFindNearestPoint(){
+        //
+        return null;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @HideGetSet
+    public int getFindNearestPointIndex(){
+        //
+        return 0;
+        //
 
-  @HideGetSet
-  public Vector3 getFindNearestPoint() {
+        //
+    }
 
-    return null;
-  }
+    @HideGetSet
+    public Route getRoute(){
+        //
+        return null;
+        //
 
-  @HideGetSet
-  public int getFindNearestPointIndex() {
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"route"})
+    public void setRoute(Route object){
+        //
+    }
 
-    return 0;
-  }
+    public boolean hasPath(){
+        //
+        return false;
+        //
 
-  @HideGetSet
-  public Route getRoute() {
+        //
+    }
+    public boolean isPathFinished(){
+        //
+        return false;
+        //
 
-    return null;
-  }
+        //
+    }
 
-  @HideGetSet
-  @MethodArgs({"route"})
-  public void setRoute(Route object) {}
-
-  public boolean hasPath() {
-
-    return false;
-  }
-
-  public boolean isPathFinished() {
-
-    return false;
-  }
+    //
 }

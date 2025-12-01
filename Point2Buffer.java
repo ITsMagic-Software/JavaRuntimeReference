@@ -1,60 +1,80 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Vector", "Buffers"})
+//
+
+
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"Vector","Buffers"})
 public class Point2Buffer {
+    //
 
-  public Point2Buffer() {}
+    public Point2Buffer() {
+        //
+    }
 
-  @MethodArgs({"idx"})
-  public Point2 get(int idx) {
+    @MethodArgs({"idx"})
+    public Point2 get(int idx){
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
+    @MethodArgs({"idx"})
+    public int getX(int idx){
+        //
+        return 0;
+        //
 
-  @MethodArgs({"idx"})
-  public int getX(int idx) {
+        //
+    }
+    @MethodArgs({"idx"})
+    public int getY(int idx){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
 
-  @MethodArgs({"idx"})
-  public int getY(int idx) {
+    @MethodArgs({"point2"})
+    public void put(Point2 vector3){
+        //
+    }
+    @MethodArgs({"x","y"})
+    public void put(int x, int y){
+        //
+    }
 
-    return 0;
-  }
+    public int capacity(){
+        //
+        return 0;
+        //
 
-  @MethodArgs({"point2"})
-  public void put(Point2 vector3) {}
+        //
+    }
 
-  @MethodArgs({"x", "y"})
-  public void put(int x, int y) {}
+    public Point2[] array(){
+        //
+        return null;
+        //
 
-  public int capacity() {
+        //
+    }
 
-    return 0;
-  }
+    @MethodArgs({"idx"})
+    public void position(int idx){
+        //
+    }
 
-  public Point2[] array() {
 
-    return null;
-  }
+    public JAVARuntime.NativeIntBuffer getFloatBuffer(){
+        //
+        return null;
+        //
 
-  @MethodArgs({"idx"})
-  public void position(int idx) {}
-
-  @HideGetSet
-  public boolean isVboEnabled() {
-
-    return false;
-  }
-
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setVboEnabled(boolean value) {}
-
-  public JAVARuntime.NativeIntBuffer getFloatBuffer() {
-
-    return null;
-  }
+        //
+    }
 }

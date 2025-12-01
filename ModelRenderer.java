@@ -1,129 +1,167 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Rendering", "Components"})
-public final class ModelRenderer extends Component {
-  public enum BatchingChannel {
-    Automatic,
-    Dynamic,
-    Static,
-    Disabled
-  }
+//
 
-  public static final int CUBE = 456;
-  public static final int SPHERE = 457;
-  public static final int CONE = 458;
-  public static final int CYLINDER = 459;
-  public static final int CIRCLE = 460;
-  public static final int TORUS = 461;
-  public static final int SQUARE = 462;
-  public static final int SQUARE90 = 463;
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"Rendering","Components"})
+public final class ModelRenderer extends Component{
+    public enum BatchingChannel{
+        Automatic, Dynamic, Static, Disabled
+    }
 
-  public ModelRenderer() {
+    public static final int CUBE = 456;
+    public static final int SPHERE = 457;
+    public static final int CONE = 458;
+    public static final int CYLINDER = 459;
+    public static final int CIRCLE = 460;
+    public static final int TORUS = 461;
+    public static final int SQUARE = 462;
+    public static final int SQUARE90 = 463;
 
-    super();
-  }
+    //
 
-  public ModelRenderer(Vertex vertex) {
+    public ModelRenderer() {
+        //
+        super();
+        //
 
-    super();
-  }
+        //
+    }
+    public ModelRenderer(Vertex vertex) {
+        //
+        super();
+        //
 
-  @MethodArgs({"file"})
-  public void setModelFile(VertexFile file) {}
+        //
+    }
 
-  @MethodArgs({"file"})
-  public void setMaterialFile(MaterialFile file) {}
+    @MethodArgs({"file"})
+    public void setModelFile(VertexFile file){
+        //
+    }
 
-  @HideGetSet
-  public Material getMaterial() {
+    @MethodArgs({"file"})
+    public void setMaterialFile(MaterialFile file){
+        //
+    }
 
-    return null;
-  }
+    @HideGetSet
+    public Material getMaterial(){
+        //
+        return null;
+        //
 
-  @HideGetSet
-  @MethodArgs({"material"})
-  public void setMaterial(Material material) {}
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"material"})
+    public void setMaterial(Material material){
+        //
+    }
 
-  @HideGetSet
-  public Vertex getVertex() {
+    @HideGetSet
+    public Vertex getVertex(){
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"vertex"})
+    public void setVertex(Vertex vertex){
+        //
+    }
 
-  @HideGetSet
-  @MethodArgs({"vertex"})
-  public void setVertex(Vertex vertex) {}
+    @HideGetSet
+    public boolean isCastShadowEnabled(){
+        //
+        return false;
+        //
 
-  @HideGetSet
-  public boolean isCastShadowEnabled() {
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"wireframe"})
+    public void setCastShadowEnabled(boolean wireframe){
+        //
+    }
 
-    return false;
-  }
+    @HideGetSet
+    public boolean isEnableOutline(){
+        //
+        return false;
+        //
 
-  @HideGetSet
-  @MethodArgs({"wireframe"})
-  public void setCastShadowEnabled(boolean wireframe) {}
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"value"})
+    public void setEnableOutline(boolean value){
+        //
+    }
 
-  @HideGetSet
-  public boolean isWireframe() {
+    @HideGetSet
+    public Color getOutlineColor(){
+        //
+        return null;
+        //
 
-    return false;
-  }
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"color"})
+    public void setOutlineColor(Color color){
+        //
+    }
 
-  @HideGetSet
-  @MethodArgs({"wireframe"})
-  public void setWireframe(boolean wireframe) {}
+    @MethodArgs({"primitive"})
+    public void attachPrimitive(int primitive){
+        //
+    }
 
-  @HideGetSet
-  public boolean isEnableOutline() {
+    @HideGetSet
+    public float[] getRenderMatrix(){
+        //
+        return null;
+        //
 
-    return false;
-  }
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"matrix"})
+    public void setRenderMatrix(float[] renderMatrix){
+        //
+    }
 
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setEnableOutline(boolean value) {}
+    public float getOutlineScale(){
+        //
+        return 0;
+        //
 
-  @HideGetSet
-  public Color getOutlineColor() {
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"value"})
+    public void setOutlineScale(float value){
+        //
+    }
 
-    return null;
-  }
+    @HideGetSet
+    public BatchingChannel getBatchingChannel(){
+        //
+        return null;
+        //
 
-  @HideGetSet
-  @MethodArgs({"color"})
-  public void setOutlineColor(Color color) {}
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"value"})
+    public void setBatchingChannel(BatchingChannel value){
+        //
+    }
 
-  @MethodArgs({"primitive"})
-  public void attachPrimitive(int primitive) {}
-
-  @HideGetSet
-  public float[] getRenderMatrix() {
-
-    return null;
-  }
-
-  @HideGetSet
-  @MethodArgs({"matrix"})
-  public void setRenderMatrix(float[] renderMatrix) {}
-
-  public float getOutlineScale() {
-
-    return 0;
-  }
-
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setOutlineScale(float value) {}
-
-  @HideGetSet
-  public BatchingChannel getBatchingChannel() {
-
-    return null;
-  }
-
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setBatchingChannel(BatchingChannel value) {}
+    //
 }

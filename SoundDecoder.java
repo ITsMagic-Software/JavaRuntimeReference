@@ -1,20 +1,28 @@
 package JAVARuntime;
 
+//
+
 import java.io.File;
 
 public final class SoundDecoder {
 
-  @UnimplementedDoc
-  @MethodArgs({"file"})
-  public static SoundData decodeFile(File soundFile) throws Exception {
+    @UnimplementedDoc
+    @MethodArgs({"file"})
+    public static SoundData decodeFile(File soundFile) throws Exception {
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
 
-  @UnimplementedDoc
-  @MethodArgs({"file"})
-  public static SoundEmitter streamDecodeFile(File soundFile) {
+    @UnimplementedDoc
+    @MethodArgs({"file"})
+    public static SoundEmitter streamDecodeFile(File soundFile) {
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
 }

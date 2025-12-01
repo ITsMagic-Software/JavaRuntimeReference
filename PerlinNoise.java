@@ -1,90 +1,128 @@
 package JAVARuntime;
 
+//
+
 /**
  * A speed-improved simplex noise algorithm for 2D, 3D and 4D in Java.
  *
- * <p>Based on example code by Stefan Gustavson (stegu@itn.liu.se). Optimisations by Peter Eastman (peastman@drizzle.stanford.edu). Better rank ordering method by Stefan Gustavson in 2012.
+ * Based on example code by Stefan Gustavson (stegu@itn.liu.se).
+ * Optimisations by Peter Eastman (peastman@drizzle.stanford.edu).
+ * Better rank ordering method by Stefan Gustavson in 2012.
  *
- * <p>This could be speeded up even further, but it's useful as it is.
+ * This could be speeded up even further, but it's useful as it is.
  *
- * <p>Version 2012-03-09
+ * Version 2012-03-09
  *
- * <p>This code was placed in the public domain by its original author, Stefan Gustavson. You may use it as you see fit, but attribution is appreciated.
+ * This code was placed in the public domain by its original author,
+ * Stefan Gustavson. You may use it as you see fit, but
+ * attribution is appreciated.
  *
- * <p>This class was not made by ITsMagic Engine! OUTPUT VALUES ARE NORMALIZED (-1, 1)
+ * This class was not made by ITsMagic Engine!
+ * OUTPUT VALUES ARE NORMALIZED (-1, 1)
  */
-@ClassCategory(cat = {"Algorithms", "Math"})
+@ClassCategory(cat ={"Algorithms","Math"})
 public class PerlinNoise {
 
-  public PerlinNoise() {}
+    //
 
-  public PerlinNoise(float scale) {}
+    public PerlinNoise() {}
+    public PerlinNoise(float scale) {
+        //
+    }
 
-  /** Defautl scale = 10 */
+    /**
+     * Defautl scale = 10
+     */
 
-  /// Builder
-  @HideGetSet
-  @MethodArgs({"scale"})
-  public void setScale(float scale) {}
 
-  @HideGetSet
-  public float getScale() {
+    /// Builder
+    @HideGetSet
+    @MethodArgs({"scale"})
+    public void setScale(float scale){
+        //
+    }
+    @HideGetSet
+    public float getScale(){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
 
-  /// Abstracts
-  @MethodArgs({"x", "y"})
-  public double noise(double x, double y) {
+    /// Abstracts
+    @MethodArgs({"x","y"})
+    public double noise(double x, double y){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @MethodArgs({"x","y","z"})
+    public double noise(double x, double y, double z){
+        //
+        return 0;
+        //
 
-  @MethodArgs({"x", "y", "z"})
-  public double noise(double x, double y, double z) {
+        //
+    }
+    @MethodArgs({"x","y","z","w"})
+    public double noise(double x, double y, double z, double w){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
 
-  @MethodArgs({"x", "y", "z", "w"})
-  public double noise(double x, double y, double z, double w) {
+    @MethodArgs({"x","y"})
+    public float noise(int x, int y){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @MethodArgs({"x","y","z"})
+    public float noise(int x, int y, int z){
+        //
+        return 0;
+        //
 
-  @MethodArgs({"x", "y"})
-  public float noise(int x, int y) {
+        //
+    }
+    @MethodArgs({"x","y","z","w"})
+    public float noise(int x, int y, int z, int w){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
 
-  @MethodArgs({"x", "y", "z"})
-  public float noise(int x, int y, int z) {
+    @MethodArgs({"x","y"})
+    public float noise(float x, float y){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @MethodArgs({"x","y","z"})
+    public float noise(float x, float y, float z){
+        //
+        return 0;
+        //
 
-  @MethodArgs({"x", "y", "z", "w"})
-  public float noise(int x, int y, int z, int w) {
+        //
+    }
+    @MethodArgs({"x","y","z","w"})
+    public float noise(float x, float y, float z, float w){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
-
-  @MethodArgs({"x", "y"})
-  public float noise(float x, float y) {
-
-    return 0;
-  }
-
-  @MethodArgs({"x", "y", "z"})
-  public float noise(float x, float y, float z) {
-
-    return 0;
-  }
-
-  @MethodArgs({"x", "y", "z", "w"})
-  public float noise(float x, float y, float z, float w) {
-
-    return 0;
-  }
+        //
+    }
 }

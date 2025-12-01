@@ -1,3 +1,4 @@
 package JAVARuntime;
 
-public class RoomNotConnectedException extends RuntimeException {}
+public class RoomNotConnectedException extends RuntimeException{
+}

@@ -1,93 +1,140 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Debug"})
-public class GizmoElement {
+//
 
-  public enum RenderMode {
-    Triangles,
-    WireFrame,
-    Both,
-    SimpleWireFrame,
-    Outline
-  }
 
-  private boolean drawInFront;
-  private boolean additiveMode;
-  private float maxScaleBasedCameraSize = -1;
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"Debug"})
+public class GizmoElement
+        //
+{
+    public enum RenderMode{
+        Triangles, WireFrame, Outline
+    }
 
-  private transient Object userPointer = null;
+    //
+    private boolean drawInFront;
+    private float visibleDistance = -1;
+    private float fadeOutRange = -1;
+    private boolean additiveMode;
+    private float maxScaleBasedCameraSize = -1;
+    private boolean enableLight = false;
+    private float lightIntensity = 1f;
+    private boolean billboard = false;
+    private boolean pooling = false;
 
-  public Object getUserPointer() {
-    return userPointer;
-  }
+    private transient Object userPointer = null;
 
-  @MethodArgs({"userPointer"})
-  public void setUserPointer(Object userPointer) {
-    this.userPointer = userPointer;
-  }
+    public Object getUserPointer() { return userPointer; }
+    @MethodArgs({"userPointer"})
+    public void setUserPointer(Object userPointer) { this.userPointer = userPointer; }
 
-  public Vertex getVertex() {
-    return null;
-  }
+    public Vertex getVertex(){
+        return null;
+    }
+    public Color getColor(){
+        return null;
+    }
+    public Texture getTexture(){
+        return null;
+    }
+    public RenderMode getRenderMode(){
+        return RenderMode.Triangles;
+    }
+    public float[] getMatrix(){
+        return null;
+    }
+    public int getWireFrameWidth(){
+        //
+        return 0;
+        //
 
-  public Color getColor() {
-    return null;
-  }
+        //
+    }
 
-  public Texture getTexture() {
-    return null;
-  }
+    public float getOutlineScale() {
+        return 0.1f;
+    }
 
-  public RenderMode getRenderMode() {
-    return RenderMode.Triangles;
-  }
+    public boolean isDualFaceRender(){
+        return false;
+    }
 
-  public float[] getMatrix() {
-    return null;
-  }
+    public boolean isEnableTransparency() {
+        //
+        return false;
+        //
 
-  public int getWireFrameWidth() {
+        //
+    }
+    public void setEnableTransparency(boolean enableTransparency) {
+        //
+    }
 
-    return 0;
-  }
+    public boolean isBillboard() {
+        return billboard;
+    }
+    public void setBillboard(boolean billboard) {
+        this.billboard = billboard;
+    }
 
-  public float getOutlineScale() {
-    return 0.1f;
-  }
+    public boolean isDrawInFront() {
+        return drawInFront;
+    }
+    public void setDrawInFront(boolean drawInFront) {
+        this.drawInFront = drawInFront;
+    }
 
-  public boolean isEnableTransparency() {
+    public boolean isAdditiveMode() {
+        return additiveMode;
+    }
+    public void setAdditiveMode(boolean additiveMode) {
+        this.additiveMode = additiveMode;
+    }
 
-    return false;
-  }
+    public boolean isEnableLight() {
+        return enableLight;
+    }
+    public void setEnableLight(boolean enableLight) {
+        this.enableLight = enableLight;
+    }
 
-  public void setEnableTransparency(boolean enableTransparency) {}
+    public float getMaxScaleBasedCameraSize() {
+        return maxScaleBasedCameraSize;
+    }
+    public void setMaxScaleBasedCameraSize(float maxScaleBasedCameraSize) {
+        this.maxScaleBasedCameraSize = maxScaleBasedCameraSize;
+    }
 
-  public boolean isDrawInFront() {
-    return drawInFront;
-  }
+    public float getLightIntensity() {
+        return lightIntensity;
+    }
+    public void setLightIntensity(float lightIntensity) {
+        this.lightIntensity = lightIntensity;
+    }
 
-  public void setDrawInFront(boolean drawInFront) {
-    this.drawInFront = drawInFront;
-  }
+    public float getVisibleDistance() {
+        return visibleDistance;
+    }
+    public void setVisibleDistance(float visibleDistance) {
+        this.visibleDistance = visibleDistance;
+    }
 
-  public boolean isAdditiveMode() {
-    return additiveMode;
-  }
+    public float getFadeOutRange() {
+        return fadeOutRange;
+    }
+    public void setFadeOutRange(float fadeOutRange) {
+        this.fadeOutRange = fadeOutRange;
+    }
 
-  public void setAdditiveMode(boolean additiveMode) {
-    this.additiveMode = additiveMode;
-  }
+    public boolean isPooling() {
+        return pooling;
+    }
+    public void setPooling(boolean pooling) {
+        this.pooling = pooling;
+    }
 
-  public float getMaxScaleBasedCameraSize() {
-    return maxScaleBasedCameraSize;
-  }
-
-  public void setMaxScaleBasedCameraSize(float maxScaleBasedCameraSize) {
-    this.maxScaleBasedCameraSize = maxScaleBasedCameraSize;
-  }
-
-  public boolean isScaleBasedCamera() {
-    return false;
-  }
+    public boolean isScaleBasedCamera(){ return false; }
 }

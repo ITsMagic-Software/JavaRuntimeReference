@@ -1,58 +1,85 @@
 package JAVARuntime;
 
+//
+
 import java.util.LinkedList;
 import java.util.List;
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"AI", "Components"})
-public final class PathFinder extends Component {
-  public enum LookTo {
-    Disabled,
-    Path,
-    Target
-  }
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"AI","Components"})
+public final class PathFinder extends Component{
+    public enum LookTo{
+        Disabled, Path, Target
+    }
 
-  public PathFinder() {
+    //
 
-    super();
-  }
+    public PathFinder() {
+        //
+        super();
+        //
 
-  @HideGetSet
-  public SpatialObject getTarget() {
+        //
+    }
 
-    return null;
-  }
+    @HideGetSet
+    public SpatialObject getTarget(){
+        //
+        return null;
+        //
 
-  @HideGetSet
-  @MethodArgs({"object"})
-  public void setTarget(SpatialObject object) {}
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"object"})
+    public void setTarget(SpatialObject object){
+        //
+    }
 
-  @HideGetSet
-  public float getSearchDelay() {
+    @HideGetSet
+    public float getSearchDelay(){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"value"})
+    public void setSearchDelay(float value){
+        //
+    }
 
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setSearchDelay(float value) {}
+    public float getTargetDistance(){
+        //
+        return 0;
+        //
 
-  public float getTargetDistance() {
+        //
+    }
+    public float getTargetDistanceInPath(){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
 
-  public float getTargetDistanceInPath() {
+    public boolean hasPath(){
+        //
+        return false;
+        //
 
-    return 0;
-  }
+        //
+    }
+    public boolean hasTarget(){
+        //
+        return false;
+        //
 
-  public boolean hasPath() {
+        //
+    }
 
-    return false;
-  }
-
-  public boolean hasTarget() {
-
-    return false;
-  }
+    //
 }

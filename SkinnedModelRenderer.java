@@ -1,48 +1,74 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Rendering", "Components"})
-public final class SkinnedModelRenderer extends Component {
-  public static final int CUBE = 456;
-  public static final int SPHERE = 457;
-  public static final int CONE = 458;
-  public static final int CYLINDER = 459;
-  public static final int CIRCLE = 460;
-  public static final int TORUS = 461;
-  public static final int SQUARE = 462;
-  public static final int SQUARE90 = 463;
+//
 
-  public SkinnedModelRenderer() {
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"Rendering","Components"})
+public final class SkinnedModelRenderer extends Component{
+    public static final int CUBE = 456;
+    public static final int SPHERE = 457;
+    public static final int CONE = 458;
+    public static final int CYLINDER = 459;
+    public static final int CIRCLE = 460;
+    public static final int TORUS = 461;
+    public static final int SQUARE = 462;
+    public static final int SQUARE90 = 463;
 
-    super();
-  }
 
-  @Deprecated
-  @DeprecatedInfo(info = {"PFile is now obsolete, use SkinnedModelRenderer.setVertex(Vertex) instead"})
-  @MethodArgs({"file"})
-  public void setModelFile(VertexFile pFile) {}
+    //
 
-  @Deprecated
-  @DeprecatedInfo(info = {"PFile is now obsolete, use SkinnedModelRenderer.setMaterial(Material) instead"})
-  @MethodArgs({"file"})
-  public void setMaterialFile(MaterialFile pFile) {}
+    public SkinnedModelRenderer() {
+        //
+        super();
+        //
 
-  public Material getMaterial() {
+        //
+    }
 
-    return null;
-  }
+    @Deprecated
+    @DeprecatedInfo(info={"PFile is now obsolete, use SkinnedModelRenderer.setVertex(Vertex) instead"})
+    @MethodArgs({"file"})
+    public void setModelFile(VertexFile pFile){
+        //
+    }
 
-  @MethodArgs({"material"})
-  public void setMaterial(Material material) {}
+    @Deprecated
+    @DeprecatedInfo(info={"PFile is now obsolete, use SkinnedModelRenderer.setMaterial(Material) instead"})
+    @MethodArgs({"file"})
+    public void setMaterialFile(MaterialFile pFile){
+        //
+    }
 
-  public Vertex getVertex() {
+    public Material getMaterial(){
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
+    @MethodArgs({"material"})
+    public void setMaterial(Material material){
+        //
+    }
 
-  @MethodArgs({"vertex"})
-  public void setVertex(Vertex vertex) {}
+    public Vertex getVertex(){
+        //
+        return null;
+        //
 
-  @MethodArgs({"primitive"})
-  public void attachPrimitive(int primitive) {}
+        //
+    }
+    @MethodArgs({"vertex"})
+    public void setVertex(Vertex vertex){
+        //
+    }
+
+    @MethodArgs({"primitive"})
+    public void attachPrimitive(int primitive){
+        //
+    }
+
+    //
 }

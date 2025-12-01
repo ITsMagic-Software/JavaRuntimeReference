@@ -1,12 +1,22 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Files", "Object"})
-public class ObjectFile {
+//
 
-  public ObjectFile() {}
 
-  public String toString() {
-    return getClass().getName();
-  }
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"Files","Object"})
+public class ObjectFile
+//
+{
+    //
+
+    public ObjectFile() {
+        //
+    }
+
+    public String toString() {
+        return getClass().getName();
+    }
 }

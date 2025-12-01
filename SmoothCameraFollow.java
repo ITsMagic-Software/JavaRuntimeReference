@@ -1,71 +1,105 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Prototyping", "Components"})
+//
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+
+@ClassCategory(cat ={"Prototyping","Components"})
 public final class SmoothCameraFollow extends Component {
 
-  public SmoothCameraFollow() {
+    //
 
-    super();
-  }
+    public SmoothCameraFollow() {
+        //
+        super();
+        //
 
-  @HideGetSet
-  public float getDistance() {
+        //
+    }
 
-    return 0;
-  }
+    @HideGetSet
+    public float getDistance(){
+        //
+        return 0;
+        //
 
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setDistance(float value) {}
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"value"})
+    public void setDistance(float value){
+        //
+    }
 
-  @HideGetSet
-  public float getHeight() {
+    @HideGetSet
+    public float getHeight(){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"value"})
+    public void setHeight(float value){
+        //
+    }
 
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setHeight(float value) {}
+    @HideGetSet
+    public float getHeightDamping(){
+        //
+        return 0;
+        //
 
-  @HideGetSet
-  public float getHeightDamping() {
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"value"})
+    public void setHeightDamping(float value){
+        //
+    }
 
-    return 0;
-  }
+    @HideGetSet
+    public float getMaxHeightDistance(){
+        //
+        return 0;
+        //
 
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setHeightDamping(float value) {}
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"value"})
+    public void setMaxHeightDistance(float value){
+        //
+    }
 
-  @HideGetSet
-  public float getMaxHeightDistance() {
+    @HideGetSet
+    public float getRotationDamping(){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"value"})
+    public void setRotationDamping(float value){
+        //
+    }
 
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setMaxHeightDistance(float value) {}
+    @HideGetSet
+    public SpatialObject getTarget(){
+        //
+        return null;
+        //
 
-  @HideGetSet
-  public float getRotationDamping() {
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"value"})
+    public void setTarget(SpatialObject value){
+        //
+    }
 
-    return 0;
-  }
-
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setRotationDamping(float value) {}
-
-  @HideGetSet
-  public SpatialObject getTarget() {
-
-    return null;
-  }
-
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setTarget(SpatialObject value) {}
 }

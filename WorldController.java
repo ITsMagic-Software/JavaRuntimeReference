@@ -1,149 +1,200 @@
 package JAVARuntime;
 
+//
+
 import java.util.ArrayList;
 import java.util.List;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"World"})
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"World"})
 public final class WorldController {
+    //
 
-  private WorldController() {}
+    private WorldController() { }
 
-  /// Abstracts
-  @MethodArgs({"worldFile"})
-  public static void loadWorld(WorldFile worldFile) {}
+    /// Abstracts
+    @MethodArgs({"worldFile"})
+    public static void loadWorld(WorldFile worldFile){
+        //
+    }
+    @MethodArgs({"worldFile"})
+    public static void loadWorldAsync(WorldFile worldFile){
+        //
+    }
 
-  @MethodArgs({"worldFile"})
-  public static void loadWorldAsync(WorldFile worldFile) {}
+    @MethodArgs({"name"})
+    public static SpatialObject findObject(String name){
+        //
+        return null;
+        //
 
-  @MethodArgs({"name"})
-  public static SpatialObject findObject(String name) {
+        //
+    }
+    public static List<SpatialObject> getObjectList() {
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
+    public static int getObjectsCount() {
+        //
+        return 0;
+        //
 
-  public static List<SpatialObject> getObjectList() {
+        //
+    }
+    @MethodArgs({"index"})
+    public static SpatialObject getObject(int index) {
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
 
-  public static int getObjectsCount() {
+    @MethodArgs({"classReference"})
+    public static <T extends JAVARuntime.Component> T findFirstComponent(Class classReference){
+        //
+        return null;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @MethodArgs({"classReference"})
+    public static <T extends JAVARuntime.Component> T findFirstActiveComponent(Class classReference){
+        //
+        return null;
+        //
 
-  @MethodArgs({"index"})
-  public static SpatialObject getObject(int index) {
+        //
+    }
+    @MethodArgs({"tittle"})
+    public static List<JAVARuntime.Component> listAllComponents(String tittle){
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
+    @MethodArgs({"classReference"})
+    public static List<JAVARuntime.Component> listAllComponents(Class classReference){
+        //
+        return null;
+        //
 
-  @MethodArgs({"classReference"})
-  public static <T extends JAVARuntime.Component> T findFirstComponent(Class classReference) {
+        //
+    }
 
-    return null;
-  }
+    //
 
-  @MethodArgs({"classReference"})
-  public static <T extends JAVARuntime.Component> T findFirstActiveComponent(Class classReference) {
+    public static float getLoadPercent(){
+        //
+        return 0;
+        //
 
-    return null;
-  }
+        //
+    }
+    public static float getLoadProgress(){
+        //
+        return 0;
+        //
 
-  @MethodArgs({"tittle"})
-  public static List<JAVARuntime.Component> listAllComponents(String tittle) {
+        //
+    }
+    public static int getLoadedCount(){
+        //
+        return 0;
+        //
 
-    return null;
-  }
+        //
+    }
+    public static int getLoadTotal(){
+        //
+        return 0;
+        //
 
-  @MethodArgs({"classReference"})
-  public static List<JAVARuntime.Component> listAllComponents(Class classReference) {
+        //
+    }
+    public static String getLoadMessage(){
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
+    public static boolean isLoaded(){
+        //
+        return false;
+        //
 
-  public static float getLoadPercent() {
+        //
+    }
+    public static boolean isLoading(){
+        //
+        return false;
+        //
 
-    return 0;
-  }
+        //
+    }
 
-  public static float getLoadProgress() {
+    public static GraphicsSettings getGraphicsSettings(){
+        //
+        return null;
+        //
 
-    return 0;
-  }
+        //
+    }
+    public static PhysicsSettings getPhysicsSettings(){
+        //
+        return null;
+        //
 
-  public static int getLoadedCount() {
+        //
+    }
 
-    return 0;
-  }
+    @MethodArgs({"tagName"})
+    public static SpatialObject findObjectWithTag(String tagName) {
+        //
+        return null;
+        //
 
-  public static int getLoadTotal() {
+        //
+    }
+    @MethodArgs({"tagName"})
+    public static List<SpatialObject> findObjectsWithTag(String tagName) {
+        //
+        return null;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @MethodArgs({"tagName"})
+    public static SpatialObject findRandomObjectWithTag(String tagName) {
+        //
+        return null;
+        //
 
-  public static String getLoadMessage() {
+        //
+    }
+    @MethodArgs({"tagName"})
+    public static int countObjectsWithTag(String tagName) {
+        //
+        return 0;
+        //
 
-    return null;
-  }
+        //
+    }
+    @MethodArgs({"tagName"})
+    public static boolean hasObjectsWithTag(String tagName) {
+        //
+        return false;
+        //
 
-  public static boolean isLoaded() {
+        //
+    }
 
-    return false;
-  }
-
-  public static boolean isLoading() {
-
-    return false;
-  }
-
-  public static GraphicsSettings getGraphicsSettings() {
-
-    return null;
-  }
-
-  public static LightSettings getLightSettings() {
-
-    return null;
-  }
-
-  public static PhysicsSettings getPhysicsSettings() {
-
-    return null;
-  }
-
-  public static WorldPathFinder getPathFinder() {
-
-    return null;
-  }
-
-  @MethodArgs({"tagName"})
-  public static SpatialObject findObjectWithTag(String tagName) {
-
-    return null;
-  }
-
-  @MethodArgs({"tagName"})
-  public static List<SpatialObject> findObjectsWithTag(String tagName) {
-
-    return null;
-  }
-
-  @MethodArgs({"tagName"})
-  public static SpatialObject findRandomObjectWithTag(String tagName) {
-
-    return null;
-  }
-
-  @MethodArgs({"tagName"})
-  public static int countObjectsWithTag(String tagName) {
-
-    return 0;
-  }
-
-  @MethodArgs({"tagName"})
-  public static boolean hasObjectsWithTag(String tagName) {
-
-    return false;
-  }
+    //
 }

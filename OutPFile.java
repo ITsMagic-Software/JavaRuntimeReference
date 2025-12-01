@@ -1,33 +1,42 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Files"})
+//
+
+
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"Files"})
 public class OutPFile {
+    //
 
-  private transient String filePath;
+    private transient String filePath;
 
-  public OutPFile() {}
+    public OutPFile() {
 
-  @MethodArgs({"filePath"})
-  public OutPFile(String filePath) {
-    this.filePath = filePath;
-  }
+    }
+    @MethodArgs({"filePath"})
+    public OutPFile(String filePath) {
+        this.filePath = filePath;
+    }
 
-  public String getFilePath() {
-    return filePath;
-  }
+    public String getFilePath() {
+        return filePath;
+    }
+    @MethodArgs({"filePath"})
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
 
-  @MethodArgs({"filePath"})
-  public void setFilePath(String filePath) {
-    this.filePath = filePath;
-  }
+    public String getAbsolutePath() {
+        //
+        return "";
+        //
 
-  public String getAbsolutePath() {
+        //
+    }
 
-    return "";
-  }
-
-  public String toString() {
-    return getFilePath();
-  }
+    public String toString() {
+        return getFilePath();
+    }
 }

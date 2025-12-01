@@ -1,22 +1,31 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Debug"})
-public class GizmoMatrix extends GizmoElement {
+//
 
-  private transient float[] matrix;
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"Debug"})
+public class GizmoMatrix extends GizmoElement{
 
-  public GizmoMatrix() {}
+    private transient float[] matrix;
 
-  @HideGetSet
-  public float[] getMatrix() {
+    public GizmoMatrix() {
 
-    return null;
-  }
+    }
 
-  @HideGetSet
-  @MethodArgs({"matrix"})
-  public void setMatrix(float[] matrix) {
-    this.matrix = matrix;
-  }
+    @Override
+    @HideGetSet
+    public float[] getMatrix(){
+        //
+        return null;
+        //
+
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"matrix"})
+    public void setMatrix(float[] matrix) {
+        this.matrix = matrix;
+    }
 }

@@ -1,78 +1,104 @@
 package JAVARuntime;
 
 import android.text.Editable;
+//
 
-public class TextScriptingExtension extends ScriptingExtension {
-  public enum LineTip {
-    None,
-    Error,
-    Alert
-  }
+public class TextScriptingExtension extends ScriptingExtension{
+    public enum LineTip{
+        None, Error, Alert
+    }
 
-  // <editor>
+    //
 
-  // >editor<
+    // Util methods
+    public String getText(){
+        //
+        return "";
+        //
 
-  // Util methods
-  public String getText() {
+        //
+    }
+    @MethodArgs({"str"})
+    public void setText(String str){
+        //
+    }
 
-    return "";
-  }
+    @MethodArgs({"theme"})
+    public void setTheme(TextScriptingTheme theme){
+        //
+    }
+    @MethodArgs({"textScriptingProvider"})
+    public void setProvider(TextScriptingProvider textScriptingProvider){
+        //
+    }
+    @MethodArgs({"textScriptingStyler"})
+    public void setStyler(TextScriptingStyler textScriptingStyler){
+        //
+    }
 
-  @MethodArgs({"str"})
-  public void setText(String str) {}
+    // Override methods
+    @MethodArgs({"line"})
+    public LineTip getTipForLine(int line) {
+        return LineTip.None;
+    }
+    @MethodArgs({"line"})
+    public String getTipTextForLine(int line) {
+        return "";
+    }
 
-  @MethodArgs({"theme"})
-  public void setTheme(TextScriptingTheme theme) {}
+    @Override
+    @MethodArgs({"file"})
+    public void replaceScript(File newScript) {
 
-  @MethodArgs({"textScriptingProvider"})
-  public void setProvider(TextScriptingProvider textScriptingProvider) {}
+    }
 
-  @MethodArgs({"textScriptingStyler"})
-  public void setStyler(TextScriptingStyler textScriptingStyler) {}
+    @Override
+    @MethodArgs({"file"})
+    public void openScript(File script) {
 
-  // Override methods
-  @MethodArgs({"line"})
-  public LineTip getTipForLine(int line) {
-    return LineTip.None;
-  }
+    }
 
-  @MethodArgs({"line"})
-  public String getTipTextForLine(int line) {
-    return "";
-  }
+    @Override
+    public void onClose() {
 
-  @MethodArgs({"file"})
-  public void replaceScript(File newScript) {}
+    }
 
-  @MethodArgs({"file"})
-  public void openScript(File script) {}
+    @Override
+    public void init() {
 
-  public void onClose() {}
+    }
 
-  public void init() {}
+    @Override
+    public void unload() {
 
-  public void unload() {}
+    }
 
-  public boolean saveScript() {
-    return false;
-  }
+    @Override
+    public boolean saveScript() {
+        return false;
+    }
 
-  public boolean hasScript() {
-    return false;
-  }
+    @Override
+    public boolean hasScript() {
+        return false;
+    }
 
-  @MethodArgs({"file"})
-  public boolean supportFile(File file) {
-    return false;
-  }
+    @Override
+    @MethodArgs({"file"})
+    public boolean supportFile(File file) {
+        return false;
+    }
 
-  @MethodArgs({"charSequence", "start", "before", "count"})
-  public void beforeTextChanged(CharSequence charSequence, int start, int before, int count) {}
+    @MethodArgs({"charSequence", "start", "before", "count"})
+    public void beforeTextChanged(CharSequence charSequence, int start, int before, int count) {
+    }
 
-  @MethodArgs({"charSequence", "start", "before", "count"})
-  public void onTextChanged(CharSequence charSequence, int start, int before, int count) {}
+    @MethodArgs({"charSequence", "start", "before", "count"})
+    public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
 
-  @MethodArgs({"editable"})
-  public void afterTextChanged(Editable editable) {}
+    }
+
+    @MethodArgs({"editable"})
+    public void afterTextChanged(Editable editable) {
+    }
 }

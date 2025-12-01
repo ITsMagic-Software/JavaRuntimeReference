@@ -1,122 +1,174 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Physics", "Components"})
-public final class VehicleWheel extends Component {
-  public enum Type {
-    ContactPoint,
-    Model
-  }
+//
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"Physics","Components"})
+public final class VehicleWheel extends Component{
+    public enum Type{
+        ContactPoint, Model
+    }
 
-  public VehicleWheel() {
+    //
 
-    super();
-  }
+    public VehicleWheel() {
+        //
+        super();
+        //
 
-  @HideGetSet
-  public float getRadius() {
+        //
+    }
 
-    return 0;
-  }
+    @HideGetSet
+    public float getRadius(){
+        //
+        return 0;
+        //
 
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setRadius(float value) {}
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"value"})
+    public void setRadius(float value){
+        //
+    }
 
-  @HideGetSet
-  public float getSkidding() {
+    @HideGetSet
+    public float getSkidding(){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
 
-  @HideGetSet
-  public float getSuspensionRestLength() {
+    @HideGetSet
+    public float getSuspensionRestLength(){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"value"})
+    public void setSuspensionRestLength(float value){
+        //
+    }
 
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setSuspensionRestLength(float value) {}
+    @HideGetSet
+    public float getFrictionSlip(){
+        //
+        return 0;
+        //
 
-  @HideGetSet
-  public float getFrictionSlip() {
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"value"})
+    public void setFrictionSlip(float value){
+        //
+    }
 
-    return 0;
-  }
+    @Deprecated
+    @HideGetSet
+    public boolean getPosPhysicsFunctionEnabled(){
+        //
+        return false;
+        //
 
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setFrictionSlip(float value) {}
+        //
+    }
+    @Deprecated
+    @HideGetSet
+    @MethodArgs({"value"})
+    public void setPosPhysicsFunctionEnabled(boolean value){
+        //
+    }
 
-  @Deprecated
-  @HideGetSet
-  public boolean getPosPhysicsFunctionEnabled() {
+    @HideGetSet
+    @MethodArgs({"intensity"})
+    public void setBlockRotation(float intensity){
+        //
+    }
 
-    return false;
-  }
+    @Deprecated
+    public boolean isGrounded(){
+        //
+        return false;
+        //
 
-  @Deprecated
-  @HideGetSet
-  @MethodArgs({"value"})
-  public void setPosPhysicsFunctionEnabled(boolean value) {}
+        //
+    }
 
-  @HideGetSet
-  @MethodArgs({"intensity"})
-  public void setBlockRotation(float intensity) {}
+    @HideGetSet
+    public float getRotation(){
+        //
+        return 0;
+        //
 
-  @Deprecated
-  public boolean isGrounded() {
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"rotation"})
+    public void setRotation(float r){
+        //
+    }
+    @MethodArgs({"increment"})
+    public void incrementRotation(float r){
+        //
+    }
 
-    return false;
-  }
+    @HideGetSet
+    public Vector3 getModelPosition() {
+        //
+        return null;
+        //
 
-  @HideGetSet
-  public float getRotation() {
+        //
+    }
+    @HideGetSet
+    public Quaternion getModelRotation() {
+        //
+        return null;
+        //
 
-    return 0;
-  }
+        //
+    }
 
-  @HideGetSet
-  @MethodArgs({"rotation"})
-  public void setRotation(float r) {}
+    @MethodArgs({"torque"})
+    public void setTorque(float torque){
+        //
+    }
+    @MethodArgs({"brake"})
+    public void setBrake(float brake){
+        //
+    }
+    @MethodArgs({"steer"})
+    public void setSteer(float steer){
+        //
+    }
+    @MethodArgs({"steer"})
+    public void setSteerRelativeVelocity(float steer){
+        //
+    }
 
-  @MethodArgs({"increment"})
-  public void incrementRotation(float r) {}
+    @Deprecated
+    @HideGetSet
+    public boolean isShowGizmo(){
+        //
+        return false;
+        //
 
-  @HideGetSet
-  public Vector3 getModelPosition() {
+        //
+    }
+    @Deprecated
+    @HideGetSet
+    @MethodArgs({"torque"})
+    public void setShowGizmo(boolean value){
+        //
+    }
 
-    return null;
-  }
-
-  @HideGetSet
-  public Quaternion getModelRotation() {
-
-    return null;
-  }
-
-  @MethodArgs({"torque"})
-  public void setTorque(float torque) {}
-
-  @MethodArgs({"brake"})
-  public void setBrake(float brake) {}
-
-  @MethodArgs({"steer"})
-  public void setSteer(float steer) {}
-
-  @MethodArgs({"steer"})
-  public void setSteerRelativeVelocity(float steer) {}
-
-  @Deprecated
-  @HideGetSet
-  public boolean isShowGizmo() {
-
-    return false;
-  }
-
-  @Deprecated
-  @HideGetSet
-  @MethodArgs({"torque"})
-  public void setShowGizmo(boolean value) {}
+    //
 }

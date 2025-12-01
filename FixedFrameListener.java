@@ -1,8 +1,10 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Framerate"})
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"Framerate"})
 public interface FixedFrameListener {
-  @MethodArgs({"deltaTime"})
-  void repeat(float deltaTime);
+    @MethodArgs({"deltaTime"})
+    void repeat(float deltaTime);
 }

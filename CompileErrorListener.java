@@ -1,7 +1,7 @@
 package JAVARuntime;
 
-@ClassCategory(cat = {"Shaders"})
+@ClassCategory(cat ={"Shaders"})
 public interface CompileErrorListener {
-  @MethodArgs({"message"})
-  void onError(String message);
+    @MethodArgs({"message"})
+    void onError(String message);
 }

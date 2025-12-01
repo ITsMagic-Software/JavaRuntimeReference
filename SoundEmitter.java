@@ -1,108 +1,163 @@
 package JAVARuntime;
 
+//
+
 import java.io.File;
 
 public class SoundEmitter {
 
-  public SoundEmitter(NativeFloatBuffer leftChannel, int sampleRate) {}
+    //
 
-  public SoundEmitter(float[] leftChannel, int sampleRate) {}
+    public SoundEmitter(NativeFloatBuffer leftChannel, int sampleRate) {
+        //
+    }
+    public SoundEmitter(float[] leftChannel, int sampleRate) {
+        //
+    }
+    public SoundEmitter(SoundData data) {
+        //
+    }
+    public SoundEmitter(File file) throws Exception {
+        //
+    }
 
-  public SoundEmitter(SoundData data) {}
+    @HideGetSet
+    public float getLeftVolume() {
+        //
+        return 0;
+        //
 
-  public SoundEmitter(File file) throws Exception {}
+        //
+    }
+    @HideGetSet
+    public void setLeftVolume(float leftVolume) {
+        //
+    }
 
-  @HideGetSet
-  public float getLeftVolume() {
+    @HideGetSet
+    public float getRightVolume() {
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @HideGetSet
+    public void setRightVolume(float rightVolume) {
+        //
+    }
 
-  @HideGetSet
-  public void setLeftVolume(float leftVolume) {}
+    public void setVolumes(float left, float right){
+        //
+    }
+    public void setVolumes(float left, float right, float volume){
+        //
+    }
 
-  @HideGetSet
-  public float getRightVolume() {
+    @HideGetSet
+    public float getSpeed() {
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
+    @HideGetSet
+    public void setSpeed(float speed) {
+        //
+    }
 
-  @HideGetSet
-  public void setRightVolume(float rightVolume) {}
+    @HideGetSet
+    public float getPitch() {
+        //
+        return 0;
+        //
 
-  public void setVolumes(float left, float right) {}
+        //
+    }
+    @HideGetSet
+    public void setPitch(float pitch) {
+        //
+    }
 
-  public void setVolumes(float left, float right, float volume) {}
+    @HideGetSet
+    public float getVolume() {
+        //
+        return 0;
+        //
 
-  @HideGetSet
-  public float getSpeed() {
+        //
+    }
+    @HideGetSet
+    public void setVolume(float volume) {
+        //
+    }
 
-    return 0;
-  }
+    private int getStepsCount(){
+        //
+        return 0;
+        //
 
-  @HideGetSet
-  public void setSpeed(float speed) {}
+        //
+    }
+    public float getCurrentSecond(){
+        //
+        return 0;
+        //
 
-  @HideGetSet
-  public float getPitch() {
+        //
+    }
+    public float getTotalSeconds(){
+        //
+        return 0;
+        //
 
-    return 0;
-  }
+        //
+    }
+    public void seekToSecond(float second){
+        //
+    }
 
-  @HideGetSet
-  public void setPitch(float pitch) {}
+    public boolean isLoop() {
+        //
+        return false;
+        //
 
-  @HideGetSet
-  public float getVolume() {
+        //
+    }
+    public void setLoop(boolean loop) {
+        //
+    }
 
-    return 0;
-  }
+    public void play(){
+        //
+    }
+    public void pause(){
+        //
+    }
+    public void stop(){
+        //
+    }
 
-  @HideGetSet
-  public void setVolume(float volume) {}
+    public boolean isPaused(){
+        //
+        return false;
+        //
 
-  private int getStepsCount() {
+        //
+    }
+    public boolean isPlaying(){
+        //
+        return false;
+        //
 
-    return 0;
-  }
+        //
+    }
+    public boolean isStopped(){
+        //
+        return false;
+        //
 
-  public float getCurrentSecond() {
-
-    return 0;
-  }
-
-  public float getTotalSeconds() {
-
-    return 0;
-  }
-
-  public void seekToSecond(float second) {}
-
-  public boolean isLoop() {
-
-    return false;
-  }
-
-  public void setLoop(boolean loop) {}
-
-  public void play() {}
-
-  public void pause() {}
-
-  public void stop() {}
-
-  public boolean isPaused() {
-
-    return false;
-  }
-
-  public boolean isPlaying() {
-
-    return false;
-  }
-
-  public boolean isStopped() {
-
-    return false;
-  }
+        //
+    }
 }

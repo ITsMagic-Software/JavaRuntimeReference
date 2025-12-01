@@ -1,16 +1,32 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Voxels", "Components"})
-public final class VoxelGenerator extends Component {
+//
 
-  public VoxelGenerator() {
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
 
-    super();
-  }
+@ClassCategory(cat ={"Voxels","Components"})
+public final class VoxelGenerator extends Component{
 
-  @MethodArgs({"listener"})
-  public void setListener(Component value) {}
+    //
 
-  public void removeListener() {}
+    public VoxelGenerator() {
+        //
+        super();
+        //
+
+        //
+    }
+
+    @MethodArgs({"listener"})
+    public void setListener(Component value){
+        //
+    }
+
+    public void removeListener(){
+        //
+    }
+
+    //
 }

@@ -1,43 +1,44 @@
 package JAVARuntime;
 
-/** @Author Lucas Leandro (ITsMagic Founder) */
-@ClassCategory(cat = {"Constraint", "Components"})
-public final class PointConstraint extends Component {
+//
 
-  public PointConstraint() {
+/**
+ * @Author Lucas Leandro (ITsMagic Founder)
+ */
+@ClassCategory(cat ={"Constraint","Components"})
+public final class PointConstraint extends Component{
+    //
 
-    super();
-  }
+    public PointConstraint() {
+        //
+        super();
+        //
 
-  public SpatialObject getObjectA() {
+        //
+    }
 
-    return null;
-  }
+    @HideGetSet
+    public SpatialObject getTarget(){
+        //
+        return null;
+        //
 
-  @MethodArgs({"object"})
-  public void setObjectA(SpatialObject object) {}
+        //
+    }
+    @HideGetSet
+    @MethodArgs({"object"})
+    public void setTarget(SpatialObject object){
+        //
+    }
 
-  public SpatialObject getObjectB() {
+    @HideGetSet
+    public SpatialObject getPivot(){
+        //
+        return null;
+        //
 
-    return null;
-  }
+        //
+    }
 
-  @MethodArgs({"object"})
-  public void setObjectB(SpatialObject object) {}
-
-  public SpatialObject getPointA() {
-
-    return null;
-  }
-
-  @MethodArgs({"object"})
-  public void setPointA(SpatialObject object) {}
-
-  public SpatialObject getPointB() {
-
-    return null;
-  }
-
-  @MethodArgs({"object"})
-  public void setPointB(SpatialObject object) {}
+    //
 }
